@@ -15,23 +15,25 @@ const ResidentialProperty = () => {
   }, []);
 
   return (
-    <div className="max-w-8xl px-34 py-15 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 bg-gray-100">
-      {residentData.map((property) => (
-        <div
-          key={property.id}
-          className="bg-white shadow-lg overflow-hidden hover:shadow-xl transition-shadow rounded-md"
-        >
-          <PropertyCard
-            title={property.title}
-            location={property.location}
-            image={property.image}
-            category={property.category}
-            price={property.price}
-            bhk={property.bhk}
-          />
-        </div>
-      ))}
-    </div>
+    <section className="bg-gray-100 py-20 bg-gradient-to-r from-slate-900 to-slate-700 ">
+      <div className="max-w-8xl mx-42  px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        {residentData.map((property) => (
+          <div
+            key={property.id}
+            className="bg-white rounded-lg shadow-md hover:shadow-orange-300/40 transition-shadow border border-orange-200 overflow-hidden"
+          >
+            <PropertyCard
+              title={property.title}
+              location={property.location}
+              image={property.image}
+              category={property.category}
+              price={property.price}
+              bhk={property.bhk}
+            />
+          </div>
+        ))}
+      </div>
+    </section>
   );
 };
 

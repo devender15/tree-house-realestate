@@ -964,27 +964,34 @@ const ResidentialProperty = ()=>{
             setResidentData(filtered);
         }
     }["ResidentialProperty.useEffect"], []);
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "max-w-8xl px-34 py-15 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 bg-gray-100",
-        children: residentData.map((property)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "bg-white shadow-lg overflow-hidden hover:shadow-xl transition-shadow rounded-md",
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$propertyCard$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                    title: property.title,
-                    location: property.location,
-                    image: property.image,
-                    category: property.category,
-                    price: property.price,
-                    bhk: property.bhk
-                }, void 0, false, {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+        className: "bg-gray-100 py-20 bg-gradient-to-r from-slate-900 to-slate-700 ",
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "max-w-8xl mx-42  px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8",
+            children: residentData.map((property)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "bg-white rounded-lg shadow-md hover:shadow-orange-300/40 transition-shadow border border-orange-200 overflow-hidden",
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$propertyCard$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                        title: property.title,
+                        location: property.location,
+                        image: property.image,
+                        category: property.category,
+                        price: property.price,
+                        bhk: property.bhk
+                    }, void 0, false, {
+                        fileName: "[project]/components/residential-property.tsx",
+                        lineNumber: 25,
+                        columnNumber: 13
+                    }, this)
+                }, property.id, false, {
                     fileName: "[project]/components/residential-property.tsx",
-                    lineNumber: 24,
+                    lineNumber: 21,
                     columnNumber: 11
-                }, this)
-            }, property.id, false, {
-                fileName: "[project]/components/residential-property.tsx",
-                lineNumber: 20,
-                columnNumber: 9
-            }, this))
+                }, this))
+        }, void 0, false, {
+            fileName: "[project]/components/residential-property.tsx",
+            lineNumber: 19,
+            columnNumber: 7
+        }, this)
     }, void 0, false, {
         fileName: "[project]/components/residential-property.tsx",
         lineNumber: 18,
