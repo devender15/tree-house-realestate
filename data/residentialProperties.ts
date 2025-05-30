@@ -41,7 +41,8 @@ export const residentialProperties = [
     title: "Spaze Tech Park",
     location: "Sector 49, Sohna Road",
     category: "commercial",
-    image: "/assets/spaze-tech-park.jpeg",
+    image:
+      "/assets/dlf-privana-west-sector-76-gurgaon-1.jpeg",
     price: "₹10 Cr",
     bhk: null,
     features: ["IT/ITES Friendly", "24x7 Security", "Multiple Lifts"],
@@ -52,7 +53,7 @@ export const residentialProperties = [
     title: "Vatika City Point",
     location: "MG Road, Gurugram",
     category: "commercial",
-    image: "/assets/vatika-city-point.jpeg",
+    image: "",
     price: "₹16 Cr",
     bhk: null,
     features: ["High Footfall Area", "Basement Parking", "Business Lounge"],
