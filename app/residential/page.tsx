@@ -6,7 +6,7 @@ export default function ResidentialPage() {
   return (
     <div>
       <HeroSection
-        imageUrl={"/assets/BELAPERLA CENTRAL PARK RESORT.jpeg"}
+        imageUrl={"/assets/residential/thumb.png"}
         heading="Residential"
         subheading=""
       />

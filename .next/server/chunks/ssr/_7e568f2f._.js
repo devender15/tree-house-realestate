@@ -159,7 +159,7 @@ const residentialProperties = [
         title: "Spaze Tech Park",
         location: "Sector 49, Sohna Road",
         category: "commercial",
-        image: "/assets/spaze-tech-park.jpeg",
+        image: "/assets/dlf-privana-west-sector-76-gurgaon-1.jpeg",
         price: "₹10 Cr",
         bhk: null,
         features: [
@@ -174,7 +174,7 @@ const residentialProperties = [
         title: "Vatika City Point",
         location: "MG Road, Gurugram",
         category: "commercial",
-        image: "/assets/vatika-city-point.jpeg",
+        image: "",
         price: "₹16 Cr",
         bhk: null,
         features: [
@@ -337,7 +337,7 @@ function ResidentialPage() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$heroSection$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["HeroSection"], {
-                imageUrl: "/assets/BELAPERLA CENTRAL PARK RESORT.jpeg",
+                imageUrl: "/assets/residential/thumb.png",
                 heading: "Residential",
                 subheading: ""
             }, void 0, false, {

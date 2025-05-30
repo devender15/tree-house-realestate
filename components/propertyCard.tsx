@@ -1,30 +1,76 @@
 "use client";
 
 import Image from "next/image";
-import { MapPin, MapPinIcon, MessageCircle } from "lucide-react";
+import {
+  MapPin,
+  MapPinIcon,
+  MessageCircle,
+  MessageCircleMore,
+} from "lucide-react";
 
 type CardData = {
   title: string;
   location: string;
   image: string;
+  category: string;
+  price: string;
 };
 
-const PropertyCard = ({ title, location, image }: CardData) => {
+const PropertyCard = ({
+  title,
+  location,
+  image,
+  category,
+  price,
+}: CardData) => {
   return (
-    <div className="border">
-      <div className="border border-red-500">
-        <Image src={image} width={600} height={450} alt="property image" />
+    <div className="">
+      {/* card image */}
+      <div className=" relative ">
+        <Image
+          src={image || "/assets/default.jpg"}
+          width={600}
+          height={450}
+          alt="property image"
+        />
+        <span className="absolute top-3 right-2 bg-gray-600  px-3 text-white rounded-full text-sm ">
+          {category}
+        </span>
       </div>
-      <div className="border border-blue-300 p-4  ">
-        <h1 className="text-lg font-semibold pl-0.5">{title}</h1>
-        <div className="flex gap-2 text-gray-500 ">
+
+      {/* card content */}
+      <div className=" p-4 ">
+        <div className="flex justify-between items-center ">
+          <h1 className="text-xl font-semibold pl-0.5">
+            {title.toUpperCase()}
+          </h1>
+          <span className=" text-xl mr-5 text-blue-500 font-semibold ">
+            PRICE: {price}
+          </span>
+        </div>
+        <div className="flex gap-2 text-gray-500 font-light ">
           {" "}
           <MapPinIcon width={18} /> {location}
         </div>
 
-        <div className="flex justify-end ">
-          <button className="border px-3 py-1.5 rounded-full ml-3 ">enquire now</button>
-          <button className="border px-3 py-1.5 rounded-full ml-3 ">view details</button>
+        {/* buttons */}
+        <div className="flex gap-2 mt-4  ">
+          <button className=" px-3 py-1.5 rounded-full border-gray-400 bg-red-400 text-white font-semibold hover:cursor-pointer hover:bg-red-500 ">
+            enquire now
+                  </button>
+                  
+          <button className="border border-red-400 text-red-500 font-semibold px-3 py-1.5 rounded-full transition ease-in   hover:bg-red-500 hover:text-white hover:cursor-pointer ">
+            view details
+          </button>
+
+          <button className=" rounded-full ">
+            <MessageCircleMore
+              width={35}
+              height={35}
+              color="green"
+              className="font-light "
+            />{" "}
+          </button>
         </div>
       </div>
     </div>
