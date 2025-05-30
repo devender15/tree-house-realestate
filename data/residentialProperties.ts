@@ -25,7 +25,7 @@ export const residentialProperties = [
     id: "3",
     title: "M3M Urbana",
     location: "Sector 67, Gurugram",
-    category: "commercial",
+    category: "residential",
     image: "/assets/experion-the-trillion-1-thumbnail.jpg",
     price: "₹12 Cr",
     bhk: null,

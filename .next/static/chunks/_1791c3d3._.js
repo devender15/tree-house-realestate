@@ -1,4 +1,4 @@
-(globalThis.TURBOPACK = globalThis.TURBOPACK || []).push(["static/chunks/_c239e7bd._.js", {
+(globalThis.TURBOPACK = globalThis.TURBOPACK || []).push(["static/chunks/_1791c3d3._.js", {
 
 "[project]/components/tab-button.tsx [app-client] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
@@ -45,7 +45,11 @@ const properties = [
     {
         id: "1",
         title: "M3M Urbana",
-        location: "Sector 67, Gurugram",
+        location: "Sector 67, Gurugram, Gurgaon",
+        search: [
+            "Golf Course Ext Road",
+            "Sector 67"
+        ],
         category: "residential",
         image: "/assets/experion-the-trillion-1-thumbnail.jpg",
         price: "₹12 Cr",
@@ -60,7 +64,11 @@ const properties = [
     {
         id: "2",
         title: "DLF Cyber City",
-        location: "Gurugram",
+        location: "Cyber City, Gurugram, Gurgaon",
+        search: [
+            "New Gurgaon",
+            "Cyber City"
+        ],
         category: "commercial",
         image: "/assets/dlf-cyber-city.jpg",
         price: "₹50 Cr",
@@ -75,7 +83,11 @@ const properties = [
     {
         id: "3",
         title: "The Address",
-        location: "Sector 104, Noida",
+        location: "Sector 104, Noida, Delhi NCR",
+        search: [
+            "New Gurgaon",
+            "Sector 104"
+        ],
         category: "residential",
         image: "/assets/the-address-noida.jpg",
         price: "₹85 Lakh",
@@ -90,7 +102,11 @@ const properties = [
     {
         id: "4",
         title: "Tata Primanti",
-        location: "Sector 72, Gurugram",
+        location: "Sector 72, Gurugram, Gurgaon",
+        search: [
+            "Sothern Pheripery Road",
+            "Sector 72"
+        ],
         category: "new-launch",
         image: "/assets/tata-primanti.jpg",
         price: "₹1.2 Cr",
@@ -105,7 +121,11 @@ const properties = [
     {
         id: "5",
         title: "Ireo Victory Valley",
-        location: "Sector 67, Gurugram",
+        location: "Sector 67, Gurugram, Gurgaon",
+        search: [
+            "Golf Course Ext Road",
+            "Sector 67"
+        ],
         category: "residential",
         image: "/assets/ireo-victory-valley.jpg",
         price: "₹3.5 Cr",
@@ -120,7 +140,11 @@ const properties = [
     {
         id: "6",
         title: "Paras Downtown",
-        location: "Sector 59, Gurugram",
+        location: "Sector 59, Gurugram, Gurgaon",
+        search: [
+            "Golf Course Ext Road",
+            "Sector 59"
+        ],
         category: "commercial",
         image: "/assets/paras-downtown.jpg",
         price: "₹15 Cr",
@@ -135,7 +159,11 @@ const properties = [
     {
         id: "7",
         title: "Godrej Air",
-        location: "Sector 150, Noida",
+        location: "Sector 150, Noida, Delhi NCR",
+        search: [
+            "New Gurgaon",
+            "Sector 150"
+        ],
         category: "new-launch",
         image: "/assets/godrej-air.jpg",
         price: "₹75 Lakh",
@@ -150,7 +178,10 @@ const properties = [
     {
         id: "8",
         title: "DLF One Horizon Center",
-        location: "Golf Course Road, Gurugram",
+        location: "Golf Course Road, Gurugram, Gurgaon",
+        search: [
+            "Golf Course Road"
+        ],
         category: "commercial",
         image: "/assets/dlf-one-horizon.jpg",
         price: "₹100 Cr",
@@ -165,7 +196,11 @@ const properties = [
     {
         id: "9",
         title: "Emaar Palm Heights",
-        location: "Sector 77, Gurugram",
+        location: "Sector 77, Gurugram, Gurgaon",
+        search: [
+            "Dwarka Expressway",
+            "Sector 77"
+        ],
         category: "residential",
         image: "/assets/emaar-palm-heights.jpg",
         price: "₹1.1 Cr",
@@ -180,7 +215,11 @@ const properties = [
     {
         id: "10",
         title: "Unitech Cyber Park",
-        location: "Gurugram",
+        location: "Sector 39, Gurugram, Gurgaon",
+        search: [
+            "Golf Course Road",
+            "Sector 39"
+        ],
         category: "commercial",
         image: "/assets/unitech-cyber-park.jpg",
         price: "₹35 Cr",
@@ -191,306 +230,6 @@ const properties = [
             "Centralized AC"
         ],
         description: "Modern commercial offices in the heart of Gurugram"
-    },
-    {
-        id: "11",
-        title: "AIPL Joy Street",
-        location: "Sector 63, Gurugram",
-        category: "new-launch",
-        image: "/assets/aipl-joy-street.jpg",
-        price: "₹95 Lakh",
-        bhk: "2 BHK",
-        features: [
-            "Shopping Arcade",
-            "Multipurpose Hall",
-            "Children's Park"
-        ],
-        description: "New launch residential project with retail facilities"
-    },
-    {
-        id: "12",
-        title: "Vatika Business Park",
-        location: "Sector 49, Gurugram",
-        category: "commercial",
-        image: "/assets/vatika-business-park.jpg",
-        price: "₹42 Cr",
-        bhk: "NA",
-        features: [
-            "Ample Parking",
-            "Green Building",
-            "24/7 Security"
-        ],
-        description: "Prime commercial office spaces with sustainable design"
-    },
-    {
-        id: "13",
-        title: "Nirala Estate",
-        location: "Sector 93, Noida",
-        category: "residential",
-        image: "/assets/nirala-estate.jpg",
-        price: "₹45 Lakh",
-        bhk: "2 BHK",
-        features: [
-            "Garden Area",
-            "Community Hall",
-            "Gymnasium"
-        ],
-        description: "Affordable residential apartments with good amenities"
-    },
-    {
-        id: "14",
-        title: "Logix City Center",
-        location: "Sector 32, Noida",
-        category: "commercial",
-        image: "/assets/logix-city-center.jpg",
-        price: "₹28 Cr",
-        bhk: "NA",
-        features: [
-            "Retail Spaces",
-            "Food Court",
-            "Lift & Escalators"
-        ],
-        description: "Mixed-use commercial and retail complex"
-    },
-    {
-        id: "15",
-        title: "Brigade Cosmopolis",
-        location: "Kanakapura Road, Bengaluru",
-        category: "new-launch",
-        image: "/assets/brigade-cosmopolis.jpg",
-        price: "₹1.5 Cr",
-        bhk: "3 BHK",
-        features: [
-            "Clubhouse",
-            "Jogging Track",
-            "Basketball Court"
-        ],
-        description: "New launch township with modern facilities"
-    },
-    {
-        id: "16",
-        title: "Tata Realty Business Park",
-        location: "Mumbai",
-        category: "commercial",
-        image: "/assets/tata-realty-business-park.jpg",
-        price: "₹120 Cr",
-        bhk: "NA",
-        features: [
-            "LEED Certified",
-            "Large Conference Halls",
-            "24/7 Security"
-        ],
-        description: "Business park with premium office spaces in Mumbai"
-    },
-    {
-        id: "17",
-        title: "Purva Westend",
-        location: "Kanakapura Road, Bengaluru",
-        category: "residential",
-        image: "/assets/purva-westend.jpg",
-        price: "₹1.1 Cr",
-        bhk: "3 BHK",
-        features: [
-            "Swimming Pool",
-            "Gym",
-            "Clubhouse"
-        ],
-        description: "Luxury residential apartments with modern amenities"
-    },
-    {
-        id: "18",
-        title: "DLF Galleria Market",
-        location: "Gurugram",
-        category: "commercial",
-        image: "/assets/dlf-galleria-market.jpg",
-        price: "₹60 Cr",
-        bhk: "NA",
-        features: [
-            "Retail Spaces",
-            "Food Court",
-            "Ample Parking"
-        ],
-        description: "Premium retail and commercial market"
-    },
-    {
-        id: "19",
-        title: "Lodha Palava",
-        location: "Mumbai",
-        category: "new-launch",
-        image: "/assets/lodha-palava.jpg",
-        price: "₹90 Lakh",
-        bhk: "2 BHK",
-        features: [
-            "Eco-friendly Township",
-            "Community Park",
-            "Schools Nearby"
-        ],
-        description: "New launch eco-friendly township with ample greenery"
-    },
-    {
-        id: "20",
-        title: "Sobha City",
-        location: "Thrissur, Kerala",
-        category: "residential",
-        image: "/assets/sobha-city.jpg",
-        price: "₹50 Lakh",
-        bhk: "2 BHK",
-        features: [
-            "Modern Apartments",
-            "24/7 Security",
-            "Community Hall"
-        ],
-        description: "Affordable modern residential apartments"
-    },
-    {
-        id: "21",
-        title: "RMZ Corp One",
-        location: "Bengaluru",
-        category: "commercial",
-        image: "/assets/rmz-corp-one.jpg",
-        price: "₹55 Cr",
-        bhk: "NA",
-        features: [
-            "Grade A Offices",
-            "Conference Rooms",
-            "Green Building"
-        ],
-        description: "Prime commercial office spaces with green design"
-    },
-    {
-        id: "22",
-        title: "Godrej Prakriti",
-        location: "Panvel, Mumbai",
-        category: "new-launch",
-        image: "/assets/godrej-prakriti.jpg",
-        price: "₹65 Lakh",
-        bhk: "2 BHK",
-        features: [
-            "Eco-friendly Design",
-            "Swimming Pool",
-            "Jogging Track"
-        ],
-        description: "New launch residential project with eco-friendly features"
-    },
-    {
-        id: "23",
-        title: "Prestige Shantiniketan",
-        location: "Bengaluru",
-        category: "residential",
-        image: "/assets/prestige-shantiniketan.jpg",
-        price: "₹2.2 Cr",
-        bhk: "3 BHK",
-        features: [
-            "Clubhouse",
-            "Swimming Pool",
-            "Children's Play Area"
-        ],
-        description: "Luxury apartments in a serene environment"
-    },
-    {
-        id: "24",
-        title: "DLF IT Park",
-        location: "Gurugram",
-        category: "commercial",
-        image: "/assets/dlf-it-park.jpg",
-        price: "₹45 Cr",
-        bhk: "NA",
-        features: [
-            "High-speed Internet",
-            "Cafeteria",
-            "24/7 Security"
-        ],
-        description: "IT park with modern infrastructure and facilities"
-    },
-    {
-        id: "25",
-        title: "ATS Flora",
-        location: "Sector 109, Gurugram",
-        category: "new-launch",
-        image: "/assets/ats-flora.jpg",
-        price: "₹1.3 Cr",
-        bhk: "3 BHK",
-        features: [
-            "Landscaped Gardens",
-            "Swimming Pool",
-            "Gym"
-        ],
-        description: "New launch luxury residential apartments"
-    },
-    {
-        id: "26",
-        title: "Wave One",
-        location: "Sector 18, Gurugram",
-        category: "commercial",
-        image: "/assets/wave-one.jpg",
-        price: "₹30 Cr",
-        bhk: "NA",
-        features: [
-            "Retail Spaces",
-            "Food Court",
-            "Parking Facilities"
-        ],
-        description: "Popular commercial complex with retail and food outlets"
-    },
-    {
-        id: "27",
-        title: "Godrej Summit",
-        location: "Sector 106, Gurugram",
-        category: "residential",
-        image: "/assets/godrej-summit.jpg",
-        price: "₹1.05 Cr",
-        bhk: "3 BHK",
-        features: [
-            "Smart Home Technology",
-            "Swimming Pool",
-            "24/7 Security"
-        ],
-        description: "Modern apartments with smart home features"
-    },
-    {
-        id: "28",
-        title: "Sikka Kaamna",
-        location: "Sector 82, Gurugram",
-        category: "new-launch",
-        image: "/assets/sikka-kaamna.jpg",
-        price: "₹90 Lakh",
-        bhk: "2 BHK",
-        features: [
-            "Affordable Housing",
-            "Community Center",
-            "Children's Park"
-        ],
-        description: "Affordable new launch housing project"
-    },
-    {
-        id: "29",
-        title: "M3M Golf Estate",
-        location: "Sector 65, Gurugram",
-        category: "residential",
-        image: "/assets/m3m-golf-estate.jpg",
-        price: "₹2.5 Cr",
-        bhk: "4 BHK",
-        features: [
-            "Golf Course View",
-            "Clubhouse",
-            "Swimming Pool"
-        ],
-        description: "Luxury villas with golf course views"
-    },
-    {
-        id: "30",
-        title: "Emaar MGF Emerald Hills",
-        location: "Gurugram",
-        category: "residential",
-        image: "/assets/emaar-mgf-emerald-hills.jpg",
-        price: "₹1.8 Cr",
-        bhk: "3 BHK",
-        features: [
-            "Green Spaces",
-            "Swimming Pool",
-            "Gym"
-        ],
-        description: "Premium apartments with lush green surroundings"
     }
 ];
 const getPropertiesByCategory = (category)=>{
@@ -596,18 +335,21 @@ function PropertyCarousel() {
         emblaApi
     ]);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: "py-16 bg-white text-white",
+        className: "pb-30 bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 text-gray-100",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "max-w-7xl mx-auto px-4",
+            className: "max-w-7xl mx-auto px-6",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "flex justify-center mb-8",
+                    className: "flex justify-center mb-12",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex space-x-8",
+                        className: "flex flex-wrap gap-6",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$tab$2d$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TabButton"], {
                                 active: activeTab === "new-launch",
                                 onClick: ()=>setActiveTab("new-launch"),
+                                className: "px-6 py-2 font-semibold rounded-lg transition-colors duration-300",
+                                activeClassName: "bg-indigo-600 text-white shadow-lg",
+                                inactiveClassName: "text-gray-400 hover:text-indigo-400",
                                 children: "New Launch"
                             }, void 0, false, {
                                 fileName: "[project]/components/property-carousel.tsx",
@@ -617,19 +359,25 @@ function PropertyCarousel() {
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$tab$2d$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TabButton"], {
                                 active: activeTab === "residential",
                                 onClick: ()=>setActiveTab("residential"),
+                                className: "px-6 py-2 font-semibold rounded-lg transition-colors duration-300",
+                                activeClassName: "bg-indigo-600 text-white shadow-lg",
+                                inactiveClassName: "text-gray-400 hover:text-indigo-400",
                                 children: "Residential"
                             }, void 0, false, {
                                 fileName: "[project]/components/property-carousel.tsx",
-                                lineNumber: 69,
+                                lineNumber: 75,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$tab$2d$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TabButton"], {
                                 active: activeTab === "commercial",
                                 onClick: ()=>setActiveTab("commercial"),
+                                className: "px-6 py-2 font-semibold rounded-lg transition-colors duration-300",
+                                activeClassName: "bg-indigo-600 text-white shadow-lg",
+                                inactiveClassName: "text-gray-400 hover:text-indigo-400",
                                 children: "Commercial"
                             }, void 0, false, {
                                 fileName: "[project]/components/property-carousel.tsx",
-                                lineNumber: 72,
+                                lineNumber: 84,
                                 columnNumber: 13
                             }, this)
                         ]
@@ -647,14 +395,14 @@ function PropertyCarousel() {
                     className: "relative",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "overflow-hidden",
+                            className: "overflow-hidden rounded-3xl shadow-2xl",
                             ref: emblaRef,
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex",
+                                className: "flex gap-6",
                                 children: filteredProperties.map((property)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "flex-[0_0_100%] md:flex-[0_0_50%] lg:flex-[0_0_33.333%] pl-4",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "relative h-[400px] rounded-lg overflow-hidden group cursor-pointer",
+                                            className: "relative h-[420px] rounded-3xl overflow-hidden group shadow-xl border border-gray-700 bg-gray-900",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     className: "absolute inset-0",
@@ -662,179 +410,177 @@ function PropertyCarousel() {
                                                         src: property.image,
                                                         alt: property.title,
                                                         fill: true,
-                                                        className: "object-cover transition-transform duration-300 group-hover:scale-105",
+                                                        className: "object-cover transition-transform duration-500 ease-in-out group-hover:scale-110",
                                                         sizes: "(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw",
                                                         priority: property.id === "1"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/property-carousel.tsx",
-                                                        lineNumber: 87,
+                                                        lineNumber: 111,
                                                         columnNumber: 23
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/property-carousel.tsx",
-                                                    lineNumber: 86,
+                                                    lineNumber: 110,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"
+                                                    className: "absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/property-carousel.tsx",
-                                                    lineNumber: 98,
+                                                    lineNumber: 122,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "absolute inset-0 p-6 flex flex-col justify-end",
+                                                    className: "absolute inset-0 p-8 flex flex-col justify-end",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                            className: "text-xl font-bold mb-2 font-poppins",
+                                                            className: "text-3xl font-semibold mb-3 font-serif text-white leading-tight drop-shadow-lg",
                                                             children: property.title
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/property-carousel.tsx",
-                                                            lineNumber: 102,
+                                                            lineNumber: 126,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "flex items-center text-gray-300 mb-4 font-poppins",
+                                                            className: "flex items-center text-gray-300 mb-6 space-x-2",
                                                             children: [
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2d$pin$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MapPin$3e$__["MapPin"], {
-                                                                    className: "w-4 h-4 mr-2"
+                                                                    className: "w-5 h-5"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/property-carousel.tsx",
-                                                                    lineNumber: 104,
+                                                                    lineNumber: 130,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                    className: "text-sm",
+                                                                    className: "text-base",
                                                                     children: property.location
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/property-carousel.tsx",
-                                                                    lineNumber: 105,
+                                                                    lineNumber: 131,
                                                                     columnNumber: 25
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/components/property-carousel.tsx",
-                                                            lineNumber: 103,
+                                                            lineNumber: 129,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "flex items-center space-x-3",
+                                                            className: "flex items-center space-x-4",
                                                             children: [
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
-                                                                    className: "bg-white text-black hover:bg-gray-100 font-poppins",
-                                                                    size: "sm",
+                                                                    className: "bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 px-6 py-3 text-base font-semibold shadow-md transition duration-300",
                                                                     children: "Enquire Now"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/property-carousel.tsx",
-                                                                    lineNumber: 110,
+                                                                    lineNumber: 136,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
                                                                     variant: "outline",
-                                                                    className: "border-white text-black hover:bg-white hover:text-black font-poppins",
-                                                                    size: "sm",
+                                                                    className: "border-indigo-600 text-indigo-600 hover:bg-indigo-600 hover:text-white rounded-lg px-6 py-3 text-base font-semibold transition duration-300",
                                                                     children: "View Details"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/property-carousel.tsx",
-                                                                    lineNumber: 113,
+                                                                    lineNumber: 139,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
                                                                     size: "sm",
-                                                                    className: "bg-green-500 hover:bg-green-600 p-2",
+                                                                    className: "bg-green-600 hover:bg-green-700 p-3 rounded-full shadow-md transition duration-300",
                                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$message$2d$circle$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MessageCircle$3e$__["MessageCircle"], {
-                                                                        className: "w-4 h-4"
+                                                                        className: "w-5 h-5"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/components/property-carousel.tsx",
-                                                                        lineNumber: 121,
+                                                                        lineNumber: 149,
                                                                         columnNumber: 27
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/property-carousel.tsx",
-                                                                    lineNumber: 120,
+                                                                    lineNumber: 145,
                                                                     columnNumber: 25
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/components/property-carousel.tsx",
-                                                            lineNumber: 109,
+                                                            lineNumber: 135,
                                                             columnNumber: 23
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/property-carousel.tsx",
-                                                    lineNumber: 101,
+                                                    lineNumber: 125,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/property-carousel.tsx",
-                                            lineNumber: 84,
+                                            lineNumber: 108,
                                             columnNumber: 19
                                         }, this)
                                     }, property.id, false, {
                                         fileName: "[project]/components/property-carousel.tsx",
-                                        lineNumber: 83,
+                                        lineNumber: 104,
                                         columnNumber: 17
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/components/property-carousel.tsx",
-                                lineNumber: 81,
+                                lineNumber: 102,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/property-carousel.tsx",
-                            lineNumber: 80,
+                            lineNumber: 98,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "flex justify-between items-center mt-6",
+                            className: "flex justify-between items-center mt-10 px-2 max-w-3xl mx-auto",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "flex items-center space-x-4",
+                                    className: "flex items-center space-x-5",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
                                             variant: "outline",
                                             size: "sm",
                                             onClick: scrollPrev,
-                                            className: " border-black text-black hover:bg-white hover:text-black cursor-pointer",
+                                            className: "border-indigo-600 text-indigo-600 hover:bg-indigo-600 hover:text-white rounded-full p-3 shadow-md transition duration-300",
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$left$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronLeft$3e$__["ChevronLeft"], {
-                                                className: "w-4 h-4"
+                                                className: "w-6 h-6"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/property-carousel.tsx",
-                                                lineNumber: 140,
+                                                lineNumber: 168,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/property-carousel.tsx",
-                                            lineNumber: 134,
+                                            lineNumber: 162,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
                                             variant: "outline",
                                             size: "sm",
                                             onClick: scrollNext,
-                                            className: "border-black text-black hover:bg-white hover:text-black cursor-pointer",
+                                            className: "border-indigo-600 text-indigo-600 hover:bg-indigo-600 hover:text-white rounded-full p-3 shadow-md transition duration-300",
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronRight$3e$__["ChevronRight"], {
-                                                className: "w-4 h-4"
+                                                className: "w-6 h-6"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/property-carousel.tsx",
-                                                lineNumber: 148,
+                                                lineNumber: 176,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/property-carousel.tsx",
-                                            lineNumber: 142,
+                                            lineNumber: 170,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/property-carousel.tsx",
-                                    lineNumber: 133,
+                                    lineNumber: 161,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "text-sm text-gray-300 font-poppins",
+                                    className: "text-sm text-gray-400 font-semibold tracking-wide",
                                     children: [
                                         selectedIndex + 1,
                                         " / ",
@@ -842,30 +588,30 @@ function PropertyCarousel() {
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/property-carousel.tsx",
-                                    lineNumber: 152,
+                                    lineNumber: 180,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/property-carousel.tsx",
-                            lineNumber: 132,
+                            lineNumber: 160,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/property-carousel.tsx",
-                    lineNumber: 79,
+                    lineNumber: 97,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/property-carousel.tsx",
-            lineNumber: 57,
+            lineNumber: 62,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/property-carousel.tsx",
-        lineNumber: 56,
+        lineNumber: 61,
         columnNumber: 5
     }, this);
 }
@@ -1444,6 +1190,249 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
     __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
 }
 }}),
+"[project]/components/locations.tsx [app-client] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { g: global, __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
+{
+__turbopack_context__.s({
+    "default": (()=>__TURBOPACK__default__export__)
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$embla$2d$carousel$2d$react$2f$esm$2f$embla$2d$carousel$2d$react$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/embla-carousel-react/esm/embla-carousel-react.esm.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$data$2f$properties$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/data/properties.ts [app-client] (ecmascript)"); // Adjust path if needed
+;
+var _s = __turbopack_context__.k.signature();
+;
+;
+;
+;
+const locations = [
+    "Golf Course Ext Road",
+    "Sothern Pheripery Road",
+    "Dwarka Expressway",
+    "Golf Course Road",
+    "New Gurgaon"
+];
+const PropertyCarousel = ()=>{
+    _s();
+    const [emblaRef, emblaApi] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$embla$2d$carousel$2d$react$2f$esm$2f$embla$2d$carousel$2d$react$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"])({
+        loop: true,
+        align: "center"
+    });
+    const [selectedLocation, setSelectedLocation] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("Golf Course Ext Road");
+    const filteredProperties = __TURBOPACK__imported__module__$5b$project$5d2f$data$2f$properties$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["properties"].filter((property)=>property.search?.some((tag)=>tag.toLowerCase().includes(selectedLocation.toLowerCase())));
+    // Re-init scroll position on location change
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "PropertyCarousel.useEffect": ()=>{
+            if (emblaApi) emblaApi.scrollTo(0);
+        }
+    }["PropertyCarousel.useEffect"], [
+        filteredProperties,
+        emblaApi
+    ]);
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "py-14 bg-[#030E27] text-white",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                className: "text-center text-4xl font-serif mb-8",
+                children: "LOCATIONS"
+            }, void 0, false, {
+                fileName: "[project]/components/locations.tsx",
+                lineNumber: 36,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "flex flex-wrap justify-center gap-4 mb-12 text-gray-400",
+                children: locations.map((location)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                        onClick: ()=>setSelectedLocation(location),
+                        className: `px-5 py-2 text-sm rounded-full border transition duration-300 ease-in-out ${selectedLocation === location ? "border-white text-white bg-white/10" : "border-gray-600 hover:text-white hover:border-white"}`,
+                        children: location
+                    }, location, false, {
+                        fileName: "[project]/components/locations.tsx",
+                        lineNumber: 41,
+                        columnNumber: 11
+                    }, this))
+            }, void 0, false, {
+                fileName: "[project]/components/locations.tsx",
+                lineNumber: 39,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "overflow-hidden max-w-7xl mx-auto px-4",
+                ref: emblaRef,
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "flex gap-6",
+                    children: filteredProperties.length > 0 ? filteredProperties.map((property)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "relative flex-shrink-0 w-[320px] h-[440px] rounded-xl overflow-hidden shadow-xl bg-gray-800",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                    src: property.image,
+                                    alt: property.title,
+                                    layout: "fill",
+                                    objectFit: "cover",
+                                    className: "absolute z-0"
+                                }, void 0, false, {
+                                    fileName: "[project]/components/locations.tsx",
+                                    lineNumber: 64,
+                                    columnNumber: 17
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "absolute z-10 bg-black bg-opacity-60 w-full h-full flex flex-col justify-end p-4",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                            className: "text-xl font-semibold mb-1",
+                                            children: property.title
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/locations.tsx",
+                                            lineNumber: 72,
+                                            columnNumber: 19
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "text-sm flex items-center",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "mr-2",
+                                                    children: "📍"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/locations.tsx",
+                                                    lineNumber: 76,
+                                                    columnNumber: 21
+                                                }, this),
+                                                property.location
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/components/locations.tsx",
+                                            lineNumber: 75,
+                                            columnNumber: 19
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/components/locations.tsx",
+                                    lineNumber: 71,
+                                    columnNumber: 17
+                                }, this)
+                            ]
+                        }, property.id, true, {
+                            fileName: "[project]/components/locations.tsx",
+                            lineNumber: 60,
+                            columnNumber: 15
+                        }, this)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "text-center w-full py-10 text-lg text-gray-300",
+                        children: "No properties found for this location."
+                    }, void 0, false, {
+                        fileName: "[project]/components/locations.tsx",
+                        lineNumber: 83,
+                        columnNumber: 13
+                    }, this)
+                }, void 0, false, {
+                    fileName: "[project]/components/locations.tsx",
+                    lineNumber: 57,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/components/locations.tsx",
+                lineNumber: 56,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "bg-[#030E27] text-white py-20",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "max-w-7xl mx-auto my-40 px-6 grid md:grid-cols-2 gap-16 items-center",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "w-full h-[400px] bg-gray-800 rounded-xl shadow-lg flex items-center justify-center overflow-hidden ",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                src: "/assets/aboutThumb.png",
+                                alt: ""
+                            }, void 0, false, {
+                                fileName: "[project]/components/locations.tsx",
+                                lineNumber: 94,
+                                columnNumber: 13
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/components/locations.tsx",
+                            lineNumber: 93,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                    className: "text-4xl md:text-5xl font-serif mb-6 leading-snug",
+                                    children: "EXPLORE LOCATIONS"
+                                }, void 0, false, {
+                                    fileName: "[project]/components/locations.tsx",
+                                    lineNumber: 99,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    className: "text-gray-400 mb-8 text-lg leading-relaxed",
+                                    children: "Discover premium real estate locations across Gurgaon and Delhi NCR. Whether you’re searching for residential or commercial properties, we make your journey seamless and rewarding."
+                                }, void 0, false, {
+                                    fileName: "[project]/components/locations.tsx",
+                                    lineNumber: 102,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "flex flex-wrap gap-4",
+                                    children: [
+                                        "Golf Course Ext Road",
+                                        "Southern Peripheral Road",
+                                        "Dwarka Expressway",
+                                        "Golf Course Road",
+                                        "New Gurgaon"
+                                    ].map((location)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                            className: "px-6 py-2 rounded-full border border-gray-500 text-gray-300 hover:border-white hover:text-white transition duration-300",
+                                            children: location
+                                        }, location, false, {
+                                            fileName: "[project]/components/locations.tsx",
+                                            lineNumber: 117,
+                                            columnNumber: 17
+                                        }, this))
+                                }, void 0, false, {
+                                    fileName: "[project]/components/locations.tsx",
+                                    lineNumber: 109,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/components/locations.tsx",
+                            lineNumber: 98,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/components/locations.tsx",
+                    lineNumber: 91,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/components/locations.tsx",
+                lineNumber: 90,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/components/locations.tsx",
+        lineNumber: 35,
+        columnNumber: 5
+    }, this);
+};
+_s(PropertyCarousel, "JndtACT1B9ItzpzuaSvZ/bIdoAs=", false, function() {
+    return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$embla$2d$carousel$2d$react$2f$esm$2f$embla$2d$carousel$2d$react$2e$esm$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"]
+    ];
+});
+_c = PropertyCarousel;
+const __TURBOPACK__default__export__ = PropertyCarousel;
+var _c;
+__turbopack_context__.k.register(_c, "PropertyCarousel");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
+}
+}}),
 "[project]/app/page.tsx [app-client] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
@@ -1460,9 +1449,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$hooks$2f$use$2d$scroll$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/hooks/use-scroll.ts [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$property$2d$carousel$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/property-carousel.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$heroSection$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/heroSection.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$locations$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/locations.tsx [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
 "use client";
+;
 ;
 ;
 ;
@@ -1473,7 +1464,7 @@ function HomePage() {
     const scrolled = (0, __TURBOPACK__imported__module__$5b$project$5d2f$hooks$2f$use$2d$scroll$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useScroll"])(20);
     const [activeTab, setActiveTab] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("featured");
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "min-h-screen bg-white",
+        className: "min-h-screen bg-gray-900",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
                 className: "relative h-screen overflow-hidden",
@@ -1483,195 +1474,195 @@ function HomePage() {
                     heading: "Residential"
                 }, void 0, false, {
                     fileName: "[project]/app/page.tsx",
-                    lineNumber: 36,
+                    lineNumber: 22,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 35,
+                lineNumber: 21,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$property$2d$carousel$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["PropertyCarousel"], {}, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 43,
+                lineNumber: 29,
                 columnNumber: 7
             }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Locations, {}, void 0, false, {
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$locations$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 45,
+                lineNumber: 31,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                className: "py-16 bg-white",
+                className: "py-32 bg-gradient-to-br from-[#0F172A] via-[#1E293B] to-[#0F172A] text-white",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "max-w-7xl mx-auto px-4",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "text-center mb-12",
+                            className: "text-center mb-16",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                    className: "text-3xl font-bold mb-4 font-poppins",
+                                    className: "text-4xl font-bold mb-4 font-poppins text-white",
                                     children: "Why Choose Tree House"
                                 }, void 0, false, {
                                     fileName: "[project]/app/page.tsx",
-                                    lineNumber: 51,
+                                    lineNumber: 38,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "text-gray-600 max-w-2xl mx-auto font-poppins",
-                                    children: "We provide comprehensive real estate solutions with expert guidance and transparent processes"
+                                    className: "text-gray-300 max-w-xl mx-auto text-lg font-light font-poppins",
+                                    children: "We provide comprehensive real estate solutions with expert guidance and transparent processes."
                                 }, void 0, false, {
                                     fileName: "[project]/app/page.tsx",
-                                    lineNumber: 54,
+                                    lineNumber: 41,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/page.tsx",
-                            lineNumber: 50,
+                            lineNumber: 37,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "grid grid-cols-1 md:grid-cols-3 gap-8",
+                            className: "grid grid-cols-1 md:grid-cols-3 gap-10",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "text-center",
+                                    className: "text-center bg-[#1E293B] rounded-2xl p-8 shadow-xl hover:shadow-2xl transition duration-300 border border-white/10",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4",
+                                            className: "w-16 h-16 bg-orange-500/10 rounded-full flex items-center justify-center mx-auto mb-6",
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$search$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Search$3e$__["Search"], {
-                                                className: "w-8 h-8 text-orange-500"
+                                                className: "w-8 h-8 text-orange-400 drop-shadow-md"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/page.tsx",
-                                                lineNumber: 63,
+                                                lineNumber: 52,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/app/page.tsx",
-                                            lineNumber: 62,
+                                            lineNumber: 51,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                            className: "text-xl font-semibold mb-2 font-poppins",
+                                            className: "text-xl font-semibold mb-3 text-white font-poppins",
                                             children: "Expert Property Search"
                                         }, void 0, false, {
                                             fileName: "[project]/app/page.tsx",
-                                            lineNumber: 65,
+                                            lineNumber: 54,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "text-gray-600 font-poppins",
-                                            children: "Advanced search tools to find your perfect property match"
+                                            className: "text-gray-400 font-poppins text-base leading-relaxed",
+                                            children: "Advanced search tools to find your perfect property match."
                                         }, void 0, false, {
                                             fileName: "[project]/app/page.tsx",
-                                            lineNumber: 68,
+                                            lineNumber: 57,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/page.tsx",
-                                    lineNumber: 61,
+                                    lineNumber: 50,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "text-center",
+                                    className: "text-center bg-[#1E293B] rounded-2xl p-8 shadow-xl hover:shadow-2xl transition duration-300 border border-white/10",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4",
+                                            className: "w-16 h-16 bg-orange-500/10 rounded-full flex items-center justify-center mx-auto mb-6",
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$phone$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Phone$3e$__["Phone"], {
-                                                className: "w-8 h-8 text-orange-500"
+                                                className: "w-8 h-8 text-orange-400 drop-shadow-md"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/page.tsx",
-                                                lineNumber: 75,
+                                                lineNumber: 65,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/app/page.tsx",
-                                            lineNumber: 74,
+                                            lineNumber: 64,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                            className: "text-xl font-semibold mb-2 font-poppins",
+                                            className: "text-xl font-semibold mb-3 text-white font-poppins",
                                             children: "24/7 Support"
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/page.tsx",
+                                            lineNumber: 67,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "text-gray-400 font-poppins text-base leading-relaxed",
+                                            children: "Round-the-clock assistance for all your real estate needs."
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/page.tsx",
+                                            lineNumber: 70,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/app/page.tsx",
+                                    lineNumber: 63,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "text-center bg-[#1E293B] rounded-2xl p-8 shadow-xl hover:shadow-2xl transition duration-300 border border-white/10",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "w-16 h-16 bg-orange-500/10 rounded-full flex items-center justify-center mx-auto mb-6",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mail$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Mail$3e$__["Mail"], {
+                                                className: "w-8 h-8 text-orange-400 drop-shadow-md"
+                                            }, void 0, false, {
+                                                fileName: "[project]/app/page.tsx",
+                                                lineNumber: 78,
+                                                columnNumber: 17
+                                            }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/app/page.tsx",
                                             lineNumber: 77,
                                             columnNumber: 15
                                         }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "text-gray-600 font-poppins",
-                                            children: "Round-the-clock assistance for all your real estate needs"
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                            className: "text-xl font-semibold mb-3 text-white font-poppins",
+                                            children: "Transparent Process"
                                         }, void 0, false, {
                                             fileName: "[project]/app/page.tsx",
                                             lineNumber: 80,
                                             columnNumber: 15
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/app/page.tsx",
-                                    lineNumber: 73,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "text-center",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4",
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mail$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Mail$3e$__["Mail"], {
-                                                className: "w-8 h-8 text-orange-500"
-                                            }, void 0, false, {
-                                                fileName: "[project]/app/page.tsx",
-                                                lineNumber: 87,
-                                                columnNumber: 17
-                                            }, this)
-                                        }, void 0, false, {
-                                            fileName: "[project]/app/page.tsx",
-                                            lineNumber: 86,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                            className: "text-xl font-semibold mb-2 font-poppins",
-                                            children: "Transparent Process"
-                                        }, void 0, false, {
-                                            fileName: "[project]/app/page.tsx",
-                                            lineNumber: 89,
-                                            columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "text-gray-600 font-poppins",
-                                            children: "Clear documentation and honest pricing with no hidden costs"
+                                            className: "text-gray-400 font-poppins text-base leading-relaxed",
+                                            children: "Clear documentation and honest pricing with no hidden costs."
                                         }, void 0, false, {
                                             fileName: "[project]/app/page.tsx",
-                                            lineNumber: 92,
+                                            lineNumber: 83,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/page.tsx",
-                                    lineNumber: 85,
+                                    lineNumber: 76,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/page.tsx",
-                            lineNumber: 60,
+                            lineNumber: 48,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/page.tsx",
-                    lineNumber: 49,
+                    lineNumber: 35,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 48,
+                lineNumber: 34,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/page.tsx",
-        lineNumber: 34,
+        lineNumber: 20,
         columnNumber: 5
     }, this);
 }
@@ -1689,4 +1680,4 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 }}),
 }]);
 
-//# sourceMappingURL=_c239e7bd._.js.map
+//# sourceMappingURL=_1791c3d3._.js.map
