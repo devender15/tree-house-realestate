@@ -1,8 +1,6 @@
 "use client";
-
-import { useState } from "react";
+import React from "react";
 import { Search, Phone, Mail } from "lucide-react";
-import { useScroll } from "@/hooks/use-scroll";
 
 import { PropertyCarousel } from "@/components/property-carousel";
 import { HeroSection } from "@/components/heroSection";

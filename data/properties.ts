@@ -4,8 +4,6 @@ export interface Property {
   location: string;
   category: "new-launch" | "residential" | "commercial";
   image: string;
-  price?: string;
-  bhk?: string;
   features?: string[];
   description?: string;
   search: string[];

@@ -11,6 +11,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { PT_Serif } from "next/font/google";
+import Image from "next/image";
 
 const PTSerif = PT_Serif({
   subsets: ["latin"],
@@ -46,10 +47,13 @@ export function HeroSection({
         </video>
       ) : (
         imageUrl && (
-          <img
+      
+          <Image
             src={imageUrl}
             alt="Hero Background"
+            fill
             className="absolute inset-0 w-full h-full object-cover"
+            priority
           />
         )
       )}

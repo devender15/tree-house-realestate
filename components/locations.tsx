@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Image from "next/image";
 import { properties } from "../data/properties"; // Adjust path if needed
@@ -101,11 +101,14 @@ const PropertyCarousel = () => {
         <div className=" mx-40 px-6 grid md:grid-cols-2 gap-16 items-center ">
           {/* IMAGE BLOCK */}
           <div className="w-full h-[600px] bg-gray-800 rounded-lg shadow-lg flex items-center justify-center overflow-hidden ">
-            <img
-              src="/assets/aboutThumb.png"
-              alt="About Thumb"
-              className="object-cover w-full h-full"
-            />
+            <div className="relative w-full h-full">
+              <Image
+                src="/assets/aboutThumb.png"
+                alt="About Thumb"
+                fill
+                className="object-cover"
+              />
+            </div>
           </div>
 
           {/* TEXT BLOCK */}

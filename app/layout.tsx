@@ -20,7 +20,7 @@ const cinzel = Cinzel({
 });
 
 export const metadata: Metadata = {
-  title: "Prime Estates - Your Dream Home Awaits",
+  title: "Tree House - Your Dream Home Awaits",
   description:
     "Discover premium properties across the city with expert guidance",
 };

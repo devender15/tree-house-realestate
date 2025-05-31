@@ -28,7 +28,6 @@ const ResidentialProperty = () => {
               image={property.image}
               category={property.category}
               price={property.price}
-              bhk={property.bhk}
             />
           </div>
         ))}

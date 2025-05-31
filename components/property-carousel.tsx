@@ -31,7 +31,7 @@ export function PropertyCarousel() {
   });
 
   const [selectedIndex, setSelectedIndex] = useState(0);
-  const [scrollSnaps, setScrollSnaps] = useState<number[]>([]);
+  // const [scrollSnaps, setScrollSnaps] = useState<number[]>([]);
 
   // Handlers for prev/next
   const scrollPrev = useCallback(() => {
@@ -51,7 +51,7 @@ export function PropertyCarousel() {
   useEffect(() => {
     if (!emblaApi) return;
     onSelect();
-    setScrollSnaps(emblaApi.scrollSnapList());
+    // setScrollSnaps(emblaApi.scrollSnapList());
     emblaApi.on("select", onSelect);
     emblaApi.on("reInit", onSelect);
   }, [emblaApi, onSelect]);
