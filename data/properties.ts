@@ -23,7 +23,7 @@ export const properties: Property[] = [
       "Belaperla Central Park Resort",
     ],
     category: "residential",
-    image: "/assets/residential/belaperla-central-park-resort-thumbnail",
+    image: "/assets/residential/belaperla-central-park-resort-thumbnail.jpg",
   },
   {
     id: "2",
@@ -31,7 +31,7 @@ export const properties: Property[] = [
     location: "Sector 48, Gurugram, Gurgaon",
     search: ["Sector 48", "gurugram", "gurgaon", "Experion The Trillion"],
     category: "residential",
-    image: "/assets/residential/experion-the-trillion-thumbnail",
+    image: "/assets/residential/experion-the-trillion-thumbnail.jpg",
   },
   {
     id: "3",
@@ -39,7 +39,7 @@ export const properties: Property[] = [
     location: "Sector 56, Gurugram, Gurgaon",
     search: ["Sector 56", "gurugram", "gurgaon", "MNB Ananta Vilasa"],
     category: "residential",
-    image: "/assets/residential/mnb-ananta-vilasa-thumbnail",
+    image: "/assets/residential/mnb-ananta-vilasa-thumbnail.jpg",
   },
   {
     id: "4",
@@ -47,7 +47,7 @@ export const properties: Property[] = [
     location: "Sector 104, Gurugram, Gurgaon",
     search: ["Sector 104", "gurugram", "gurgaon", "Hero Homes The Palatial"],
     category: "residential",
-    image: "/assets/residential/hero-homes-the-palatial-thumbnail",
+    image: "/assets/residential/hero-homes-the-palatial-thumbnail.jpg",
   },
   {
     id: "5",
@@ -55,7 +55,7 @@ export const properties: Property[] = [
     location: "Sector 80, Gurugram, Gurgaon",
     search: ["Sector 80", "gurugram", "gurgaon", "Conscient Elaira Residences"],
     category: "residential",
-    image: "/assets/residential/Conscient-Elaira-Residences-thumbnail",
+    image: "/assets/residential/Conscient-Elaira-Residences-thumbnail.jpg",
   },
   {
     id: "6",
@@ -63,7 +63,7 @@ export const properties: Property[] = [
     location: "Sector 31, Gurugram, Gurgaon",
     search: ["Sector 31", "gurugram", "gurgaon", "Birla Arika"],
     category: "residential",
-    image: "/assets/residential/birla-arika-thumbnail",
+    image: "/assets/residential/birla-arika-thumbnail.jpg",
   },
   {
     id: "7",
@@ -71,7 +71,7 @@ export const properties: Property[] = [
     location: "Sector 102, Gurugram, Gurgaon",
     search: ["Sector 102", "gurugram", "gurgaon", "BPTP Amstoria Verti Greens"],
     category: "residential",
-    image: "/assets/residential/bptp-amstoria-verti-greens-thumbnail",
+    image: "/assets/residential/bptp-amstoria-verti-greens-thumbnail.jpg",
   },
   {
     id: "8",
@@ -79,7 +79,7 @@ export const properties: Property[] = [
     location: "Sector 106, Gurugram, Gurgaon",
     search: ["Sector 106", "gurugram", "gurgaon", "Elan The Emperor"],
     category: "residential",
-    image: "/assets/residential/Elan-The-Emperor-thumbnail",
+    image: "/assets/residential/Elan-The-Emperor-thumbnail.jpeg",
   },
   {
     id: "9",
@@ -87,7 +87,7 @@ export const properties: Property[] = [
     location: "Sector 112, Gurugram, Gurgaon",
     search: ["Sector 112", "gurugram", "gurgaon", "Emaar Urban Ascent"],
     category: "residential",
-    image: "/assets/residential/emaar-urban-ascent-thumbnail",
+    image: "/assets/residential/emaar-urban-ascent-thumbnail.jpg",
   },
   {
     id: "10",
@@ -95,7 +95,7 @@ export const properties: Property[] = [
     location: "Sector 63, Gurugram, Gurgaon",
     search: ["Sector 63", "gurugram", "gurgaon", "Adani Samsara Ivana"],
     category: "residential",
-    image: "/assets/residential/adani-samsara-ivana-thumbnail",
+    image: "/assets/residential/adani-samsara-ivana-thumbnail.jpg",
   },
   {
     id: "11",
@@ -103,7 +103,7 @@ export const properties: Property[] = [
     location: "Sector 37D, Gurugram, Gurgaon",
     search: ["Sector 37D", "gurugram", "gurgaon", "Navraj The Antalyas"],
     category: "residential",
-    image: "/assets/residential/navraj-the-antalyas-thumbnail",
+    image: "/assets/residential/navraj-the-antalyas-thumbnail.jpg",
   },
   {
     id: "12",
@@ -111,7 +111,7 @@ export const properties: Property[] = [
     location: "Sector 62, Gurugram, Gurgaon",
     search: ["Sector 62", "gurugram", "gurgaon", "Emaar Amaris"],
     category: "residential",
-    image: "/assets/residential/emaar-amaris-thumbnail",
+    image: "/assets/residential/emaar-amaris-thumbnail.jpg",
   },
   {
     id: "13",
@@ -119,7 +119,7 @@ export const properties: Property[] = [
     location: "Sector 43, Gurugram, Gurgaon",
     search: ["Sector 43", "gurugram", "gurgaon", "Godrej Miraya"],
     category: "residential",
-    image: "/assets/residential/godrej-miraya-thumbnail",
+    image: "/assets/residential/godrej-miraya-thumbnail.jpg",
   },
   {
     id: "14",
@@ -127,7 +127,7 @@ export const properties: Property[] = [
     location: "Sector 89, Gurugram, Gurgaon",
     search: ["Sector 89", "gurugram", "gurgaon", "M3M Soulitude"],
     category: "residential",
-    image: "/assets/residential/m3m-soulitude-thumbnail",
+    image: "/assets/residential/m3m-soulitude-thumbnail.jpg",
   },
   {
     id: "15",
@@ -141,7 +141,7 @@ export const properties: Property[] = [
     ],
     category: "residential",
     image:
-      "/assets/residential/3-bhk-conscient-hines-elevate-on-sale-thumbnail",
+      "/assets/residential/3-bhk-conscient-hines-elevate-on-sale-thumbnail.jpeg",
   },
   {
     id: "16",
@@ -149,7 +149,7 @@ export const properties: Property[] = [
     location: "Sector 67 Gurugram, Gurgaon",
     search: ["Sector 67", "gurugram", "gurgaon", "M3M Opus at M3M Merlin"],
     category: "residential",
-    image: "/assets/residential/m3m-opus-at-m3m-merlin-thumbnail",
+    image: "/assets/residential/m3m-opus-at-m3m-merlin-thumbnail.jpg",
   },
   {
     id: "17",
@@ -157,7 +157,7 @@ export const properties: Property[] = [
     location: "Sector 80 Gurugram, Gurgaon",
     search: ["Sector 80", "gurugram", "gurgaon", "Eldeco Fairway Reserve"],
     category: "residential",
-    image: "/assets/residential/eldeco-fairway-thumbnail",
+    image: "/assets/residential/eldeco-fairway-thumbnail.jpg",
   },
   {
     id: "18",
@@ -165,7 +165,7 @@ export const properties: Property[] = [
     location: "Sector 59 Gurugram, Gurgaon",
     search: ["Sector 59", "gurugram", "gurgaon", "Paras The Florett Enclave"],
     category: "residential",
-    image: "/assets/residential/paras-the-florett-enclave-thumbnail",
+    image: "/assets/residential/paras-the-florett-enclave-thumbnail.jpg",
   },
   {
     id: "19",
@@ -173,7 +173,7 @@ export const properties: Property[] = [
     location: "Sector 57, Gurugram, Gurgaon",
     search: ["Sector 57", "gurugram", "gurgaon", "Ameya Sapphire 57"],
     category: "commercial",
-    image: "/assets/commercial/ameya-sapphire-57-thumbnail",
+    image: "/assets/commercial/ameya-sapphire-57-thumbnail.jpg",
   },
   {
     id: "20",
@@ -181,7 +181,7 @@ export const properties: Property[] = [
     location: "Sector 91, Gurugram, Gurgaon",
     search: ["Sector 91", "gurugram", "gurgaon", "DLF Club Arcade"],
     category: "commercial",
-    image: "/assets/commercial/dlf-club-arcade-thumbnail",
+    image: "/assets/commercial/dlf-club-arcade-thumbnail.jpg",
   },
   {
     id: "21",
@@ -189,7 +189,7 @@ export const properties: Property[] = [
     location: "Sector 88, Gurugram, Gurgaon",
     search: ["Sector 88", "gurugram", "gurgaon", "AIPL Joy District"],
     category: "commercial",
-    image: "/assets/commercial/aipl-joy-district-thumbnail",
+    image: "/assets/commercial/aipl-joy-district-thumbnail.jpg",
   },
   {
     id: "22",
@@ -197,7 +197,7 @@ export const properties: Property[] = [
     location: "Sector 65, Gurugram, Gurgaon",
     search: ["Sector 65", "gurugram", "gurgaon", "M3M Route 65"],
     category: "commercial",
-    image: "/assets/commercial/m3m-route-65-thumbnail",
+    image: "/assets/commercial/m3m-route-65-thumbnail.jpg",
   },
   {
     id: "23",
@@ -205,7 +205,7 @@ export const properties: Property[] = [
     location: "Sector 43, Gurugram, Gurgaon",
     search: ["Sector 43", "gurugram", "gurgaon", "Suncity The Empire"],
     category: "commercial",
-    image: "/assets/commercial/suncity-the-empire-thumbnail",
+    image: "/assets/commercial/suncity-the-empire-thumbnail.jpg",
   },
   {
     id: "24",
@@ -213,7 +213,7 @@ export const properties: Property[] = [
     location: "Sector 58, Gurugram, Gurgaon",
     search: ["Sector 58", "gurugram", "gurgaon", "Magnum Global Park Gurgaon"],
     category: "commercial",
-    image: "/assets/commercial/magnum-global-park-gurgaon-thumbnail",
+    image: "/assets/commercial/magnum-global-park-gurgaon-thumbnail.jpg",
   },
   {
     id: "25",
@@ -221,7 +221,7 @@ export const properties: Property[] = [
     location: "Sector 82, Gurugram, Gurgaon",
     search: ["Sector 82", "gurugram", "gurgaon", "Elan Imperial"],
     category: "commercial",
-    image: "/assets/commercial/elan-imperial-thumbnail",
+    image: "/assets/commercial/elan-imperial-thumbnail.jpg",
   },
   {
     id: "26",
@@ -235,7 +235,7 @@ export const properties: Property[] = [
       "Elan The Mark",
     ],
     category: "commercial",
-    image: "/assets/commercial/elan-the-mark-thumbnail",
+    image: "/assets/commercial/elan-the-mark-thumbnail.jpeg",
   },
   {
     id: "27",
@@ -243,7 +243,7 @@ export const properties: Property[] = [
     location: "Sector 57, Gurugram, Gurgaon",
     search: ["Sector 57", "gurugram", "gurgaon", "M3M Paragon 57"],
     category: "commercial",
-    image: "/assets/commercial/m3m-paragon-57-thumbnail",
+    image: "/assets/commercial/m3m-paragon-57-thumbnail.jpg",
   },
   {
     id: "28",
@@ -251,7 +251,7 @@ export const properties: Property[] = [
     location: "Sector 25, MG Road, Gurugram, Gurgaon",
     search: ["Sector 25", "MG Road", "gurugram", "gurgaon", "M3M Jewel"],
     category: "commercial",
-    image: "/assets/commercial/m3m-jewel-thumbnail",
+    image: "/assets/commercial/m3m-jewel-thumbnail.jpg",
   },
   {
     id: "29",
@@ -265,7 +265,7 @@ export const properties: Property[] = [
       "M3M Cosmopolitan",
     ],
     category: "commercial",
-    image: "/assets/commercial/m3m-cosmopolitan-thumbnail",
+    image: "/assets/commercial/m3m-cosmopolitan-thumbnail.jpg",
   },
   {
     id: "30",
@@ -273,7 +273,7 @@ export const properties: Property[] = [
     location: "Sector 66, Gurugram, Gurgaon",
     search: ["Sector 66", "gurugram", "gurgaon", "M3M Tee Point"],
     category: "commercial",
-    image: "/assets/commercial/m3m-tee-point-thumbnail",
+    image: "/assets/commercial/m3m-tee-point-thumbnail.jpg",
   },
   {
     id: "31",
@@ -281,7 +281,7 @@ export const properties: Property[] = [
     location: "Sector 67, Gurugram, Gurgaon",
     search: ["Sector 67", "gurugram", "gurgaon", "M3M Urbana Premium"],
     category: "commercial",
-    image: "/assets/commercial/m3m-urbana-premium-thumbnail",
+    image: "/assets/commercial/m3m-urbana-premium-thumbnail.jpg",
   },
   {
     id: "32",
@@ -289,7 +289,7 @@ export const properties: Property[] = [
     location: "Sector 74, Gurugram, Gurgaon",
     search: ["Sector 74", "gurugram", "gurgaon", "M3M Corner Walk"],
     category: "commercial",
-    image: "/assets/commercial/m3m-corner-walk-thumbnail",
+    image: "/assets/commercial/m3m-corner-walk-thumbnail.jpg",
   },
   {
     id: "33",
@@ -303,7 +303,7 @@ export const properties: Property[] = [
       "M3M Food Nation",
     ],
     category: "commercial",
-    image: "/assets/commercial/m3m-food-nation-thumbnail",
+    image: "/assets/commercial/m3m-food-nation-thumbnail.jpeg",
   },
   {
     id: "34",
@@ -317,7 +317,8 @@ export const properties: Property[] = [
       "M3M International Financial Center",
     ],
     category: "commercial",
-    image: "/assets/commercial/m3m-international-financial-center-thumbnail",
+    image:
+      "/assets/commercial/m3m-international-financial-center-thumbnail.jpg",
   },
   {
     id: "35",
@@ -331,7 +332,7 @@ export const properties: Property[] = [
       "M3M Service Apartments",
     ],
     category: "commercial",
-    image: "/assets/commercial/m3m-service-apartments-thumbnail",
+    image: "/assets/commercial/m3m-service-apartments-thumbnail.jpg",
   },
   {
     id: "36",
@@ -339,7 +340,7 @@ export const properties: Property[] = [
     location: "Sector 73, Gurugram, Gurgaon",
     search: ["Sector 73", "gurugram", "gurgaon", "M3M Prive 73"],
     category: "commercial",
-    image: "/assets/commercial/m3m-prive-73-thumbnail",
+    image: "/assets/commercial/m3m-prive-73-thumbnail.jpg",
   },
 ];
 
