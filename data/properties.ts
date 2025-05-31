@@ -17,7 +17,7 @@ export const properties: Property[] = [
     id: "1",
     title: "Belaperla Central Park Resort",
     location: "Sector 48, Gurugram, Gurgaon",
-    search: ["Sector 48", "gurugram", "gurgaon"],
+    search: ["Sector 48", "gurugram", "gurgaon", "Belaperla Central Park Resort"],
     category: "residential",
     image: "/assets/residential/belaperla-central-park-resort-thumbnail"
   },
@@ -25,7 +25,7 @@ export const properties: Property[] = [
     id: "2",
     title: "Experion The Trillion",
     location: "Sector 48, Gurugram, Gurgaon",
-    search: ["Sector 48", "gurugram", "gurgaon"],
+    search: ["Sector 48", "gurugram", "gurgaon", "Experion The Trillion"],
     category: "residential",
     image: "/assets/residential/experion-the-trillion-thumbnail"
   },
@@ -33,7 +33,7 @@ export const properties: Property[] = [
     id: "3",
     title: "MNB Ananta Vilasa",
     location: "Sector 56, Gurugram, Gurgaon",
-    search: ["Sector 56", "gurugram", "gurgaon"],
+    search: ["Sector 56", "gurugram", "gurgaon", "MNB Ananta Vilasa"],
     category: "residential",
     image: "/assets/residential/mnb-ananta-vilasa-thumbnail"
   },
@@ -41,7 +41,7 @@ export const properties: Property[] = [
     id: "4",
     title: "Hero Homes The Palatial",
     location: "Sector 104, Gurugram, Gurgaon",
-    search: ["Sector 104", "gurugram", "gurgaon"],
+    search: ["Sector 104", "gurugram", "gurgaon", "Hero Homes The Palatial"],
     category: "residential",
     image: "/assets/residential/hero-homes-the-palatial-thumbnail"
   },
@@ -49,7 +49,7 @@ export const properties: Property[] = [
     id: "5",
     title: "Conscient Elaira Residences",
     location: "Sector 80, Gurugram, Gurgaon",
-    search: ["Sector 80", "gurugram", "gurgaon"],
+    search: ["Sector 80", "gurugram", "gurgaon", "Conscient Elaira Residences"],
     category: "residential",
     image: "/assets/residential/Conscient-Elaira-Residences-thumbnail"
   },
@@ -57,7 +57,7 @@ export const properties: Property[] = [
     id: "6",
     title: "Birla Arika",
     location: "Sector 31, Gurugram, Gurgaon",
-    search: ["Sector 31", "gurugram", "gurgaon"],
+    search: ["Sector 31", "gurugram", "gurgaon", "Birla Arika"],
     category: "residential",
     image: "/assets/residential/birla-arika-thumbnail"
   },
@@ -65,7 +65,7 @@ export const properties: Property[] = [
     id: "7",
     title: "BPTP Amstoria Verti Greens",
     location: "Sector 102, Gurugram, Gurgaon",
-    search: ["Sector 102", "gurugram", "gurgaon"],
+    search: ["Sector 102", "gurugram", "gurgaon", "BPTP Amstoria Verti Greens"],
     category: "residential",
     image: "/assets/residential/bptp-amstoria-verti-greens-thumbnail"
   },
@@ -73,7 +73,7 @@ export const properties: Property[] = [
     id: "8",
     title: "Elan The Emperor",
     location: "Sector 106, Gurugram, Gurgaon",
-    search: ["Sector 106", "gurugram", "gurgaon"],
+    search: ["Sector 106", "gurugram", "gurgaon", "Elan The Emperor"],
     category: "residential",
     image: "/assets/residential/Elan-The-Emperor-thumbnail"
   },
@@ -81,7 +81,7 @@ export const properties: Property[] = [
     id: "9",
     title: "Emaar Urban Ascent",
     location: "Sector 112, Gurugram, Gurgaon",
-    search: ["Sector 112", "gurugram", "gurgaon"],
+    search: ["Sector 112", "gurugram", "gurgaon", "Emaar Urban Ascent"],
     category: "residential",
     image: "/assets/residential/emaar-urban-ascent-thumbnail"
   },
@@ -89,7 +89,7 @@ export const properties: Property[] = [
     id: "10",
     title: "Adani Samsara Ivana",
     location: "Sector 63, Gurugram, Gurgaon",
-    search: ["Sector 63", "gurugram", "gurgaon"],
+    search: ["Sector 63", "gurugram", "gurgaon", "Adani Samsara Ivana"],
     category: "residential",
     image: "/assets/residential/adani-samsara-ivana-thumbnail"
   },
@@ -97,7 +97,7 @@ export const properties: Property[] = [
     id: "11",
     title: "Navraj The Antalyas",
     location: "Sector 37D, Gurugram, Gurgaon",
-    search: ["Sector 37D", "gurugram", "gurgaon"],
+    search: ["Sector 37D", "gurugram", "gurgaon", "Navraj The Antalyas"],
     category: "residential",
     image: "/assets/residential/navraj-the-antalyas-thumbnail"
   },
@@ -105,7 +105,7 @@ export const properties: Property[] = [
     id: "12",
     title: "Emaar Amaris",
     location: "Sector 62, Gurugram, Gurgaon",
-    search: ["Sector 62", "gurugram", "gurgaon"],
+    search: ["Sector 62", "gurugram", "gurgaon", "Emaar Amaris"],
     category: "residential",
     image: "/assets/residential/emaar-amaris-thumbnail"
   },
@@ -113,7 +113,7 @@ export const properties: Property[] = [
     id: "13",
     title: "Godrej Miraya",
     location: "Sector 43, Gurugram, Gurgaon",
-    search: ["Sector 43", "gurugram", "gurgaon"],
+    search: ["Sector 43", "gurugram", "gurgaon", "Godrej Miraya"],
     category: "residential",
     image: "/assets/residential/godrej-miraya-thumbnail"
   },
@@ -121,7 +121,7 @@ export const properties: Property[] = [
     id: "14",
     title: "M3M Soulitude",
     location: "Sector 89, Gurugram, Gurgaon",
-    search: ["Sector 89", "gurugram", "gurgaon"],
+    search: ["Sector 89", "gurugram", "gurgaon", "M3M Soulitude"],
     category: "residential",
     image: "/assets/residential/m3m-soulitude-thumbnail"
   },
@@ -129,7 +129,7 @@ export const properties: Property[] = [
     id: "15",
     title: "3 BHK Conscient Hines Elevate On Sale",
     location: "Sector 59 Gurugram, Gurgaon",
-    search: ["Sector 59", "gurugram", "gurgaon"],
+    search: ["Sector 59", "gurugram", "gurgaon", "3 BHK Conscient Hines Elevate On Sale"],
     category: "residential",
     image: "/assets/residential/3-bhk-conscient-hines-elevate-on-sale-thumbnail"
   },
@@ -137,7 +137,7 @@ export const properties: Property[] = [
     id: "16",
     title: "M3M Opus at M3M Merlin",
     location: "Sector 67 Gurugram, Gurgaon",
-    search: ["Sector 67", "gurugram", "gurgaon"],
+    search: ["Sector 67", "gurugram", "gurgaon", "M3M Opus at M3M Merlin"],
     category: "residential",
     image: "/assets/residential/m3m-opus-at-m3m-merlin-thumbnail"
   },
@@ -145,7 +145,7 @@ export const properties: Property[] = [
     id: "17",
     title: "Eldeco Fairway Reserve",
     location: "Sector 80 Gurugram, Gurgaon",
-    search: ["Sector 80", "gurugram", "gurgaon"],
+    search: ["Sector 80", "gurugram", "gurgaon", "Eldeco Fairway Reserve"],
     category: "residential",
     image: "/assets/residential/eldeco-fairway-thumbnail"
   },
@@ -153,7 +153,7 @@ export const properties: Property[] = [
     id: "18",
     title: "Paras The Florett Enclave",
     location: "Sector 59 Gurugram, Gurgaon",
-    search: ["Sector 59", "gurugram", "gurgaon"],
+    search: ["Sector 59", "gurugram", "gurgaon", "Paras The Florett Enclave"],
     category: "residential",
     image: "/assets/residential/paras-the-florett-enclave-thumbnail"
   }
