@@ -264,15 +264,21 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ui/input.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$search$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Search$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/search.js [app-ssr] (ecmascript) <export default as Search>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ui/select.tsx [app-ssr] (ecmascript)");
+(()=>{
+    const e = new Error("Cannot find module 'next/font/google/target.css'");
+    e.code = 'MODULE_NOT_FOUND';
+    throw e;
+})();
 "use client";
 ;
 ;
 ;
 ;
 ;
-function HeroSection({ videoUrl, imageUrl, heading = "START THEIR JOURNEY", subheading = "WHERE YOUR DREAMS" }) {
+;
+function HeroSection({ videoUrl, imageUrl, heading, subheading = "WHERE YOUR HOME" }) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: "relative h-[80vh] overflow-hidden",
+        className: "relative h-[90vh] overflow-hidden",
         children: [
             videoUrl ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("video", {
                 autoPlay: true,
@@ -286,14 +292,14 @@ function HeroSection({ videoUrl, imageUrl, heading = "START THEIR JOURNEY", subh
                         type: "video/mp4"
                     }, void 0, false, {
                         fileName: "[project]/components/heroSection.tsx",
-                        lineNumber: 38,
+                        lineNumber: 44,
                         columnNumber: 11
                     }, this),
                     "Your browser does not support the video tag."
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/heroSection.tsx",
-                lineNumber: 31,
+                lineNumber: 37,
                 columnNumber: 9
             }, this) : imageUrl && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                 src: imageUrl,
@@ -301,14 +307,14 @@ function HeroSection({ videoUrl, imageUrl, heading = "START THEIR JOURNEY", subh
                 className: "absolute inset-0 w-full h-full object-cover"
             }, void 0, false, {
                 fileName: "[project]/components/heroSection.tsx",
-                lineNumber: 43,
+                lineNumber: 49,
                 columnNumber: 11
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "absolute inset-0 bg-black/50"
+                className: "absolute inset-0 bg-gradient-to-b from-black/0 via-black/30 to-black "
             }, void 0, false, {
                 fileName: "[project]/components/heroSection.tsx",
-                lineNumber: 52,
+                lineNumber: 58,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -317,27 +323,19 @@ function HeroSection({ videoUrl, imageUrl, heading = "START THEIR JOURNEY", subh
                     className: "text-center text-white max-w-4xl px-4 font-cinzel pt-16",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "text-lg mb-4 tracking-wider font-cinzel",
+                            className: "text-2xl font-serif font-semibold mb-4 tracking-wider font-cinzel",
                             children: subheading
                         }, void 0, false, {
                             fileName: "[project]/components/heroSection.tsx",
-                            lineNumber: 57,
+                            lineNumber: 63,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                            className: "text-5xl md:text-7xl font-light mb-8 leading-tight font-cinzel",
-                            children: heading
+                            className: "text-4xl md:text-7xl font-light font- mb-8 leading-tight font-cinzel",
+                            children: heading || "JOURNEY BEGINS HERE"
                         }, void 0, false, {
                             fileName: "[project]/components/heroSection.tsx",
-                            lineNumber: 60,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "text-xl mb-12 opacity-90 font-poppins",
-                            children: "Explore premium properties across the city with our expert guidance"
-                        }, void 0, false, {
-                            fileName: "[project]/components/heroSection.tsx",
-                            lineNumber: 63,
+                            lineNumber: 66,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -354,12 +352,12 @@ function HeroSection({ videoUrl, imageUrl, heading = "START THEIR JOURNEY", subh
                                                     className: "text-black"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/heroSection.tsx",
-                                                    lineNumber: 72,
+                                                    lineNumber: 75,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/heroSection.tsx",
-                                                lineNumber: 71,
+                                                lineNumber: 74,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SelectContent"], {
@@ -370,7 +368,7 @@ function HeroSection({ videoUrl, imageUrl, heading = "START THEIR JOURNEY", subh
                                                         children: "Apartment"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/heroSection.tsx",
-                                                        lineNumber: 78,
+                                                        lineNumber: 81,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SelectItem"], {
@@ -378,7 +376,7 @@ function HeroSection({ videoUrl, imageUrl, heading = "START THEIR JOURNEY", subh
                                                         children: "Villa"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/heroSection.tsx",
-                                                        lineNumber: 79,
+                                                        lineNumber: 82,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SelectItem"], {
@@ -386,7 +384,7 @@ function HeroSection({ videoUrl, imageUrl, heading = "START THEIR JOURNEY", subh
                                                         children: "Plot"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/heroSection.tsx",
-                                                        lineNumber: 80,
+                                                        lineNumber: 83,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SelectItem"], {
@@ -394,19 +392,19 @@ function HeroSection({ videoUrl, imageUrl, heading = "START THEIR JOURNEY", subh
                                                         children: "Commercial"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/heroSection.tsx",
-                                                        lineNumber: 81,
+                                                        lineNumber: 84,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/heroSection.tsx",
-                                                lineNumber: 77,
+                                                lineNumber: 80,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/heroSection.tsx",
-                                        lineNumber: 70,
+                                        lineNumber: 73,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Select"], {
@@ -417,12 +415,12 @@ function HeroSection({ videoUrl, imageUrl, heading = "START THEIR JOURNEY", subh
                                                     placeholder: "Budget Range"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/heroSection.tsx",
-                                                    lineNumber: 87,
+                                                    lineNumber: 90,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/heroSection.tsx",
-                                                lineNumber: 86,
+                                                lineNumber: 89,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SelectContent"], {
@@ -433,7 +431,7 @@ function HeroSection({ videoUrl, imageUrl, heading = "START THEIR JOURNEY", subh
                                                         children: "Under ₹50L"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/heroSection.tsx",
-                                                        lineNumber: 90,
+                                                        lineNumber: 93,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SelectItem"], {
@@ -441,7 +439,7 @@ function HeroSection({ videoUrl, imageUrl, heading = "START THEIR JOURNEY", subh
                                                         children: "₹50L - ₹1Cr"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/heroSection.tsx",
-                                                        lineNumber: 91,
+                                                        lineNumber: 94,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SelectItem"], {
@@ -449,7 +447,7 @@ function HeroSection({ videoUrl, imageUrl, heading = "START THEIR JOURNEY", subh
                                                         children: "₹1Cr - ₹2Cr"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/heroSection.tsx",
-                                                        lineNumber: 92,
+                                                        lineNumber: 95,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$select$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["SelectItem"], {
@@ -457,19 +455,19 @@ function HeroSection({ videoUrl, imageUrl, heading = "START THEIR JOURNEY", subh
                                                         children: "Above ₹2Cr"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/heroSection.tsx",
-                                                        lineNumber: 93,
+                                                        lineNumber: 96,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/heroSection.tsx",
-                                                lineNumber: 89,
+                                                lineNumber: 92,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/heroSection.tsx",
-                                        lineNumber: 85,
+                                        lineNumber: 88,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Input"], {
@@ -477,7 +475,7 @@ function HeroSection({ videoUrl, imageUrl, heading = "START THEIR JOURNEY", subh
                                         className: "h-12 font-poppins text-black w-full"
                                     }, void 0, false, {
                                         fileName: "[project]/components/heroSection.tsx",
-                                        lineNumber: 97,
+                                        lineNumber: 100,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -487,42 +485,42 @@ function HeroSection({ videoUrl, imageUrl, heading = "START THEIR JOURNEY", subh
                                                 className: "w-4 h-4 mr-2"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/heroSection.tsx",
-                                                lineNumber: 103,
+                                                lineNumber: 106,
                                                 columnNumber: 17
                                             }, this),
                                             "Search Properties"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/heroSection.tsx",
-                                        lineNumber: 102,
+                                        lineNumber: 105,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/heroSection.tsx",
-                                lineNumber: 69,
+                                lineNumber: 72,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/heroSection.tsx",
-                            lineNumber: 68,
+                            lineNumber: 71,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/heroSection.tsx",
-                    lineNumber: 56,
+                    lineNumber: 62,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/heroSection.tsx",
-                lineNumber: 55,
+                lineNumber: 61,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/heroSection.tsx",
-        lineNumber: 28,
+        lineNumber: 34,
         columnNumber: 5
     }, this);
 }

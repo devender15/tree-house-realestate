@@ -44,140 +44,453 @@ __turbopack_context__.s({
 const properties = [
     {
         id: "1",
-        title: "BELAPERLA CENTRAL PARK RESORT",
-        location: "Sector 48 Gurugram",
-        category: "new-launch",
-        image: "/assets/BELAPERLA CENTRAL PARK RESORT.jpeg",
-        price: "₹2.5 Cr",
-        bhk: "3-4 BHK",
+        title: "M3M Urbana",
+        location: "Sector 67, Gurugram",
+        category: "residential",
+        image: "/assets/experion-the-trillion-1-thumbnail.jpg",
+        price: "₹12 Cr",
+        bhk: "NA",
         features: [
-            "Swimming Pool",
-            "Gym",
-            "Garden",
-            "Security"
+            "Retail & Office Mix",
+            "Central Air Conditioning",
+            "Easy Access to NH8"
         ],
-        description: "Luxury resort-style living with world-class amenities"
+        description: "Modern mixed-use development with retail and office spaces"
     },
     {
         id: "2",
-        title: "EXPERION THE TRILLION",
-        location: "Sector 48 Gurugram",
-        category: "residential",
-        image: "/assets/experion-the-trillion-1-thumbnail.jpg",
-        price: "₹3.2 Cr",
-        bhk: "4-5 BHK",
+        title: "DLF Cyber City",
+        location: "Gurugram",
+        category: "commercial",
+        image: "/assets/dlf-cyber-city.jpg",
+        price: "₹50 Cr",
+        bhk: "NA",
         features: [
-            "Club House",
-            "Sports Complex",
-            "Retail Plaza"
+            "Grade A Office Spaces",
+            "High-Speed Elevators",
+            "Ample Parking"
         ],
-        description: "Premium residential complex with modern architecture"
+        description: "Premium office spaces in the heart of Gurugram's business district"
     },
     {
         id: "3",
-        title: "MNB ANANTA VILASA",
-        location: "Sector 56 Gurugram",
+        title: "The Address",
+        location: "Sector 104, Noida",
         category: "residential",
-        image: "/assets/mnb-ananta-vilasa-1.jpg",
-        price: "₹1.8 Cr",
-        bhk: "2-3 BHK",
+        image: "/assets/the-address-noida.jpg",
+        price: "₹85 Lakh",
+        bhk: "3 BHK",
         features: [
-            "Green Spaces",
-            "Kids Play Area",
-            "Jogging Track"
+            "Swimming Pool",
+            "24/7 Security",
+            "Clubhouse Access"
         ],
-        description: "Serene living spaces surrounded by nature"
+        description: "Luxury apartments with modern amenities and green spaces"
     },
     {
         id: "4",
-        title: "TRUMP TOWERS",
-        location: "Sector 65 Gurugram",
-        category: "commercial",
-        image: "/placeholder.svg?height=400&width=600",
-        price: "₹5.5 Cr",
-        bhk: "Office Spaces",
+        title: "Tata Primanti",
+        location: "Sector 72, Gurugram",
+        category: "new-launch",
+        image: "/assets/tata-primanti.jpg",
+        price: "₹1.2 Cr",
+        bhk: "2 BHK",
         features: [
-            "Business Center",
-            "Conference Rooms",
-            "Parking"
+            "Eco-Friendly Construction",
+            "Smart Home Features",
+            "Close to Metro Station"
         ],
-        description: "Premium commercial spaces for modern businesses"
+        description: "Newly launched sustainable housing project with smart features"
     },
     {
         id: "5",
-        title: "GODREJ ARISTOCRAT",
-        location: "Sector 49 Gurugram",
-        category: "new-launch",
-        image: "/placeholder.svg?height=400&width=600",
-        price: "₹2.8 Cr",
-        bhk: "3-4 BHK",
+        title: "Ireo Victory Valley",
+        location: "Sector 67, Gurugram",
+        category: "residential",
+        image: "/assets/ireo-victory-valley.jpg",
+        price: "₹3.5 Cr",
+        bhk: "4 BHK",
         features: [
-            "Spa",
-            "Yoga Studio",
-            "Library",
-            "Cafeteria"
+            "Golf Course View",
+            "Gym & Spa",
+            "Children's Play Area"
         ],
-        description: "Elegant homes with sophisticated design and amenities"
+        description: "Luxury villas with beautiful golf course views"
     },
     {
         id: "6",
-        title: "DLF PRIVANA",
-        location: "Sector 76 Gurugram",
-        category: "residential",
-        image: "/assets/dlf-privana-west-sector-76-gurgaon-1.jpeg",
-        price: "₹4.2 Cr",
-        bhk: "4-5 BHK",
+        title: "Paras Downtown",
+        location: "Sector 59, Gurugram",
+        category: "commercial",
+        image: "/assets/paras-downtown.jpg",
+        price: "₹15 Cr",
+        bhk: "NA",
         features: [
-            "Golf Course View",
-            "Private Elevator",
-            "Terrace Garden"
+            "Retail Spaces",
+            "Food Court",
+            "Multi-level Parking"
         ],
-        description: "Ultra-luxury residences with exclusive amenities"
+        description: "Commercial retail complex with modern facilities"
     },
     {
         id: "7",
-        title: "EMAAR PALM HILLS",
-        location: "Sector 77 Gurugram",
+        title: "Godrej Air",
+        location: "Sector 150, Noida",
         category: "new-launch",
-        image: "/placeholder.svg?height=400&width=600",
-        price: "₹3.5 Cr",
-        bhk: "3-4 BHK",
+        image: "/assets/godrej-air.jpg",
+        price: "₹75 Lakh",
+        bhk: "3 BHK",
         features: [
-            "Central Park",
-            "Retail Boulevard",
-            "School"
+            "Eco-friendly Design",
+            "Jogging Track",
+            "Community Hall"
         ],
-        description: "Integrated township with complete lifestyle amenities"
+        description: "Environment-friendly residential township with modern amenities"
     },
     {
         id: "8",
-        title: "VATIKA CITY",
-        location: "Sector 49 Gurugram",
+        title: "DLF One Horizon Center",
+        location: "Golf Course Road, Gurugram",
         category: "commercial",
-        image: "/placeholder.svg?height=400&width=600",
-        price: "₹1.2 Cr",
-        bhk: "Retail Spaces",
+        image: "/assets/dlf-one-horizon.jpg",
+        price: "₹100 Cr",
+        bhk: "NA",
         features: [
-            "Food Court",
-            "Entertainment Zone",
-            "Ample Parking"
+            "LEED Platinum Rated",
+            "High-Speed Internet",
+            "Cafeteria & Lounge"
         ],
-        description: "Prime retail and commercial spaces in bustling location"
+        description: "Premium office tower with world-class facilities"
     },
     {
         id: "9",
-        title: "SOBHA INTERNATIONAL CITY",
-        location: "Sector 109 Gurugram",
+        title: "Emaar Palm Heights",
+        location: "Sector 77, Gurugram",
         category: "residential",
-        image: "/placeholder.svg?height=400&width=600",
-        price: "₹2.1 Cr",
-        bhk: "2-3 BHK",
+        image: "/assets/emaar-palm-heights.jpg",
+        price: "₹1.1 Cr",
+        bhk: "3 BHK",
         features: [
-            "International School",
-            "Hospital",
-            "Shopping Mall"
+            "Lake View",
+            "Swimming Pool",
+            "24/7 Security"
         ],
-        description: "Self-sustained community with world-class infrastructure"
+        description: "Spacious apartments with serene lake views"
+    },
+    {
+        id: "10",
+        title: "Unitech Cyber Park",
+        location: "Gurugram",
+        category: "commercial",
+        image: "/assets/unitech-cyber-park.jpg",
+        price: "₹35 Cr",
+        bhk: "NA",
+        features: [
+            "Business Lounge",
+            "Conference Rooms",
+            "Centralized AC"
+        ],
+        description: "Modern commercial offices in the heart of Gurugram"
+    },
+    {
+        id: "11",
+        title: "AIPL Joy Street",
+        location: "Sector 63, Gurugram",
+        category: "new-launch",
+        image: "/assets/aipl-joy-street.jpg",
+        price: "₹95 Lakh",
+        bhk: "2 BHK",
+        features: [
+            "Shopping Arcade",
+            "Multipurpose Hall",
+            "Children's Park"
+        ],
+        description: "New launch residential project with retail facilities"
+    },
+    {
+        id: "12",
+        title: "Vatika Business Park",
+        location: "Sector 49, Gurugram",
+        category: "commercial",
+        image: "/assets/vatika-business-park.jpg",
+        price: "₹42 Cr",
+        bhk: "NA",
+        features: [
+            "Ample Parking",
+            "Green Building",
+            "24/7 Security"
+        ],
+        description: "Prime commercial office spaces with sustainable design"
+    },
+    {
+        id: "13",
+        title: "Nirala Estate",
+        location: "Sector 93, Noida",
+        category: "residential",
+        image: "/assets/nirala-estate.jpg",
+        price: "₹45 Lakh",
+        bhk: "2 BHK",
+        features: [
+            "Garden Area",
+            "Community Hall",
+            "Gymnasium"
+        ],
+        description: "Affordable residential apartments with good amenities"
+    },
+    {
+        id: "14",
+        title: "Logix City Center",
+        location: "Sector 32, Noida",
+        category: "commercial",
+        image: "/assets/logix-city-center.jpg",
+        price: "₹28 Cr",
+        bhk: "NA",
+        features: [
+            "Retail Spaces",
+            "Food Court",
+            "Lift & Escalators"
+        ],
+        description: "Mixed-use commercial and retail complex"
+    },
+    {
+        id: "15",
+        title: "Brigade Cosmopolis",
+        location: "Kanakapura Road, Bengaluru",
+        category: "new-launch",
+        image: "/assets/brigade-cosmopolis.jpg",
+        price: "₹1.5 Cr",
+        bhk: "3 BHK",
+        features: [
+            "Clubhouse",
+            "Jogging Track",
+            "Basketball Court"
+        ],
+        description: "New launch township with modern facilities"
+    },
+    {
+        id: "16",
+        title: "Tata Realty Business Park",
+        location: "Mumbai",
+        category: "commercial",
+        image: "/assets/tata-realty-business-park.jpg",
+        price: "₹120 Cr",
+        bhk: "NA",
+        features: [
+            "LEED Certified",
+            "Large Conference Halls",
+            "24/7 Security"
+        ],
+        description: "Business park with premium office spaces in Mumbai"
+    },
+    {
+        id: "17",
+        title: "Purva Westend",
+        location: "Kanakapura Road, Bengaluru",
+        category: "residential",
+        image: "/assets/purva-westend.jpg",
+        price: "₹1.1 Cr",
+        bhk: "3 BHK",
+        features: [
+            "Swimming Pool",
+            "Gym",
+            "Clubhouse"
+        ],
+        description: "Luxury residential apartments with modern amenities"
+    },
+    {
+        id: "18",
+        title: "DLF Galleria Market",
+        location: "Gurugram",
+        category: "commercial",
+        image: "/assets/dlf-galleria-market.jpg",
+        price: "₹60 Cr",
+        bhk: "NA",
+        features: [
+            "Retail Spaces",
+            "Food Court",
+            "Ample Parking"
+        ],
+        description: "Premium retail and commercial market"
+    },
+    {
+        id: "19",
+        title: "Lodha Palava",
+        location: "Mumbai",
+        category: "new-launch",
+        image: "/assets/lodha-palava.jpg",
+        price: "₹90 Lakh",
+        bhk: "2 BHK",
+        features: [
+            "Eco-friendly Township",
+            "Community Park",
+            "Schools Nearby"
+        ],
+        description: "New launch eco-friendly township with ample greenery"
+    },
+    {
+        id: "20",
+        title: "Sobha City",
+        location: "Thrissur, Kerala",
+        category: "residential",
+        image: "/assets/sobha-city.jpg",
+        price: "₹50 Lakh",
+        bhk: "2 BHK",
+        features: [
+            "Modern Apartments",
+            "24/7 Security",
+            "Community Hall"
+        ],
+        description: "Affordable modern residential apartments"
+    },
+    {
+        id: "21",
+        title: "RMZ Corp One",
+        location: "Bengaluru",
+        category: "commercial",
+        image: "/assets/rmz-corp-one.jpg",
+        price: "₹55 Cr",
+        bhk: "NA",
+        features: [
+            "Grade A Offices",
+            "Conference Rooms",
+            "Green Building"
+        ],
+        description: "Prime commercial office spaces with green design"
+    },
+    {
+        id: "22",
+        title: "Godrej Prakriti",
+        location: "Panvel, Mumbai",
+        category: "new-launch",
+        image: "/assets/godrej-prakriti.jpg",
+        price: "₹65 Lakh",
+        bhk: "2 BHK",
+        features: [
+            "Eco-friendly Design",
+            "Swimming Pool",
+            "Jogging Track"
+        ],
+        description: "New launch residential project with eco-friendly features"
+    },
+    {
+        id: "23",
+        title: "Prestige Shantiniketan",
+        location: "Bengaluru",
+        category: "residential",
+        image: "/assets/prestige-shantiniketan.jpg",
+        price: "₹2.2 Cr",
+        bhk: "3 BHK",
+        features: [
+            "Clubhouse",
+            "Swimming Pool",
+            "Children's Play Area"
+        ],
+        description: "Luxury apartments in a serene environment"
+    },
+    {
+        id: "24",
+        title: "DLF IT Park",
+        location: "Gurugram",
+        category: "commercial",
+        image: "/assets/dlf-it-park.jpg",
+        price: "₹45 Cr",
+        bhk: "NA",
+        features: [
+            "High-speed Internet",
+            "Cafeteria",
+            "24/7 Security"
+        ],
+        description: "IT park with modern infrastructure and facilities"
+    },
+    {
+        id: "25",
+        title: "ATS Flora",
+        location: "Sector 109, Gurugram",
+        category: "new-launch",
+        image: "/assets/ats-flora.jpg",
+        price: "₹1.3 Cr",
+        bhk: "3 BHK",
+        features: [
+            "Landscaped Gardens",
+            "Swimming Pool",
+            "Gym"
+        ],
+        description: "New launch luxury residential apartments"
+    },
+    {
+        id: "26",
+        title: "Wave One",
+        location: "Sector 18, Gurugram",
+        category: "commercial",
+        image: "/assets/wave-one.jpg",
+        price: "₹30 Cr",
+        bhk: "NA",
+        features: [
+            "Retail Spaces",
+            "Food Court",
+            "Parking Facilities"
+        ],
+        description: "Popular commercial complex with retail and food outlets"
+    },
+    {
+        id: "27",
+        title: "Godrej Summit",
+        location: "Sector 106, Gurugram",
+        category: "residential",
+        image: "/assets/godrej-summit.jpg",
+        price: "₹1.05 Cr",
+        bhk: "3 BHK",
+        features: [
+            "Smart Home Technology",
+            "Swimming Pool",
+            "24/7 Security"
+        ],
+        description: "Modern apartments with smart home features"
+    },
+    {
+        id: "28",
+        title: "Sikka Kaamna",
+        location: "Sector 82, Gurugram",
+        category: "new-launch",
+        image: "/assets/sikka-kaamna.jpg",
+        price: "₹90 Lakh",
+        bhk: "2 BHK",
+        features: [
+            "Affordable Housing",
+            "Community Center",
+            "Children's Park"
+        ],
+        description: "Affordable new launch housing project"
+    },
+    {
+        id: "29",
+        title: "M3M Golf Estate",
+        location: "Sector 65, Gurugram",
+        category: "residential",
+        image: "/assets/m3m-golf-estate.jpg",
+        price: "₹2.5 Cr",
+        bhk: "4 BHK",
+        features: [
+            "Golf Course View",
+            "Clubhouse",
+            "Swimming Pool"
+        ],
+        description: "Luxury villas with golf course views"
+    },
+    {
+        id: "30",
+        title: "Emaar MGF Emerald Hills",
+        location: "Gurugram",
+        category: "residential",
+        image: "/assets/emaar-mgf-emerald-hills.jpg",
+        price: "₹1.8 Cr",
+        bhk: "3 BHK",
+        features: [
+            "Green Spaces",
+            "Swimming Pool",
+            "Gym"
+        ],
+        description: "Premium apartments with lush green surroundings"
     }
 ];
 const getPropertiesByCategory = (category)=>{
@@ -1183,6 +1496,11 @@ function HomePage() {
                 lineNumber: 43,
                 columnNumber: 7
             }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Locations, {}, void 0, false, {
+                fileName: "[project]/app/page.tsx",
+                lineNumber: 45,
+                columnNumber: 7
+            }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
                 className: "py-16 bg-white",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1196,7 +1514,7 @@ function HomePage() {
                                     children: "Why Choose Tree House"
                                 }, void 0, false, {
                                     fileName: "[project]/app/page.tsx",
-                                    lineNumber: 49,
+                                    lineNumber: 51,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1204,13 +1522,13 @@ function HomePage() {
                                     children: "We provide comprehensive real estate solutions with expert guidance and transparent processes"
                                 }, void 0, false, {
                                     fileName: "[project]/app/page.tsx",
-                                    lineNumber: 52,
+                                    lineNumber: 54,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/page.tsx",
-                            lineNumber: 48,
+                            lineNumber: 50,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1225,12 +1543,12 @@ function HomePage() {
                                                 className: "w-8 h-8 text-orange-500"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/page.tsx",
-                                                lineNumber: 61,
+                                                lineNumber: 63,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/app/page.tsx",
-                                            lineNumber: 60,
+                                            lineNumber: 62,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1238,7 +1556,7 @@ function HomePage() {
                                             children: "Expert Property Search"
                                         }, void 0, false, {
                                             fileName: "[project]/app/page.tsx",
-                                            lineNumber: 63,
+                                            lineNumber: 65,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1246,13 +1564,13 @@ function HomePage() {
                                             children: "Advanced search tools to find your perfect property match"
                                         }, void 0, false, {
                                             fileName: "[project]/app/page.tsx",
-                                            lineNumber: 66,
+                                            lineNumber: 68,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/page.tsx",
-                                    lineNumber: 59,
+                                    lineNumber: 61,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1264,12 +1582,12 @@ function HomePage() {
                                                 className: "w-8 h-8 text-orange-500"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/page.tsx",
-                                                lineNumber: 73,
+                                                lineNumber: 75,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/app/page.tsx",
-                                            lineNumber: 72,
+                                            lineNumber: 74,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1277,7 +1595,7 @@ function HomePage() {
                                             children: "24/7 Support"
                                         }, void 0, false, {
                                             fileName: "[project]/app/page.tsx",
-                                            lineNumber: 75,
+                                            lineNumber: 77,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1285,13 +1603,13 @@ function HomePage() {
                                             children: "Round-the-clock assistance for all your real estate needs"
                                         }, void 0, false, {
                                             fileName: "[project]/app/page.tsx",
-                                            lineNumber: 78,
+                                            lineNumber: 80,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/page.tsx",
-                                    lineNumber: 71,
+                                    lineNumber: 73,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1303,12 +1621,12 @@ function HomePage() {
                                                 className: "w-8 h-8 text-orange-500"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/page.tsx",
-                                                lineNumber: 85,
+                                                lineNumber: 87,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/app/page.tsx",
-                                            lineNumber: 84,
+                                            lineNumber: 86,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1316,7 +1634,7 @@ function HomePage() {
                                             children: "Transparent Process"
                                         }, void 0, false, {
                                             fileName: "[project]/app/page.tsx",
-                                            lineNumber: 87,
+                                            lineNumber: 89,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1324,30 +1642,30 @@ function HomePage() {
                                             children: "Clear documentation and honest pricing with no hidden costs"
                                         }, void 0, false, {
                                             fileName: "[project]/app/page.tsx",
-                                            lineNumber: 90,
+                                            lineNumber: 92,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/page.tsx",
-                                    lineNumber: 83,
+                                    lineNumber: 85,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/page.tsx",
-                            lineNumber: 58,
+                            lineNumber: 60,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/page.tsx",
-                    lineNumber: 47,
+                    lineNumber: 49,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 46,
+                lineNumber: 48,
                 columnNumber: 7
             }, this)
         ]
