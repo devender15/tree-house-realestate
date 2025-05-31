@@ -18,7 +18,7 @@ export default function HomePage() {
         <HeroSection
           videoUrl={""}
           imageUrl={"/assets/hero-bg.png"}
-          heading={"Residential"}
+          heading={""}
         />
       </section>
 
@@ -27,7 +27,7 @@ export default function HomePage() {
       <Locations />
 
       {/* Why Choose Us */}
-      <section className="py-32 bg-gradient-to-r from-black to-black/50 text-white">
+      <section className="py-32 bg-gradient-to-br from-black to-black/70 text-white">
         <div className="max-w-8xl mx-auto px-4">
           {/* Heading */}
           <div className="text-center mb-16">

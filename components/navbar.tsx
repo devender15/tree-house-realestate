@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Phone, Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useScroll } from "@/hooks/use-scroll";
+import useEnquiryStore from "@/store/store";
 
 const navItems = [
   { label: "Commercial", href: "/commercial" },
@@ -15,6 +16,8 @@ const navItems = [
 ];
 
 export default function Navbar() {
+  const { setEnquiry } = useEnquiryStore();
+
   const scrolled = useScroll(10);
 
   return (
@@ -52,8 +55,11 @@ export default function Navbar() {
             <span className="tracking-wide">+91-9999999999</span>
           </div>
 
-          <Button className="bg-orange-500 hover:bg-orange-600 text-black rounded-full px-5 py-2 text-sm font-semibold shadow-lg transition-all">
-            Get Started
+          <Button
+            onClick={() => setEnquiry(true)}
+            className="bg-orange-500 hover:bg-orange-600 text-white rounded-full px-5 py-2 text-sm font-semibold shadow-lg transition-all"
+          >
+            enquire now
           </Button>
 
           <Button
