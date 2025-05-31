@@ -66,7 +66,7 @@ export function HeroSection({
           <h1
             className={`${PTSerif.className} text-4xl md:text-7xl mb-8 leading-tight`}
           >
-            {heading || "JOURNEY BEGINS"}
+            {heading || "JOURNEY  BEGINS"}
           </h1>
 
           {/* Search Bar */}
