@@ -105,191 +105,8 @@ __turbopack_context__.n(__TURBOPACK__imported__module__$5b$project$5d2f$componen
 var { g: global, __dirname } = __turbopack_context__;
 {
 __turbopack_context__.s({
-    "residentialData": (()=>residentialData),
-    "residentialProperties": (()=>residentialProperties)
+    "residentialData": (()=>residentialData)
 });
-const residentialProperties = [
-    {
-        id: "1",
-        title: "Cyber Park Tower",
-        location: "Sector 44, Gurugram",
-        category: "commercial",
-        image: "/assets/experion-the-trillion-1-thumbnail.jpg",
-        price: "₹25 Cr",
-        bhk: null,
-        features: [
-            "Grade A Building",
-            "Power Backup",
-            "Ample Parking"
-        ],
-        description: "Premium office tower located in the IT hub of Gurugram"
-    },
-    {
-        id: "2",
-        title: "DLF Corporate Greens",
-        location: "Sector 74A, Gurugram",
-        category: "commercial",
-        image: "/assets/experion-the-trillion-1-thumbnail.jpg",
-        price: "₹18 Cr",
-        bhk: null,
-        features: [
-            "LEED Certified",
-            "Cafeteria",
-            "High-Speed Elevators"
-        ],
-        description: "Eco-friendly corporate offices with modern infrastructure"
-    },
-    {
-        id: "3",
-        title: "M3M Urbana",
-        location: "Sector 67, Gurugram",
-        category: "residential",
-        image: "/assets/experion-the-trillion-1-thumbnail.jpg",
-        price: "₹12 Cr",
-        bhk: null,
-        features: [
-            "Retail & Office Mix",
-            "Central Air Conditioning",
-            "Easy Access to NH8"
-        ],
-        description: "Modern mixed-use development with retail and office spaces"
-    },
-    {
-        id: "4",
-        title: "Spaze Tech Park",
-        location: "Sector 49, Sohna Road",
-        category: "commercial",
-        image: "/assets/dlf-privana-west-sector-76-gurgaon-1.jpeg",
-        price: "₹10 Cr",
-        bhk: null,
-        features: [
-            "IT/ITES Friendly",
-            "24x7 Security",
-            "Multiple Lifts"
-        ],
-        description: "Well-equipped workspace with top IT facilities"
-    },
-    {
-        id: "5",
-        title: "Vatika City Point",
-        location: "MG Road, Gurugram",
-        category: "commercial",
-        image: "",
-        price: "₹16 Cr",
-        bhk: null,
-        features: [
-            "High Footfall Area",
-            "Basement Parking",
-            "Business Lounge"
-        ],
-        description: "Located in the heart of the business district"
-    },
-    {
-        id: "6",
-        title: "Global Business Park",
-        location: "DLF Phase III, Gurugram",
-        category: "commercial",
-        image: "/assets/global-business-park.jpeg",
-        price: "₹22 Cr",
-        bhk: null,
-        features: [
-            "Multi-Tenant",
-            "Prestigious Address",
-            "Excellent Connectivity"
-        ],
-        description: "One of Gurugram’s top business destinations"
-    },
-    {
-        id: "7",
-        title: "Elan Empire",
-        location: "Sector 66, Gurugram",
-        category: "commercial",
-        image: "/assets/elan-empire.jpeg",
-        price: "₹9 Cr",
-        bhk: null,
-        features: [
-            "High Street Retail",
-            "Multiplex",
-            "Food Court"
-        ],
-        description: "Next-gen commercial development with top-notch amenities"
-    },
-    {
-        id: "8",
-        title: "JMD Megapolis",
-        location: "Sohna Road, Gurugram",
-        category: "commercial",
-        image: "/assets/jmd-megapolis.jpeg",
-        price: "₹11 Cr",
-        bhk: null,
-        features: [
-            "Premium Interiors",
-            "Fire Safety",
-            "Business Center"
-        ],
-        description: "Smart office spaces ideal for tech and service companies"
-    },
-    {
-        id: "9",
-        title: "Signature Tower",
-        location: "Sector 30, Gurugram",
-        category: "commercial",
-        image: "/assets/signature-tower.jpeg",
-        price: "₹14 Cr",
-        bhk: null,
-        features: [
-            "Iconic Landmark",
-            "Central AC",
-            "Professional Maintenance"
-        ],
-        description: "Highly recognized corporate tower in central Gurugram"
-    },
-    {
-        id: "10",
-        title: "WorldMark Gurugram",
-        location: "Sector 65, Golf Course Ext. Road",
-        category: "commercial",
-        image: "/assets/worldmark-gurugram.jpeg",
-        price: "₹20 Cr",
-        bhk: null,
-        features: [
-            "Mixed-Use Hub",
-            "Event Space",
-            "Valet Parking"
-        ],
-        description: "Ultra-modern space for global businesses and brands"
-    },
-    {
-        id: "11",
-        title: "AIPL Joy Central",
-        location: "Sector 65, Gurugram",
-        category: "commercial",
-        image: "/assets/aipl-joy-central.jpeg",
-        price: "₹8.5 Cr",
-        bhk: null,
-        features: [
-            "Food Courts",
-            "Office Spaces",
-            "Retail Zones"
-        ],
-        description: "Well-designed commercial complex with smart zoning"
-    },
-    {
-        id: "12",
-        title: "Orris Market City",
-        location: "Sector 89, Gurugram",
-        category: "commercial",
-        image: "/assets/orris-market-city.jpeg",
-        price: "₹7.5 Cr",
-        bhk: null,
-        features: [
-            "Retail Shops",
-            "Showrooms",
-            "Flexible Leasing"
-        ],
-        description: "Conveniently located business spaces for all needs"
-    }
-];
 const residentialData = [
     {
         heading: "M3M Golf Hills",
@@ -347,38 +164,46 @@ function ResidentialPage() {
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$residential$2d$property$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/app/residential/page.tsx",
-                lineNumber: 13,
+                lineNumber: 14,
                 columnNumber: 7
             }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "max-w-7xl mx-auto px-4 py-8 ",
-                children: __TURBOPACK__imported__module__$5b$project$5d2f$data$2f$residentialProperties$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["residentialData"].map((data, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                                className: "text-3xl font-bold mb-3 ",
-                                children: data.heading
-                            }, void 0, false, {
-                                fileName: "[project]/app/residential/page.tsx",
-                                lineNumber: 18,
-                                columnNumber: 13
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-gray-600 text-xl",
-                                children: data.paragraph
-                            }, void 0, false, {
-                                fileName: "[project]/app/residential/page.tsx",
-                                lineNumber: 19,
-                                columnNumber: 13
-                            }, this)
-                        ]
-                    }, idx, true, {
-                        fileName: "[project]/app/residential/page.tsx",
-                        lineNumber: 17,
-                        columnNumber: 11
-                    }, this))
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+                className: "bg-gray-600 text-white py-20",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "max-w-4xl mx-auto px-6",
+                    children: __TURBOPACK__imported__module__$5b$project$5d2f$data$2f$residentialProperties$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["residentialData"].map((data, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "mb-14",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                                    className: "text-4xl font-bold mb-4 font-poppins leading-snug",
+                                    children: data.heading
+                                }, void 0, false, {
+                                    fileName: "[project]/app/residential/page.tsx",
+                                    lineNumber: 21,
+                                    columnNumber: 15
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    className: "text-lg text-gray-300 leading-relaxed font-light font-poppins",
+                                    children: data.paragraph
+                                }, void 0, false, {
+                                    fileName: "[project]/app/residential/page.tsx",
+                                    lineNumber: 24,
+                                    columnNumber: 15
+                                }, this)
+                            ]
+                        }, idx, true, {
+                            fileName: "[project]/app/residential/page.tsx",
+                            lineNumber: 20,
+                            columnNumber: 13
+                        }, this))
+                }, void 0, false, {
+                    fileName: "[project]/app/residential/page.tsx",
+                    lineNumber: 18,
+                    columnNumber: 9
+                }, this)
             }, void 0, false, {
                 fileName: "[project]/app/residential/page.tsx",
-                lineNumber: 15,
+                lineNumber: 17,
                 columnNumber: 7
             }, this)
         ]

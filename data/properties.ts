@@ -8,7 +8,7 @@ export interface Property {
   bhk?: string;
   features?: string[];
   description?: string;
-  search: string[]
+  search: string[];
 }
 
 export const properties: Property[] = [
@@ -80,7 +80,7 @@ export const properties: Property[] = [
     location: "Sector 67, Gurugram, Gurgaon",
     search: ["Golf Course Ext Road", "Sector 67"],
     category: "residential",
-    image: "/assets/ireo-victory-valley.jpg",
+    image: "/assets/residential/thumb.png",
     price: "₹3.5 Cr",
     bhk: "4 BHK",
     features: ["Golf Course View", "Gym & Spa", "Children's Play Area"],
@@ -92,7 +92,7 @@ export const properties: Property[] = [
     location: "Sector 59, Gurugram, Gurgaon",
     search: ["Golf Course Ext Road", "Sector 59"],
     category: "commercial",
-    image: "/assets/paras-downtown.jpg",
+    image: "/assets/residential/thumb.png",
     price: "₹15 Cr",
     bhk: "NA",
     features: ["Retail Spaces", "Food Court", "Multi-level Parking"],

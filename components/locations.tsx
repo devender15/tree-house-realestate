@@ -32,20 +32,26 @@ const PropertyCarousel = () => {
   }, [filteredProperties, emblaApi]);
 
   return (
-    <div className="py-14 bg-[#030E27] text-white">
-      <h2 className="text-center text-4xl font-serif mb-8">LOCATIONS</h2>
+    <section className="py-20 bg-gradient-to-bl from-black to-black/70 text-white ">
+      {/* Title */}
+      <h2 className="text-center text-6xl font-serif font-semibold mb-12">
+        LOCATIONS
+      </h2>
 
       {/* Location Buttons */}
-      <div className="flex flex-wrap justify-center gap-4 mb-12 text-gray-400">
+      <div className="flex flex-wrap justify-center gap-6 mb-16  ">
         {locations.map((location) => (
           <button
             key={location}
             onClick={() => setSelectedLocation(location)}
-            className={`px-5 py-2 text-sm rounded-full border transition duration-300 ease-in-out ${
-              selectedLocation === location
-                ? "border-white text-white bg-white/10"
-                : "border-gray-600 hover:text-white hover:border-white"
-            }`}
+            className={`
+          px-5 py-3 text-lg rounded-md transition duration-300 ease-in-out
+          ${
+            selectedLocation === location
+              ? "border border-yellow-500 text-yellow-500 bg-white"
+              : "border border-gray-700 text-gray-400 bg-white/90 hover:border-yellow-500 hover:text-yellow-500"
+          }
+        `}
           >
             {location}
           </button>
@@ -53,50 +59,59 @@ const PropertyCarousel = () => {
       </div>
 
       {/* Carousel */}
-      <div className="overflow-hidden max-w-7xl mx-auto px-4" ref={emblaRef}>
-        <div className="flex gap-6">
+      <div className="overflow-hidden max-w-8xl mx-30 px-4 " ref={emblaRef}>
+        <div className="flex gap-8 justify-center  ">
           {filteredProperties.length > 0 ? (
             filteredProperties.map((property) => (
               <div
                 key={property.id}
-                className="relative flex-shrink-0 w-[320px] h-[440px] rounded-xl overflow-hidden shadow-xl bg-gray-800"
+                className="relative flex-shrink-0 w-[480px] h-[300px] rounded-lg overflow-hidden shadow-xl bg-gray-800"
               >
+                {/* Underlying Image */}center
                 <Image
                   src={property.image}
                   alt={property.title}
                   layout="fill"
                   objectFit="cover"
-                  className="absolute z-0"
+                  className="absolute inset-0 z-0"
                 />
-                <div className="absolute z-10 bg-black bg-opacity-60 w-full h-full flex flex-col justify-end p-4">
-                  <h3 className="text-xl font-semibold mb-1">
+                {/* Gradient Overlay (bottom dark → top transparent) */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent z-10" />
+                {/* Text Content at the Bottom */}
+                <div className="absolute inset-0 flex flex-col justify-end p-4 z-20">
+                  <h3 className="text-lg font-semibold mb-1 text-white drop-shadow-md">
                     {property.title}
                   </h3>
-                  <p className="text-sm flex items-center">
-                    <span className="mr-2">📍</span>
+                  <p className="flex items-center text-sm text-gray-300">
+                    <span className="mr-2 text-yellow-500">📍</span>
                     {property.location}
                   </p>
                 </div>
               </div>
             ))
           ) : (
-            <div className="text-center w-full py-10 text-lg text-gray-300">
+            <div className="text-center w-full py-10 text-lg text-gray-400">
               No properties found for this location.
             </div>
           )}
         </div>
       </div>
 
-      <div className="bg-[#030E27] text-white py-20">
-        <div className="max-w-7xl mx-auto my-40 px-6 grid md:grid-cols-2 gap-16 items-center">
-          {/* IMAGE BLOCK (You can replace this div with your <Image /> component) */}
-          <div className="w-full h-[400px] bg-gray-800 rounded-xl shadow-lg flex items-center justify-center overflow-hidden ">
-            <img src="/assets/aboutThumb.png" alt="" />
+      {/* Following Image + Text Block */}
+      <div className=" text-white py-20  my-20 ">
+        <div className=" mx-40 px-6 grid md:grid-cols-2 gap-16 items-center ">
+          {/* IMAGE BLOCK */}
+          <div className="w-full h-[600px] bg-gray-800 rounded-lg shadow-lg flex items-center justify-center overflow-hidden ">
+            <img
+              src="/assets/aboutThumb.png"
+              alt="About Thumb"
+              className="object-cover w-full h-full"
+            />
           </div>
 
           {/* TEXT BLOCK */}
           <div>
-            <h2 className="text-4xl md:text-5xl font-serif mb-6 leading-snug">
+            <h2 className="text-2xl md:text-3xl font-serif font-semibold mb-6 leading-snug">
               EXPLORE LOCATIONS
             </h2>
             <p className="text-gray-400 mb-8 text-lg leading-relaxed">
@@ -116,7 +131,11 @@ const PropertyCarousel = () => {
               ].map((location) => (
                 <button
                   key={location}
-                  className="px-6 py-2 rounded-full border border-gray-500 text-gray-300 hover:border-white hover:text-white transition duration-300"
+                  className="
+                px-6 py-2 rounded-full border border-gray-500 
+                text-gray-300 hover:border-yellow-500 hover:text-yellow-500 
+                transition duration-300
+              "
                 >
                   {location}
                 </button>
@@ -125,7 +144,7 @@ const PropertyCarousel = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
