@@ -25,7 +25,7 @@ export function HeroSection({
   subheading = "WHERE YOUR DREAMS",
 }: HeroSectionProps) {
   return (
-    <section className="relative h-[80vh] overflow-hidden">
+    <section className="relative h-[90vh] overflow-hidden">
       {/* Background Media */}
       {videoUrl ? (
         <video
@@ -49,7 +49,7 @@ export function HeroSection({
       )}
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/50" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/0 via-black/30 to-black " />
 
       {/* Content */}
       <div className="relative z-10 flex items-center justify-center h-full">

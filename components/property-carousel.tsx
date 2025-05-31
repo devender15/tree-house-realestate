@@ -58,15 +58,15 @@ export function PropertyCarousel() {
   }, [activeTab, emblaApi]);
 
   return (
-    <section className="pb-30 bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 text-gray-100">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="py-42  bg-gradient-to-b from-black via-gray-900 to-gray-800 text-gray-100">
+      <div className="mx-60 px-4 max-w-8xl ">
         {/* Tab Navigation */}
-        <div className="flex justify-center mb-12">
+        <div className="flex justify-center mb-16">
           <div className="flex flex-wrap gap-6">
             <TabButton
               active={activeTab === "new-launch"}
               onClick={() => setActiveTab("new-launch")}
-              className="px-6 py-2 font-semibold rounded-lg transition-colors duration-300"
+              className="px-6 py-2 font-semibold rounded-full transition-colors duration-300"
               activeClassName="bg-indigo-600 text-white shadow-lg"
               inactiveClassName="text-gray-400 hover:text-indigo-400"
             >
@@ -75,7 +75,7 @@ export function PropertyCarousel() {
             <TabButton
               active={activeTab === "residential"}
               onClick={() => setActiveTab("residential")}
-              className="px-6 py-2 font-semibold rounded-lg transition-colors duration-300"
+              className="px-6 py-2 font-semibold rounded-full transition-colors duration-300"
               activeClassName="bg-indigo-600 text-white shadow-lg"
               inactiveClassName="text-gray-400 hover:text-indigo-400"
             >
@@ -84,7 +84,7 @@ export function PropertyCarousel() {
             <TabButton
               active={activeTab === "commercial"}
               onClick={() => setActiveTab("commercial")}
-              className="px-6 py-2 font-semibold rounded-lg transition-colors duration-300"
+              className="px-6 py-2 font-semibold rounded-full transition-colors duration-300"
               activeClassName="bg-indigo-600 text-white shadow-lg"
               inactiveClassName="text-gray-400 hover:text-indigo-400"
             >
@@ -94,18 +94,20 @@ export function PropertyCarousel() {
         </div>
 
         {/* Carousel Container */}
-        <div className="relative">
-          <div
-            className="overflow-hidden rounded-3xl shadow-2xl"
-            ref={emblaRef}
-          >
-            <div className="flex gap-6">
+        <div className="relative  ">
+          {/* Embla viewport: overflow-hidden so only exactly two cards show */}
+          <div className="overflow-hidden" ref={emblaRef}>
+            <div className="flex">
               {filteredProperties.map((property) => (
                 <div
                   key={property.id}
-                  className="flex-[0_0_100%] md:flex-[0_0_50%] lg:flex-[0_0_33.333%] pl-4"
+                  className="
+                  basis-[calc(50%-0.75rem)]  /* 50% minus half of the 1.5rem gap */
+                  flex-shrink-0
+                  mx-3                    /* 0.75rem margin on each side → total gap = 1.5rem */
+                "
                 >
-                  <div className="relative h-[420px] rounded-3xl overflow-hidden group shadow-xl border border-gray-700 bg-gray-900">
+                  <div className="relative h-95 rounded-xl overflow-hidden group shadow-xl border border-gray-700 bg-gray-600 ">
                     {/* Property Image */}
                     <div className="absolute inset-0">
                       <Image
@@ -113,32 +115,32 @@ export function PropertyCarousel() {
                         alt={property.title}
                         fill
                         className="object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
-                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 40vw"
                         priority={property.id === "1"}
                       />
                     </div>
 
                     {/* Gradient Overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/50 to-transparent" />
 
                     {/* Content */}
-                    <div className="absolute inset-0 p-8 flex flex-col justify-end">
-                      <h3 className="text-3xl font-semibold mb-3 font-serif text-white leading-tight drop-shadow-lg">
+                    <div className="absolute inset-0 p-6 flex flex-col justify-end">
+                      <h3 className="text-2xl font-semibold mb-2 font-serif text-white leading-tight drop-shadow-lg">
                         {property.title}
                       </h3>
-                      <div className="flex items-center text-gray-300 mb-6 space-x-2">
+                      <div className="flex items-center text-gray-300 mb-4 space-x-2">
                         <MapPin className="w-5 h-5" />
                         <span className="text-base">{property.location}</span>
                       </div>
 
                       {/* Action Buttons */}
-                      <div className="flex items-center space-x-4">
-                        <Button className="bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 px-6 py-3 text-base font-semibold shadow-md transition duration-300">
+                      <div className="flex flex-wrap items-center space-x-3">
+                        <Button className="bg-indigo-600 text-white rounded-md hover:bg-indigo-700 px-5 py-2 text-sm font-semibold shadow-md transition duration-300">
                           Enquire Now
                         </Button>
                         <Button
                           variant="outline"
-                          className="border-indigo-600 text-indigo-600 hover:bg-indigo-600 hover:text-white rounded-lg px-6 py-3 text-base font-semibold transition duration-300"
+                          className="border-indigo-600 text-indigo-600 hover:bg-indigo-600 hover:text-white rounded-md px-5 py-2 text-sm font-semibold transition duration-300"
                         >
                           View Details
                         </Button>
@@ -157,23 +159,44 @@ export function PropertyCarousel() {
           </div>
 
           {/* Navigation Controls */}
-          <div className="flex justify-between items-center mt-10 px-2 max-w-3xl mx-auto">
+          <div className="flex justify-between items-center mt-6 px-2">
             <div className="flex items-center space-x-5">
+              {/* Left Button */}
               <Button
                 variant="outline"
-                size="sm"
                 onClick={scrollPrev}
-                className="border-indigo-600 text-indigo-600 hover:bg-indigo-600 hover:text-white rounded-full p-3 shadow-md transition duration-300"
+                className="
+                w-14 h-14 
+                flex items-center justify-center 
+                border-2 border-yellow-500 
+                text-yellow-500 
+                hover:bg-yellow-500 hover:text-white 
+                font-bold 
+                rounded-lg 
+                shadow-md 
+                transition duration-300
+              "
               >
-                <ChevronLeft className="w-6 h-6" />
+                <ChevronLeft className="w-8 h-8" />
               </Button>
+
+              {/* Right Button */}
               <Button
                 variant="outline"
-                size="sm"
                 onClick={scrollNext}
-                className="border-indigo-600 text-indigo-600 hover:bg-indigo-600 hover:text-white rounded-full p-3 shadow-md transition duration-300"
+                className="
+                w-14 h-14 
+                flex items-center justify-center 
+                border-2 border-yellow-500 
+                text-yellow-500 
+                hover:bg-yellow-500 hover:text-white 
+                font-bold 
+                rounded-lg 
+                shadow-md 
+                transition duration-300
+              "
               >
-                <ChevronRight className="w-6 h-6" />
+                <ChevronRight className="w-8 h-8" />
               </Button>
             </div>
 

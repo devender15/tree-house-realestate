@@ -1,4 +1,4 @@
-import type { Config } from "tailwindcss"
+import type { Config } from "tailwindcss";
 
 const config = {
   darkMode: "class",
@@ -20,9 +20,10 @@ const config = {
     },
     extend: {
       fontFamily: {
-        sans: ["var(--font-poppins)"],
-        poppins: ["var(--font-poppins)"],
-        cinzel: ["var(--font-cinzel)"],
+        sans: ["var(--font-poppins)"], // your existing sans
+        poppins: ["var(--font-poppins)"], // your existing poppins alias
+        cinzel: ["var(--font-cinzel)"], // your existing cinzel alias
+        playfair: ["'Playfair Display'", "serif"], // new elegant serif for headings
       },
       colors: {
         border: "hsl(var(--border))",
@@ -58,6 +59,11 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+
+        // Added luxury colors:
+        navy: "#001F3F", // deep navy blue background
+        charcoal: "#2C2C32", // dark charcoal for sections
+        gold: "#D4AF37", // gold accent color
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -81,6 +87,6 @@ const config = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-} satisfies Config
+} satisfies Config;
 
-export default config
+export default config;

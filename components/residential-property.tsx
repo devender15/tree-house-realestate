@@ -15,7 +15,7 @@ const ResidentialProperty = () => {
   }, []);
 
   return (
-    <section className="bg-gray-100 py-20 bg-gradient-to-r from-slate-900 to-slate-700 ">
+    <section className="bg-gray-100 py-20  ">
       <div className="max-w-8xl mx-42  px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {residentData.map((property) => (
           <div
