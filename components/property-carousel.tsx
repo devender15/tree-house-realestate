@@ -2,7 +2,13 @@
 
 import { useState, useCallback, useEffect } from "react";
 import useEmblaCarousel from "embla-carousel-react";
-import { ChevronLeft, ChevronRight, MapPin, MessageCircle } from "lucide-react";
+import {
+  ChevronLeft,
+  ChevronRight,
+  MapPin,
+  MessageCircle,
+  MoveLeft,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { TabButton } from "@/components/tab-button";
 import {
@@ -58,7 +64,7 @@ export function PropertyCarousel() {
   }, [activeTab, emblaApi]);
 
   return (
-    <section className="py-42  bg-gradient-to-b from-black via-gray-900 to-gray-800 text-gray-100">
+    <section className="py-42  bg-gradient-to-b from-black via-black/70 to-black text-gray-100">
       <div className="mx-60 px-4 max-w-8xl ">
         {/* Tab Navigation */}
         <div className="flex justify-center mb-16">
@@ -166,16 +172,15 @@ export function PropertyCarousel() {
                 variant="outline"
                 onClick={scrollPrev}
                 className="
-                w-14 h-14 
-                flex items-center justify-center 
-                border-2 border-yellow-500 
-                text-yellow-500 
-                hover:bg-yellow-500 hover:text-white 
-                font-bold 
-                rounded-lg 
-                shadow-md 
-                transition duration-300
-              "
+        w-14 h-14 
+        flex items-center justify-center 
+        border-2 border-white 
+        text-black 
+        hover:bg-white hover:text-[#030E27] 
+        rounded-lg 
+        shadow-md 
+        transition-colors duration-300
+      "
               >
                 <ChevronLeft className="w-8 h-8" />
               </Button>
@@ -185,16 +190,15 @@ export function PropertyCarousel() {
                 variant="outline"
                 onClick={scrollNext}
                 className="
-                w-14 h-14 
-                flex items-center justify-center 
-                border-2 border-yellow-500 
-                text-yellow-500 
-                hover:bg-yellow-500 hover:text-white 
-                font-bold 
-                rounded-lg 
-                shadow-md 
-                transition duration-300
-              "
+        w-14 h-14 
+        flex items-center justify-center 
+        border-2 border-white 
+        text-black 
+        hover:bg-white hover:text-[#030E27] 
+        rounded-lg 
+        shadow-md 
+        transition-colors duration-300
+      "
               >
                 <ChevronRight className="w-8 h-8" />
               </Button>

@@ -10,6 +10,12 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { PT_Serif } from "next/font/google";
+
+const PTSerif = PT_Serif({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
 
 interface HeroSectionProps {
   videoUrl?: string;
@@ -21,8 +27,8 @@ interface HeroSectionProps {
 export function HeroSection({
   videoUrl,
   imageUrl,
-  heading = "START THEIR JOURNEY",
-  subheading = "WHERE YOUR DREAMS",
+  heading,
+  subheading = "WHERE YOUR HOME",
 }: HeroSectionProps) {
   return (
     <section className="relative h-[90vh] overflow-hidden">
@@ -49,20 +55,19 @@ export function HeroSection({
       )}
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/0 via-black/30 to-black " />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/0 via-black/30 to-black" />
 
       {/* Content */}
       <div className="relative z-10 flex items-center justify-center h-full">
-        <div className="text-center text-white max-w-4xl px-4 font-cinzel pt-16">
-          <p className="text-lg mb-4 tracking-wider font-cinzel">
+        <div className="text-center text-white max-w-4xl px-4 pt-16">
+          <p className="text-2xl font-serif font-semibold mb-4 tracking-wider">
             {subheading}
           </p>
-          <h1 className="text-5xl md:text-7xl font-light mb-8 leading-tight font-cinzel">
-            {heading}
+          <h1
+            className={`${PTSerif.className} text-4xl md:text-7xl mb-8 leading-tight`}
+          >
+            {heading || "JOURNEY BEGINS"}
           </h1>
-          <p className="text-xl mb-12 opacity-90 font-poppins">
-            Explore premium properties across the city with our expert guidance
-          </p>
 
           {/* Search Bar */}
           <div className="bg-white/95 backdrop-blur-sm rounded-lg p-6 max-w-4xl mx-auto">
@@ -88,8 +93,8 @@ export function HeroSection({
                 </SelectTrigger>
                 <SelectContent className="text-black">
                   <SelectItem value="under-50">Under ₹50L</SelectItem>
-                  <SelectItem value="50-1cr">₹50L - ₹1Cr</SelectItem>
-                  <SelectItem value="1-2cr">₹1Cr - ₹2Cr</SelectItem>
+                  <SelectItem value="50-1cr">₹50L – ₹1Cr</SelectItem>
+                  <SelectItem value="1-2cr">₹1Cr – ₹2Cr</SelectItem>
                   <SelectItem value="above-2cr">Above ₹2Cr</SelectItem>
                 </SelectContent>
               </Select>
