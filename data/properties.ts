@@ -156,7 +156,153 @@ export const properties: Property[] = [
     search: ["Sector 59", "gurugram", "gurgaon", "Paras The Florett Enclave"],
     category: "residential",
     image: "/assets/residential/paras-the-florett-enclave-thumbnail"
-  }
+  },
+  {
+  id: "19",
+  title: "Ameya Sapphire 57",
+  location: "Sector 57, Gurugram, Gurgaon",
+  search: ["Sector 57", "gurugram", "gurgaon", "Ameya Sapphire 57"],
+  category: "commercial",
+  image: "/assets/commercial/ameya-sapphire-57-thumbnail"
+},
+{
+  id: "20",
+  title: "DLF Club Arcade",
+  location: "Sector 91, Gurugram, Gurgaon",
+  search: ["Sector 91", "gurugram", "gurgaon", "DLF Club Arcade"],
+  category: "commercial",
+  image: "/assets/commercial/dlf-club-arcade-thumbnail"
+},
+{
+  id: "21",
+  title: "AIPL Joy District",
+  location: "Sector 88, Gurugram, Gurgaon",
+  search: ["Sector 88", "gurugram", "gurgaon", "AIPL Joy District"],
+  category: "commercial",
+  image: "/assets/commercial/aipl-joy-district-thumbnail"
+},
+{
+  id: "22",
+  title: "M3M Route 65",
+  location: "Sector 65, Gurugram, Gurgaon",
+  search: ["Sector 65", "gurugram", "gurgaon", "M3M Route 65"],
+  category: "commercial",
+  image: "/assets/commercial/m3m-route-65-thumbnail"
+},
+{
+  id: "23",
+  title: "Suncity The Empire",
+  location: "Sector 43, Gurugram, Gurgaon",
+  search: ["Sector 43", "gurugram", "gurgaon", "Suncity The Empire"],
+  category: "commercial",
+  image: "/assets/commercial/suncity-the-empire-thumbnail"
+},
+{
+  id: "24",
+  title: "Magnum Global Park Gurgaon",
+  location: "Sector 58, Gurugram, Gurgaon",
+  search: ["Sector 58", "gurugram", "gurgaon", "Magnum Global Park Gurgaon"],
+  category: "commercial",
+  image: "/assets/commercial/magnum-global-park-gurgaon-thumbnail"
+},
+{
+  id: "25",
+  title: "Elan Imperial",
+  location: "Sector 82, Gurugram, Gurgaon",
+  search: ["Sector 82", "gurugram", "gurgaon", "Elan Imperial"],
+  category: "commercial",
+  image: "/assets/commercial/elan-imperial-thumbnail"
+},
+{
+  id: "26",
+  title: "Elan The Mark",
+  location: "Sector 106, Dwarka Expressway, Gurugram, Gurgaon",
+  search: ["Sector 106", "Dwarka Expressway", "gurugram", "gurgaon", "Elan The Mark"],
+  category: "commercial",
+  image: "/assets/commercial/elan-the-mark-thumbnail"
+},
+{
+  id: "27",
+  title: "M3M Paragon 57",
+  location: "Sector 57, Gurugram, Gurgaon",
+  search: ["Sector 57", "gurugram", "gurgaon", "M3M Paragon 57"],
+  category: "commercial",
+  image: "/assets/commercial/m3m-paragon-57-thumbnail"
+},
+{
+  id: "28",
+  title: "M3M Jewel",
+  location: "Sector 25, MG Road, Gurugram, Gurgaon",
+  search: ["Sector 25", "MG Road", "gurugram", "gurgaon", "M3M Jewel"],
+  category: "commercial",
+  image: "/assets/commercial/m3m-jewel-thumbnail"
+},
+{
+  id: "29",
+  title: "M3M Cosmopolitan",
+  location: "Sector 66, Golf Course Ext Road, Gurugram, Gurgaon",
+  search: ["Sector 66", "Golf Course Ext Road", "gurugram", "gurgaon", "M3M Cosmopolitan"],
+  category: "commercial",
+  image: "/assets/commercial/m3m-cosmopolitan-thumbnail"
+},
+{
+  id: "30",
+  title: "M3M Tee Point",
+  location: "Sector 66, Gurugram, Gurgaon",
+  search: ["Sector 66", "gurugram", "gurgaon", "M3M Tee Point"],
+  category: "commercial",
+  image: "/assets/commercial/m3m-tee-point-thumbnail"
+},
+{
+  id: "31",
+  title: "M3M Urbana Premium",
+  location: "Sector 67, Gurugram, Gurgaon",
+  search: ["Sector 67", "gurugram", "gurgaon", "M3M Urbana Premium"],
+  category: "commercial",
+  image: "/assets/commercial/m3m-urbana-premium-thumbnail"
+},
+{
+  id: "32",
+  title: "M3M Corner Walk",
+  location: "Sector 74, Gurugram, Gurgaon",
+  search: ["Sector 74", "gurugram", "gurgaon", "M3M Corner Walk"],
+  category: "commercial",
+  image: "/assets/commercial/m3m-corner-walk-thumbnail"
+},
+{
+  id: "33",
+  title: "M3M Food Nation",
+  location: "Sector 65, Golf Course Ext Road, Gurugram, Gurgaon",
+  search: ["Sector 65", "Golf Course Ext Road", "gurugram", "gurgaon", "M3M Food Nation"],
+  category: "commercial",
+  image: "/assets/commercial/m3m-food-nation-thumbnail"
+},
+{
+  id: "34",
+  title: "M3M International Financial Center",
+  location: "Sector 66, Golf Course Ext Road, Gurugram, Gurgaon",
+  search: ["Sector 66", "Golf Course Ext Road", "gurugram", "gurgaon", "M3M International Financial Center"],
+  category: "commercial",
+  image: "/assets/commercial/m3m-international-financial-center-thumbnail"
+},
+{
+  id: "35",
+  title: "M3M Service Apartments",
+  location: "Sector 67, Golf Course Ext Road, Gurugram, Gurgaon",
+  search: ["Sector 67", "Golf Course Ext Road", "gurugram", "gurgaon", "M3M Service Apartments"],
+  category: "commercial",
+  image: "/assets/commercial/m3m-service-apartments-thumbnail"
+},
+{
+  id: "36",
+  title: "M3M Prive 73",
+  location: "Sector 73, Gurugram, Gurgaon",
+  search: ["Sector 73", "gurugram", "gurgaon", "M3M Prive 73"],
+  category: "commercial",
+  image: "/assets/commercial/m3m-prive-73-thumbnail"
+}
+
+
 
 
   // {
