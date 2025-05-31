@@ -5,10 +5,9 @@ import { properties } from "../data/properties"; // Adjust path if needed
 
 const locations = [
   "Golf Course Ext Road",
-  "Sothern Pheripery Road",
+  "M 3 M",
   "Dwarka Expressway",
-  "Golf Course Road",
-  "New Gurgaon",
+  "Gurgaon",
 ];
 
 const PropertyCarousel = () => {
