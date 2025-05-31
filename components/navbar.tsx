@@ -10,7 +10,7 @@ import useEnquiryStore from "@/store/store";
 const navItems = [
   { label: "Commercial", href: "/commercial" },
   { label: "Residential", href: "/residential" },
-  { label: "Plots", href: "/plots" },
+  { label: "Plots", href: "/plot" },
   { label: "Rent", href: "/rent" },
   { label: "Resale", href: "/resale" },
   { label: "About Us", href: "/about" },

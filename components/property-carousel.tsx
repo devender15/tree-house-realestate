@@ -212,7 +212,7 @@ export function PropertyCarousel() {
             </div>
 
             <div className="text-sm text-gray-400 font-semibold tracking-wide">
-              {selectedIndex + 1} / {scrollSnaps.length}
+              {selectedIndex + 1}
             </div>
           </div>
         </div>
