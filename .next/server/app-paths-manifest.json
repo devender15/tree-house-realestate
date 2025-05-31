@@ -1,7 +1,0 @@
-{
-  "/_not-found/page": "app/_not-found/page.js",
-  "/commercial/page": "app/commercial/page.js",
-  "/page": "app/page.js",
-  "/rent/page": "app/rent/page.js",
-  "/residential/page": "app/residential/page.js"
-}
