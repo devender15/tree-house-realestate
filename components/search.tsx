@@ -27,11 +27,11 @@ const SearchBar = () => {
   };
 
   return (
-    <div className="bg-white/90 backdrop-blur-md rounded-xl shadow-md p-4 sm:p-6 max-w-5xl mx-auto">
-      <div className="flex flex-col md:flex-row gap-4 items-center">
-        <div className="w-full md:w-1/4">
+    <div className="bg-white/90 backdrop-blur-md rounded-2xl shadow-lg border p-4 sm:p-6 mx-auto w-full max-w-7xl">
+      <div className="flex flex-col gap-4 md:flex-row md:items-center">
+        <div className="w-full md:w-[20%] min-w-[180px]">
           <Select onValueChange={setPropertyType}>
-            <SelectTrigger className="h-12 font-medium text-black w-full border">
+            <SelectTrigger className="h-12 font-medium text-black w-full border rounded-md">
               <SelectValue placeholder="Property Type" />
             </SelectTrigger>
             <SelectContent>
@@ -43,18 +43,20 @@ const SearchBar = () => {
           </Select>
         </div>
 
-        <div className="w-full md:flex-1">
+        {/* Search Input */}
+        <div className="flex-1 w-full">
           <Input
             placeholder="Location, Project, or Builder"
-            className="h-12 text-black w-full border font-normal"
+            className="h-12 text-black w-full border rounded-md font-normal"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
           />
         </div>
 
+        {/* Search Button */}
         <div className="w-full md:w-auto">
           <Button
-            className="w-full h-12 bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 rounded-md transition"
+            className="w-full md:w-auto h-12 bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 rounded-md transition"
             onClick={handleSearch}
           >
             Search Properties
