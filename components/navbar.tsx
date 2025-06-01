@@ -6,6 +6,7 @@ import { Phone, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useScroll } from "@/hooks/use-scroll";
 import useEnquiryStore from "@/store/store";
+import Image from "next/image";
 
 const navItems = [
   { label: "Commercial", href: "/commercial" },
@@ -33,13 +34,16 @@ export default function Navbar() {
             : "bg-transparent"
         }`}
       >
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 py-3 flex items-center justify-between">
+        <div className="mx-auto px-6 lg:px-20 py-3 flex items-center justify-between">
           {/* LOGO */}
           <Link
             href="/"
-            className="text-2xl lg:text-3xl font-black tracking-wide font-mono text-white"
+            className=" flex items-center lg:text-3xl font-black tracking-wide font-mono text-white"
           >
-            TREE<span className="text-orange-400">HOUSE</span>
+            <Image src={"/assets/logo.png"} alt="Logo" width={70} height={70} />
+            <span className="text-3xl">
+              TREE<span className="text-orange-400">HOUSE</span>
+            </span>
           </Link>
 
           {/* DESKTOP NAV */}
@@ -48,7 +52,7 @@ export default function Navbar() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="relative text-sm uppercase font-semibold tracking-wider text-white/80 hover:text-orange-400 transition-colors duration-200 group"
+                className="relative text-md uppercase font-semibold tracking-wider text-white/80 hover:text-orange-400 transition-colors duration-200 group"
               >
                 {item.label}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-orange-400 transition-all group-hover:w-full" />
@@ -57,18 +61,24 @@ export default function Navbar() {
           </nav>
 
           {/* PHONE + ENQUIRE + MOBILE MENU */}
-          <div className="flex items-center gap-4">
-            <div className="hidden lg:flex items-center gap-2 text-sm text-white/80 font-medium">
-              <Phone className="w-4 h-4 text-orange-400" />
-              <span className="tracking-wide">+91-9999999999</span>
-            </div>
-
-            <Button
-              onClick={() => setEnquiry(true)}
-              className="bg-orange-500 hover:bg-orange-600 text-white rounded-full px-5 py-2 text-sm font-semibold shadow-lg transition-all"
+          <div className="flex items-center gap-10 ">
+            <a
+              href="https://wa.me/919509594949"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden lg:flex items-center gap-2 text-md text-white/80 font-medium"
             >
-              enquire now
-            </Button>
+              <Phone className="w-6 h-6 text-orange-400" />
+              <span className="text-lg">+91 9509594949</span>
+            </a>
+
+            <Link
+              href={'/enquiry'}
+              onClick={() => setEnquiry(true)}
+              className="bg-orange-500 hover:bg-orange-600 text-white rounded-full px-6 py-3 text-lg font-bold  transition-all cursor-pointer "
+            >
+              Enquire Now
+            </Link>
 
             {/* HAMBURGER */}
             <Button

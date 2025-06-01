@@ -4,10 +4,11 @@ import React, { useState, useEffect } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import PropertyCard from "./propertyCard"; // Adjust path as needed
 import { properties } from "../data/properties"; // Adjust path as needed
+import Image from "next/image";
 
 const locations = [
   "Golf Course Ext Road",
-  "M 3 M",
+  "M3M",
   "Dwarka Expressway",
   "Gurgaon",
 ];
@@ -33,9 +34,9 @@ const PropertyCarousel = () => {
   }, [filteredProperties, emblaApi]);
 
   return (
-    <section className=" bg-white text-orange-700">
+    <section className=" bg-white text-orange-400">
       {/* Title */}
-      <h2 className="text-center text-6xl font-serif font-semibold mb-12 text-orange-700">
+      <h2 className="text-center text-6xl font-serif font-semibold mb-12 text-orange-500">
         LOCATIONS
       </h2>
 
@@ -46,11 +47,11 @@ const PropertyCarousel = () => {
             key={location}
             onClick={() => setSelectedLocation(location)}
             className={`
-              px-5 py-3 text-lg rounded-full transition duration-300 ease-in-out font-semibold
+              px-5 py-3 text-lg cursor-pointer rounded-full transition duration-300 ease-in-out font-semibold
               ${
                 selectedLocation === location
-                  ? " bg-orange-600 text-white shadow-lg"
-                  : "border border-orange-300 bg-white text-orange-600 hover:bg-orange-600 hover:text-white"
+                  ? " bg-orange-400 text-white shadow-lg"
+                  : "border border-orange-500 bg-white text-orange-500 hover:bg-orange-400 hover:text-white"
               }
             `}
           >
@@ -89,13 +90,15 @@ const PropertyCarousel = () => {
       </div>
 
       {/* Following Image + Text Block */}
-      <div className="text-orange-700 py-20 my-20 max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+      <div className="text-orange-700 py-20 my-20 max-w-7xl mx-auto  grid md:grid-cols-2 gap-16 items-center">
         {/* IMAGE BLOCK */}
-        <div className="w-full h-[600px] bg-orange-50 rounded-lg shadow-lg flex items-center justify-center overflow-hidden">
+        <div className="w-full h-[500px] border-2 rounded-md shadow-md flex items-center justify-center overflow-hidden" >
           <div className="relative w-full h-full">
-            <img
-              src="/assets/aboutThumb.png"
+            <Image
+              src="/assets/location.png"
               alt="About Thumb"
+              width={400}
+              height={300}
               className="object-cover w-full h-full"
             />
           </div>
@@ -103,12 +106,12 @@ const PropertyCarousel = () => {
 
         {/* TEXT BLOCK */}
         <div>
-          <h2 className="text-2xl md:text-3xl font-serif font-semibold mb-6 leading-snug text-orange-700">
+          <h2 className="text-2xl md:text-4xl font-serif font-semibold mb-6 leading-snug text-orange-500">
             EXPLORE LOCATIONS
           </h2>
-          <p className="text-orange-600 mb-8 text-lg leading-relaxed">
+          <p className="text-orange-600 mb-8 text-lg  font-medium leading-relaxed">
             Discover premium real estate locations across Gurgaon and Delhi NCR.
-            Whether you’re searching for residential or commercial properties,
+            Whether you are searching for residential or commercial properties,
             we make your journey seamless and rewarding.
           </p>
 
@@ -125,8 +128,7 @@ const PropertyCarousel = () => {
                 key={location}
                 className="
                   px-6 py-2 rounded-full border border-orange-400 
-                  text-orange-600 hover:border-orange-600 hover:bg-orange-600 hover:text-white
-                  transition duration-300 font-semibold
+                  text-orange-600 transition duration-300 font-semibold
                 "
               >
                 {location}
