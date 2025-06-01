@@ -1,4 +1,5 @@
 import { HeroSection } from "@/components/heroSection";
+import Plots from "@/components/plots";
 
 export default function PlotPage() {
   return (
@@ -8,6 +9,8 @@ export default function PlotPage() {
         heading="PLOTS FOR SALE"
         subheading=""
       />
+
+      <Plots />
     </div>
   );
 }

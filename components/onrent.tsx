@@ -25,6 +25,7 @@ const Rent = () => {
             className="bg-white rounded-lg shadow-md hover:shadow-orange-300/40 transition-shadow border border-orange-200 overflow-hidden"
           >
             <PropertyCard
+              id={property.id}
               title={property.title}
               location={property.location}
               image={property.image}
