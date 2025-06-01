@@ -2530,7 +2530,56 @@ export const properties: Property[] = [
     location: "Sector 65, Gurgaon",
     search: ["Sector 65", "Gurgaon", "Gurugram", "Emerald Hills Plots"],
     category: "plots",
-    image: "/assets/plots/emerald-hills-plots-thumbnail.jpg"
+    image: "/assets/plots/emerald-hills-plots-thumbnail.jpg",
+    details: {
+      overview: {
+        heading: "Emerald Hills Plots: Luxury Residential Plots in Sector 65, Gurgaon",
+        paragraph1: "Emerald Hills Plots offer a classic blend of luxury and privacy, allowing you to build your dream villa in a secure, master-planned community. These limited, exclusive residential plots are available at premium locations in Sector 65, Gurgaon, with plot areas starting from 350 sq. yd. and going up to 1138 sq. yd.",
+        paragraph2: "Residents benefit from developed plots with all infrastructure in place, including electricity, water, and drainage. The community features landscaped parks, streetlights, fountains, water bodies, and a range of recreational facilities such as a clubhouse, spa, gym, health club, sports amenities, royal jacuzzi, and swimming pool. The township is designed to foster a vibrant community while offering the ultimate luxury of customizing your villa and interiors."
+      },
+      features: [
+        "Limited exclusive residential plots from 350 to 1138 sq. yd.",
+        "Located in Sector 65, Golf Course Extension Road, Gurgaon",
+        "Secure, gated master-planned community",
+        "Developed plots with electric, water, and drainage facilities",
+        "Landscaped parks, streetlights, fountains, and water bodies",
+        "Clubhouse with health club, restaurants, party hall, and lawns",
+        "Neighborhood shopping arcade with convenient retail",
+      ],
+      specifications: {
+        heading: "Emerald Hills Plots Amenities & Facilities",
+        paragraph1: "Emerald Hills Plots are part of a thoughtfully designed township that integrates outdoor living and recreation into the community’s architecture. The design ensures that children’s play areas, clubhouses, and sports facilities are easily accessible and safe.",
+        paragraph2: "Innovative use of space includes clubhouses with bowling alleys and gyms, skating rinks or basketball courts atop multi-level parking, and badminton courts at lower levels. The focus is on creating environments where residents can thrive and take pride in their homes for generations.",
+        highlights: [
+          "Located in Sector 65, Golf Course Extension Road, Gurgaon",
+          "Part of a secure, gated master-planned community",
+          "100% power back-up",
+          "Modern street lighting and landscaping",
+          "Landscaped parks and greens",
+          "Clubhouse with health club, restaurants, party hall, and lawns",
+          "Sports facilities: tennis courts, swimming pool, etc.",
+          "Neighborhood shopping arcade",
+          "Facility management services"
+        ]
+      },
+      location_advantage: {
+        heading: "Prime Location and Connectivity",
+        paragraph1: "Emerald Hills Plots are ideally situated in Sector 65, offering the conveniences of city living with easy access to the airport, metro rail, and expressways, while providing a retreat-like environment.",
+        highlights: [
+          "Located in Sector 65, Golf Course Extension Road",
+          "Easy access to airport, metro rail, and expressways",
+          "Close to city conveniences, malls, and entertainment centers",
+          "Retreat-like environment with community living"
+        ]
+      },
+      about_developer: {
+        logo: "/assets/developers/emaar-india-logo.jpg",
+        heading: "Developer Name : Emaar India",
+        paragraph1: "Since entering the Indian real estate market in 2005, Emaar India has become renowned for developing iconic and luxurious properties around Gurgaon. Headquartered in Gurgaon, the company boasts a diverse portfolio of residential and commercial projects, earning a reputation as one of the leading real estate developers in the region.",
+        paragraph2: "Emaar India’s residential projects are known for their luxury, innovative design, and modern amenities, while their commercial developments are recognized for their strategic locations and contemporary architecture. The company’s commitment to customer satisfaction and continuous innovation has established it as a trusted name in the real estate sector.",
+        conclusion: "Emaar Group continues to set benchmarks in the industry, driven by a focus on quality, customer-centricity, and sustainable growth."
+      }
+    }
   },
   {
     id: "46",
@@ -2538,7 +2587,50 @@ export const properties: Property[] = [
     location: "Sector 35, Sohna",
     search: ["Sector 35", "Sohna", "Pyramid Spring Valley Plots", "Gurgaon", "Gurugram"],
     category: "plots",
-    image: "/assets/plots/pyramid-spring-valley-thumbnail.jpg"
+    image: "/assets/plots/pyramid-spring-valley-thumbnail.jpg",
+    details: {
+      overview: {
+        heading: "Pyramid Spring Valley Plots Sohna Road Gurgaon",
+        paragraph1: "Pyramid Spring Valley is a distinctive residential development by Pyramid Infratech under Deen Dayal Jan Awas Yojna (DDJAY), located in Sector 35, Sohna, Gurugram. This RERA-registered project blends modern architecture with premium amenities to offer a comfortable and peaceful living environment. Spread across 9.06 acres, the township features 162 units and is designed with Stilt + 4 Floors layout plots, allowing individual registry for each plot. Residents enjoy lush greenery, scenic landscapes, and a tranquil setting that is close enough to the city for connectivity, yet far enough to escape the urban rush.",
+        paragraph2: "The project combines luxury and tranquility, providing exclusive amenities for a relaxing lifestyle. With extensive flora and fauna, Pyramid Spring Valley ensures a cleaner, fresher environment. Sustainable features like sewage water recycling and rainwater harvesting are integrated, and the township offers excellent connectivity to all major cities in Delhi NCR. Residents benefit from a modern lifestyle seamlessly integrated with natural surroundings, including a recreational club, meditation lawn, badminton court, and more."
+      },
+      features: [
+        "Stilt + 4 Floors layout plots with individual registry",
+        "Lush greenery and scenic landscapes",
+        "Modern architecture and premium amenities",
+        "Sustainable development with sewage and rainwater recycling",
+        "Recreational club, meditation lawn, and badminton court",
+        "Close proximity to city yet peaceful environment"
+      ],
+      specifications: {
+        heading: "Pyramid Spring Valley Project Highlights",
+        paragraph1: "Pyramid Spring Valley is thoughtfully planned to provide a blend of comfort, sustainability, and modern living. The project is RERA-registered (No. 42 of 2019) and licensed (LC-3852A) under DDJAY, with possession of plots expected within 2 years. Over 1 acre is dedicated to green landscape, and the township includes 162 units ranging from 105 to 138 sq. yd. Stilt parking, balconies, and other FAR-free areas are authorized as per certified plans.",
+        paragraph2: "The project is designed to promote a healthy lifestyle with amenities such as a classical themed garden, jogging track, and rainwater harvesting. Residents benefit from a secure, well-planned environment with all essential facilities in place.",
+        highlights: [
+          "Spread over 9.0625 acres with lush greenery",
+          "162 units with plot sizes from 105 to 138 sq. yd.",
+          "RERA-registered (No. 42 of 2019), License No. LC-3852A",
+          "Allotted under Deen Dayal Jan Awas Yojna (DDJAY)",
+          "Stilt + 4 Floors permitted with individual registry",
+          "Possession within 2 years",
+          "Over 1 acre dedicated to green landscape"
+        ]
+      },
+      location_advantage: {
+        heading: "Prime Location and Connectivity",
+        paragraph1: "Pyramid Spring Valley enjoys a strategic location in Sector 35, Sohna, offering excellent connectivity to major cities in Delhi NCR. The township is close enough to the city for convenience, yet far enough to provide a peaceful, stress-free environment.",
+        paragraph2: "Residents benefit from proximity to key roadways, ensuring easy commutes and access to business hubs, leisure destinations, and essential services.",
+        highlights: [
+          "Located in Sector 35, Sohna, Gurugram",
+          "Excellent connectivity to Delhi NCR",
+          "Close to major highways and urban centers"
+        ]
+      },
+      about_developer: {
+        logo: "/assets/developers/pyramid-infratech-logo.jpeg",
+        heading: "Developer Name : Pyramid Infratech"
+      }
+    }
   },
   {
     id: "47",
@@ -2546,7 +2638,56 @@ export const properties: Property[] = [
     location: "Sector 67, Gurgaon",
     search: ["Sector 67", "Gurgaon", "Gurugram", "Ansal Versalia Plots"],
     category: "plots",
-    image: "/assets/plots/ansal-versalia-thumbnail.jpg"
+    image: "/assets/plots/ansal-versalia-thumbnail.jpg",
+    details: {
+      overview: {
+        heading: "Ansal Versalia Gurgaon – Welcome to the Treasure of Community",
+        paragraph1: "Ansal Versalia is an ultra-luxurious gated community in Sector 67, Gurgaon, presented by Ansal API after the grand success of Ansal Esencia. This premium township offers harmonized living amidst a wealth of amenities, set across expansive acres adjacent to the renowned Esencia green township. Designed for those who appreciate opulence and tranquility, Versalia features residential plots, mansions, villas, and independent floors, all surrounded by lush green landscapes and theme-based parks.",
+        paragraph2: "Residents enjoy a blend of suburban serenity and urban convenience, with lavish indoor and outdoor spaces, a central park, sports and medical facilities, schools, and shopping centers all within walking distance. The master-planned community is characterized by low-rise development, open horizons, and a lifestyle rich in leisure and connectivity, making it an ideal place to settle down, raise a family, or invest in independent plots."
+      },
+      features: [
+        "Ultra-luxurious low-rise gated township",
+        "Residential plots, mansions, villas, and independent floors",
+        "Lavish indoor and outdoor spaces",
+        "Central park and multiple theme-based gardens",
+        "Sports facilities, medical facilities, and school within the township",
+        "Shopping center at walkable distance",
+        "Wide open horizons and low-rise development",
+        "Master-planned community with a focus on lifestyle and convenience"
+      ],
+      specifications: {
+        heading: "Ansal Versalia Plot Sizes and Amenities",
+        paragraph1: "Ansal Versalia offers a diverse range of plot sizes to cater to various housing needs, ensuring a comfortable and abundant living experience for all residents.",
+        paragraph2: "The township is equipped with modern amenities and facilities, including a clubhouse with a swimming pool, landscaped gardens, kids' play area, multipurpose hall, ample car parking, and round-the-clock security.",
+        highlights: [
+          "Plot sizes: 60, 66, 182, 251, 269, 299, 329, 350, 374, 419, 478, 502, 598, 1005, 1124, and 1195 sq. yd.",
+          "Clubhouse amenities with swimming pool",
+          "Landscaped and theme gardens",
+          "Kids' play area and multipurpose hall",
+          "Ample car parking",
+          "24/7 security"
+        ]
+      },
+      location_advantage: {
+        heading: "Ansal Versalia Comfort, Convenience, Connection",
+        paragraph1: "Ansal Versalia stands as proof that you truly can have it all—location, style, and quality. The township is adjacent to the fully developed Esencia township, offering residents the convenience of city living with the belonging of a close-knit community.",
+        paragraph2: "Its strategic location ensures easy access to major destinations, making daily commutes and access to essential services seamless.",
+        highlights: [
+          "Adjacent to Ansal Esencia, Sector 67, Gurgaon",
+          "15 minutes from Iffco Chowk",
+          "20 minutes from Delhi",
+          "30 minutes from IGI Airport",
+          "Close proximity to Medicity, malls, and schools"
+        ]
+      },
+      about_developer: {
+        logo: "/assets/developers/ansal-api-logo.jpeg",
+        heading: "Developer Name : Ansal API",
+        paragraph1: "Ansal API is a renowned real estate developer with a legacy of delivering high-quality residential and commercial projects in Gurgaon and beyond. The company is committed to excellence, innovation, and customer satisfaction, ensuring that every development meets the highest standards of construction and design.",
+        paragraph2: "When choosing a real estate developer, it is important to conduct thorough research, assess past projects, and ensure the developer provides financial support and excellent connectivity. Ansal API stands out for its proven track record, strategic locations, and commitment to creating vibrant communities.",
+        conclusion: "Investing in Ansal Versalia Plots is a rewarding opportunity for those seeking exceptional construction quality, advantageous connectivity, and a central location in Gurgaon."
+      }
+    }
   },
   {
     id: "48",
@@ -2554,7 +2695,52 @@ export const properties: Property[] = [
     location: "Sector 67, Gurgaon",
     search: ["Sector 67", "Gurgaon", "Gurugram", "Ansal Esencia Plots"],
     category: "plots",
-    image: "/assets/plots/ansal-esencia-thumbnail.jpg"
+    image: "/assets/plots/ansal-esencia-thumbnail.jpg",
+    details: {
+      overview: {
+        heading: "Ansal Esencia Plots Gurgaon – Luxury of Independent Plots with Villa Lifestyle and Gated Security",
+        paragraph1: "Ansal Esencia is a residential township by Ansal API in Sector 67, Golf Course Extension Road, Gurgaon. As the first true green township of Gurgaon and a certified GRIHA development, Esencia offers premium independent floors and residential plots surrounded by eight theme-based parks across 142 acres of lush greenery. The township is designed to transcend ordinary definitions of luxury, blending the comfort of independent plots with the lifestyle of a villa and the security of a vibrant, gated community.",
+        paragraph2: "Residents enjoy a complete lifestyle with peace of mind, knowing they are part of a development that caters to every need and fancy. Whether you seek a home away from the city or suburban serenity, Esencia provides a gratifying living experience, with options ranging from fully furnished villas to plots for building your dream home."
+      },
+      features: [
+        "Certified GRIHA green township",
+        "Premium independent floors and residential plots",
+        "Eight theme-based parks in 142 acres of greenery",
+        "Gated community with vibrant, active lifestyle",
+        "Options for fully furnished villas or custom-built homes",
+        "Microgreen environment with all modern luxuries and amenities"
+      ],
+      specifications: {
+        heading: "Ansal Esencia Plot Sizes and Amenities",
+        paragraph1: "Esencia offers a variety of plot sizes to suit different needs, starting from 60 sq. yd. (EWS category) and ranging up to 1195 sq. yd. The township is a self-contained unit with everything you need, including nature zones, gardens, and recreational spaces.",
+        paragraph2: "Inspired by nature, the community features a green landscape, water features, and vibrant gardens, creating an oasis of tranquility and color.",
+        highlights: [
+          "Plot sizes: 60 (EWS), 251, 299, 350, 419, 502, 1005, 1124, 1195 sq. yd.",
+          "Nature Zone with Flower Garden, Water Garden, Amphitheater, Sports Garden, General Amenity Garden",
+          "Lush green parks and verdant alcoves",
+          "Whispering water features and vibrant landscaping"
+        ]
+      },
+      location_advantage: {
+        heading: "Ansal Esencia Comfort, Convenience, Connection",
+        paragraph1: "Ansal Esencia stands as proof that you can have it all—location, style, and quality. The township is adjacent to M3M Merlin and Ireo Victory Valley, offering life in harmony with its surroundings.",
+        paragraph2: "Its prime location ensures easy access to major destinations and essential services, making daily life convenient and connected.",
+        highlights: [
+          "Adjacent to M3M Merlin and Ireo Victory Valley",
+          "15 minutes from Iffco Chowk",
+          "20 minutes from Delhi",
+          "30 minutes from IGI Airport",
+          "Close proximity to Medicity, malls, and schools"
+        ]
+      },
+      about_developer: {
+        logo: "/assets/developers/ansal-api-logo.jpeg",
+        heading: "Developer Name : Ansal API",
+        paragraph1: "Ansal API is a leading real estate developer with a strong reputation for delivering high-quality residential and commercial projects in Gurgaon and beyond. The company is committed to excellence, innovation, and customer satisfaction, ensuring every development meets the highest standards.",
+        paragraph2: "When choosing a real estate developer, it is important to conduct thorough research, review past projects, and ensure the developer offers financial support and excellent connectivity. Ansal API is recognized for its proven track record, strategic locations, and vibrant communities.",
+        conclusion: "Investing in Ansal Esencia Plots is a rewarding opportunity for those seeking exceptional construction quality, prime connectivity, and a central location in Gurgaon."
+      }
+    }
   },
   {
     id: "49",
@@ -2562,7 +2748,53 @@ export const properties: Property[] = [
     location: "Sector 63/65, Golf Course Ext Road",
     search: ["Sector 63", "Sector 65", "Golf Course Ext Road", "Gurgaon", "Gurugram", "Adani Brahma Plots Gurgaon"],
     category: "plots",
-    image: "/assets/plots/adani-brahma-plots-thumbnail.jpg"
+    image: "/assets/plots/adani-brahma-plots-thumbnail.jpg",
+    details: {
+      overview: {
+        heading: "Adani Brahma Plots Gurgaon",
+        paragraph1: "Adani Brahma Realty presents luxurious residential plots in Sector 65, Golf Course Extension Road, Gurgaon, adjacent to Emerald Hills. This low-rise, gated township offers a blend of outdoor and indoor spaces, a central park, sports and medical facilities, a school, and a shopping center—all within walking distance. The master-planned community is designed for a lifestyle of convenience, with wide open horizons and only low-rise development, allowing residents to enjoy clear views and a serene environment.",
+        paragraph2: "Adani Brahma Plots stand as proof that you can truly have it all—location, style, and quality. The township is crafted to provide a life of sheer convenience in a vibrant, community-rich setting, where leisure and retail are always close at hand."
+      },
+      features: [
+        "Luxurious low-rise gated plots township",
+        "Central park and landscaped green areas",
+        "Sports facilities, medical facilities, and school within the township",
+        "Shopping center at walkable distance",
+        "Wide open horizons with only low-rise development",
+        "Master-planned community for a balanced lifestyle",
+        "Limited plots available"
+      ],
+      specifications: {
+        heading: "Adani Brahma Plots Specifications",
+        paragraph1: "Adani Brahma Plots offer a range of plot sizes to suit different needs, with sizes approximately from 270, 300 up to 500 sq. yd. The township is adjacent to the fully developed Emerald Hills Plots and is equipped with all modern amenities expected in a premium development.",
+        highlights: [
+          "Plot sizes: 270, 300, 500 sq. yd. (approximate)",
+          "Gated community with power backup and underground lighting",
+          "Central park and green spaces",
+          "Sports and recreational facilities",
+          "Medical and educational facilities within the township",
+          "Shopping center and retail options",
+          "Attractive payment plans available"
+        ]
+      },
+      location_advantage: {
+        heading: "Prime Location and Connectivity",
+        paragraph1: "Adani Brahma Plots enjoy a strategic location in Sector 65, Golf Course Extension Road, Gurgaon, adjacent to Emerald Hills. The township offers excellent connectivity to key destinations, making daily commutes and access to essential services seamless.",
+        highlights: [
+          "Adjacent to Emerald Hills Plots, Sector 65, Gurgaon",
+          "15 minutes from Iffco Chowk",
+          "30 minutes from IGI Airport",
+          "Close proximity to Medicity, malls, and schools"
+        ]
+      },
+      about_developer: {
+        logo: "/assets/developers/adani-realty-logo.jpg",
+        heading: "Developer Name : Adani Realty",
+        paragraph1: "Adani Realty is a leading real estate developer in Gurgaon, renowned for delivering high-quality residential and commercial properties. The company has established a strong reputation for meeting the needs of modern buyers and businesses, with a portfolio that includes premium projects like Adani Oyster Grande, Adani Samsara Floors, and Adani Brahma Samsara Vilasa Floors.",
+        paragraph2: "Adani Realty’s developments are characterized by contemporary design, world-class amenities, and a commitment to customer satisfaction. The company continues to shape the landscape of Gurgaon with innovative projects and a focus on quality.",
+        conclusion: "With a growing portfolio and a reputation for excellence, Adani Realty is set to become synonymous with top-tier real estate development in Gurgaon."
+      }
+    }
   },
   {
     id: "50",
@@ -2570,7 +2802,52 @@ export const properties: Property[] = [
     location: "Sector 63/65, Golf Course Ext Road",
     search: ["Sector 63", "Sector 65", "Golf Course Ext Road", "Gurgaon", "Gurugram", "Adani Plots Gurgaon"],
     category: "plots",
-    image: "/assets/plots/adani-plots-gurgaon-thumbnail.jpg"
+    image: "/assets/plots/adani-plots-gurgaon-thumbnail.jpg",
+    details: {
+      overview: {
+        heading: "Adani Plots Gurgaon – Premium Residential Plots on Golf Course Extension Road",
+        paragraph1: "Adani Realty offers premium residential plots starting from 267 sq. yd. on Golf Course Extension Road, Gurgaon. These plots are part of a gated township with 100% power backup, underground lighting, and lush green parks, providing a secure and modern living environment. The development is ideal for both self-use and rental income, with 66% coverage and 2.64 FAR, and is approved for stilt plus four floors.",
+        paragraph2: "Residents enjoy a better alternative with developed plots in a secure, fully equipped community. The township features landscaped parks, streetlights, fountains, water bodies, and a range of recreational facilities, ensuring a vibrant and comfortable lifestyle for all."
+      },
+      features: [
+        "Plots starting from 267 sq. yd.",
+        "100% power backup",
+        "Modern street lighting and underground wiring",
+        "Gated township with security",
+        "Landscaped parks and green spaces",
+        "Clubhouse with health club, restaurants, party hall, and lawns",
+        "Stilt plus four floor approval with 66% coverage and 2.64 FAR",
+        "Ready infrastructure with electric, water, and drainage facilities"
+      ],
+      specifications: {
+        heading: "Adani Plots Gurgaon – Amenities & Facilities",
+        paragraph1: "The township is designed for a luxurious and secure lifestyle, offering a range of amenities and facilities for residents of all ages.",
+        paragraph2: "Enjoy landscaped parks, a clubhouse with spa, gym, health club, sports facilities, royal jacuzzi, and a swimming pool. The community also features a cineplex, lounge, bar, and restaurant, providing ample opportunities for recreation and socializing.",
+        highlights: [
+          "Landscaped parks, fountains, and water bodies",
+          "Clubhouse with spa, gym, health club, and sports facilities",
+          "Royal jacuzzi and swimming pool",
+          "Cineplex, lounge, bar, and restaurant",
+          "Secure environment with modern infrastructure"
+        ]
+      },
+      location_advantage: {
+        heading: "Prime Location and Connectivity",
+        paragraph1: "Adani Plots Gurgaon is strategically located on Golf Course Extension Road in Sector 63/65, offering excellent connectivity to major business hubs, shopping centers, schools, and hospitals.",
+        highlights: [
+          "Located on Golf Course Extension Road, Sector 63/65, Gurgaon",
+          "Close to business hubs, malls, schools, and hospitals",
+          "Well-connected to Delhi NCR"
+        ]
+      },
+      about_developer: {
+        logo: "/assets/developers/adani-realty-logo.jpg",
+        heading: "Developer Name : Adani Realty",
+        paragraph1: "Adani Realty is a leading real estate developer in Gurgaon, known for delivering high-quality residential and commercial projects. The company has built a strong reputation for meeting the needs of modern buyers and businesses, with a portfolio that includes premium developments like Adani Oyster Grande, Adani Samsara Floors, and Adani Brahma Samsara Vilasa Floors.",
+        paragraph2: "Adani Realty’s projects are characterized by contemporary design, world-class amenities, and a commitment to customer satisfaction. The company continues to shape the landscape of Gurgaon with innovative and quality-driven developments.",
+        conclusion: "With a growing portfolio and a reputation for excellence, Adani Realty is set to become synonymous with top-tier real estate development in Gurgaon."
+      }
+    }
   },
   {
     id: "51",
@@ -2578,7 +2855,52 @@ export const properties: Property[] = [
     location: "Sector 65, Golf Course Ext Road",
     search: ["Sector 65", "Golf Course Ext Road", "Gurgaon", "Gurugram", "Adani Plots Sector 65"],
     category: "plots",
-    image: "/assets/plots/adani-plots-sector-65-thumbnail.jpeg"
+    image: "/assets/plots/adani-plots-sector-65-thumbnail.jpeg",
+    details: {
+      overview: {
+        heading: "Adani Plots Sector 65 Gurgaon",
+        paragraph1: "Adani Realty has launched new residential plots in Sector 65, Golf Course Extension Road, Gurgaon. These plots are part of a secure, gated community with all infrastructure in place, including electric, water, and drainage facilities. The township features landscaped parks, streetlights, fountains, and water bodies, providing a scenic backdrop for recreational amenities such as a clubhouse, spa, gym, health club, sports facilities, royal jacuzzi, and a swimming pool.",
+        paragraph2: "Adani Plots Sector 65 stands as proof that you can have it all—location, style, and quality. The community is designed for comfortable living, privacy, and convenience, with all essential amenities and facilities within easy reach."
+      },
+      features: [
+        "Plots ranging from 270 to 500 sq. yd.",
+        "Gated community with complete infrastructure",
+        "Landscaped parks, streetlights, fountains, and water bodies",
+        "High-tech amenities and privacy-focused design",
+        "Attractive development and down payment plans available"
+      ],
+      specifications: {
+        heading: "Adani Plots Sector 65 – Sizes and Amenities",
+        paragraph1: "The township offers a variety of plot sizes, with options such as 270, 300, and up to 500 sq. yd. (approximate). Residents benefit from a fully developed community with all modern amenities and facilities for a comfortable lifestyle.",
+        paragraph2: "Club membership, IFMS, power backup charges, registration, and stamp duty are applicable as per policy. The development offers an attractive payment plan of approximately 12 months, with a down payment option also available.",
+        highlights: [
+          "Plot sizes: 270–500 sq. yd. (approximate)",
+          "Fully developed gated community",
+          "All infrastructure in place: electric, water, drainage",
+          "Clubhouse, spa, gym, health club, sports facilities",
+          "Royal jacuzzi and swimming pool",
+          "Landscaped parks and green spaces"
+        ]
+      },
+      location_advantage: {
+        heading: "Prime Location and Connectivity",
+        paragraph1: "Adani Plots Sector 65 enjoys a prime location on Golf Course Extension Road, adjacent to the fully developed Emerald Hills Plots. The township offers excellent connectivity to key destinations in Gurgaon and Delhi NCR.",
+        paragraph2: "Residents benefit from proximity to major business hubs, shopping malls, schools, and hospitals, as well as quick access to the airport and city center.",
+        highlights: [
+          "Adjacent to Emerald Hills Plots, Sector 65, Gurgaon",
+          "15 minutes from Iffco Chowk",
+          "30 minutes from IGI Airport",
+          "Close proximity to Medicity, malls, and schools"
+        ]
+      },
+      about_developer: {
+        logo: "/assets/developers/adani-realty-logo.jpg",
+        heading: "Developer Name : Adani Realty",
+        paragraph1: "Adani Realty is a leading real estate developer in Gurgaon, known for delivering high-quality residential and commercial projects. The company has built a strong reputation for meeting the needs of modern buyers and businesses, with a portfolio that includes premium developments like Adani Oyster Grande, Adani Samsara Floors, and Adani Brahma Samsara Vilasa Floors.",
+        paragraph2: "Adani Realty’s projects are characterized by contemporary design, world-class amenities, and a commitment to customer satisfaction. The company continues to shape the landscape of Gurgaon with innovative and quality-driven developments.",
+        conclusion: "With a growing portfolio and a reputation for excellence, Adani Realty is set to become synonymous with top-tier real estate development in Gurgaon."
+      }
+    }
   },
   {
     id: "52",
@@ -2586,7 +2908,61 @@ export const properties: Property[] = [
     location: "Sector 99, Gurgaon",
     search: ["Sector 99", "Uppal G99", "Gurgaon", "Gurugram"],
     category: "plots",
-    image: "/assets/plots/uppal-g99-thumbnail.jpg"
+    image: "/assets/plots/uppal-g99-thumbnail.jpg",
+    details: {
+      overview: {
+        heading: "Uppal G99 Plots, Sector 99, Dwarka Expressway Gurgaon",
+        paragraph1: "Uppal G99 Plots is a premium residential township spread across 106 acres in Sector 99, Gurgaon, along the Dwarka Expressway. This exclusive gated community is designed around expansive green spaces and parks, offering a blend of luxury, privacy, and modern amenities. The project features Spanish-style architecture and provides spacious living options, including luxury villas and plots ranging from 258 to 650 sq. yards.",
+        paragraph2: "Residents enjoy a thoughtfully planned environment with access to schools, nursing homes, commercial areas, and a host of recreational facilities. The township is crafted to the highest design standards, ensuring a lifestyle of comfort and convenience in one of Gurgaon's most sought-after locations."
+      },
+      features: [
+        "106-acre gated residential township",
+        "Spanish-style architecture with luxury villas and plots",
+        "Plots ranging from 258 to 650 sq. yards",
+        "Expansive green spaces and parks",
+        "State-of-the-art clubhouse and gym",
+        "Soccer field, tennis and basketball courts",
+        "Playgrounds and jogging/cycling tracks",
+        "Swimming pool with kids' pool and Jacuzzi",
+        "Billiards and card rooms",
+        "Fine dining restaurant and gourmet coffee shop",
+        "Wide roads and ample parking",
+        "Gated community with security"
+      ],
+      specifications: {
+        heading: "Uppal G99 Plots – Specifications & Amenities",
+        paragraph1: "Uppal G99 Plots offers a comprehensive range of amenities to enhance the living experience. The township is equipped with modern recreational and lifestyle facilities, ensuring residents have everything they need within easy reach.",
+        paragraph2: "",
+        highlights: [
+          "Clubhouse with gym and sports facilities",
+          "Swimming pool and Jacuzzi",
+          "Dedicated spaces for billiards and cards",
+          "Jogging and cycling tracks",
+          "Children’s play areas and landscaped parks",
+          "Wide internal roads and ample parking",
+          "Gated entry with security"
+        ]
+      },
+      location_advantage: {
+        heading: "Prime Location & Connectivity",
+        paragraph1: "Uppal G99 Plots is strategically located on the Dwarka Expressway in Sector 99, Gurgaon, offering excellent connectivity to major destinations in the city and beyond.",
+        paragraph2: "",
+        highlights: [
+          "Located on Dwarka Expressway (Northern Peripheral Road)",
+          "15 minutes from Palam Vihar",
+          "20 minutes to Cyber City and Dwarka",
+          "Close proximity to major business hubs and leisure destinations",
+          "Easy access to Indira Gandhi International Airport"
+        ]
+      },
+      about_developer: {
+        logo: "/assets/developers/uppal-group-logo.jpeg",
+        heading: "Developer Name : Uppal Group & QVC Realty",
+        paragraph1: "Uppal Group is a renowned name in real estate, recognized for delivering luxury and excellence across residential, commercial, and hospitality projects. With over 30 million sq. ft. delivered and projects worth over 5000 crores underway, Uppal Group exemplifies quality and commitment.",
+        paragraph2: "QVC Realty, India's first venture capital-backed real estate company, is known for its dynamic team and innovative approach. Together, Uppal Group and QVC Realty have created landmark developments in Gurgaon and Bangalore, setting new benchmarks in the industry.",
+        conclusion: "Uppal G99 Plots is a testament to the developers’ vision of creating vibrant, well-planned communities that offer a superior living experience."
+      }
+    }
   },
   {
     id: "53",
