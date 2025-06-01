@@ -1,11 +1,8 @@
 import PropertyDetails from "@/components/propertyDetails";
 
-export default async function DetailsPage({
-  params,
-}: {
-  params: { id: string };
-}) {
-  const { id } = await params;
+export default function DetailsPage({ params }: { params: { id: string } }) {
+  const { id } = params;
+
   return (
     <div>
       <PropertyDetails id={id} />

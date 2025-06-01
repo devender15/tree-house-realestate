@@ -23,7 +23,7 @@ export function HeroSection({
   subheading = "WHERE YOUR HOME",
 }: HeroSectionProps) {
   return (
-    <section className="relative h-[90vh] overflow-hidden">
+    <section className="relative h-screen overflow-hidden">
       {/* Background Media */}
       {videoUrl ? (
         <video

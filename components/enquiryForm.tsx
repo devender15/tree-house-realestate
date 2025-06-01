@@ -98,11 +98,11 @@ export default function EnquiryForm() {
       "
     >
       <h1 className="text-2xl sm:text-3xl font-bold mb-4 text-gray-900">
-        What's on your Mind
+        What&apos;s on your Mind
       </h1>
       <p className="text-gray-700 mb-6 text-sm sm:text-base">
-        We’re here to help! Tell us what you’re looking for and we’ll get you
-        connected to the right people.
+        We&apos;re here to help! Tell us what you&apos;re looking for and
+        we&apos;ll get you connected to the right people.
       </p>
 
       {submitted ? (
