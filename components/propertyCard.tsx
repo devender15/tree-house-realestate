@@ -14,13 +14,19 @@ type CardData = {
 
 const PropertyCard = ({ id, title, location, image, category }: CardData) => {
   return (
-    <div className="bg-orange-100/50 rounded-lg shadow-md overflow-hidden">
+    <div
+      className="
+        bg-orange-100/50 rounded shadow-md overflow-hidden
+        lg:min-w-0
+        min-w-[300px]
+      "
+    >
       {/* card image */}
       <div className="relative">
         <Image
           src={image || "/assets/default.jpg"}
           width={600}
-          height={450}
+          height={360}
           alt="property image"
           className="w-full object-cover"
         />
@@ -32,32 +38,32 @@ const PropertyCard = ({ id, title, location, image, category }: CardData) => {
       {/* card content */}
       <div className="p-4">
         <div className="flex justify-between items-center">
-          <h1 className="text-xl font-semibold text-orange-700">
+          <h1 className="text-xl font-semibold text-orange-700 whitespace-nowrap overflow-hidden text-ellipsis">
             {title.toUpperCase()}
           </h1>
         </div>
-        <div className="flex gap-2 text-orange-500 font-light mt-1 items-center">
+        <div className="flex gap-2 text-orange-500 font-light mt-1 items-center whitespace-nowrap overflow-hidden text-ellipsis">
           <MapPinIcon width={18} /> {location}
         </div>
 
         {/* buttons */}
-        <div className="flex gap-2 mt-4">
+        <div className="mt-4 flex flex-wrap lg:flex-wrap gap-2">
           <Link
             href={`/enquiry`}
-            className="px-4 py-1.5 rounded-full bg-orange-600 text-white font-semibold hover:bg-orange-700 transition-colors duration-300"
+            className="px-4 py-1.5 rounded-full bg-orange-600 text-white font-semibold hover:bg-orange-700 transition-colors duration-300 whitespace-nowrap"
           >
             Enquire Now
           </Link>
 
           <Link
             href={`/details/${id}`}
-            className="border border-orange-600 text-orange-600 font-semibold px-4 py-1.5 rounded-full hover:bg-orange-600 hover:text-white transition-colors duration-300"
+            className="border border-orange-600 text-orange-600 font-semibold px-4 py-1.5 rounded-full hover:bg-orange-600 hover:text-white transition-colors duration-300 whitespace-nowrap"
           >
             View Details
           </Link>
 
           <a
-            href="https://wa.me/919509594949"
+            href="https://wa.me/+919811098193"
             target="_blank"
             rel="noopener noreferrer"
             className="rounded-full flex items-center justify-center hover:scale-105 transition-transform duration-200"

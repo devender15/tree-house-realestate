@@ -9,27 +9,31 @@ const Commercial = () => {
 
   useEffect(() => {
     const filtered = properties.filter(
-      (property) => property.category === "commercial"
+      (property) => property?.category === "commercial"
     );
-
-    // If there's a type mismatch, explicitly assert the type
     setCommercialData(filtered as Property[]);
   }, []);
 
   return (
     <section className="bg-gray-100 py-20">
-      <div className="max-w-8xl mx-42 px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div
+        className={`
+          grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-14
+          px-2 lg:mx-42 lg:px-6 lg:gap-8
+          
+        `}
+      >
         {commercialData.map((property) => (
           <div
-            key={property.id}
+            key={property?.id}
             className="bg-white rounded-lg shadow-md hover:shadow-orange-300/40 transition-shadow border border-orange-200 overflow-hidden"
           >
             <PropertyCard
-              id={property.id}
-              title={property.title}
-              location={property.location}
-              image={property.image}
-              category={property.category}
+              id={property?.id}
+              title={property?.title ?? "Untitled"}
+              location={property?.location ?? "Location not specified"}
+              image={property?.image ?? "/fallback.jpg"}
+              category={property?.category ?? "unknown"}
             />
           </div>
         ))}
