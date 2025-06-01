@@ -2064,18 +2064,17 @@ export const properties: Property[] = [
         heading: "Project Highlights & Design",
         paragraph1: "M3M IFC is designed to be a central business and retail hub, with a blend of open and closed spaces, and a master plan that encourages pedestrian movement and visual connectivity with the city. The project is conceptualized by Chapman Taylor, an award-winning international architecture firm.",
         highlights: [
-          "Triple-height retail shops and high-end commercial office spaces",
-          "Gold-rated LEED certification for energy efficiency",
-          "Iconic design and landmark address",
-          "Flexible office and retail layouts",
-          "Terrace seating for restaurants on the second floor",
-          "Premium location on Golf Course Extension Road"
+          "Located on Golf Course Extension Road, directly opposite St. Xaviers School, Gurgaon",
+          "Situated at the intersection of 84-meter Golf Course Extension Road and 60-meter sector road",
+          "Direct connectivity to major roads like NH-8 (Delhi-Jaipur Highway), Golf Course Road, Sohna Road, and Southern Peripheral Road",
+          "Easy access to Delhi and Faridabad via Golf Course Road",
+          "Proposed metro line along Golf Course Extension Road to enhance future connectivity and commuting convenience"
         ]
+
       },
       location_advantage: {
         heading: "Location Advantages of M3M International Financial Center",
         paragraph1: "M3M IFC is located on Golf Course Extension Road, opposite St. Xaviers School, at the intersection of the 84-meter Golf Course Extension Road and 60-meter sector road. The project offers direct connectivity to major destinations including NH8 (Delhi-Jaipur Highway), Golf Course Road, Sohna Road, Southern Peripheral Road, Delhi, and Faridabad.",
-        paragraph2: "A proposed metro line along Golf Course Extension Road will further enhance connectivity, making M3M IFC a future-ready business and retail destination.",
         highlights: [
           "Prime location on Golf Course Extension Road, Sector 66, Gurgaon",
           "Opposite St. Xaviers School",
@@ -2100,15 +2099,89 @@ export const properties: Property[] = [
     location: "Sector 67, Golf Course Ext Road, Gurugram, Gurgaon",
     search: ["Sector 67", "Golf Course Ext Road", "gurugram", "gurgaon", "M3M Service Apartments"],
     category: "commercial",
-    image: "/assets/commercial/m3m-service-apartments-thumbnail.jpg"
+    image: "/assets/commercial/m3m-service-apartments-thumbnail.jpg",
+    details: {
+      overview: {
+        heading: "M3M Urbana One Key Resiments",
+        paragraph1: "M3M Urbana One Key Resiments offers premium studio, 1 BHK, and 2 BHK apartments as part of the M3M Urbana development, surrounded by upscale residential projects on Golf Course Extension Road, Gurgaon. These units provide open spaces that residents can personalize according to their needs and preferences. The option to have a convenient workspace within your living area enhances accessibility and efficiency.",
+        paragraph2: "M3M Urbana features ultra-serviced, ultra-smart units, modern retail spaces, and sophisticated office spaces in Gurgaon, NCR. The retail spaces, inspired by 'California-like' designs, are crafted by international architectural firms as part of a mixed-use development. The project includes a richly landscaped central plaza, pedestrian areas with seating and food kiosks, and dedicated drop-off zones for retail. Office suites are designed with abundant natural light and smart cubicles to ensure comfort and productivity. M3M Urbana is at the heart of the city's vibrant lifestyle in Sector 67, Gurgaon."
+      },
+      features: [
+        "Premium studio, 1 BHK, and 2 BHK units with flexible open-plan layouts for personalized interior design and integrated workspace setup",
+        "Part of M3M Urbana, a mixed-use development offering ultra-smart serviced units, modern retail spaces, and sophisticated office suites",
+        "Designed by renowned international firms with California-inspired architecture, featuring a landscaped central plaza, pedestrian zones, seating areas, food kiosks, and smart office cubicles with natural lighting"
+      ],
+      about_developer: {
+        logo: "/assets/developers/m3m-india-logo.jpg",
+        heading: "Developer Name : M3M India",
+        paragraph1: "Founded in 1998, M3M India has rapidly emerged as a leading name in the Indian real estate sector. With a vision to redefine luxury living and commercial spaces, M3M has consistently focused on innovation, quality, and sustainability. Over the years, the company has developed a diverse portfolio that includes residential, commercial, and retail projects, making it a preferred choice among investors and homebuyers alike.",
+        paragraph2: "M3M India is renowned for its commitment to delivering exceptional real estate solutions. The company’s projects are characterized by their contemporary designs, strategic locations, and state-of-the-art amenities. Some notable highlights include: Luxury residential projects with modern amenities and green spaces, premium commercial spaces, and a focus on sustainable, eco-friendly building practices.",
+        conclusion: "With over two decades of experience, M3M India stands as a beacon of innovation and excellence in the real estate sector. Its rich history, commitment to quality, and focus on sustainability make it a trusted choice for those seeking luxury living and investment opportunities in India."
+      }
+    }
   },
+
   {
     id: "36",
     title: "M3M Prive 73",
     location: "Sector 73, Gurugram, Gurgaon",
     search: ["Sector 73", "gurugram", "gurgaon", "M3M Prive 73"],
     category: "commercial",
-    image: "/assets/commercial/m3m-prive-73-thumbnail.jpg"
+    image: "/assets/commercial/m3m-prive-73-thumbnail.jpg",
+    details: {
+      overview: {
+        heading: "M3M Prive73 – New High Street Commercial on Southern Periphery Road, Gurgaon",
+        paragraph1: "M3M Prive73 is a newly launched high street commercial development by M3M India, located on the 150-meter wide Southern Periphery Road (SPR) in Sector 73, Gurgaon. Designed by UHA London and inspired by Burlington Arcade, this project sets a new standard for integrated commercial and mixed-use destinations in the region. It features expansive retail spaces, entertainment zones, a multiplex, and a variety of food and beverage outlets, all within a single, vibrant complex.",
+        paragraph2: "The development offers the largest frontage on SPR, open-to-sky high-street retail units, double-height showrooms, and a food court with both indoor and outdoor seating. The architecture emphasizes seamless pedestrian integration across multiple levels, with vertical landscaping, multiple drop-offs, and advanced air-conditioning systems in retail units."
+      },
+      features: [
+        "Largest frontage on Southern Periphery Road (SPR)",
+        "Open-to-sky high-street retail units",
+        "Double-height showrooms",
+        "Architecture by UHA London, inspired by Burlington Arcade",
+        "Food court with indoor and outdoor seating",
+        "Vertical landscaping with drip irrigation",
+        "Multiple drop-offs for smooth transit",
+        "DX split air-conditioning, water-cooled in retail units",
+        "Seamless pedestrian integration across Lower Ground, Ground/Upper Ground, and First Floor retail blocks",
+        "Second floor dedicated to office block",
+        "Integrated with large open spaces and event activity areas",
+        "10-screen multiplex with 1,600 seats on 3rd and 4th floors",
+        "Three anchor stores and three basements"
+      ],
+      specifications: {
+        heading: "Iconic Grand Frontage and Highly Functional Design",
+        paragraph1: "M3M Prive73 is characterized by its iconic grand façade, highly functional design, and a blend of high-street and mall experiences in a secure, controlled environment. The project features large, impactful show windows, wide boulevards, seamless vertical and horizontal connectivity, open-to-sky F&B areas, and sky bridges for enhanced visibility and connectivity.",
+        highlights: [
+          "Promising location in the next growth corridor",
+          "Horizontal access from the 150m wide Golf Course Road Extension",
+          "Iconic grand façade for an impressive visitor experience",
+          "Optimized circulation and wide boulevards",
+          "Open-to-sky cut-outs for natural light integration",
+          "Hi-street format in a controlled environment",
+          "Sky bridges and event activity areas",
+          "Restaurants with sky views and water cascades at the rear level"
+        ]
+      },
+      location_advantage: {
+        heading: "Prime Location Advantages of M3M Prive73",
+        paragraph1: "M3M Prive73 enjoys a central location with excellent connectivity to Golf Course Road Extension, Sohna Road, and NH-8. The project offers prime retail frontage facing the 150-meter wide Golf Course Road Extension, with direct access from NH-8 and Sohna-Gurugram Road.",
+        highlights: [
+          "Centrally located with connectivity to Golf Course Road Extension, Sohna Road, and NH-8",
+          "Prime retail frontage on 150m wide Golf Course Road Extension",
+          "Direct access from NH-8 and Sohna-Gurugram Road",
+          "Surrounded by premium residential and commercial developments",
+          "Close to major hospitals and schools"
+        ]
+      },
+      about_developer: {
+        logo: "/assets/developers/m3m-india-logo.jpg",
+        heading: "Developer Name : M3M India",
+        paragraph1: "Founded in 1998, M3M India has rapidly emerged as a leading name in the Indian real estate sector. With a vision to redefine luxury living and commercial spaces, M3M has consistently focused on innovation, quality, and sustainability. Over the years, the company has developed a diverse portfolio that includes residential, commercial, and retail projects, making it a preferred choice among investors and homebuyers alike.",
+        paragraph2: "M3M India is renowned for its commitment to delivering exceptional real estate solutions. The company’s projects are characterized by their contemporary designs, strategic locations, and state-of-the-art amenities. Notable highlights include luxury residential projects with modern amenities and green spaces, premium commercial spaces, and a focus on sustainable, eco-friendly building practices.",
+        conclusion: "With over two decades of experience, M3M India stands as a beacon of innovation and excellence in the real estate sector. Its rich history, commitment to quality, and focus on sustainability make it a trusted choice for those seeking luxury living and investment opportunities in India."
+      }
+    }
   },
   {
     id: "37",
@@ -2116,7 +2189,27 @@ export const properties: Property[] = [
     location: "Sector 65, Golf Course Ext Road",
     search: ["Sector 65", "Golf Course Ext Road", "gurugram", "gurgaon", "4 BHK Apartments for Rent in Emerald Floors Premier"],
     category: "rent",
-    image: "/assets/rent/emerald-floors-premier-thumbnail.jpg"
+    image: "/assets/rent/emerald-floors-premier-thumbnail.jpg",
+    details: {
+      overview: {
+        heading: "Emerald Floors Premier – Exclusive Low-Rise Luxury Homes at Emerald Hills, Sector 65, Gurgaon",
+        paragraph1: "Emerald Floors Premier offers exclusive independent low-rise luxury homes in the prestigious Emerald Hills, Sector 65, Gurgaon. These residences are designed to the highest standards, featuring premium amenities at attractive price points. Each home is crafted to provide the ambiance of villa living within a thriving community, offering a great sense of space, luxury, and quality workmanship.",
+        paragraph2: "The project features 3 and 4 BHK apartment configurations ranging from 1650 to 1975 sq. ft. Residents enjoy a unique lifestyle, with homes that foster growth and flourishing in a vibrant neighborhood."
+      },
+      features: [
+        "3 and 4 BHK apartment configurations ranging from 1650 to 1975 sq. ft.",
+        "Residents enjoy a unique lifestyle, with homes that foster growth and flourishing in a vibrant neighborhood.",
+        "Premium amenities at attractive price points.",
+        "Each home is crafted to provide the ambiance of villa living within a thriving community, offering a great sense of space, luxury, and quality workmanship."
+      ],
+      about_developer: {
+        logo: "/assets/developers/emaar-india-logo.jpg",
+        heading: "Developer Name : Emaar India",
+        paragraph1: "Since entering the Indian real estate industry in 2005, Emaar India has become renowned for developing iconic and luxurious properties across Gurgaon. Headquartered in Gurgaon, the company boasts a diverse portfolio of residential and commercial projects, earning a reputation as one of the leading real estate developers in the region.",
+        paragraph2: "Emaar India’s residential projects are known for their luxury, innovative design, and modern amenities, while their commercial developments are recognized for their strategic locations and contemporary architecture. The company’s commitment to customer satisfaction and continuous innovation has established it as a trusted name in the real estate sector.",
+        conclusion: "Emaar Group continues to set benchmarks in the industry, driven by a focus on quality, customer-centricity, and sustainable growth."
+      }
+    }
   },
   {
     id: "38",
@@ -2124,7 +2217,33 @@ export const properties: Property[] = [
     location: "Sector 65, Gurgaon",
     search: ["Sector 65", "gurgaon", "gurugram", "4 BHK Independent Floor for Rent in Sector 65 Gurgaon"],
     category: "rent",
-    image: "/assets/rent/sector-65-independent-floor-thumbnail.jpg"
+    image: "/assets/rent/sector-65-independent-floor-thumbnail.jpg",
+    details: {
+      overview: {
+        heading: "4 BHK Independent Floor for Rent in Sector 65, Gurgaon ",
+        paragraph1: "This is a beautifully furnished 4 BHK flat for rent in Sector 65, Gurgaon, located in the Emaar MGF Emerald Floors community. The apartment has a super built-up area of 350 sq. yards and is situated on the ground floor of a two-story building, available exclusively for families. It features two or more balconies and three bathrooms.",
+        paragraph2: "The apartment includes a servant room, pooja room, and study room. It is north-east facing, finished with wood tiles, and part of a gated society. Furnishings include six wardrobes, a modular kitchen, eight fans, and nine lights. This corner property faces a 60-meter wide road, has piped gas, and is feng-shui/vaastu compliant. Residents enjoy amenities such as a clubhouse, gym, swimming pool, shopping center, park, visitor parking, water storage, intercom, security/fire alarm, and full power backup. Multiple open parking spaces are available."
+      },
+      features: [
+        "Furnished 4 BHK with servant, pooja, and study rooms",
+        "Ground floor in a two-story building",
+        "Super built-up area: 350 sq. yards",
+        "North-east facing, wood tile flooring",
+        "Gated society with security and intercom",
+        "Corner property with 60-meter wide road",
+        "Piped gas, feng-shui/vaastu compliant",
+        "Clubhouse, gym, swimming pool, shopping center, park",
+        "Visitor parking, water storage, security/fire alarm",
+        "Full power backup, multiple open parking spaces"
+      ],
+      about_developer: {
+        logo: "/assets/developers/emaar-india-logo.jpg",
+        heading: "Developer Name : Emaar India",
+        paragraph1: "Since entering the Indian real estate market in 2005, Emaar India has become renowned for developing iconic and luxurious properties across Gurgaon. Headquartered in Gurgaon, the company boasts a diverse portfolio of residential and commercial projects, earning a reputation as one of the leading real estate developers in the region.",
+        paragraph2: "Emaar India’s residential projects are known for their luxury, innovative design, and modern amenities, while their commercial developments are recognized for their strategic locations and contemporary architecture. The company’s commitment to customer satisfaction and continuous innovation has established it as a trusted name in the real estate sector.",
+        conclusion: "Emaar Group continues to set benchmarks in the industry, driven by a focus on quality, customer-centricity, and sustainable growth."
+      }
+    }
   },
   {
     id: "39",
@@ -2132,7 +2251,37 @@ export const properties: Property[] = [
     location: "DLF Phase-5, Golf Course Road",
     search: ["DLF Phase 5", "Golf Course Road", "gurugram", "gurgaon", "Emaar Palm Springs Apartment for Rent"],
     category: "rent",
-    image: "/assets/rent/emaar-palm-springs-thumbnail.jpg"
+    image: "/assets/rent/emaar-palm-springs-thumbnail.jpg",
+    details: {
+      overview: {
+        heading: "Emaar Palm Springs Apartment for Rent",
+        paragraph1: "Emaar Palm Springs offers fully renovated, Aravalli-facing apartments for rent in Sector 54, Golf Course Road. Both semi and fully furnished 3, 4, and 5 BHK options are available, with each property featuring high-quality interiors and a well-maintained, theme-based park. The apartments are equipped with air conditioning in every room and the drawing/dining area, modular kitchens, complete woodwork, geysers, fridge, TV, beds, sofas, dining tables, lights, and fans.",
+        paragraph2: "Residents enjoy a range of amenities including a health club, tennis court, gym, swimming pool, basketball court, and table tennis. The luxury apartments come with spa pools, advanced security systems, full power backup, Schindler lift systems, water harvesting, and premium bath fixtures from Grohe and Duravit. Interiors feature Italian marble and stone, UPVC doors and windows, Daikin air conditioning, and Legrand electrical fittings. The society provides dedicated security guards for every tower, a separate washroom for domestic help, daily needs shopping within the premises, reliable water supply, and piped gas."
+      },
+      features: [
+        "Fully renovated, Aravalli-facing flats",
+        "Semi/fully furnished 3, 4, and 5 BHK options",
+        "Air conditioning in all rooms and living areas",
+        "Modular kitchen and complete woodwork",
+        "Premium appliances and furnishings (geyser, fridge, TV, beds, sofas, dining table, lights, fans)",
+        "Health club, tennis court, gym, swimming pool, basketball court, table tennis",
+        "Spa pool, advanced security systems, full power backup",
+        "Schindler lifts, water harvesting, Grohe and Duravit bath fixtures",
+        "Italian marble and stone interiors",
+        "UPVC doors and windows, Daikin air conditioning, Legrand electrical fittings",
+        "Dedicated security guards for every tower",
+        "Separate washroom for domestic help",
+        "Daily needs shopping within society",
+        "Reliable water supply and piped gas"
+      ],
+      about_developer: {
+        logo: "/assets/developers/emaar-india-logo.jpg",
+        heading: "Developer Name : Emaar India",
+        paragraph1: "Since entering the Indian real estate market in 2005, Emaar India has become renowned for developing iconic and luxurious properties across Gurgaon. Headquartered in Gurgaon, the company boasts a diverse portfolio of residential and commercial projects, earning a reputation as one of the leading real estate developers in the region.",
+        paragraph2: "Emaar India’s residential projects are known for their luxury, innovative design, and modern amenities, while their commercial developments are recognized for their strategic locations and contemporary architecture. The company’s commitment to customer satisfaction and continuous innovation has established it as a trusted name in the real estate sector.",
+        conclusion: "Emaar Group continues to set benchmarks in the industry, driven by a focus on quality, customer-centricity, and sustainable growth."
+      }
+    }
   },
   {
     id: "40",
@@ -2140,7 +2289,33 @@ export const properties: Property[] = [
     location: "DLF Phase-5, Golf Course Road",
     search: ["DLF Phase-5", "Golf Course Road", "gurugram", "gurgaon", "3 BHK Apartment for Rent in DLF Phase 5"],
     category: "rent",
-    image: "/assets/rent/dlf-phase-5-apartment-thumbnail.jpg"
+    image: "/assets/rent/dlf-phase-5-apartment-thumbnail.jpg",
+    details: {
+      overview: {
+        heading: "3 BHK Apartment for Rent in DLF City Phase 5, Gurgaon",
+        paragraph1: "This semi-furnished 3 BHK apartment is available for rent in DLF City Phase 5, Gurgaon. Located on the 8th floor of a 30-storey tower, the apartment features three bedrooms, three bathrooms, and two balconies, providing ample space and comfort for families.",
+        paragraph2: "The apartment comes equipped with five wardrobes, a modular kitchen, refrigerator, five air conditioners, five geysers, and four fans. With a super built-up area of 2,282 sq. ft., it also includes two covered parking spaces and is ready for immediate occupancy. The property is 1-5 years old and is ideal for families seeking a modern lifestyle in a prime location."
+      },
+      features: [
+        "Semi-furnished 3 BHK apartment",
+        "8th floor in a 30-storey tower",
+        "Three bedrooms, three bathrooms, two balconies",
+        "Five wardrobes, modular kitchen, refrigerator",
+        "Five air conditioners, five geysers, four fans",
+        "Super built-up area: 2,282 sq. ft.",
+        "Two covered parking spaces",
+        "Ready for immediate occupancy",
+        "Ideal for families",
+        "Located in DLF City Phase 5, Golf Course Road, Gurgaon"
+      ],
+      about_developer: {
+        logo: "/assets/developers/dlf-logo.png",
+        heading: "Developer Name : DLF",
+        paragraph1: "DLF is a renowned real estate developer in Gurgaon, recognized for delivering projects that meet the evolving needs of modern residents. With over 75 years of experience, DLF has established itself as a leader in high-rise and luxury developments, contributing significantly to the city's growth.",
+        paragraph2: "The company has developed a diverse portfolio of residential and commercial projects, including DLF The Arbour, DLF Garden City, DLF Primus, DLF The Crest, DLF New Town Heights, DLF Sky Court, DLF Park Place, DLF Ultima, DLF Express Greens, DLF Princeton Estate, DLF Carlton Estate, DLF Garden City Floors, DLF The Grove Floors, and DLF One Midtown.",
+        conclusion: "DLF's commitment to quality, innovation, and customer satisfaction has made it one of the most sought-after real estate developers in Gurgaon, shaping the city's skyline with iconic structures and vibrant communities."
+      }
+    }
   },
   {
     id: "41",
