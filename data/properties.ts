@@ -1868,7 +1868,52 @@ export const properties: Property[] = [
     location: "Sector 67, Gurugram, Gurgaon",
     search: ["Sector 67", "gurugram", "gurgaon", "M3M Urbana Premium"],
     category: "commercial",
-    image: "/assets/commercial/m3m-urbana-premium-thumbnail.jpg"
+    image: "/assets/commercial/m3m-urbana-premium-thumbnail.jpg",
+    details: {
+      overview: {
+        heading: "M3M Urbana Premium – High-Street Retail, Anchor Stores & Food Courts in Sector 67, Gurgaon",
+        paragraph1: "Urbana is the largest commercial complex in Gurgaon built on a hi-street retail format, spanning 17.5 acres with a total area of 7.4 lakh square feet. It offers easy access from a 60-meter wide sector road connecting Sector 64 and Sector 67, making it convenient for visitors and office-goers. With an impressive frontage of approximately 500 meters along this 60-meter sector road, Urbana provides excellent visibility and branding opportunities.",
+      },
+      features: [
+        "Retail, Anchor Store, Restaurant & Food Courts, Office Spaces & Serviced Apartments managed by a renowned operator",
+        "Latest offering: A new building block of 3.92 acres – Urbana Premium",
+        "Urbana Premium includes Retails, Food Courts, Anchor Stores (Big Bazaar, Pantaloons, PVR Cinemas)",
+        "Retail units (Lower Ground / Upper / First Floor) – Size ranges from 350 sq. ft. onwards up to approx. 1000 sq. ft.",
+        "Food Court shops (2nd Floor) – Total of 7 units, each sized at 1037 sq. ft."
+      ],
+      specifications: {
+        heading: "Project Specifications – M3M Urbana Premium",
+        paragraph1: "Urbana Premium is designed with meticulous attention to detail, offering modern amenities and robust infrastructure to support a thriving commercial environment. The project includes spacious retail units, efficient layouts, and advanced security systems, ensuring a comfortable and secure experience for all occupants.",
+        highlights: [
+          "Surrounded by high-end semi & ultra-luxury apartments ranging from ₹2 Cr to ₹10 Cr",
+          "Major nearby residential projects: Ireo Victory Valley, M3M Merlin, M3M Golf Estate, Bestech Spa Next, Ansal Esencia Floors and Plots, BPTP Mansion and Park Prime, Ireo Uptown, Emaar MGF Palm Drive, Palm Terraces, Sky Terraces, Emerald Hills, Ireo Corridors, Vardhman Apartments",
+          "Opposite side: University of Shree Ram Group",
+          "Provision for split ACs in the retail units",
+          "Provision for wet points in all the units",
+          "Dedicated signage areas for all units as per design",
+          "Internal signage includes main lobby tenant directory and directional signs",
+          "Fully finished common toilets with modern fittings & fixtures",
+          "Large covered air-conditioned common sitting area",
+          "Spacious terrace sit-out area"
+        ]
+      },
+      location_advantage: {
+        heading: "Prime Location Advantages of M3M Urbana Premium",
+        highlights: [
+          "Located on 60-meter wide sector road between Sector 64 & 67",
+          "Wide 500-meter frontage for maximum visibility",
+          "Easy access to NH8 and South Delhi",
+          "Surrounded by luxury residential projects and major commercial hubs"
+        ]
+      },
+      about_developer: {
+        logo: "/assets/developers/m3m-india-logo.jpg",
+        heading: "Developer Name : M3M India",
+        paragraph1: "Founded in 1998, M3M India has rapidly established itself as a leading name in the Indian real estate sector. The company is recognized for its innovative approach, quality construction, and commitment to sustainability, with a diverse portfolio spanning residential, commercial, and retail projects.",
+        paragraph2: "M3M India’s projects are known for their contemporary designs, strategic locations, and world-class amenities. The company’s team of industry professionals leverages deep market knowledge to deliver exceptional real estate solutions that meet evolving client needs.",
+        conclusion: "M3M India stands as a symbol of excellence and innovation in real estate, trusted by investors and homebuyers alike for its quality, sustainability, and customer-centric approach."
+      }
+    }
   },
   {
     id: "32",
@@ -1876,15 +1921,117 @@ export const properties: Property[] = [
     location: "Sector 74, Gurugram, Gurgaon",
     search: ["Sector 74", "gurugram", "gurgaon", "M3M Corner Walk"],
     category: "commercial",
-    image: "/assets/commercial/m3m-corner-walk-thumbnail.jpg"
+    image: "/assets/commercial/m3m-corner-walk-thumbnail.jpg",
+    details: {
+      overview: {
+        heading: "M3M Corner Walk – New Commercial High Street in Sector 74, Gurgaon",
+        paragraph1: "M3M Corner Walk is a newly launched 7.5-acre high-street retail and multiplex project by M3M India, located on the main SPR road (150 meters), Sector 74, Gurgaon. Offering seamless connectivity from NH8 and Golf Course Extension Road, this unique development features a blend of high-end retail shops and world-class commercial spaces. Its prominent corner location with exclusive two-side access sets a new benchmark for affluence and vibrancy in Gurugram.",
+        paragraph2: "M3M Corner Walk is designed as a destination where day and night are equally lively, offering the best in shopping, dining, entertainment, and leisure. Drawing inspiration from global lifestyles, it provides a diverse mix of living, shopping, and recreational experiences. The project introduces a futuristic, international mixed-use concept with retail shops, food courts, office spaces, and studio apartments—creating a secure and dynamic environment that Gurugram has never seen before."
+      },
+      features: [
+        "Lower ground, upper ground, and first floor dedicated to high-street retail",
+        "Second floor for food court, restaurants, and multiplex",
+        "Third floor onwards for offices and studio apartments",
+        "Double-height and conventional retail shops",
+        "Surrounded by DLF Alameda, DLF Commercial, and hospitals",
+        "Frontage designed for top global brands with high visibility",
+        "Efficiently designed floor plans",
+        "Pedestrianized plazas and open spaces around retail outlets",
+        "Dedicated branding signage for every retail outlet",
+        "Boulevards and open spaces for clear visibility",
+        "Wide display areas for showcasing collections"
+      ],
+      specifications: {
+        heading: "Project Specifications – M3M Corner Walk",
+        paragraph1: "M3M Corner Walk is meticulously planned to offer a vibrant commercial environment. The project features a mix of retail, F&B, office, and studio apartment spaces, all designed for maximum visibility and accessibility. The entire development is pedestrian-friendly, with open plazas and efficient layouts to enhance the shopping and leisure experience.",
+        highlights: [
+          "1.75 acres of frontage on a 60-meter wide road corner",
+          "High-street retail on lower ground, upper ground, and first floors",
+          "Food court, restaurants, and multiplex on the second floor",
+          "Offices and studio apartments from the third floor onwards",
+          "Double-height and conventional retail shops",
+          "Over 10,000 families in the surrounding area",
+          "Proximity to DLF Alameda, DLF Commercial, and major hospitals",
+          "Frontage for world-class brands with high visibility",
+          "Efficient floor plans and wide display areas",
+          "Pedestrianized plazas and open spaces",
+          "Dedicated branding signage for each retail outlet"
+        ]
+      },
+      location_advantage: {
+        heading: "Location Advantages of M3M Corner Walk",
+        paragraph1: "Strategically located at Golf Course Road Extension, Sector 74, Gurugram, M3M Corner Walk offers optimal connectivity to Golf Course Road, Sohna Road, and NH8. The project enjoys excellent arterial links to Dwarka, Manesar, and the NCR, with seamless access to renowned schools and hospitals.",
+        paragraph2: "The development features over 700 commercial spaces and is surrounded by more than 50,000 housing units, with 20,000 currently under construction, ensuring a vibrant and thriving catchment area.",
+        highlights: [
+          "Located at Golf Course Road Extension, Sector 74, Gurugram",
+          "Direct connection to Golf Course Road, Sohna Road, and NH8",
+          "Excellent connectivity to Dwarka, Manesar, and NCR",
+          "Close to top schools and hospitals",
+          "Over 700 commercial spaces",
+          "Surrounded by 50,000+ housing units (20,000 under construction)"
+        ]
+      },
+      about_developer: {
+        logo: "/assets/developers/m3m-india-logo.jpg",
+        heading: "Developer Name : M3M India",
+        paragraph1: "Founded in 1998, M3M India has quickly become a leading name in Indian real estate, known for redefining luxury living and commercial spaces. The company is committed to innovation, quality, and sustainability, with a diverse portfolio of residential, commercial, and retail projects.",
+        paragraph2: "M3M India is recognized for its contemporary designs, strategic locations, and world-class amenities. The company’s team of industry professionals leverages deep market knowledge to deliver exceptional real estate solutions that meet evolving client needs.",
+        conclusion: "M3M India stands as a beacon of excellence and innovation in real estate, trusted by investors and homebuyers for its quality, sustainability, and customer-centric approach."
+      }
+    }
   },
+
   {
     id: "33",
     title: "M3M Food Nation",
     location: "Sector 65, Golf Course Ext Road, Gurugram, Gurgaon",
     search: ["Sector 65", "Golf Course Ext Road", "gurugram", "gurgaon", "M3M Food Nation"],
     category: "commercial",
-    image: "/assets/commercial/m3m-food-nation-thumbnail.jpeg"
+    image: "/assets/commercial/m3m-food-nation-thumbnail.jpeg",
+    details: {
+      overview: {
+        heading: "M3M Food Nation – A Paradise for Food Lovers at 65th Avenue, Gurgaon",
+        paragraph1: "M3M Food Nation is a dedicated F&B destination launched by M3M India at Block No. 4 in M3M 65th Avenue, Gurgaon. With a lease guarantee after possession and an assured return of 11% till possession (on 50% payment), this project is designed to be a vibrant hub for food enthusiasts and investors alike.",
+        paragraph2: "Part of the futuristic and international mixed-use development of M3M 65th Avenue, Food Nation offers a unique environment with a secure mix of retail and living spaces. The high-street retail zone emphasizes exclusivity, space, and aesthetics, making it a coveted hub for global retailers. The dedicated F&B zone, food courts, and restaurants at various levels create a lively social hub and an exceptional culinary experience for visitors."
+      },
+      features: [
+        "Dedicated food courts and food zone within the premises",
+        "F&B street creating a social hub and evening destination",
+        "Restaurants and F&B outlets at different levels",
+        "Part of M3M 65th Avenue's international mixed-use development",
+        "High-street retail zone with designer and premium merchandise",
+        "Wide boulevards for easy access to all retail shops",
+        "Lease guarantee after possession",
+        "Assured 11% return till possession on 50% payment"
+      ],
+      specifications: {
+        heading: "M3M Food Nation Premium Pricing",
+        paragraph1: "M3M Food Nation offers premium pricing with lease guarantees after possession. Prices are as follows:",
+        highlights: [
+          "Lower Ground Floor (LGF): ₹28,500/sqft – Lease guaranteed ₹150/sqft after possession",
+          "Upper Ground Floor (UGF): ₹24,700/sqft – Lease guaranteed ₹130/sqft after possession",
+          "First Floor (FF): ₹15,200/sqft – Lease guaranteed ₹80/sqft after possession",
+          "Above prices are BSP only; other charges as applicable"
+        ]
+      },
+      location_advantage: {
+        heading: "Location Advantages of M3M Food Nation",
+        highlights: [
+          "Located at Block No. 4 in M3M 65th Avenue, Sector 65, Gurgaon",
+          "Part of the international mixed-use development of M3M 65th Avenue",
+          "Secure mix of retail and living spaces",
+          "High-street retail zone with designer and premium merchandise",
+          "Wide boulevards for easy access to all retail shops"
+        ]
+      },
+      about_developer: {
+        logo: "/assets/developers/m3m-india-logo.jpg",
+        heading: "Developer Name : M3M India",
+        paragraph1: "Founded in 1998, M3M India has rapidly emerged as a leading name in the Indian real estate sector. The company is known for its focus on innovation, quality, and sustainability, with a diverse portfolio of residential, commercial, and retail projects.",
+        paragraph2: "M3M India is renowned for its contemporary designs, strategic locations, and world-class amenities. The company’s team of industry professionals leverages deep market knowledge to deliver exceptional real estate solutions that meet evolving client needs.",
+        conclusion: "M3M India stands as a beacon of innovation and excellence in real estate, trusted by investors and homebuyers for its quality, sustainability, and customer-centric approach."
+      }
+    }
   },
   {
     id: "34",
@@ -1892,7 +2039,60 @@ export const properties: Property[] = [
     location: "Sector 66, Golf Course Ext Road, Gurugram, Gurgaon",
     search: ["Sector 66", "Golf Course Ext Road", "gurugram", "gurgaon", "M3M International Financial Center"],
     category: "commercial",
-    image: "/assets/commercial/m3m-international-financial-center-thumbnail.jpg"
+    image: "/assets/commercial/m3m-international-financial-center-thumbnail.jpg",
+    details: {
+      overview: {
+        heading: "M3M International Financial Center – A Commercial Landmark Project",
+        paragraph1: "M3M International Financial Center (IFC) is a high-end commercial project launched by M3M in Sector 66, Golf Course Extension Road, Gurgaon. Spread over 4.83 acres, this development offers triple-height retail shops and premium commercial office spaces with lease guarantees. Its prime location opposite St. Xaviers School makes it an ideal spot for top brands and businesses.",
+        paragraph2: "M3M IFC is a prominent mixed-use destination featuring two landmark towers that combine premium 'Grade A' offices with a wide variety of luxury retail spaces. The sophisticated master plan is highly pedestrian-friendly, designed as a seamless connection between work and leisure, and conceptualized by Chapman Taylor, UK."
+      },
+      features: [
+        "Ground, first, and second floors dedicated to retail and restaurants",
+        "Approx. 93,000 sq. m. total project area, with 13,935 sq. m. (1.5 lakh sq. ft.) of premium retail",
+        "Two commercial office towers: one with 40 floors, another with 10 floors",
+        "Gold-rated LEED certification for energy efficiency",
+        "Approx. 1 million sq. ft. of office space",
+        "Seating capacity for approx. 10,000 employees",
+        "Central Business District (CBD) of Gurgaon",
+        "Landmark address and iconic design",
+        "Ground floor retail sizes from 1,400 to 5,400 sq. ft.; front showrooms up to 5,400 sq. ft. with 28 ft. ceiling heights",
+        "First floor retail showrooms starting at 1,200 sq. ft.",
+        "Second floor with large restaurants and terrace seating",
+        "Designed by Chapman Taylor, UK"
+      ],
+      specifications: {
+        heading: "Project Highlights & Design",
+        paragraph1: "M3M IFC is designed to be a central business and retail hub, with a blend of open and closed spaces, and a master plan that encourages pedestrian movement and visual connectivity with the city. The project is conceptualized by Chapman Taylor, an award-winning international architecture firm.",
+        highlights: [
+          "Triple-height retail shops and high-end commercial office spaces",
+          "Gold-rated LEED certification for energy efficiency",
+          "Iconic design and landmark address",
+          "Flexible office and retail layouts",
+          "Terrace seating for restaurants on the second floor",
+          "Premium location on Golf Course Extension Road"
+        ]
+      },
+      location_advantage: {
+        heading: "Location Advantages of M3M International Financial Center",
+        paragraph1: "M3M IFC is located on Golf Course Extension Road, opposite St. Xaviers School, at the intersection of the 84-meter Golf Course Extension Road and 60-meter sector road. The project offers direct connectivity to major destinations including NH8 (Delhi-Jaipur Highway), Golf Course Road, Sohna Road, Southern Peripheral Road, Delhi, and Faridabad.",
+        paragraph2: "A proposed metro line along Golf Course Extension Road will further enhance connectivity, making M3M IFC a future-ready business and retail destination.",
+        highlights: [
+          "Prime location on Golf Course Extension Road, Sector 66, Gurgaon",
+          "Opposite St. Xaviers School",
+          "Intersection of 84m and 60m sector roads",
+          "Direct access to NH8, Golf Course Road, Sohna Road, and Southern Peripheral Road",
+          "Easy connectivity to Delhi and Faridabad",
+          "Proposed metro line for enhanced commuting"
+        ]
+      },
+      about_developer: {
+        logo: "/assets/developers/m3m-india-logo.jpg",
+        heading: "Developer Name : M3M India",
+        paragraph1: "Founded in 1998, M3M India has rapidly emerged as a leading name in the Indian real estate sector. The company is known for its focus on innovation, quality, and sustainability, with a diverse portfolio of residential, commercial, and retail projects.",
+        paragraph2: "M3M India is renowned for its contemporary designs, strategic locations, and world-class amenities. The company’s team of industry professionals leverages deep market knowledge to deliver exceptional real estate solutions that meet evolving client needs.",
+        conclusion: "M3M India stands as a beacon of innovation and excellence in real estate, trusted by investors and homebuyers for its quality, sustainability, and customer-centric approach."
+      }
+    }
   },
   {
     id: "35",
