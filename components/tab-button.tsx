@@ -14,10 +14,10 @@ export function TabButton({ active, children, onClick }: TabButtonProps) {
     <button
       onClick={onClick}
       className={cn(
-        "px-6 py-2 text-lg font-medium rounded-full transition-colors duration-300 backdrop-blur-sm font-poppins",
+        "px-6 py-2 text-lg cursor-pointer font-medium rounded-full transition-colors duration-300 backdrop-blur-sm font-poppins",
         active
-          ? "bg-gray-100  text-black font-semibold shadow-md"
-          : "bg-transparent text-white font-semibold border-2 border-gray-300 hover:text-orange-500 hover:border-orange-500"
+          ? "bg-orange-400  text-white font-semibold shadow-md"
+          : "bg-white text-orange-500 font-semibold border-2 border-orange-400 hover:bg-orange-400 hover:text-white "
       )}
     >
       {children}

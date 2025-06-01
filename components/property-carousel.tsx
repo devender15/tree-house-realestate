@@ -71,17 +71,17 @@ export function PropertyCarousel() {
   }, [activeTab, emblaApi]);
 
   return (
-    <section className="py-42 bg-gradient-to-b from-black via-black/70 to-black text-gray-100">
+    <section className="py-20 bg-white text-orange-700">
       <div className="mx-60 px-4 max-w-8xl">
         {/* Tab Navigation */}
-        <div className="flex justify-center mb-16">
+        <div className="flex justify-center mb-14 ">
           <div className="flex flex-wrap gap-6">
             <TabButton
               active={activeTab === "new-launch"}
               onClick={() => setActiveTab("new-launch")}
               className="px-6 py-2 font-semibold rounded-full transition-colors duration-300"
-              activeClassName="bg-indigo-600 text-white shadow-lg"
-              inactiveClassName="text-gray-400 hover:text-indigo-400"
+              activeClassName="bg-orange-600 text-white shadow-lg"
+              inactiveClassName="text-orange-600 border border-orange-300 hover:bg-orange-100"
             >
               New Launch
             </TabButton>
@@ -89,8 +89,8 @@ export function PropertyCarousel() {
               active={activeTab === "residential"}
               onClick={() => setActiveTab("residential")}
               className="px-6 py-2 font-semibold rounded-full transition-colors duration-300"
-              activeClassName="bg-indigo-600 text-white shadow-lg"
-              inactiveClassName="text-gray-400 hover:text-indigo-400"
+              activeClassName="bg-orange-600 text-white shadow-lg"
+              inactiveClassName="text-orange-600 border border-orange-300 hover:bg-orange-100"
             >
               Residential
             </TabButton>
@@ -98,8 +98,8 @@ export function PropertyCarousel() {
               active={activeTab === "commercial"}
               onClick={() => setActiveTab("commercial")}
               className="px-6 py-2 font-semibold rounded-full transition-colors duration-300"
-              activeClassName="bg-indigo-600 text-white shadow-lg"
-              inactiveClassName="text-gray-400 hover:text-indigo-400"
+              activeClassName="bg-orange-600 text-white shadow-lg"
+              inactiveClassName="text-orange-600 border border-orange-300 hover:bg-orange-100"
             >
               Commercial
             </TabButton>
@@ -107,20 +107,14 @@ export function PropertyCarousel() {
         </div>
 
         {/* Carousel Container */}
-        <div className="relative">
-          {/* Embla viewport: overflow-hidden so only the intended slides are visible */}
+        <div className="relative ">
           <div className="overflow-hidden" ref={emblaRef}>
             <div className="flex">
               {filteredProperties.map((property) => (
                 <div
                   key={property.id}
-                  className="
-                    basis-[calc(50%-0.75rem)]  /* two cards per view minus half the gap */
-                    flex-shrink-0
-                    mx-3                      /* total gap of 1.5rem between cards */
-                  "
+                  className="flex-shrink-0 px-3 w-full sm:w-1/2 lg:w-1/3"
                 >
-                  {/* Card */}
                   <PropertyCard
                     id={property.id}
                     title={property.title}
@@ -134,46 +128,44 @@ export function PropertyCarousel() {
           </div>
 
           {/* Navigation Controls */}
-          <div className="flex justify-between items-center mt-6 px-2">
+          <div className="flex justify-between items-center px-2 ">
             <div className="flex items-center space-x-5">
-              {/* Left Button */}
               <Button
                 variant="outline"
                 onClick={scrollPrev}
                 className="
-                  w-14 h-14 
-                  flex items-center justify-center 
-                  border-2 border-white 
-                  text-black 
-                  hover:bg-white hover:text-[#030E27] 
-                  rounded-lg 
-                  shadow-md 
-                  transition-colors duration-300
-                "
+                w-14 h-14 
+                flex items-center justify-center 
+                border-2 border-orange-600 
+                text-orange-600 
+                hover:bg-orange-600 hover:text-white 
+                rounded-lg 
+                shadow-md 
+                transition-colors duration-300
+              "
               >
                 <ChevronLeft className="w-8 h-8" />
               </Button>
 
-              {/* Right Button */}
               <Button
                 variant="outline"
                 onClick={scrollNext}
                 className="
-                  w-14 h-14 
-                  flex items-center justify-center 
-                  border-2 border-white 
-                  text-black 
-                  hover:bg-white hover:text-[#030E27] 
-                  rounded-lg 
-                  shadow-md 
-                  transition-colors duration-300
-                "
+                w-14 h-14 
+                flex items-center justify-center 
+                border-2 border-orange-600 
+                text-orange-600 
+                hover:bg-orange-600 hover:text-white 
+                rounded-lg 
+                shadow-md 
+                transition-colors duration-300
+              "
               >
                 <ChevronRight className="w-8 h-8" />
               </Button>
             </div>
 
-            <div className="text-sm text-gray-400 font-semibold tracking-wide">
+            <div className="text-sm text-orange-500 font-semibold tracking-wide">
               {selectedIndex + 1}
             </div>
           </div>

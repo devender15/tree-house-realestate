@@ -10,11 +10,11 @@ import useEnquiryStore from "@/store/store";
 const navItems = [
   { label: "Commercial", href: "/commercial" },
   { label: "Residential", href: "/residential" },
+  { label: "Our Owned", href: "/owned" },
   { label: "Plots", href: "/plot" },
   { label: "Rent", href: "/rent" },
   { label: "Resale", href: "/resale" },
   { label: "About Us", href: "/about" },
-  { label: "Our Owned", href: "/owned" },
 ];
 
 export default function Navbar() {
