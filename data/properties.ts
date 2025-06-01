@@ -2323,7 +2323,61 @@ export const properties: Property[] = [
     location: "Sector M9 & M10, IMT Manesar, Gurugram",
     search: ["Sector M9", "Sector M10", "IMT Manesar", "Gurugram", "Gurgaon", "Prominent Swastik Greens"],
     category: "plots",
-    image: "/assets/plots/prominent-swastik-greens-thumbnail.jpg"
+    image: "/assets/plots/prominent-swastik-greens-thumbnail.jpg",
+    details: {
+      overview: {
+        heading: "Prominent Swastik Greens: Your Gateway to Modern Living",
+        paragraph1: "Prominent Swastik Greens, developed by Prominent Enterprises Private Limited, is a standout residential plot development in Sector M9 & M10, IMT Manesar, Gurugram. Spanning 106.67 acres, this project blends luxury, convenience, and sustainability, offering homebuyers and investors a unique opportunity to own prime real estate in one of the region’s most desirable locations.",
+        paragraph2: "The project’s strategic location near Dwarka Expressway ensures excellent connectivity to major highways, business hubs, and the Indira Gandhi International Airport. With a variety of plot sizes, modern amenities, and a focus on sustainability, Prominent Swastik Greens is designed for those seeking a vibrant, future-ready community."
+      },
+      features: [
+        "Expansive 106.67-acre residential plot development",
+        "914 plots ranging from 796 sq. ft. to 4,397 sq. ft.",
+        "Yoga and meditation area for relaxation",
+        "Jogging track for an active lifestyle",
+        "Clubhouse for social and recreational activities",
+        "Abundant green spaces and sustainable design",
+        "RERA approved (ID: GGM/765/497/2023/109)",
+        "Possession scheduled for March 2028"
+      ],
+      specifications: {
+        heading: "Key Features of Prominent Swastik Greens",
+        paragraph1: "Prominent Swastik Greens is thoughtfully planned with modern infrastructure and amenities to enhance residents’ quality of life.",
+        paragraph2: "The project features well-laid internal roads, a large community club, underground electrification, and 24x7 security. Residents benefit from a gated township, gas pipeline provision, a 3.56-acre park, and proximity to a proposed shopping area. With 60% of development already completed, timely delivery is assured.",
+        highlights: [
+          "24m, 18m, and 12m wide internal roads",
+          "3.5-acre community club facility",
+          "Modern underground electrification",
+          "24×7 security services",
+          "Proposed shopping area nearby",
+          "Gated township for privacy and exclusivity",
+          "Gas pipeline provision",
+          "3.56-acre park for outdoor activities",
+          "Expansive 106-acre total development area",
+        ]
+      },
+      location_advantage: {
+        heading: "Prime Location and Connectivity",
+        paragraph1: "Prominent Swastik Greens is ideally located near the Dwarka Expressway, offering seamless access to IGI Airport via NH 48. The upcoming metro station is just 10 minutes away, and the township is well-connected to major highways, making it perfect for both living and investment.",
+        paragraph2: "Residents enjoy proximity to key destinations, including business hubs, shopping malls, educational institutions, and healthcare facilities, ensuring convenience and accessibility.",
+        highlights: [
+          "2 mins to Proposed Freight Corridor",
+          "5 mins to Maruti Suzuki Plant",
+          "7 mins to Honda Plant",
+          "10 mins to DLF New Town Heights",
+          "12 mins to Hyatt Regency",
+          "40 mins to IGI Airport",
+          "Easy access to KMP Highway and Gurugram-Rewari-Pataudi Highway"
+        ]
+      },
+      about_developer: {
+        logo: "/assets/developers/prominent-enterprise-logo.png",
+        heading: "Developer Name : Prominent Enterprise Ltd",
+        paragraph1: "Prominent Enterprise Ltd is a leading real estate development company based in Gurugram, India, known for transforming skylines and enriching lifestyles through large-scale residential, industrial, and commercial projects.",
+        paragraph2: "With a commitment to design, functionality, and sustainability, Prominent Enterprise Ltd has established a reputation for quality and innovation. The company’s diverse portfolio includes skyscrapers, industrial complexes, and luxury residential communities, all crafted with a forward-thinking vision.",
+        conclusion: "Prominent Enterprise Ltd is dedicated to building environments that foster productivity, comfort, and community, setting new standards in residential development and contributing positively to the region’s growth."
+      }
+    }
   },
   {
     id: "42",
@@ -2331,7 +2385,30 @@ export const properties: Property[] = [
     location: "Sector 65, Gurgaon",
     search: ["Sector 65", "Gurgaon", "Gurugram", "Emaar Marbella Phase 2 Plots"],
     category: "plots",
-    image: "/assets/plots/emaar-marbella-phase-2-thumbnail.jpg"
+    image: "/assets/plots/emaar-marbella-phase-2-thumbnail.jpg",
+    details: {
+      overview: {
+        heading: "Emaar Marbella Phase 2 Plots",
+        paragraph1: "Emaar Marbella Phase 2 is an exclusive residential plotted development by Emaar, offering a limited collection of just 55 plots in various sizes, including 350, 550, and 578 square yards. Conveniently located near M3M Tee Point in Sector 65, Gurgaon, this project provides a rare opportunity to own premium land in the rapidly growing Delhi-NCR region.",
+        paragraph2: "With land becoming increasingly scarce, these plots not only promise potential appreciation in value but also serve as a valuable inheritance for future generations. The project’s proximity to renowned schools, colleges, hospitals, supermarkets, parks, and recreational centers ensures a well-rounded and connected lifestyle for residents."
+      },
+      features: [
+        "Only 55 exclusive residential plots",
+        "Plot sizes: 350, 550, and 578 square yards",
+        "Located near M3M Tee Point, Sector 65, Gurgaon",
+        "Excellent connectivity to key landmarks and essential amenities",
+        "Close to top schools, colleges, hospitals, and supermarkets",
+        "Suitable for both luxury and affordable plot seekers",
+        "Potential for value appreciation and long-term investment"
+      ],
+      about_developer: {
+        logo: "/assets/developers/emaar-india-logo.jpg",
+        heading: "Developer Name : Emaar India",
+        paragraph1: "Since entering the Indian real estate market in 2005, Emaar India has become renowned for developing iconic and luxurious properties across Gurgaon. Headquartered in Gurgaon, the company boasts a diverse portfolio of residential and commercial projects, earning a reputation as one of the leading real estate developers in the region.",
+        paragraph2: "Emaar India’s residential projects are known for their luxury, innovative design, and modern amenities, while their commercial developments are recognized for their strategic locations and contemporary architecture. The company’s commitment to customer satisfaction and continuous innovation has established it as a trusted name in the real estate sector.",
+        conclusion: "Emaar Group continues to set benchmarks in the industry, driven by a focus on quality, customer-centricity, and sustainable growth."
+      }
+    }
   },
   {
     id: "43",
@@ -2339,7 +2416,55 @@ export const properties: Property[] = [
     location: "Sector 95A, New Gurgaon",
     search: ["Sector 95A", "New Gurgaon", "New Gurugram", "JMS Primeland Plots"],
     category: "plots",
-    image: "/assets/plots/jms-primeland-thumbnail.jpg"
+    image: "/assets/plots/jms-primeland-thumbnail.jpg",
+    details: {
+      overview: {
+        heading: "JMS Primeland Plots",
+        paragraph1: "JMS Primeland is a plotted township in Sector 95A, Gurgaon, developed under the Deen Dayal Jan Awas Yojna (DDJAY) scheme. The project offers plots ranging from 105 to 133 sq. yards, providing an excellent opportunity for homebuyers to own land in a well-connected and rapidly developing area. Purchasers can build independent stilt + 4 floors, with separate registry allowed for each floor, regardless of plot size.",
+        paragraph2: "Spread across 10 acres on Main Pataudi Road, JMS Primeland features 216 plots, with 109 already registered as frozen stocks. The project is HRERA approved and offers up to 70% home loan eligibility. With its prime location, modern amenities, and affordable pricing, JMS Primeland is a smart investment for those seeking a secure future for their families."
+      },
+      features: [
+        "Plots sizes: 105, 109, 121, 128, and 133 sq. yards",
+        "Total of 216 plots in a gated township",
+        "Developed under Deen Dayal Jan Awas Yojna (DDJAY)",
+        "Stilt + 4 floors allowed with separate registry for each floor",
+        "Located on Main Pataudi Road, Sector 95A, Gurgaon",
+        "Home loans up to 70% available",
+        "Lush green environment with modern amenities",
+        "HRERA approved and all key endorsements in place"
+      ],
+      specifications: {
+        heading: "Amenities at JMS Primeland Plots",
+        paragraph1: "JMS Primeland is designed to offer a vibrant and healthy lifestyle, with a range of amenities for all age groups.",
+        paragraph2: "Residents enjoy access to open gym, volleyball and basketball courts, party lawn, palm and fragrance gardens, yoga area, skating ring, elders zone, tea deck, badminton court, joggers park, cricket pitch, CCTV surveillance, guard room, reflexology park, sculpture and meditation gardens, kids' play area, and a secure entrance/exit gate plaza.",
+        highlights: [
+          "Open Gym, Volleyball Court, Party Lawn",
+          "Basketball Court, Palm Garden, Yoga Area",
+          "Skating Ring, Elders Zone, Tea Deck",
+          "Fragrance Garden, Badminton Court, Joggers Park",
+          "Cricket Pitch, CCTV Surveillance, Guard Room",
+          "Reflexology Park, Sculpture Garden, Meditation Area",
+          "Kids' Play Area, Secure Entrance/Exit Gate Plaza"
+        ]
+      },
+      location_advantage: {
+        heading: "Prime Location and Connectivity",
+        paragraph1: "JMS Primeland enjoys a strategic location on Main Pataudi Road, Sector 95A, Gurgaon, ensuring excellent connectivity to all parts of the city. The project is well-connected to major highways and urban centers, making daily commutes and access to essential services convenient.",
+        highlights: [
+          "Located on Main Pataudi Road, Sector 95A, Gurgaon",
+          "Easy access to major highways and city centers",
+          "Close to schools, colleges, malls, and hospitals",
+          "Well-connected to the rest of Gurgaon and New Gurgaon"
+        ]
+      },
+      about_developer: {
+        logo: "/assets/developers/jms-group-logo.jpeg",
+        heading: "Developer Name : JMS Group",
+        paragraph1: "JMS Group is a forward-thinking real estate developer in Gurgaon, dedicated to delivering experiential living spaces and innovative plotted developments. The company combines efficient teams of builders and architects with scalable designs to create architectural masterpieces.",
+        paragraph2: "JMS Group’s projects are recognized for their design, quality, and customer-centric approach. The company is committed to supporting the region’s economic growth and providing affordable housing solutions under government schemes like DDJAY.",
+        conclusion: "With a strong vision and a focus on customer needs, JMS Group continues to set new benchmarks in the Gurgaon real estate market, making it a trusted name for homebuyers and investors."
+      }
+    }
   },
   {
     id: "44",
@@ -2347,7 +2472,57 @@ export const properties: Property[] = [
     location: "Sector 65, Golf Course Ext Road",
     search: ["Sector 65", "Golf Course Ext Road", "Gurgaon", "Gurugram", "Emerald Hills Villa Plots"],
     category: "plots",
-    image: "/assets/plots/emerald-hills-villa-plots-thumbnail.jpg"
+    image: "/assets/plots/emerald-hills-villa-plots-thumbnail.jpg",
+    details: {
+      overview: {
+        heading: "Emerald Hills Villa Plots: Luxury Residential Plots in Sector 65, Gurgaon",
+        paragraph1: "Emerald Hills Villa Plots offer a classic blend of luxury and privacy, allowing you to build the villa of your dreams in a secure, master-planned community. These limited, exclusive residential plots are available at premium locations in Sector 65, Gurgaon, with plot areas starting from 350 sq. yd. and going up to 1138 sq. yd.",
+        paragraph2: "Residents enjoy the convenience of developed plots with all infrastructure in place, including electricity, water, and drainage. The community features landscaped parks, streetlights, fountains, water bodies, and a host of recreational facilities such as a clubhouse, spa, gym, health club, sports amenities, royal jacuzzi, and swimming pool. The township is designed to foster a vibrant community while offering the ultimate luxury of customizing your villa and interiors."
+      },
+      features: [
+        "Limited exclusive residential plots from 350 to 1138 sq. yd.",
+        "Located in Sector 65, Golf Course Extension Road, Gurgaon",
+        "Secure, gated master-planned community",
+        "Developed plots with electric, water, and drainage facilities",
+        "Landscaped parks, streetlights, fountains, and water bodies",
+        "Sports facilities including tennis courts and swimming pool",
+        "Neighborhood shopping arcade with convenient retail",
+      ],
+      specifications: {
+        heading: "Emerald Hills Plots Amenities & Facilities",
+        paragraph1: "Emerald Hills Villa Plots are part of a thoughtfully designed township that integrates outdoor living and recreation into the community’s architecture. The design ensures that children’s play areas, clubhouses, and sports facilities are easily accessible and safe.",
+        paragraph2: "Innovative use of space includes clubhouses with bowling alleys and gyms, skating rinks or basketball courts atop multi-level parking, and badminton courts at lower levels. The focus is on creating environments where residents can thrive and take pride in their homes for generations.",
+        highlights: [
+          "Located in Sector 65, Golf Course Extension Road, Gurgaon",
+          "Part of a secure, gated master-planned community",
+          "100% power back-up",
+          "Modern street lighting and landscaping",
+          "Landscaped parks and greens",
+          "Clubhouse with health club, restaurants, party hall, and lawns",
+          "Sports facilities: tennis courts, swimming pool, etc.",
+          "Neighborhood shopping arcade",
+          "Facility management services"
+        ]
+      },
+      location_advantage: {
+        heading: "Prime Location and Connectivity",
+        paragraph1: "Emerald Hills Villa Plots are ideally situated in Sector 65, offering the conveniences of city living with easy access to the airport, metro rail, and expressways, while providing a retreat-like environment.",
+        paragraph2: "Residents can enjoy the privacy of their own villa and, at the same time, be part of a vibrant community with malls, restaurants, and entertainment centers nearby.",
+        highlights: [
+          "Located in Sector 65, Golf Course Extension Road",
+          "Easy access to airport, metro rail, and expressways",
+          "Close to city conveniences, malls, and entertainment centers",
+          "Retreat-like environment with community living"
+        ]
+      },
+      about_developer: {
+        logo: "/assets/developers/emaar-india-logo.jpg",
+        heading: "Developer Name : Emaar India",
+        paragraph1: "Since entering the Indian real estate market in 2005, Emaar India has become renowned for developing iconic and luxurious properties across Gurgaon. Headquartered in Gurgaon, the company boasts a diverse portfolio of residential and commercial projects, earning a reputation as one of the leading real estate developers in the region.",
+        paragraph2: "Emaar India’s residential projects are known for their luxury, innovative design, and modern amenities, while their commercial developments are recognized for their strategic locations and contemporary architecture. The company’s commitment to customer satisfaction and continuous innovation has established it as a trusted name in the real estate sector.",
+        conclusion: "Emaar Group continues to set benchmarks in the industry, driven by a focus on quality, customer-centricity, and sustainable growth."
+      }
+    }
   },
   {
     id: "45",
