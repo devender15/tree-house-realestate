@@ -1,4 +1,5 @@
 import { HeroSection } from "@/components/heroSection";
+import Resale from "@/components/resale";
 
 export default function ResalePage() {
   return (
@@ -8,6 +9,8 @@ export default function ResalePage() {
         heading="RESALE PROPERTIES"
         subheading=""
       />
+
+      <Resale />
     </div>
   );
 }

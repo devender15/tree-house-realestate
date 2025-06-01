@@ -12,6 +12,7 @@ import {
 } from "@/components/ui/select";
 import { PT_Serif } from "next/font/google";
 import Image from "next/image";
+import SearchBar from "./search";
 
 const PTSerif = PT_Serif({
   subsets: ["latin"],
@@ -47,7 +48,6 @@ export function HeroSection({
         </video>
       ) : (
         imageUrl && (
-      
           <Image
             src={imageUrl}
             alt="Hero Background"
@@ -74,46 +74,7 @@ export function HeroSection({
           </h1>
 
           {/* Search Bar */}
-          <div className="bg-white/95 backdrop-blur-sm rounded-lg p-6 max-w-4xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-4 items-center">
-              <Select>
-                <SelectTrigger className="h-12 font-poppins text-black w-full">
-                  <SelectValue
-                    placeholder="Property Type"
-                    className="text-black"
-                  />
-                </SelectTrigger>
-                <SelectContent className="!text-black">
-                  <SelectItem value="apartment">Apartment</SelectItem>
-                  <SelectItem value="villa">Villa</SelectItem>
-                  <SelectItem value="plot">Plot</SelectItem>
-                  <SelectItem value="commercial">Commercial</SelectItem>
-                </SelectContent>
-              </Select>
-
-              <Select>
-                <SelectTrigger className="h-12 font-poppins text-black w-full">
-                  <SelectValue placeholder="Budget Range" />
-                </SelectTrigger>
-                <SelectContent className="text-black">
-                  <SelectItem value="under-50">Under ₹50L</SelectItem>
-                  <SelectItem value="50-1cr">₹50L – ₹1Cr</SelectItem>
-                  <SelectItem value="1-2cr">₹1Cr – ₹2Cr</SelectItem>
-                  <SelectItem value="above-2cr">Above ₹2Cr</SelectItem>
-                </SelectContent>
-              </Select>
-
-              <Input
-                placeholder="Location, Project, or Builder"
-                className="h-12 font-poppins text-black w-full"
-              />
-
-              <Button className="h-12 bg-orange-500 hover:bg-orange-600 font-poppins cursor-pointer w-full">
-                <Search className="w-4 h-4 mr-2" />
-                Search Properties
-              </Button>
-            </div>
-          </div>
+          <SearchBar />
         </div>
       </div>
     </section>
