@@ -62,10 +62,10 @@ const PropertyCarousel = () => {
 
       {/* Carousel */}
       <div
-        className="overflow-hidden max-w-[1200px] mx-auto px-4"
+        className="overflow-hidden max-w-[1400px] mx-auto px-4 "
         ref={emblaRef}
       >
-        <div className="flex gap-6 select-none touch-pan-x">
+        <div className="flex gap-2 select-none touch-pan-x">
           {filteredProperties.length > 0 ? (
             filteredProperties.map((property) => (
               <div
