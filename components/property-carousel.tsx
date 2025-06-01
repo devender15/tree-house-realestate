@@ -11,6 +11,7 @@ import {
   type Property,
 } from "@/data/properties";
 import Image from "next/image";
+import PropertyCard from "./propertyCard";
 
 export function PropertyCarousel() {
   const [activeTab, setActiveTab] =
@@ -120,52 +121,13 @@ export function PropertyCarousel() {
                   "
                 >
                   {/* Card */}
-                  <div className="relative h-96 rounded-xl overflow-hidden group shadow-xl border border-gray-700 bg-gray-600">
-                    {/* Property Image */}
-                    <div className="absolute inset-0">
-                      <Image
-                        src={property.image}
-                        alt={property.title}
-                        fill
-                        className="object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
-                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 40vw"
-                        priority={property.id === "1"}
-                      />
-                    </div>
-
-                    {/* Gradient Overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/50 to-transparent" />
-
-                    {/* Content */}
-                    <div className="absolute inset-0 p-6 flex flex-col justify-end">
-                      <h3 className="text-2xl font-semibold mb-2 font-serif text-white leading-tight drop-shadow-lg">
-                        {property.title}
-                      </h3>
-                      <div className="flex items-center text-gray-300 mb-4 space-x-2">
-                        <MapPin className="w-5 h-5" />
-                        <span className="text-base">{property.location}</span>
-                      </div>
-
-                      {/* Action Buttons */}
-                      <div className="flex flex-wrap items-center space-x-3">
-                        <Button className="bg-indigo-600 text-white rounded-md hover:bg-indigo-700 px-5 py-2 text-sm font-semibold shadow-md transition duration-300">
-                          Enquire Now
-                        </Button>
-                        <Button
-                          variant="outline"
-                          className="border-indigo-600 text-indigo-600 hover:bg-indigo-600 hover:text-white rounded-md px-5 py-2 text-sm font-semibold transition duration-300"
-                        >
-                          View Details
-                        </Button>
-                        <Button
-                          size="sm"
-                          className="bg-green-600 hover:bg-green-700 p-3 rounded-full shadow-md transition duration-300"
-                        >
-                          <MessageCircle className="w-5 h-5" />
-                        </Button>
-                      </div>
-                    </div>
-                  </div>
+                  <PropertyCard
+                    id={property.id}
+                    title={property.title}
+                    location={property.location}
+                    image={property.image}
+                    category={property.category}
+                  />
                 </div>
               ))}
             </div>

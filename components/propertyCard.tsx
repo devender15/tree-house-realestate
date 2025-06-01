@@ -42,9 +42,12 @@ const PropertyCard = ({ id, title, location, image, category }: CardData) => {
 
         {/* buttons */}
         <div className="flex gap-2 mt-4  ">
-          <button className=" px-3 py-1.5 rounded-full border-gray-400 bg-red-400 text-white font-semibold hover:cursor-pointer hover:bg-red-500 ">
+          <Link
+            href={`/enquiry`}
+            className=" px-3 py-1.5 rounded-full border-gray-400 bg-red-400 text-white font-semibold hover:cursor-pointer hover:bg-red-500 "
+          >
             enquire now
-          </button>
+          </Link>
 
           <Link
             href={`/details/${id}`}
@@ -53,14 +56,19 @@ const PropertyCard = ({ id, title, location, image, category }: CardData) => {
             view details
           </Link>
 
-          <button className=" rounded-full ">
+          <a
+            href="https://wa.me/919509594949"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-full flex items-center justify-center"
+          >
             <MessageCircleMore
               width={35}
               height={35}
               color="green"
-              className="font-light "
-            />{" "}
-          </button>
+              className="font-light"
+            />
+          </a>
         </div>
       </div>
     </div>

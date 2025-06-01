@@ -24,8 +24,8 @@ export default function SearchResultsPage({
   return (
     <div>
       <HeroSection
-        imageUrl="/assets/resale_bg.jpg"
-        heading="SEARCH PROPERTIES"
+        imageUrl="/assets/search_bg.png"
+        heading="SEARCH"
         subheading=""
       />
 
@@ -40,6 +40,8 @@ export default function SearchResultsPage({
             </p>
           </div>
         )}
+
+        <h1 className="mx-42 p-6 mb-5 text-2xl text-red-500 ">{filtered.length} results found</h1>
         <div className="max-w-8xl mx-42 px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {filtered.map((property) => (
             <div

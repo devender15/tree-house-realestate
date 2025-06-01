@@ -1,15 +1,5 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Search } from "lucide-react";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 import { PT_Serif } from "next/font/google";
 import Image from "next/image";
 import SearchBar from "./search";
@@ -59,22 +49,24 @@ export function HeroSection({
       )}
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/30  to-black/80" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-black/80" />
 
       {/* Content */}
-      <div className="relative z-10 flex items-center justify-center h-full">
-        <div className="text-center text-white max-w-4xl px-4 pt-16">
-          <p className="text-2xl font-serif font-semibold mb-4 tracking-wider">
+      <div className="relative z-10 flex items-center justify-center h-full px-4 sm:px-6 lg:px-8">
+        <div className="text-center text-white max-w-3xl w-full space-y-6">
+          <p className="text-lg sm:text-xl md:text-2xl font-serif font-semibold tracking-wide">
             {subheading}
           </p>
           <h1
-            className={`${PTSerif.className} text-4xl md:text-7xl mb-8 leading-tight`}
+            className={`${PTSerif.className} text-3xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight font-bold`}
           >
-            {heading || "JOURNEY  BEGINS"}
+            {heading || "JOURNEY BEGINS"}
           </h1>
 
           {/* Search Bar */}
-          <SearchBar />
+          <div className="mt-6 sm:mt-10 px-2 sm:px-4">
+            <SearchBar />
+          </div>
         </div>
       </div>
     </section>

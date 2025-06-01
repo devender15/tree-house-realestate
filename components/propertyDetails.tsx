@@ -18,7 +18,6 @@ const PropertyDetails = ({ id }: { id: string }) => {
           <h1>{property.title}</h1>
           <p>{property.description}</p>
           <p>Location: {property.location}</p>
-          {/* <p>Price: {property.price}</p> */}
         </div>
       ) : (
         "Property not found"
