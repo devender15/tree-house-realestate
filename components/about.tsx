@@ -4,7 +4,7 @@ const About = () => {
   return (
     <section className="bg-white py-20 px-6 max-w-6xl mx-auto text-gray-800">
       <h1 className="text-4xl font-bold text-orange-600 mb-8 text-center">
-        About Reias India Real Estate
+        Tree House India Real Estate
       </h1>
 
       <p className="mb-6">

@@ -2,6 +2,7 @@
 
 import React from "react";
 import { ourProperties } from "@/data/weown";
+import Image from "next/image";
 
 const Owned = () => {
   return (
@@ -17,10 +18,12 @@ const Owned = () => {
               key={property.id}
               className="bg-white rounded-2xl overflow-hidden shadow-lg border border-orange-200 hover:shadow-orange-300/50 transition-shadow"
             >
-              <img
+              <Image
                 src={property.image}
                 alt={property.title}
-                className="h-48 w-full object-cover"
+                fill
+                className="object-cover"
+                sizes="100vw"
               />
               <div className="p-6 space-y-3">
                 <h3 className="text-lg font-bold text-orange-600">
