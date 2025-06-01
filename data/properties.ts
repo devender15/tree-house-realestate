@@ -1213,30 +1213,52 @@ export const properties: Property[] = [
     image: "/assets/commercial/dlf-club-arcade-thumbnail.jpg",
     details: {
       overview: {
-        heading: "",
-        paragraph1: "",
-        paragraph2: "",
+        heading: "DLF Club Arcade Sector 91, Gurgaon: The Premier Investment Opportunity in Commercial Real Estate",
+        paragraph1: "DLF Club Arcade is a thoughtfully designed commercial complex located in Sector 91, Gurugram. Developed by DLF, this project offers a curated mix of retail shops, F&B outlets, and essential services, catering to the daily needs of residents in the surrounding DLF Garden City and nearby communities.",
+        paragraph2: "With modern architecture, ample parking, and a strategic location, DLF Club Arcade ensures high visibility and accessibility. It is an ideal destination for shopping, dining, and convenience, making it a preferred choice for both business owners and visitors."
       },
-      features: [],
+      features: [
+        "Prime location within DLF Garden City, Sector 91, Gurgaon",
+        "Ground and first floor retail shops with excellent frontage",
+        "Dedicated zones for F&B, daily needs, and essential services",
+        "Ample surface and basement parking for visitors and tenants",
+        "Wide internal driveways and pedestrian-friendly design",
+        "High visibility from main sector roads",
+        "Professional facility management and 24x7 security"
+      ],
       specifications: {
-        heading: "",
-        paragraph1: "",
-        paragraph2: "",
-        highlights: []
+        heading: "Project Specifications – DLF Club Arcade",
+        paragraph1: "The success of any commercial development relies heavily on the quality of its infrastructure and amenities. DLF Club Arcade provides an impressive array of features that distinguish it as a premier project in Gurgaon's commercial real estate landscape.",
+        highlights: [
+          "Total land area of 0.89 acres within a 4-acre commercial project at DLF Club Arcade",
+          "Retail shops available in sizes ranging from 500 to 900 sq. ft., catering to diverse business needs",
+          "Located on a 60-meter wide road ensuring high footfall and visibility with a 4 lakh+ residential catchment area",
+          "Excellent connectivity to major highways and metro stations for ease of commute and customer access",
+          "Ample parking facilities including basement and surface parking with dedicated disabled parking spaces",
+          "Diverse retail and dining options from gourmet restaurants to cafes catering to all tastes",
+          "State-of-the-art fitness centers and wellness facilities including spas within the complex",
+          "Vibrant entertainment and cultural venues hosting regular social events, performances, and community activities"
+        ]
+
       },
       location_advantage: {
-        heading: "",
-        paragraph1: "",
-        paragraph2: "",
-        highlights: [],
+        heading: "Strategic Location Benefits",
+        paragraph1: "DLF Club Arcade enjoys a prime position in Sector 91, Gurgaon, within the heart of DLF Garden City. The project is easily accessible from major roads and is surrounded by a large residential catchment, ensuring steady footfall.",
+        paragraph2: "Its proximity to Dwarka Expressway, NH-8, and Pataudi Road enhances connectivity to key business hubs, schools, and hospitals.",
+        highlights: [
+          "Located within DLF Garden City, Sector 91",
+          "Close to Dwarka Expressway and NH-8",
+          "Surrounded by premium residential projects",
+          "Near schools, hospitals, and daily conveniences"
+        ]
       },
       about_developer: {
-        logo: "/assets/developers/",
-        heading: "",
-        paragraph1: "",
-        paragraph2: "",
-        conclusion: ""
-      },
+        logo: "/assets/developers/dlf-logo.png",
+        heading: "Developer Name : DLF",
+        paragraph1: "DLF is India’s leading real estate developer, renowned for delivering landmark residential, commercial, and retail projects across the country. With a legacy of over 75 years, DLF is committed to quality, innovation, and customer satisfaction.",
+        paragraph2: "DLF’s commercial developments are known for their strategic locations, world-class amenities, and robust infrastructure, making them preferred destinations for businesses and investors.",
+        conclusion: "DLF continues to set new benchmarks in the real estate sector, shaping the urban landscape with iconic projects and a focus on sustainable growth."
+      }
     }
   },
   {
@@ -1248,30 +1270,54 @@ export const properties: Property[] = [
     image: "/assets/commercial/aipl-joy-district-thumbnail.jpg",
     details: {
       overview: {
-        heading: "",
-        paragraph1: "",
-        paragraph2: "",
+        heading: "AIPL Joy District: New Commercial Project Launch in Sector 88, Gurgaon",
+        paragraph1: "Advance India Projects Limited (AIPL) is a leading development company with over three decades of experience, specializing in residential, commercial, and retail properties across key regions including Delhi NCR, Punjab, Rajasthan, and Maharashtra. Renowned for its commitment to innovation and quality, AIPL has successfully developed and managed commercial spaces for more than 80 multinational and Indian corporations. The company consistently views each new project as an opportunity to build on its legacy of excellence, surpass customer expectations, and deliver enduring value to its shareholders.",
+        paragraph2: "AIPL Joy District, the newest commercial venture in Sector 88, Gurgaon near Dwarka Expressway, is set to transform the area's commercial landscape by offering exceptional facilities and strategic advantages for businesses. Spanning 10.437 acres with 1,190 units, this expansive development blends contemporary workspaces with trendy high-street retail, creating an innovative environment that caters to modern business needs while seamlessly integrating commercial and residential elements to enhance both work and lifestyle experiences."
       },
-      features: [],
+      features: [
+        "Atrium Space: A 3.5-acre atrium with a musical fountain and plenty of seating, creating a welcoming environment for visitors.",
+        "Inspired by Dubai Mall: Incorporates luxurious design elements inspired by the iconic Dubai Mall for an upscale shopping and working experience.",
+        "Open Corner Property: Features a two-sided open corner with wide frontage to maximize visibility and accessibility, making it a prime investment opportunity."
+      ],
       specifications: {
-        heading: "",
-        paragraph1: "",
-        paragraph2: "",
-        highlights: []
+        heading: "Project Specifications – AIPL Joy District",
+        paragraph1: "Advance India Projects Limited (AIPL) is a leading real estate developer specializing in residential, commercial, and retail projects across key regions including Delhi NCR, Punjab, Rajasthan, and Maharashtra. With more than 30 years of experience, AIPL has earned a strong reputation for delivering high-quality developments driven by a dedication to innovation and excellence.",
+        paragraph2: "Having successfully developed and managed commercial spaces for over 80 multinational and Indian corporates, AIPL is dedicated to creating landmark projects in the Delhi-NCR region. Each new venture is viewed as an opportunity to build upon past successes, exceed customer expectations, and deliver lasting value to shareholders.",
+        highlights: [
+          "Transformative Workspaces: AIPL Joy District offers innovative work environments seamlessly integrating modern workspaces with trendy high-street retail across 10.437 acres and 1,190 units.",
+          "Prime Connectivity: Strategically located near NH-8, connecting to 3,000 acres of premium residential properties by developers like DLF and Bestech, ensuring easy accessibility and a strong customer base.",
+          "Atrium Space: Features a 3.5-acre atrium with a musical fountain and ample seating, creating an inviting atmosphere for visitors.",
+          "Inspired by Dubai Mall: Incorporates design elements inspired by Dubai Mall to offer a luxurious shopping and working experience.",
+          "Open Corner Property: Two-sided open corner property with extensive frontage, maximizing visibility and accessibility for businesses and investors.",
+          "Luxury Retail, Serviced Apartments & Office Spaces: A vibrant mix of premium retail outlets, serviced apartments, and modern office spaces fostering a community-centric environment.",
+          "Investment Opportunity: Shops starting from 2,000 sq. ft. priced at ₹3.33 crore, offering flexible configurations and high footfall, making it an ideal commercial investment in Gurgaon.",
+          "Community-Centric Design: Integration of retail, dining, and entertainment options to encourage social interaction and enhance visitor and resident experience.",
+          "Commitment to Quality & Innovation: AIPL focuses on delivering exceptional quality, innovative design, and modern amenities throughout the project."
+        ]
+
       },
       location_advantage: {
-        heading: "",
-        paragraph1: "",
-        paragraph2: "",
-        highlights: [],
+        heading: "Prime Location Benefits",
+        paragraph1: "AIPL Joy District is ideally positioned in Sector 88, Gurgaon, offering excellent connectivity to major highways and business districts. Its location ensures easy access for both local residents and commuters from across the city.",
+        paragraph2: "The project is surrounded by established residential sectors, schools, hospitals, and commercial hubs, making it a preferred destination for business and leisure.",
+        highlights: [
+          "Proximity to Notable Properties: Located near some of Gurgaon's most renowned properties, boosting its attractiveness.",
+          "Excellent Connectivity: Direct access to key routes like Dwarka Expressway and Southern Peripheral Road (SPR).",
+          "Transport Links: Easy connections to ISBT and Dwarka Metro stations for convenient commuting.",
+          "Nearby Major Roads: Sohna Road is just a 12-minute drive, further enhancing accessibility.",
+          "Close to IMT Manesar: Minutes away from the industrial hub, ideal for business activities.",
+          "Airport Accessibility: Only 15-20 minutes from Indira Gandhi International Airport for quick travel.",
+          "Walking Distance from NH-8: A short 10-minute walk to NH-8 improves overall transport convenience."
+        ]
+
       },
       about_developer: {
-        logo: "/assets/developers/",
-        heading: "",
-        paragraph1: "",
-        paragraph2: "",
-        conclusion: ""
-      },
+        logo: "/assets/developers/aipl-logo.png",
+        heading: "Developer Name : AIPL (Advance India Projects Limited)",
+        paragraph1: "AIPL is a renowned real estate developer with a strong presence in North India, known for delivering landmark commercial and residential projects. With over three decades of experience, AIPL has established a reputation for quality, innovation, and timely delivery.",
+        paragraph2: "The company’s commercial developments are recognized for their strategic locations, modern design, and robust infrastructure, making them preferred choices for businesses and investors.",
+        conclusion: "AIPL continues to set new benchmarks in the real estate sector, focusing on customer satisfaction and sustainable growth."
+      }
     }
   },
   {
@@ -1283,29 +1329,57 @@ export const properties: Property[] = [
     image: "/assets/commercial/m3m-route-65-thumbnail.jpg",
     details: {
       overview: {
-        heading: "",
-        paragraph1: "",
-        paragraph2: "",
+        heading: "Discover M3M Route 65: Gurugram's Premier Commercial Destination",
+        paragraph1: "M3M Route 65 is a futuristic and international commercial-style development located in Sector 65, Gurgaon. It offers a unique blend of shopping, dining, and entertainment experiences.",
+        paragraph2: "The project features retail shops, food courts, restaurants, and entertainment zones, all designed with modern architecture and wide boulevards."
       },
-      features: [],
+      features: [
+        "Double Height and Conventional Retail Shops enhance shopping engagement.",
+        "Pedestrianized Plazas and Open Spaces create a vibrant, pedestrian-friendly environment.",
+        "Efficient Shop Design along spacious boulevards ensures maximum visibility and accessibility.",
+        "Well-Planned Layouts with connecting bridges facilitate easy movement and enhance visibility.",
+        "High Street Retail Market adjacent to World Mark 65 offers a premium retail experience.",
+        "Fully Equipped Hypermarket located on the underground level caters to all shopping needs.",
+        "Efficient Floor Plans optimize space and functionality for each retail outlet.",
+        "Dedicated Branding Signage provides strong brand presence for every retail outlet.",
+        "Wide Display Areas allow ample space to showcase the latest collections.",
+        "Multiple Anchor Stores drive foot traffic and enhance the overall shopping experience."
+      ],
       specifications: {
-        heading: "",
-        paragraph1: "",
-        paragraph2: "",
-        highlights: []
+        heading: "Project Highlights",
+        paragraph1: "M3M Route 65 is designed to be a vibrant high-street destination with excellent visibility and accessibility.",
+        highlights: [
+          "Landscaped Plaza: Enjoy a beautifully designed plaza that enhances the overall experience.",
+          "Spanning 4 Acres: This expansive development provides ample space for a variety of activities.",
+          "Open-to-Sky Courtyards: Experience refreshing outdoor spaces that promote relaxation and leisure.",
+          "Anchor Stores Across 3 Levels: Strategically positioned anchor stores ensure a diverse shopping experience.",
+          "Multiple Access Points: Thoughtfully planned entrances for easy access from all directions.",
+          "Dual Glass Façades: Glass façades on both sides offer excellent visibility for retail outlets.",
+          "Exquisite Terrace Dining: Delight in open dining options located on the terrace level.",
+          "Proximity to Premium Residences: Surrounded by upscale residences, ensuring a high footfall.",
+          "World-Class Education: Nearby institutions like DPS International School and St. Xavier’s High School enhance community value.",
+          "Healthcare Facilities: Major hospitals, including The Medicity and Artemis Hospital, are within a 5 km radius.",
+          "Seamless Connectivity: Well-designed elevators, escalators, and connecting bridges ensure easy movement throughout the project.",
+          "Diverse Experience: Enjoy shopping, dining, entertainment for kids, and access to anchors and hypermarkets—all in one place."
+        ]
+
       },
       location_advantage: {
-        heading: "",
-        paragraph1: "",
-        paragraph2: "",
-        highlights: [],
+        heading: "Location Advantages",
+        paragraph1: "Strategically located in Sector 65, Golf Course Extension Road, Gurgaon.",
+        highlights: [
+          "Proximity to Prominent Schools like Heritage School, Scottish High, Pathways, G.D. Goenka, and Shriram appeals to families.",
+          "Access to Proposed Metro Corridor enhances connectivity and commuter convenience.",
+          "Close to IGI Airport with just a 30-minute drive for easy domestic and international travel.",
+          "Nearby Healthcare Facilities including Max, Artemis, Medicity, and Fortis provide essential medical services.",
+          "Proximity to Corporate Hubs such as Hughes, Amex, Hewitt, E\&Y, IBM, and Cairn Energy attracts business professionals."
+        ]
       },
       about_developer: {
-        logo: "/assets/developers/",
-        heading: "",
-        paragraph1: "",
-        paragraph2: "",
-        conclusion: ""
+        logo: "/assets/developers/m3m-india-logo.jpg",
+        heading: "Developer Name : M3M India",
+        paragraph1: "Founded in 1998, M3M India has swiftly risen to prominence in the Indian real estate market. The company is dedicated to redefining luxury residential and commercial spaces through a strong focus on innovation, quality, and sustainability. With a diverse portfolio spanning residential, commercial, and retail projects, M3M has earned a trusted reputation among investors and homebuyers alike.",
+        conclusion: "In summary, M3M India stands as a beacon of innovation and excellence in the real estate sector. Its rich history, commitment to quality, and focus on sustainability make it a trusted choice for those seeking luxury living and investment opportunities in India. With a portfolio that continues to expand, M3M remains dedicated to shaping the future of real estate."
       },
     }
   },
@@ -1318,30 +1392,52 @@ export const properties: Property[] = [
     image: "/assets/commercial/suncity-the-empire-thumbnail.jpg",
     details: {
       overview: {
-        heading: "",
-        paragraph1: "",
-        paragraph2: "",
+        heading: "Suncity The Empire",
+        paragraph1: "Suncity Group is poised to launch its newest commercial destination, \"Suncity The Empire,\" situated in Sector 43, Gurgaon. This project is more than just real estate—it’s a lifestyle statement, crafted with precision and attention to every detail. Renowned for its high standards, Suncity Group has designed each space in The Empire to deliver luxury and elevate the living experience for its residents.",
+        paragraph2: "Strategically positioned on Sector-43, Golf Course Extension Road, Gurgaon, Suncity The Empire integrates retail shops, commercial spaces, and office units, catering to discerning buyers seeking top-notch projects. This venture blends office environments with retail convenience, conveniently accessible from major thoroughfares and upscale residential neighborhoods, aiming to provide respite from urban congestion through its expansive layout and open spaces."
       },
-      features: [],
+      features: [
+        "Iconic architecture with dual-height shops ensuring high visibility and an engaging shopping experience.",
+        "Family Entertainment Center featuring a gaming zone, theater, and gourmet dining in an open landscaped setting.",
+        "Premium office enclave 'Absolutely Rare' on Golf Course Road offering sophisticated, flexible office spaces from 50 to 600 sq mtr.",
+        "Retail segment with 41 ultra-premium showrooms featuring grand floor heights, magnificent frontage, and world-class amenities hosting luxury brands.",
+        "Enhanced accessibility with a dedicated drop-off zone, grand entrance lobby, high-speed elevators, and proximity to major hospitals, metro stations, and the international airport."
+      ],
       specifications: {
-        heading: "",
-        paragraph1: "",
-        paragraph2: "",
-        highlights: []
+        heading: "Project Highlights – Suncity The Empire",
+        highlights: [
+          "4-side open office spaces with private balconies and dedicated lifts",
+          "Lockable office spaces ensuring privacy with one office per floor",
+          "Located in a region with over 5 lakh affluent families",
+          "Retail shops designed for maximum visibility with expansive frontage",
+          "Ultra-modern building with ground plus 24 floors designed by renowned architects ARCOP",
+          "Ample parking space available",
+          "Green building features with an ultra-modern facade",
+          "41 ultra-premium showrooms on ground and first floors",
+          "Ground floor height of 5.8 meters and first floor height of 4.2 meters",
+          "Magnificent frontage enhancing visibility and aesthetic appeal",
+          "Highest efficiency based on the philosophy 'What you pay = What you get'"
+        ]
+
       },
       location_advantage: {
-        heading: "",
-        paragraph1: "",
-        paragraph2: "",
-        highlights: [],
+        heading: "Strategic Location Benefits",
+        paragraph1: "Suncity The Empire enjoys a prime location in Sector 43, Gurgaon, offering seamless connectivity to major business hubs, residential areas, and key landmarks.",
+        highlights: [
+          "Prime location near Golf Course Road for easy area access",
+          "Just a 5-minute drive from MG Road",
+          "Close to Sector 43, Gurugram Metro Station",
+          "Convenient 20-minute drive to the International Airport",
+          "Nearby major hospitals including Fortis, Artemis, and Paras for quick medical access"
+        ]
+
       },
       about_developer: {
-        logo: "/assets/developers/",
-        heading: "",
-        paragraph1: "",
-        paragraph2: "",
-        conclusion: ""
-      },
+        logo: "/assets/developers/suncity-logo.png",
+        heading: "Developer Name : Suncity Projects",
+        paragraph1: "Suncity Projects is a renowned real estate developer known for delivering premium residential and commercial projects. The company is committed to quality, innovation, and customer satisfaction.",
+        conclusion: "Suncity Projects continues to set new benchmarks in the real estate sector with its focus on excellence and timely delivery."
+      }
     }
   },
   {
@@ -1353,30 +1449,60 @@ export const properties: Property[] = [
     image: "/assets/commercial/magnum-global-park-gurgaon-thumbnail.jpg",
     details: {
       overview: {
-        heading: "",
-        paragraph1: "",
-        paragraph2: "",
+        heading: "Magnum Global Park Gurgaon",
+        paragraph1: "Magnum Global Park is a commercial project located in Sector 58, Golf Course Extension Road, Gurgaon. The project offers premium commercial spaces with modern amenities and excellent connectivity.",
+        paragraph2: "It is designed to cater to the needs of businesses and investors looking for a strategic location on Golf Course Extension Road."
       },
-      features: [],
+      features: [
+        "Elegantly designed facade",
+        "Integrated with modern facilities",
+        "Showrooms with high visibility",
+        "Natural daylight utilization",
+        "Recycling of non-renewable resources",
+        "State-of-the-art office spaces",
+        "Conference room and meeting rooms",
+        "100% power back-up",
+        "Sit-outs, gazebos, and water bodies",
+        "Exquisitely planned landscape"
+      ]
+      ,
       specifications: {
-        heading: "",
-        paragraph1: "",
-        paragraph2: "",
-        highlights: []
+        heading: "Project Highlights – Magnum Global Park",
+        highlights: [
+          "30 ft. height grand entrance lobby",
+          "Valet parking and concierge service",
+          "Meticulous floor planning",
+          "Low maintenance",
+          "Hassle-free pedestrian movement and traffic flow",
+          "24×7 multi-layer security",
+          "7 levels of car park",
+          "High speed elevators",
+          "Maximum energy efficiency",
+          "EV charging stations"
+        ]
+
       },
       location_advantage: {
-        heading: "",
-        paragraph1: "",
-        paragraph2: "",
-        highlights: [],
+        heading: "Location Advantages",
+        paragraph1: "Magnum Global Park enjoys a prime location in Sector 58, Gurgaon, providing easy access to key business hubs, residential areas, and essential services.",
+        highlights: [
+          "Ideally located in the heart of Gurgaon",
+          "Approximately 1 km from the nearest Rapid Metro Station",
+          "Well connected to IGI Airport, South Delhi, Faridabad, and Sohna Road",
+          "Seamless connectivity from NH-8 and Cyber City",
+          "Close to healthcare, hospitality, and education facilities",
+          "Located on Gurgaon-Faridabad highway",
+          "In proximity to MNCs, hotels, and corporate houses",
+          "Surrounded by ultra-modern townships and commercial hubs"
+        ]
+
       },
       about_developer: {
-        logo: "/assets/developers/",
-        heading: "",
-        paragraph1: "",
-        paragraph2: "",
-        conclusion: ""
-      },
+        logo: "/assets/developers/magnum-logo.png",
+        heading: "Developer Name : Galaxy Magnum Group",
+        paragraph1: "Magnum Group is a reputed real estate developer known for delivering quality commercial and residential projects.",
+        conclusion: "Magnum Group is committed to timely delivery and customer satisfaction."
+      }
     }
   },
   {
@@ -1388,30 +1514,53 @@ export const properties: Property[] = [
     image: "/assets/commercial/elan-imperial-thumbnail.jpg",
     details: {
       overview: {
-        heading: "",
-        paragraph1: "",
-        paragraph2: "",
+        heading: "Elan Imperial",
+        paragraph1: "Elan Imperial is a upcoming commercial project by Elan Group, located in Sector 82, Gurgaon. This high-street retail and commercial development offers a blend of retail shops, food courts, entertainment zones, and office spaces, designed to provide a world-class business and shopping experience.",
+        paragraph2: "Strategically situated on NH-48, Elan Imperial enjoys excellent connectivity and high visibility, making it an ideal investment destination for brands, businesses, and investors."
       },
-      features: [],
+      features: [
+        "Ideally located in the heart of Gurgaon",
+        "Approx. 1 km from the nearest Rapid Metro Station",
+        "Well connected to IGI Airport, South Delhi, Faridabad & Sohna Road",
+        "Seamless connectivity from NH-8 & Cyber City",
+        "Close to healthcare, hospitality & education facilities",
+        "On Gurgaon-Faridabad highway",
+        "In proximity to MNCs, hotels & corporate houses",
+        "Surrounded by ultra-modern townships & commercial hubs"
+      ]
+      ,
       specifications: {
-        heading: "",
-        paragraph1: "",
-        paragraph2: "",
-        highlights: []
+        heading: "Project Highlights – Elan Imperial",
+        highlights: [
+          "New Gurgaon's First Mall with Five-Star Hotel",
+          "Sprawling Land: Spread over a sprawling 7.6 acres of land",
+          "Designed by Benoy: Expertly designed by Benoy",
+          "Surrounded by Dense Residential Projects: Situated amidst dense residential projects",
+          "Attractive Returns: Offers a 12% annual return or NPV of 28% for 36 months",
+          "Triple Height Shops: Features triple height shops on the ground floor",
+          "Food Courts on 2nd Floor: Food courts located on the second floor (Soldout)",
+          "Double Height Restaurant with Terrace: Includes a double-height restaurant with a terrace",
+          "State-of-the-Art Multiplex: Boasts 4 silver screens and a state-of-the-art multiplex",
+          "Exclusive Payment Plan: Offers an exclusive 40:30:30 payment plan"
+        ]
+
       },
       location_advantage: {
-        heading: "",
-        paragraph1: "",
-        paragraph2: "",
-        highlights: [],
+        heading: "Location Advantages",
+        paragraph1: "Elan Imperial is strategically located in Sector 82, Gurgaon, offering seamless connectivity and access to major residential and commercial hubs.",
+        highlights: [
+          "Located on NH-48 (Delhi-Jaipur Highway)",
+          "Easy access to Dwarka Expressway and SPR",
+          "Close to IGI Airport and major business districts",
+          "Surrounded by premium residential societies",
+        ]
       },
       about_developer: {
-        logo: "/assets/developers/",
-        heading: "",
-        paragraph1: "",
-        paragraph2: "",
-        conclusion: ""
-      },
+        logo: "/assets/developers/elan-logo.jpg",
+        heading: "Developer Name : Elan Group",
+        paragraph1: "Elan Group is a leading real estate developer known for its innovative commercial and retail projects in Gurgaon.",
+        conclusion: "Elan Group is committed to delivering world-class developments with a focus on quality, design, and customer satisfaction."
+      }
     }
   },
   {
@@ -1423,32 +1572,60 @@ export const properties: Property[] = [
     image: "/assets/commercial/elan-the-mark-thumbnail.jpeg",
     details: {
       overview: {
-        heading: "",
-        paragraph1: "",
-        paragraph2: "",
+        heading: "Elan The Mark Commercial Projects in Dwarka Expressway Gurgaon",
+        paragraph1: "Elan The Mark is a new commercial project by Elan Group, located in Sector 106, Dwarka Expressway, Gurgaon. This development offers high-street retail, food courts, entertainment zones, and office spaces, designed to provide a premium business and shopping experience.",
+        paragraph2: "Strategically positioned on Dwarka Expressway, Elan The Mark enjoys excellent connectivity and visibility, making it an attractive destination for brands, businesses, and investors."
       },
-      features: [],
+      features: [
+        "High-street retail shops and showrooms",
+        "Food courts and fine dining restaurants",
+        "Entertainment zones and multiplex",
+        "Premium office spaces",
+        "Modern architecture and grand frontage",
+        "Ample parking space",
+        "High-speed elevators and escalators",
+        "24x7 security and surveillance",
+        "Strategic location on Dwarka Expressway, Sector 106, Gurgaon"
+      ],
       specifications: {
-        heading: "",
-        paragraph1: "",
-        paragraph2: "",
-        highlights: []
+        heading: "Project Highlights – Elan The Mark",
+        highlights: [
+          "Ground Floor @ ₹38,750/Sqft",
+          "First Floor @ ₹24,750/Sqft",
+          "Food Court - 3rd Floor @ ₹21,750/Sqft",
+          "Payment Plan: 30:30:40",
+          "Return: 12% or 36-Month NPV @ 28.83% for first 300 units",
+          "Main Road Facing Shops with 30 Feet Height",
+          "Internal Shops with 15 Feet Height",
+          "International Trip on Every Booking",
+          "Gold Coin on Every Booking",
+          "10 Exclusive Offers on ELAN’s 10th Anniversary",
+          "Premium Catchment at Sector 106, Dwarka Expressway",
+          "Project Collaborated with Global Icons from US/UK/Dubai",
+          "Assured Profit"
+        ]
+
       },
       location_advantage: {
-        heading: "",
-        paragraph1: "",
-        paragraph2: "",
-        highlights: [],
+        heading: "Location Advantages",
+        paragraph1: "Elan The Mark is strategically located in Sector 106, Gurgaon, offering seamless connectivity and access to major residential and commercial hubs.",
+        highlights: [
+          "Located on Dwarka Expressway",
+          "Easy access to IGI Airport and Delhi",
+          "Close to major business districts and commercial centers",
+          "Surrounded by premium residential societies",
+          "Proximity to schools, hospitals, and hotels"
+        ]
       },
       about_developer: {
-        logo: "/assets/developers/",
-        heading: "",
-        paragraph1: "",
-        paragraph2: "",
-        conclusion: ""
-      },
+        logo: "/assets/developers/elan-logo.jpg",
+        heading: "Developer Name : Elan",
+        paragraph1: "Elan Group is a leading real estate developer known for its innovative commercial and retail projects in Gurgaon.",
+        conclusion: "Elan Group is committed to delivering world-class developments with a focus on quality, design, and customer satisfaction."
+      }
     }
   },
+
   {
     id: "27",
     title: "M3M Paragon 57",
@@ -1458,55 +1635,232 @@ export const properties: Property[] = [
     image: "/assets/commercial/m3m-paragon-57-thumbnail.jpg",
     details: {
       overview: {
-        heading: "",
-        paragraph1: "",
-        paragraph2: "",
+        heading: "M3M Paragon 57 Commercial, Gurgaon",
+        paragraph1: "M3M Paragon 57 is a premium commercial development offering a mix of retail shops, anchor stores, multiplex, and studio apartments in the heart of Gurgaon, strategically located in Sector 57 near Golf Course Road Extension. Surrounded by a high-net-worth individual (HNI) catchment, the project benefits from a prime location. Developed by the renowned M3M India—known for delivering iconic landmarks across Gurugram and beyond—this new venture raises the bar in commercial infrastructure. M3M Paragon 57 features contemporary retail outlets, cutting-edge office spaces, and modern service apartments. With a thoughtfully crafted blueprint and sophisticated architecture, the project aims to deliver versatile spaces tailored to today’s dynamic business ecosystem.",
+        paragraph2: "Strategically positioned in a dense residential catchment, M3M Paragon 57 enjoys excellent connectivity and visibility, making it an attractive destination for brands, businesses, and investors."
       },
-      features: [],
+      features: [
+        "Strategically located in Sector 57, Gurgaon, ensuring high commercial value and business potential.",
+        "Offers world-class interiors and architectural design, ideal for retail, family outings, and corporate meetings.",
+        "Excellent connectivity to key financial, commercial, and residential hubs, including Golf Course Extension Road and IGI Airport."
+      ]
+      ,
       specifications: {
-        heading: "",
-        paragraph1: "",
-        paragraph2: "",
-        highlights: []
+        heading: "Project Highlights – M3M Paragon 57",
+        highlights: [
+          "Designed by the world-famous GPM & Planners",
+          "Spread over 3.25 acres with hi-street retail and open boulevards",
+          "Centrally located in Sushant Lok-2/3, Gurgaon",
+          "Strategically planned with multiple access points and separate vehicular/pedestrian movement",
+          "Features a landscaped plaza/piazza with multiple activity arenas and sitting arrangements",
+          "Offers a mix of retail shops, food courts, and restaurants",
+          "Triple height shops on the ground floor for enhanced visibility",
+          "2nd and 3rd floors exclusively dedicated to food and beverage outlets",
+          "3rd/4th floor includes a 5-screen multiplex for entertainment",
+          "5th to 15th floors dedicated to fully equipped studio apartments",
+          "24×7 CCTV surveillance and manned security for safety"
+        ]
+
       },
       location_advantage: {
-        heading: "",
-        paragraph1: "",
-        paragraph2: "",
-        highlights: [],
+        heading: "Location Advantages",
+        paragraph1: "M3M Paragon 57 is strategically located in Sector 57, Gurgaon, offering seamless connectivity and access to major residential and commercial hubs.",
+        highlights: [
+          "Located on Golf Course Extension Road",
+          "Seamless connectivity with Gurgaon and Faridabad",
+          "Close to major business districts and commercial centers",
+          "Surrounded by premium residential societies",
+          "Proximity to schools, hospitals, and hotels"
+        ]
       },
       about_developer: {
-        logo: "/assets/developers/",
-        heading: "",
-        paragraph1: "",
-        paragraph2: "",
-        conclusion: ""
-      },
+        logo: "/assets/developers/m3m-india-logo.jpg",
+        heading: "Developer Name : M3M India",
+        paragraph1: "M3M India is a leading real estate developer known for its innovative commercial and residential projects in Gurgaon.",
+        conclusion: "M3M India is committed to delivering world-class developments with a focus on quality, design, and customer satisfaction."
+      }
     }
   },
+
   {
     id: "28",
     title: "M3M Jewel",
     location: "Sector 25, MG Road, Gurugram, Gurgaon",
     search: ["Sector 25", "MG Road", "gurugram", "gurgaon", "M3M Jewel"],
     category: "commercial",
-    image: "/assets/commercial/m3m-jewel-thumbnail.jpg"
+    image: "/assets/commercial/m3m-jewel-thumbnail.jpg",
+    details: {
+      overview: {
+        heading: "M3M Jewel Sector 25, MG Road Gurgaon",
+        paragraph1: "M3M Jewel is a landmark commercial project by M3M India, located on MG Road, Sector 25, Gurgaon. The project offers high-street retail, F&B outlets, and premium office spaces, designed to provide a world-class business and shopping experience.",
+        paragraph2: "With its iconic glass façade, double-height shops, and prime location, M3M Jewel is set to become the new retail and business hub of Gurgaon."
+      },
+      features: [
+        "Well designed by Bentel Associates International",
+        "Modern architecture blends with upscale design to create a holistic environment",
+        "Grand entry plaza with large frontage",
+        "Features open courts, vivacious vistas, beautiful boulevards, and a central activity hub",
+        "Retail spaces designed to encourage high shopper engagement",
+        "Well-articulated vehicular traffic planning with no conflict points for pedestrian movement"
+      ]
+      ,
+      specifications: {
+        heading: "Project Highlights – M3M Jewel",
+        paragraph1: "M3M Jewel offers a blend of retail, F&B, and office spaces with modern infrastructure and premium amenities.",
+        highlights: [
+          "Located on MG Road, one of Gurgaon's most prominent commercial areas",
+          "Excellent connectivity to DLF Cyber City and Udyog Vihar",
+          "Walking distance from MG Road Metro Station",
+          "Surrounded by major commercial buildings, corporate offices, and shopping malls",
+          "High footfall area ensuring strong business potential",
+          "Close to premium residential societies, ensuring steady customer base",
+          "Seamless access to NH-8 and other key parts of Gurgaon and Delhi"
+        ]
+
+      },
+      location_advantage: {
+        heading: "Location Advantages",
+        paragraph1: "M3M Jewel enjoys a strategic location on MG Road, Sector 25, Gurgaon, offering excellent connectivity and visibility.",
+        highlights: [
+          "Just 2 minutes away from MG Road Station",
+          "5 minutes away from MG Road Metro Station",
+          "5 minutes away from prominent malls such as MGF Metropolitan Mall and DLF City Centre",
+          "15 minutes away from the IGI Airport",
+          "7 minutes away from NH 8",
+          "7 minutes away from Cyber City",
+          "10 minutes away from Udyog Vihar",
+          "7 minutes from Golf Course Road"
+        ]
+
+      },
+      about_developer: {
+        logo: "/assets/developers/m3m-india-logo.jpg",
+        heading: "Developer Name : M3M India",
+        paragraph1: "M3M India is a leading real estate developer known for its innovative commercial and residential projects in Gurgaon.",
+        conclusion: "M3M India is committed to delivering world-class developments with a focus on quality, design, and customer satisfaction."
+      }
+    }
   },
+
   {
     id: "29",
     title: "M3M Cosmopolitan",
     location: "Sector 66, Golf Course Ext Road, Gurugram, Gurgaon",
     search: ["Sector 66", "Golf Course Ext Road", "gurugram", "gurgaon", "M3M Cosmopolitan"],
     category: "commercial",
-    image: "/assets/commercial/m3m-cosmopolitan-thumbnail.jpg"
+    image: "/assets/commercial/m3m-cosmopolitan-thumbnail.jpg",
+    details: {
+      overview: {
+        heading: "M3M Cosmopolitan – Premium Retail & Office Hub in Sector 66, Gurgaon",
+        paragraph1: "M3M Cosmopolitan is a premium commercial development spread across nearly 3 acres in the heart of Sector 66, Golf Course Extension Road, Gurgaon. Designed as a vibrant hub for retail and office spaces, the project features a dynamic blend of anchor stores, retail outlets, office units, and medical suites. The architectural design is expertly crafted by RSP Singapore, a globally renowned design consultancy known for integrating architectural principles with modern aesthetics. Complementing the structure, Element Design Studio has meticulously landscaped the surrounding areas to enhance the project's visual appeal. Possession for the property was handed over in January 2017.",
+        paragraph2: "M3M Cosmopolitan Gurgaon offers a strong potential for future return on investment, thanks to its unique combination of medical facilities and lifestyle amenities—an uncommon blend in Indian retail spaces. The project is developed to meet top global design standards and aims to deliver an experiential lifestyle focused on holistic care, rejuvenating both body and mind."
+      },
+      features: [
+        "Prime location on Golf Course Extension Road, Sector 66",
+        "Triple frontage for maximum visibility",
+        "High-street retail, F&B, and premium office spaces",
+        "Modern glass façade and impressive architecture",
+        "Ample surface and basement parking",
+        "Wide boulevards and open landscaped areas",
+        "High-speed elevators and escalators",
+        "24x7 security and professional facility management"
+      ],
+      specifications: {
+        heading: "Project Highlights – M3M Cosmopolitan",
+        paragraph1: "M3M Cosmopolitan offers a blend of retail, F&B, and office spaces with premium amenities and infrastructure.",
+        highlights: [
+          "Project spans 3 acres with ground plus 12 floors",
+          "Ground and first two floors dedicated to high-end anchor stores, retail outlets, restaurants, and food court",
+          "Floors two to seven allocated for office spaces",
+          "Features high design standards including retail promenades, luscious lawns, landscaping, and boutique store clusters",
+          "Catered to meet the needs of real estate investors, businessmen, and store owners alike"
+        ]
+
+      },
+      location_advantage: {
+        heading: "Location Advantages",
+        paragraph1: "M3M Cosmopolitan enjoys a strategic location in Sector 66, Gurgaon, offering excellent connectivity and visibility.",
+        highlights: [
+          "Strategically located in the high-density, upscale catchment area of Sector 66",
+          "Area has high real estate value and strong market penetration",
+          "Easy and rapid access to NH-8, MG Road, and Faridabad-Gurgaon Highway",
+          "Situated on the planned metro corridor route offering fast connectivity to Delhi",
+          "Nearby reputed projects like Ireo, Splendor, Emaar, Spaze, and BPTP boosting commercial potential",
+          "Just 20 km away from the airport, adding to its attractiveness"
+        ]
+      },
+      about_developer: {
+        logo: "/assets/developers/m3m-india-logo.jpg",
+        heading: "Developer Name : M3M India",
+        paragraph1: "M3M India is a leading real estate developer known for its innovative commercial and residential projects in Gurgaon.",
+        conclusion: "M3M India is committed to delivering world-class developments with a focus on quality, design, and customer satisfaction."
+      }
+    }
   },
+
   {
     id: "30",
     title: "M3M Tee Point",
     location: "Sector 66, Gurugram, Gurgaon",
     search: ["Sector 66", "gurugram", "gurgaon", "M3M Tee Point"],
     category: "commercial",
-    image: "/assets/commercial/m3m-tee-point-thumbnail.jpg"
+    image: "/assets/commercial/m3m-tee-point-thumbnail.jpg",
+    details: {
+      overview: {
+        heading: "M3M Tee Point – Prime Commercial Spaces in Sector 66, Gurgaon",
+        paragraph1: "M3M Tee Point is a new commercial development by M3M Group located on Golf Course Extension Road, Sector 65, Gurgaon. Situated near the gate of M3M Golf Estate, the project spans 2 acres and features two blocks separated by a 24-meter-wide road. The main frontage of the project faces a 60-meter-wide road.",
+        paragraph2: "M3M Tee Point is set to be an ideal destination for retail and F\&B outlets. Adjacent to it, on the left, is M3M Latitude, a premium residential project located just a stone’s throw away. The development offers efficiently designed retail spaces ranging from 300 sq. ft to 2,800 sq. ft, catering to diverse business needs. It boasts a magnificent frontage of nearly 260 meters."
+      },
+      features: [
+        "A fabulous mix of office spaces, retail areas, and F&B",
+        "Magnificent frontage of nearly 260 meters",
+        "Surrounded by prime residential developments catering to affluent families with high disposable income",
+        "Designed by UHA, a London-based, globally acknowledged architecture and design studio",
+        "Low maintenance façade with large glazing and permanent finishes",
+        "Elegant lighting design for façade and features",
+        "Retail space on ground and first floors",
+        "2nd floor onwards dedicated to office space/commercial units",
+        "Service elevators with dedicated drop-off zones",
+        "Multi-level parking",
+        "100% power backup with CCTV surveillance"
+      ],
+      specifications: {
+        heading: "Project Highlights – M3M Tee Point",
+        paragraph1: "M3M Tee Point offers a blend of retail and office spaces with world-class amenities and infrastructure.",
+        highlights: [
+          "Retail Floors: Ground & First",
+          "Glazed fronts of retail units with dedicated signage areas as per design",
+          "RCC framed structure with masonry partitions",
+          "Pedestrian plaza designed with seating area and kiosk",
+          "Dedicated drop-off zone and entrances for retail",
+          "On-site parking areas with lush canopy trees and landscape features",
+          "Exterior finishes combining stone, tiles, ACP, and painted surfaces",
+          "Lobbies finished with combinations of stone, tiles, wooden paneling, and painted surfaces",
+          "Basement with concrete floor; tenant floor finish concrete",
+          "Common toilets with modern fittings and fixtures",
+          "Multilevel basement parking and service areas with adequate surface parking",
+          "CCTV surveillance and manned security at basement and ground floor lobbies",
+          "Boom barriers at all vehicular entry and exit points",
+          "Fire safety provisions including wet riser/hose, reels, sprinklers, and fire diesel generators",
+          "100% fully automatic power backup with suitable diversity"
+        ]
+
+      },
+      location_advantage: {
+        heading: "Location Advantages",
+        paragraph1: "M3M Tee Point enjoys a strategic location in Sector 66, Gurgaon, offering excellent connectivity and accessibility.",
+        highlights: [
+          "Located on Golf Course Extension Road",
+          "Close to metro stations and major business districts"
+        ]
+      },
+      about_developer: {
+        logo: "/assets/developers/m3m-india-logo.jpg",
+        heading: "Developer Name : M3M India",
+        paragraph1: "M3M India is a leading real estate developer known for its innovative commercial and residential projects in Gurgaon.",
+        conclusion: "M3M India is committed to delivering world-class developments with a focus on quality, design, and customer satisfaction."
+      }
+    }
   },
   {
     id: "31",
