@@ -6,7 +6,7 @@ export default function ResidentialPage() {
   return (
     <div>
       <HeroSection
-        imageUrl={"/assets/residential/thumb.png"}
+        imageUrl={"/assets/residential/bg.jpg"}
         heading="Residential"
         subheading=""
       />
