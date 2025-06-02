@@ -2,122 +2,184 @@ import React from "react";
 
 const About = () => {
   return (
-    <section className="bg-white py-20 px-6 max-w-6xl mx-auto text-gray-800">
-      <h1 className="text-4xl font-bold text-orange-600 mb-8 text-center">
-        Tree House India Real Estate
-      </h1>
+    <section className="bg-gradient-to-b from-white to-gray-50 py-16 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto">
+        <div className="text-center mb-16">
+          <h1 className="text-4xl md:text-5xl font-bold text-orange-600 mb-4">
+            Tree House
+          </h1>
+          <div className="w-24 h-1 bg-orange-500 mx-auto rounded-full mb-8"></div>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Building trust and excellence in real estate
+          </p>
+        </div>
 
-      <p className="mb-6">
-        Let us get to know each other first. Well, if you’re engaging with us,
-        we guess you’re seeking real estate agents. We are aware of how tiresome
-        finding a realtor would be. We would say that you’re on the verge of
-        reaching “The right place” and making “The Right Choice.”
-      </p>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div>
+            <div className="bg-white rounded-xl shadow-lg p-6 mb-10">
+              <h2 className="text-2xl font-semibold text-orange-500 mb-4 pb-2 border-b border-orange-100">
+                Our Story
+              </h2>
+              <p className="mb-6 text-gray-700 leading-relaxed">
+                We understand how challenging finding the right realtor can be.
+                When you engage with us, you're making the right choice with
+                India's top-tier real estate professionals.
+              </p>
+              <p className="mb-6 text-gray-700 leading-relaxed">
+                Under the leadership of Mr. Sanjay Sharma since 2009, we've
+                built our reputation on trust, respect, and excellence. We
+                believe that
+                <span className="font-semibold text-orange-600">
+                  {" "}
+                  "Trust takes decades to build, seconds to break, and forever
+                  to repair"
+                </span>
+                , which is why we value our clients' trust above all.
+              </p>
+            </div>
 
-      <p className="mb-6">
-        We The Reias India real estate company is built into a Top-notch realtor
-        in India. Reias India being the ultimate place for Real estate services
-        is managed and directed by our industrious person, Mr. Sanjay Sharma.
-        From the year 2009, we have labored enough to acquire reputation,
-        respect, and excellence in the real estate field. We as a team have been
-        careful in every step ahead, we believe that “Trust costs decades to
-        Build, Seconds to Break, and infinite to repair”. So, we value the trust
-        our clients have in us.
-      </p>
+            <div className="bg-white rounded-xl shadow-lg p-6 mb-10">
+              <h2 className="text-2xl font-semibold text-orange-500 mb-4 pb-2 border-b border-orange-100">
+                Our Core Services
+              </h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {[
+                  "Original booking",
+                  "Selling properties",
+                  "Buying properties",
+                  "Property rentals",
+                  "Home loan consultancy",
+                  "Property valuation",
+                  "Real estate investments",
+                  "Gurgaon/Delhi NCR leasing",
+                ].map((service, index) => (
+                  <div key={index} className="flex items-start">
+                    <span className="text-orange-500 mr-2 mt-1">•</span>
+                    <span className="text-gray-700">{service}</span>
+                  </div>
+                ))}
+              </div>
+              <p className="mt-6 text-gray-700 leading-relaxed">
+                We also collaborate with builders to offer properties at various
+                stages - pre-launch, launch, and post-launch rates.
+              </p>
+            </div>
 
-      <h2 className="text-2xl font-semibold text-orange-500 mb-2">
-        Our Core Services
-      </h2>
-      <ul className="list-disc list-inside mb-6">
-        <li>Original booking</li>
-        <li>Selling a property</li>
-        <li>Buying a property</li>
-        <li>Renting a property</li>
-        <li>Home loan consultancy</li>
-        <li>Property valuation service</li>
-        <li>Real estate investment service</li>
-        <li>Leasing properties in Gurgaon and Delhi/NCR</li>
-      </ul>
+            <div className="bg-white rounded-xl shadow-lg p-6">
+              <h2 className="text-2xl font-semibold text-orange-500 mb-4 pb-2 border-b border-orange-100">
+                Our Mission
+              </h2>
+              <p className="mb-6 text-gray-700 leading-relaxed">
+                We're dedicated to building trust, demonstrating leadership, and
+                nurturing client relationships. Customer satisfaction is our
+                ladder to success, achieved through organic trust-building and
+                quality service.
+              </p>
+              <h3 className="text-xl font-semibold text-orange-500 mb-3 mt-8">
+                Why Choose Us
+              </h3>
+              <p className="text-gray-700 leading-relaxed">
+                We transform property transactions into dream-come-true moments
+                with our expertise, creating safe spaces for real estate
+                decisions. Our strategic investment approaches and transparent
+                platforms ensure the best returns and communication.
+              </p>
+            </div>
+          </div>
 
-      <p className="mb-6">
-        Apart from these services, we collaborate with the builders and we
-        arrange properties for different rates, launch, pre-launch, or even at
-        post-launch rates.
-      </p>
+          <div>
+            <div className="bg-white rounded-xl shadow-lg p-6 mb-10">
+              <h2 className="text-2xl font-semibold text-orange-500 mb-4 pb-2 border-b border-orange-100">
+                Our Team
+              </h2>
+              <p className="mb-6 text-gray-700 leading-relaxed">
+                Our passionate team considers Tree House India as their own. We
+                prioritize both client and employee satisfaction, maintaining
+                the highest standards through our family-like work environment.
+              </p>
+              <div className="bg-gray-100 p-4 rounded-lg border-l-4 border-orange-500">
+                <p className="text-gray-700 italic">
+                  "We work as a unified family, where coordination and mutual
+                  respect drive our success and service excellence."
+                </p>
+              </div>
+            </div>
 
-      <h2 className="text-2xl font-semibold text-orange-500 mb-2">
-        Our Primary Motto
-      </h2>
-      <p className="mb-6">
-        We strive towards building Trust, Leadership quality, and client
-        relationships. Our team never fails to attain customer satisfaction,
-        which we consider as a ladder to success. We ensure to create customer
-        satisfaction and trust organically by providing quality service.
-      </p>
+            <div className="bg-white rounded-xl shadow-lg p-6 mb-10">
+              <h2 className="text-2xl font-semibold text-orange-500 mb-4 pb-2 border-b border-orange-100">
+                Residential Properties
+              </h2>
+              <p className="mb-4 text-gray-700 leading-relaxed">
+                We create feel-good residential solutions balancing financial
+                optimization with lifestyle and community living.
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-4">
+                {[
+                  "Apartments",
+                  "Independent Floors",
+                  "Villas",
+                  "Plots",
+                  "Service Apartments",
+                  "Townhouses",
+                ].map((property, index) => (
+                  <div key={index} className="flex items-center">
+                    <div className="w-2 h-2 bg-orange-400 rounded-full mr-3"></div>
+                    <span className="text-gray-700">{property}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
 
-      <h2 className="text-2xl font-semibold text-orange-500 mb-2">Why Us</h2>
-      <p className="mb-6">
-        When a common man buys a property it might be a dream come true moment
-        for him/her or it might be an achievement. To do business with the right
-        property proper research must be undertaken, this is where a realtor
-        helps. We are the Top-realtors in India, having in-depth knowledge and
-        expertise in our field and we provide a safe and risk-free space for
-        real estate decisions. We structure your investment strategies and
-        manage your portfolio aiming to provide the best returns. We provide a
-        platform for transparent communication between buyers and sellers.
-      </p>
+            <div className="bg-white rounded-xl shadow-lg p-6">
+              <h2 className="text-2xl font-semibold text-orange-500 mb-4 pb-2 border-b border-orange-100">
+                Commercial Properties
+              </h2>
+              <p className="mb-4 text-gray-700 leading-relaxed">
+                We boost your business reputation and profitability through
+                expert support in commercial real estate.
+              </p>
 
-      <h2 className="text-2xl font-semibold text-orange-500 mb-2">Our Team</h2>
-      <p className="mb-6">
-        We have a competent team of employees who have worked smartly to bring
-        Reias India to the top. Our High-end team works with enthusiasm and
-        considers Reias India as their own! Like client satisfaction, we ensure
-        employee satisfaction to maintain quality, standards, and ethics. We
-        work as a family to maintain coordination and unity.
-      </p>
+              <h3 className="text-lg font-semibold text-gray-800 mt-6 mb-3">
+                Our Expertise:
+              </h3>
+              <ul className="grid grid-cols-1 gap-2 mb-6">
+                {[
+                  "Leasing assistance",
+                  "Buying/selling guidance",
+                  "Investment consultancy",
+                  "Commercial space rentals",
+                ].map((service, index) => (
+                  <li key={index} className="flex">
+                    <span className="text-orange-500 mr-2">-</span>
+                    <span className="text-gray-700">{service}</span>
+                  </li>
+                ))}
+              </ul>
 
-      <h2 className="text-2xl font-semibold text-orange-500 mb-2">
-        Residential Property Services
-      </h2>
-      <p className="mb-4">
-        The wellness of nature, posh community, a happy home. We provide
-        feel-good residential services considering financial optimization,
-        lifestyle, and community living.
-      </p>
-      <ul className="list-disc list-inside mb-6">
-        <li>Residential Apartments</li>
-        <li>Independent Floors</li>
-        <li>Villas</li>
-        <li>Plots</li>
-        <li>Service Apartments</li>
-        <li>Townhouses</li>
-      </ul>
-
-      <h2 className="text-2xl font-semibold text-orange-500 mb-2">
-        Commercial Property Services
-      </h2>
-      <p className="mb-4">
-        Reputation, Profitability, and Familiarity for your unique business
-        ideas and investments. We provide expert support in finding, leasing,
-        and investing in commercial properties.
-      </p>
-      <ul className="list-disc list-inside mb-6">
-        <li>Proper assistance in leasing</li>
-        <li>Guidance in selling or buying a commercial property</li>
-        <li>Investment consultancy</li>
-        <li>Services to rent a commercial space</li>
-      </ul>
-      <p className="mb-4">Commercial property types we handle include:</p>
-      <ul className="list-disc list-inside">
-        <li>Office space</li>
-        <li>Retail properties</li>
-        <li>Industrial buildings</li>
-        <li>Multifamily</li>
-        <li>Hotels/hospitals</li>
-        <li>Mixed-use</li>
-        <li>Land</li>
-        <li>Special purposes</li>
-      </ul>
+              <h3 className="text-lg font-semibold text-gray-800 mb-3">
+                Property Types:
+              </h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {[
+                  "Office spaces",
+                  "Retail properties",
+                  "Industrial buildings",
+                  "Multifamily units",
+                  "Hotels/Hospitals",
+                  "Mixed-use developments",
+                  "Land",
+                  "Special purpose properties",
+                ].map((type, index) => (
+                  <div key={index} className="flex items-center">
+                    <div className="w-2 h-2 bg-orange-400 rounded-full mr-3"></div>
+                    <span className="text-gray-700">{type}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   );
 };

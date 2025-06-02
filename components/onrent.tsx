@@ -17,28 +17,39 @@ const Rent = () => {
   }, []);
 
   return (
-    <section className="bg-gray-100 py-4 md:py-20 ">
-      <div
-        className={`
-          grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:mx-5 md:mx-12
-          px-2 lg:mx-20 xl:mx-42 lg:px-6 lg:gap-6 xl:gap-8
-          
-        `}
-      >
-        {rentData.map((property) => (
-          <div
-            key={property.id}
-            className="bg-white rounded-lg shadow-md hover:shadow-orange-300/40 transition-shadow border border-orange-200 overflow-hidden"
-          >
-            <PropertyCard
-              id={property.id}
-              title={property.title}
-              location={property.location}
-              image={property.image}
-              category={property.category}
-            />
+    <section className="bg-gray-50 py-10 md:py-16 lg:py-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Section Header */}
+        <div className="text-center mb-10 md:mb-14">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-3">
+            Properties On Rent
+          </h2>
+          <p className="text-gray-600 max-w-2xl mx-auto text-base sm:text-lg">
+            Premium properties spaces for your business and living needs
+          </p>
+        </div>
+
+        {/* Property Grid */}
+        {rentData.length > 0 ? (
+          <div className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-3 md:gap-4 lg:gap-6">
+            {rentData.map((property) => (
+              <PropertyCard
+                key={property?.id}
+                id={property?.id}
+                title={property?.title ?? "Untitled"}
+                location={property?.location ?? "Location not specified"}
+                image={property?.image ?? "/fallback.jpg"}
+                category={property?.category ?? "unknown"}
+              />
+            ))}
           </div>
-        ))}
+        ) : (
+          <div className="text-center py-12">
+            <h3 className="text-xl font-medium text-gray-700">
+              No commercial properties available at the moment
+            </h3>
+          </div>
+        )}
       </div>
     </section>
   );

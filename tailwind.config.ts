@@ -20,10 +20,11 @@ const config = {
     },
     extend: {
       fontFamily: {
-        sans: ["var(--font-poppins)"], // your existing sans
-        poppins: ["var(--font-poppins)"], // your existing poppins alias
-        cinzel: ["var(--font-cinzel)"], // your existing cinzel alias
-        playfair: ["'Playfair Display'", "serif"], // new elegant serif for headings
+        sans: ["var(--font-poppins)"],
+        poppins: ["var(--font-poppins)"],
+        cinzel: ["var(--font-cinzel)"],
+        playfair: ["'Playfair Display'", "serif"],
+        montserrat: ["Montserrat", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",

@@ -23,7 +23,7 @@ export const ourProperties: Property[] = [
       "Rental Income: ₹1.20 Lac/month each",
       "Asking Price: ₹2.70 Crore",
     ],
-    image: "/?office,building",
+    image: "/assets/corporate-greens.jpg",
     contact: {
       agent: "Neeraj Agarwal",
       email: "treehouse6102@gmail.com",
@@ -41,7 +41,7 @@ export const ourProperties: Property[] = [
       "Subdivided: 2000 + 2000 sq. m",
       "Price: ₹8 Cr each plot",
     ],
-    image: "/?factory,industrial",
+    image: "/assets/khuskhera.jpg",
     contact: {
       agent: "Neeraj Agarwal",
       email: "treehouse6102@gmail.com",
@@ -58,7 +58,7 @@ export const ourProperties: Property[] = [
       "181 gaj, 4-story floor @ ₹13 Cr",
       "Prime rental and builder location",
     ],
-    image: "/?house,delhi",
+    image: "/assets/paschim-vihar.webp",
     contact: {
       agent: "Neeraj Agarwal",
       email: "treehouse6102@gmail.com",
@@ -76,7 +76,7 @@ export const ourProperties: Property[] = [
       "7km from Hayatt Hotel",
       "Price: ₹40,000 per Gaj",
     ],
-    image: "/?land,plot,hill",
+    image: "/assets/hill-view.avif",
     contact: {
       agent: "Neeraj Agarwal",
       email: "treehouse6102@gmail.com",
@@ -94,7 +94,7 @@ export const ourProperties: Property[] = [
       "Newly built by DLF with top floor + terrace",
       "Fully furnished with premium fittings",
     ],
-    image: "/?luxury,home",
+    image: "/assets/dlf.jpeg",
     contact: {
       agent: "Neeraj Agarwal",
       email: "treehouse6102@gmail.com",

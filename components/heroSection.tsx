@@ -1,12 +1,20 @@
 "use client";
 
-import { PT_Serif } from "next/font/google";
+import { motion } from "framer-motion";
+import { Playfair_Display, Montserrat } from "next/font/google";
 import Image from "next/image";
 import SearchBar from "./search";
 
-const PTSerif = PT_Serif({
+const playfair = Playfair_Display({
   subsets: ["latin"],
-  weight: ["400", "700"],
+  weight: ["400", "700", "900"],
+  variable: "--font-playfair",
+});
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600"],
+  variable: "--font-montserrat",
 });
 
 interface HeroSectionProps {
@@ -36,39 +44,69 @@ export function HeroSection({
           <source src={videoUrl} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
+      ) : imageUrl ? (
+        <Image
+          src={imageUrl}
+          alt="Hero Background"
+          fill
+          className="absolute inset-0 w-full h-full object-cover"
+          priority
+          quality={100}
+        />
       ) : (
-        imageUrl && (
-          <Image
-            src={imageUrl}
-            alt="Hero Background"
-            fill
-            className="absolute inset-0 w-full h-full object-cover"
-            priority
-          />
-        )
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-900 to-slate-800" />
       )}
 
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-black/80" />
+      {/* Gradient Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/80" />
 
       {/* Content */}
       <div className="relative z-10 flex items-center justify-center h-full px-4 sm:px-6 lg:px-8">
-        <div className="text-center text-white max-w-3xl w-full space-y-6">
-          <p className="text-lg sm:text-xl md:text-2xl font-serif font-semibold tracking-wide">
+        <div className="text-center text-white max-w-4xl w-full space-y-8">
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className={`${montserrat.className} text-lg md:text-xl uppercase tracking-[0.2em] font-light text-gray-100`}
+          >
             {subheading}
-          </p>
-          <h1
-            className={`${PTSerif.className} text-3xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight font-bold`}
+          </motion.p>
+
+          <motion.h1
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.2 }}
+            className={`${playfair.className} text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1.15] font-bold max-w-3xl mx-auto`}
           >
             {heading || "JOURNEY BEGINS"}
-          </h1>
+          </motion.h1>
 
-          {/* Search Bar */}
-          <div className="mt-6 sm:mt-10 px-2 sm:px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.4 }}
+            className="mt-8 sm:mt-12 px-4 max-w-2xl mx-auto w-full"
+          >
             <SearchBar />
-          </div>
+          </motion.div>
         </div>
       </div>
+
+      {/* Scroll indicator */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.2 }}
+        className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+      >
+        <div className="animate-bounce w-8 h-14 rounded-full border-2 border-white flex justify-center">
+          <motion.div
+            animate={{ y: [0, 10, 0] }}
+            transition={{ duration: 1.5, repeat: Infinity }}
+            className="w-1 h-3 bg-white mt-2 rounded-full"
+          />
+        </div>
+      </motion.div>
     </section>
   );
 }
