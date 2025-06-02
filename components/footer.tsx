@@ -61,7 +61,10 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/resale" className="hover:text-white font-poppins">
+                  <Link
+                    href="/resale"
+                    className="hover:text-white font-poppins"
+                  >
                     Resale
                   </Link>
                 </li>
@@ -101,11 +104,11 @@ const Footer = () => {
               <div className="space-y-2 text-gray-400">
                 <div className="flex items-center font-poppins">
                   <Phone className="w-4 h-4 mr-2" />
-                  <span>+91-9999999999</span>
+                  <span>+91-9811098193</span>
                 </div>
                 <div className="flex items-center font-poppins">
                   <Mail className="w-4 h-4 mr-2" />
-                  <span>info@primeestates.com</span>
+                  <span>Treehousefarmland@gmail.com</span>
                 </div>
                 <div className="flex items-center font-poppins">
                   <MapPin className="w-4 h-4 mr-2" />

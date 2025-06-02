@@ -43,7 +43,7 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <div className="flex items-center gap-4">
             <a
-              href="tel:+919811098193"
+              href="https://wa.me/+919811098193"
               className="flex items-center gap-1.5 hover:text-orange-100 transition"
             >
               <Phone size={14} /> <span>+91 9811098193</span>
@@ -52,7 +52,7 @@ export default function Navbar() {
               href="mailto:info@treehouserealty.com"
               className="hidden sm:flex items-center gap-1.5 hover:text-orange-100 transition"
             >
-              <Mail size={14} /> <span>info@treehouserealty.com</span>
+              <Mail size={14} /> <span>Treehousefarmland@gmail.com</span>
             </a>
           </div>
           <div className="hidden md:flex items-center gap-3">
