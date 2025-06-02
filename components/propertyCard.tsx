@@ -14,66 +14,56 @@ type CardData = {
 
 const PropertyCard = ({ id, title, location, image, category }: CardData) => {
   return (
-    <div
-      className="
-        bg-orange-100/50 rounded shadow-md overflow-hidden
-        lg:min-w-0
-        min-w-[300px]
-      "
-    >
-      {/* card image */}
-      <div className="relative">
+    <div className="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg border border-gray-100 w-full max-w-[700px] my-2 mx-auto">
+      {/* Image Section */}
+      <div className="relative aspect-video">
         <Image
           src={image || "/assets/default.jpg"}
-          width={600}
-          height={360}
-          alt="property image"
-          className="w-full object-cover"
+          fill
+          alt={title}
+          className="object-cover"
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
         />
-        <span className="absolute top-3 right-2 bg-orange-600 px-2 lg:px-3 py-1 text-white rounded-full text-xs lg:text-sm  lg:font-medium badge capitalize ">
+        <span className="absolute top-3 left-3 bg-orange-600 text-white px-3 py-1 rounded-full text-xs font-medium capitalize shadow-md">
           {category}
         </span>
       </div>
 
-      {/* card content */}
-      <div className="px-2 py-3  lg:p-4 ">
-        <div className="flex justify-between items-center">
-          <h1 className=" text-lg lg:text-xl font-semibold text-orange-700 whitespace-nowrap overflow-hidden text-ellipsis">
-            {title.toUpperCase()}
-          </h1>
-        </div>
-        <div className="flex gap-1 lg:gap-2 text-orange-500 text-sm lg:text-md font-light mt-1 items-center whitespace-nowrap overflow-hidden text-ellipsis">
-          <MapPinIcon width={18} /> {location}
+      {/* Content Section */}
+      <div className="p-4 sm:p-5">
+        <h2 className="text-lg sm:text-xl font-bold text-gray-900 line-clamp-1 mb-1">
+          {title}
+        </h2>
+
+        <div className="flex items-center text-gray-600 text-sm sm:text-base mb-4">
+          <MapPinIcon className="w-4 h-4 mr-1.5 flex-shrink-0" />
+          <span className="line-clamp-1">{location}</span>
         </div>
 
-        {/* buttons */}
-        <div className="mt-4 flex items-center lg:flex-wrap gap-2">
+        {/* Action Buttons - Optimized for mobile */}
+        <div className="flex items-center justify-between gap-1 sm:gap-2">
           <Link
             href={`/enquiry`}
-            className=" px-2.5 lg:px-4 py-1.5 rounded-full bg-orange-600 text-white text-sm lg:text-md font-semibold hover:bg-orange-700 transition-colors duration-300 whitespace-nowrap"
+            className="flex-1 min-w-[70px] sm:min-w-[100px] bg-orange-600 hover:bg-orange-700 text-white font-medium py-2 px-1.5 sm:px-3 rounded-lg text-center transition-colors duration-200 text-xs sm:text-sm md:text-base"
           >
-            Enquire Now
+            <span className="">Enquire</span>
           </Link>
 
           <Link
             href={`/details/${id}`}
-            className="border border-orange-600 text-orange-600 font-semibold px-2 lg:px-4 py-1.5 text-sm lg:text-md rounded-full hover:bg-orange-600 hover:text-white transition-colors duration-300 whitespace-nowrap"
+            className="flex-1 min-w-[70px] sm:min-w-[100px] border border-orange-600 text-orange-600 hover:bg-orange-50 font-medium py-2 px-1.5 sm:px-3 rounded-lg text-center transition-colors duration-200 text-xs sm:text-sm md:text-base"
           >
-            View Details
+            <span className="">Details</span>
           </Link>
 
           <a
             href="https://wa.me/+919811098193"
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-full flex items-center justify-center hover:scale-105 transition-transform duration-200"
+            className="flex items-center justify-center bg-green-600 hover:bg-green-700 rounded-full transition-colors duration-200 w-9 h-9 sm:w-12 sm:h-12"
+            aria-label="Contact via WhatsApp"
           >
-            <MessageCircleMore
-              width={35}
-              height={35}
-              color="#25D366"
-              className="font-light"
-            />
+            <MessageCircleMore className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
           </a>
         </div>
       </div>

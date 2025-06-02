@@ -1,6 +1,7 @@
 import React from "react";
-import { Button } from "./ui/button";
 import { Mail, MapPin, Phone } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -10,19 +11,23 @@ const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
               <div className="text-2xl font-bold mb-4 font-poppins">
-                TREE<span className="text-orange-500">HOUSE</span>
+                <Image
+                  src={"/assets/logo.png"}
+                  alt="Logo"
+                  width={80}
+                  height={80}
+                />
               </div>
               <p className="text-gray-400 mb-4 font-poppins">
                 Your trusted partner in finding the perfect property investment.
               </p>
-              <div className="flex space-x-4">
-                <Button
-                  variant="outline"
-                  size="sm"
-                  className="font-poppins text-black"
+              <div className="flex space-x-4 ">
+                <Link
+                  href="/enquiry"
+                  className="bg-white px-2 py-2 rounded-sm font-poppins text-black"
                 >
                   Contact Us
-                </Button>
+                </Link>
               </div>
             </div>
 
@@ -30,29 +35,35 @@ const Footer = () => {
               <h4 className="font-semibold mb-4 font-poppins">Quick Links</h4>
               <ul className="space-y-2 text-gray-400">
                 <li>
-                  <a href="#" className="hover:text-white font-poppins">
+                  <Link
+                    href="/residential"
+                    className="hover:text-white font-poppins"
+                  >
                     Residential
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white font-poppins">
+                  <Link
+                    href="/commercial"
+                    className="hover:text-white font-poppins"
+                  >
                     Commercial
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white font-poppins">
+                  <Link href="/rent" className="hover:text-white font-poppins">
                     Rent
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white font-poppins">
+                  <Link href="/plot" className="hover:text-white font-poppins">
                     Plots
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white font-poppins">
+                  <Link href="/resale" className="hover:text-white font-poppins">
                     Resale
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
