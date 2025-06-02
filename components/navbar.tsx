@@ -83,7 +83,7 @@ export default function Navbar() {
             <Button
               variant="ghost"
               size="icon"
-              className="block lg:hidden text-white hover:text-orange-400"
+              className="block lg:hidden text-white hover:text-orange-400 cursor-pointer "
               /* Fixed typo bloack -> block */
               onClick={toggleSidebar}
             >
@@ -114,7 +114,7 @@ export default function Navbar() {
           <span className="text-lg font-semibold">Menu</span>
           <button
             onClick={toggleSidebar}
-            className="p-1 text-white hover:text-orange-400"
+            className="p-1 text-white hover:text-orange-400 cursor-pointer "
           >
             <X className="w-6 h-6" />
           </button>

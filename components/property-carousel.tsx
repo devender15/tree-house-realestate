@@ -13,7 +13,8 @@ import {
 import PropertyCard from "./propertyCard";
 
 export function PropertyCarousel() {
-  const [activeTab, setActiveTab] = useState<Property["category"]>("new-launch");
+  const [activeTab, setActiveTab] =
+    useState<Property["category"]>("new-launch");
   const [filteredProperties, setFilteredProperties] = useState(properties);
 
   const [emblaRef, emblaApi] = useEmblaCarousel({
@@ -122,7 +123,7 @@ export function PropertyCarousel() {
               <Button
                 variant="outline"
                 onClick={scrollPrev}
-                className=" w-10 h-10 md:w-14 md:h-14 flex items-center justify-center border-2 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white rounded-lg shadow-md transition-colors duration-300"
+                className=" w-10 h-10 md:w-14 md:h-14 flex items-center justify-center border-2 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white rounded-lg shadow-md transition-colors duration-300 cursor-pointer "
               >
                 <ChevronLeft className="w-8 h-8" />
               </Button>
@@ -130,7 +131,7 @@ export function PropertyCarousel() {
               <Button
                 variant="outline"
                 onClick={scrollNext}
-                className=" w-10 h-10 md:w-14 md:h-14 flex items-center justify-center border-2 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white rounded-lg shadow-md transition-colors duration-300"
+                className=" w-10 h-10 md:w-14 md:h-14 flex items-center justify-center border-2 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white rounded-lg shadow-md transition-colors duration-300 cursor-pointer "
               >
                 <ChevronRight className="w-8 h-8" />
               </Button>
