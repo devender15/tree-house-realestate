@@ -26,30 +26,20 @@ export default function Navbar() {
     <>
       {/* HEADER */}
       <header
-        className={`fixed top-0 left-0 right-0 z-50 backdrop-blur-md transition-all duration-300 ${
+        className={`fixed top-0 left-0 right-0 z-50 w-full backdrop-blur-md transition-all duration-300 ${
           scrolled
             ? "bg-black/70 shadow-lg border-b border-white/10"
             : "bg-transparent"
         }`}
       >
-        <div className="mx-auto px-4 sm:px-6 lg:px-20 py-3 flex flex-wrap items-center justify-between gap-4">
-          {/* Added flex-wrap and gap to prevent overlap on large screens */}
-
+        <div className="mx-auto px-4 sm:px-6 md:px-10 lg:px-20 py-3 flex items-center justify-between gap-4 bg-black/50 ">
           {/* LOGO */}
-          <Link
-            href="/"
-            className="flex items-center gap-2 font-mono text-white flex-shrink-0"
-            /* flex-shrink-0 to avoid shrinking the logo */
-          >
-            <Image src={"/assets/logo.png"} alt="Logo" width={50} height={50} />
-            <span className="text-xl sm:text-2xl lg:text-3xl font-black tracking-wide whitespace-nowrap">
-              {/* whitespace-nowrap to prevent line break */}
-              TREE<span className="text-orange-400">HOUSE</span>
-            </span>
+          <Link href="/" className="">
+            <Image src={"/assets/logo.png"} alt="Logo" width={80} height={80} />
           </Link>
 
           {/* DESKTOP NAV */}
-          <nav className="hidden lg:flex flex-wrap items-center gap-6 max-w-[60%] flex-shrink">
+          <nav className="hidden lg:flex flex-wrap justify-center items-center gap-6 flex-shrink  ">
             {/* max-w 60% to give some breathing room, flex-wrap so links don't overlap */}
             {navItems.map((item) => (
               <Link
@@ -65,7 +55,7 @@ export default function Navbar() {
           </nav>
 
           {/* PHONE + ENQUIRE + MOBILE MENU */}
-          <div className="flex items-center gap-4 sm:gap-6 lg:gap-10 flex-shrink-0">
+          <div className="flex items-center gap-4 sm:gap-6 lg:gap-8 flex-shrink-0">
             {/* flex-shrink-0 to prevent shrinking */}
 
             {/* Phone Number - show only on large screens */}
@@ -73,7 +63,7 @@ export default function Navbar() {
               href="https://wa.me/+919811098193"
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden lg:flex items-center gap-2 text-sm lg:text-md text-white/80 font-medium whitespace-nowrap"
+              className="hidden lg:flex items-center gap-2 text-sm lg:text-md font-semibold text-white/80  whitespace-nowrap"
               /* whitespace-nowrap to prevent phone number wrapping */
             >
               <Phone className="w-5 h-5 text-orange-400" />
@@ -114,7 +104,7 @@ export default function Navbar() {
       {/* Sidebar */}
       <aside
         className={`
-          fixed top-0 left-0 h-full w-64 bg-[#030E27] text-white z-50
+          fixed top-0 left-0 h-full w-2/3 sm:w-2/3 md:w-100 bg-[#030E27] text-white z-50
           transform transition-transform duration-300 ease-in-out
           ${isSidebarOpen ? "translate-x-0" : "-translate-x-full"}
         `}

@@ -27,7 +27,7 @@ const SearchBar = () => {
   };
 
   return (
-    <div className="bg-white/90 backdrop-blur-md rounded-2xl shadow-lg border p-4 sm:p-6 mx-auto w-full max-w-7xl">
+    <div className="bg-white/90 backdrop-blur-md rounded-2xl shadow-lg p-4 sm:p-6 mx-auto w-full max-w-7xl ">
       <div className="flex flex-col gap-4 md:flex-row md:items-center">
         <div className="w-full md:w-[20%] min-w-[180px]">
           <Select onValueChange={setPropertyType}>

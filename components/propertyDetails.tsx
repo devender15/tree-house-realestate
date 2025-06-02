@@ -208,7 +208,7 @@ const PropertyDetails = ({ id }: { id: string }) => {
       </div>
 
       {/* Right Sidebar */}
-      <div className="lg:sticky lg:top-32">
+      <div className="lg:sticky lg:top-32 flex justify-center">
         <EnquiryForm />
       </div>
     </div>
