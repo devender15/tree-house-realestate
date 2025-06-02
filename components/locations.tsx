@@ -34,20 +34,20 @@ const PropertyCarousel = () => {
   }, [filteredProperties, emblaApi]);
 
   return (
-    <section className=" bg-white text-orange-400">
+    <section className=" bg-white text-orange-400 py-5 ">
       {/* Title */}
-      <h2 className="text-center text-6xl font-serif font-semibold mb-12 text-orange-500">
+      <h2 className="text-center text-2xl md:text-4xl lg:text-5xl font-serif font-semibold mb-4 md:mb-7 lg:mb-12 text-orange-500">
         LOCATIONS
       </h2>
 
       {/* Location Buttons */}
-      <div className="flex flex-wrap justify-center gap-6 mb-16">
+      <div className="flex flex-wrap justify-center gap-2 md:gap-4 lg:gap-6 mb-6 md:mb-10 lg:mb-16">
         {locations.map((location) => (
           <button
             key={location}
             onClick={() => setSelectedLocation(location)}
             className={`
-              px-5 py-3 text-lg cursor-pointer rounded-full transition duration-300 ease-in-out font-semibold
+              px-3 py-1 text-xs font-md md:font-semibold md:px-5 md:text-lg lg:px-5 lg:py-3 lg:text-lg cursor-pointer rounded-full transition duration-300 ease-in-out font-semibold
               ${
                 selectedLocation === location
                   ? " bg-orange-400 text-white shadow-lg"
@@ -62,7 +62,7 @@ const PropertyCarousel = () => {
 
       {/* Carousel */}
       <div
-        className="overflow-hidden max-w-[1400px] mx-auto px-4 "
+        className="overflow-hidden max-w-[1400px] mx-auto md:px-4 "
         ref={emblaRef}
       >
         <div className="flex gap-2 select-none touch-pan-x">
@@ -90,9 +90,9 @@ const PropertyCarousel = () => {
       </div>
 
       {/* Following Image + Text Block */}
-      <div className="text-orange-700 py-20 my-20 max-w-7xl mx-auto  grid md:grid-cols-2 gap-16 items-center">
+      <div className="text-orange-700 py-30 lg:mt-30  max-w-[1400px] mx-auto  grid md:grid-cols-2 gap-6 items-center">
         {/* IMAGE BLOCK */}
-        <div className="w-full h-[500px] border-2 rounded-md shadow-md flex items-center justify-center overflow-hidden" >
+        <div className="w-full  md:h-[500px] md:border-2 md:rounded-md shadow-md flex items-center justify-center overflow-hidden">
           <div className="relative w-full h-full">
             <Image
               src="/assets/location.png"
@@ -105,18 +105,18 @@ const PropertyCarousel = () => {
         </div>
 
         {/* TEXT BLOCK */}
-        <div>
+        <div className="flex flex-col justify-center items-center">
           <h2 className="text-2xl md:text-4xl font-serif font-semibold mb-6 leading-snug text-orange-500">
             EXPLORE LOCATIONS
           </h2>
-          <p className="text-orange-600 mb-8 text-lg  font-medium leading-relaxed">
+          <p className="text-orange-600 mb-8 text-center text-lg  font-medium leading-relaxed">
             Discover premium real estate locations across Gurgaon and Delhi NCR.
             Whether you are searching for residential or commercial properties,
             we make your journey seamless and rewarding.
           </p>
 
           {/* BUTTON GROUP */}
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-wrap px-2 gap-2 md:gap-4">
             {[
               "Golf Course Ext Road",
               "Southern Peripheral Road",
@@ -127,7 +127,7 @@ const PropertyCarousel = () => {
               <button
                 key={location}
                 className="
-                  px-6 py-2 rounded-full border border-orange-400 
+                  px-3 md:px-6 py-2 text-xs sm:text-sm md:text-md lg:text-lg rounded-full border border-orange-400 
                   text-orange-600 transition duration-300 font-semibold
                 "
               >

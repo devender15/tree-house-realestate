@@ -18,8 +18,8 @@ const ResidentialProperty = () => {
     <section className="bg-gray-100 py-20">
       <div
         className={`
-          grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4
-          px-2 md:mx-10 lg:mx-42 lg:px-6 lg:gap-8
+         grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:mx-5 md:mx-12
+          px-2 lg:mx-20 xl:mx-42 lg:px-6 lg:gap-6 xl:gap-8
           
         `}
       >
