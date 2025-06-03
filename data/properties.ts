@@ -2970,7 +2970,46 @@ export const properties: Property[] = [
     location: "All Gurgaon Sector, Golf Course Road",
     search: ["HUDA Plots", "Gurgaon", "Gurugram", "Golf Course Road"],
     category: "plots",
-    image: "/assets/plots/huda-plots-thumbnail.jpg"
+    image: "/assets/plots/huda-plots-thumbnail.jpg",
+    details: {
+      overview: {
+        heading: "263 Sqyrd HUDA Residential Plots on Golf Course Road, Gurgaon",
+        paragraph1: "263 square yard residential plots are available for sale on Golf Course Road, Sector 28, near DLF Phase 1 Rapid Metro. These prime location plots are close to DLF Galleria and Sikanderpur, making them ideal for builder floors or built-up houses.",
+        paragraph2: "The area is highly sought after and well-connected, offering an excellent opportunity for those looking to invest in premium residential plots in Gurgaon. Multiple options are available for sale in HUDA, Ansal, Emaar, DLF, Ireo, and other prominent developments."
+      },
+      features: [
+        "Prime location on Golf Course Road, Sector 28",
+        "Plot size: 263 Sqyrd with 11 Sqyrd width",
+        "Suitable for builder floors and built-up houses",
+        "Proximity to DLF Galleria and Sikanderpur",
+        "Near DLF Phase 1 Rapid Metro",
+        "Multiple plot options available in HUDA and other top developments"
+      ],
+      specifications: {
+        heading: "Plot Specifications",
+        highlights: [
+          "263 Sqyrd plot size",
+          "11 Sqyrd width",
+          "Residential zoning",
+          "Ready for immediate construction"
+        ]
+      },
+      location_advantage: {
+        heading: "Location Advantages",
+        highlights: [
+          "Prime Golf Course Road address",
+          "Near DLF Galleria and Sikanderpur",
+          "Close to DLF Phase 1 Rapid Metro",
+          "Well-connected to major business and leisure hubs"
+        ]
+      },
+      about_developer: {
+        logo: "/assets/developers/huda-logo.jpg",
+        heading: "Developer Name : HUDA",
+        paragraph1: "HUDA (Haryana Urban Development Authority) is a prominent government agency responsible for urban planning and development in Haryana. HUDA has developed numerous residential and commercial projects, ensuring planned growth and modern infrastructure across the region.",
+        conclusion: "HUDA's commitment to excellence is reflected in its projects, making it a preferred choice for homebuyers and investors in Gurgaon."
+      }
+    }
   },
   {
     id: "54",
@@ -2978,7 +3017,56 @@ export const properties: Property[] = [
     location: "Sector 102, Gurgaon",
     search: ["Sector 102", "BPTP Amstoria", "Gurgaon", "Gurugram"],
     category: "plots",
-    image: "/assets/plots/bptp-amstoria-thumbnail.jpg"
+    image: "/assets/plots/bptp-amstoria-thumbnail.jpg",
+    details: {
+      overview: {
+        heading: "BPTP Amstoria Plots in Sector 102, Dwarka Expressway, Gurugram",
+        paragraph1: "BPTP Amstoria Plots is a 126-acre township located on the Dwarka Expressway, offering an exquisite lifestyle amidst detailed landscaping. The project features nearly 24 acres of soft and hard landscaping, with a green living initiative that includes the planting of thousands of trees, ensuring a healthy and serene environment.",
+        paragraph2: "The township is designed around the courtyard concept, with central green spaces for each cluster of plots and floors, encouraging community living. Residents enjoy a balance of open spaces, early morning sun, and cool breezes, with a variety of plot sizes and housing options available."
+      },
+      features: [
+        "126-acre gated township on Dwarka Expressway",
+        "24 acres of landscaped greens",
+        "Courtyard concept with central green spaces",
+        "Multiple plot sizes: 180/200/225/250/300 Sqyrd and more",
+        "Gated living with 24x7 security and patrol vehicles",
+        "Scheduled shuttle service to Basai Chowk",
+        "Electronically operated main gates and security escort services",
+        "Wi-Fi enabled zones and fiber optic network",
+        "IP-based intercom, cable TV, and internet facilities"
+      ],
+      specifications: {
+        heading: "Project Specifications & Environmental Initiatives",
+        paragraph1: "The township employs drip and micro-irrigation systems to conserve water, along with sprinklers for landscape irrigation and dust control. A network of CCTV cameras ensures security, while door-to-door garbage collection and segregation at source promote efficient waste management.",
+        paragraph2: "Common areas are maintained by a dedicated housekeeping agency, and special amenities include a separate pet area, shaded pedestrian pathways, and layered greens along roads. Roads feature a mix of blacktop and pavers, with ample lighting and LED signage throughout the township.",
+        highlights: [
+          "Drip and micro-irrigation for water conservation",
+          "120+ CCTV cameras with night vision",
+          "Door-to-door garbage collection and segregation",
+          "Dedicated housekeeping and pet area",
+          "Aesthetic mix of blacktop and paver roads",
+          "Ample street lighting and LED signage"
+        ]
+      },
+      location_advantage: {
+        heading: "Location Advantages",
+        paragraph1: "Situated in Sector 102, Gurgaon, BPTP Amstoria Plots enjoys direct access to the Dwarka Expressway, providing excellent connectivity to major destinations in Gurgaon and Delhi.",
+        paragraph2: "The township is well-connected to key business, retail, and leisure hubs, making it a preferred choice for modern living.",
+        highlights: [
+          "Prime location on Dwarka Expressway",
+          "Easy access to Gurgaon and Delhi",
+          "Close to business and retail centers",
+          "Well-developed social and physical infrastructure"
+        ]
+      },
+      about_developer: {
+        logo: "/assets/developers/bptp-logo.jpg",
+        heading: "Developer Name : BPTP",
+        paragraph1: "BPTP is a leading real estate developer known for its innovative projects and commitment to quality. The company has delivered numerous residential and commercial developments, focusing on customer satisfaction and sustainable growth.",
+        paragraph2: "With a strong presence in Gurgaon and the NCR, BPTP continues to set benchmarks in the real estate sector through its thoughtfully designed townships and modern amenities.",
+        conclusion: "BPTP Amstoria Plots exemplifies the developer’s vision of creating vibrant, well-planned communities for a superior living experience."
+      }
+    }
   },
   {
     id: "55",
@@ -2986,7 +3074,55 @@ export const properties: Property[] = [
     location: "Sector 70A, Gurgaon",
     search: ["Sector 70A", "BPTP Fortuna", "Gurgaon", "Gurugram"],
     category: "plots",
-    image: "/assets/plots/bptp-fortuna-thumbnail.png"
+    image: "/assets/plots/bptp-fortuna-thumbnail.png",
+    details: {
+      overview: {
+        heading: "BPTP Fortuna Plots in Sector 70A, Astaire Gardens, Gurgaon",
+        paragraph1: "BPTP Fortuna Plots are part of a beautifully landscaped township spanning 100 acres, located off SPR on a 60-meter road. The project offers plots ranging from 250 to 400 square yards, with over 500 families already residing in the township and more than 3,000 families in Sector 70A. The township features essential social infrastructure, including St. Angels School and Ananta Nursing Home.",
+        paragraph2: "Designed as a smart and eco-sensitive community, BPTP Fortuna Plots provide a secure and vibrant environment with a host of amenities and green spaces, making it an ideal choice for modern living."
+      },
+      features: [
+        "Smart and eco-sensitive township",
+        "Three-tier security with CCTV surveillance",
+        "2-acre clubhouse with indoor and outdoor pools",
+        "3-acre central park with manicured gardens and seasonal flowers",
+        "Beautifully landscaped greens with over 2,000 trees",
+        "24x7 security with manned gates and guard houses",
+        "Power backup with dual pre-paid electricity meters",
+        "Sewerage treatment plant and storm water management",
+        "Underground electrical lines and dual piping water supply",
+        "Kids play area, health and sports facilities"
+      ],
+      specifications: {
+        heading: "Clubhouse & Infrastructure Specifications",
+        paragraph1: "The township features a 2-acre recreational clubhouse with a heated indoor pool, outdoor pool, kids' pool, jogging tracks, gymnasium, multi-cuisine restaurant, business centre, banquet hall, multiple sports facilities, and a high-end spa. Designer street lighting with energy-saving LED lamps enhances the township's appeal.",
+        paragraph2: "Infrastructure includes underground electrical lines, dual water supply, and a sewerage treatment plant, ensuring a modern and sustainable living environment.",
+        highlights: [
+          "2-acre clubhouse with premium amenities",
+          "Heated indoor and outdoor pools",
+          "Jogging tracks and sports facilities",
+          "Designer LED street lighting",
+          "Modern infrastructure and utilities"
+        ]
+      },
+      location_advantage: {
+        heading: "Location Advantages",
+        paragraph1: "Located in Sector 70A, Gurgaon, BPTP Fortuna Plots offer excellent connectivity to major destinations via SPR and other arterial roads.",
+        highlights: [
+          "Prime location off SPR, Sector 70A",
+          "Easy access to major roads and business hubs",
+          "Close to schools and healthcare facilities",
+          "Well-developed neighborhood with a large resident base"
+        ]
+      },
+      about_developer: {
+        logo: "/assets/developers/bptp-logo.jpg",
+        heading: "Developer Name : BPTP",
+        paragraph1: "BPTP is a renowned real estate developer recognized for its innovative projects and commitment to quality. The company has delivered numerous residential and commercial developments, focusing on customer satisfaction and sustainable growth.",
+        paragraph2: "With a strong presence in Gurgaon and the NCR, BPTP continues to set benchmarks in the real estate sector through thoughtfully designed townships and modern amenities.",
+        conclusion: "BPTP Fortuna Plots reflect the developer’s vision of creating vibrant, well-planned communities for a superior living experience."
+      }
+    }
   },
   {
     id: "56",
@@ -2994,7 +3130,52 @@ export const properties: Property[] = [
     location: "Sector 83, Faridabad",
     search: ["Sector 83", "Faridabad", "Godrej Retreat"],
     category: "plots",
-    image: "/assets/plots/godrej-retreat-faridabad-thumbnail.jpg"
+    image: "/assets/plots/godrej-retreat-faridabad-thumbnail.jpg",
+    details: {
+      overview: {
+        heading: "Godrej Retreat Plots Faridabad – Resort-Style Plotted Development",
+        paragraph1: "Godrej Retreat is the first-ever resort-style plotted development by Godrej Properties in India, located in Sector 83, Faridabad. Each plot is designed to offer a luxurious, resort-like experience, surrounded by abundant greenery and best-in-class amenities, while maintaining excellent connectivity to the city.",
+        paragraph2: "The project features thoughtfully designed plots ranging from 110 to 180 square yards, with 2.5 km of tree-shaded walkways, gardens of five senses, and over 1,500 trees within the development. Residents enjoy a unique blend of nature, comfort, and connectivity, making it a perfect address for a lifetime of happiness."
+      },
+      features: [
+        "First-ever resort-style plotted development by Godrej",
+        "Plots ranging from 110 to 180 Sqyrd",
+        "2.5 km of tree-shaded walkways",
+        "Gardens of five senses and themed green spaces",
+        "Secured, thoughtfully designed plots",
+        "Abundant open green spaces and fresh air",
+        "Strategically located with excellent connectivity"
+      ],
+      specifications: {
+        heading: "Project Specifications & Green Features",
+        paragraph1: "Godrej Retreat offers five distinct land parcels, each with its own themed garden, such as the Fragrance Garden, Garden of Ripples, Garden of Hues, and Tactile Garden. The project is planned to evoke all five senses, with a variety of trees, water bodies, and textured plantations.",
+        paragraph2: "The development is designed to provide a healthy lifestyle, with reflexology zones, gardening activities, and a visual treat of colored greenery throughout the expanse.",
+        highlights: [
+          "Five themed gardens for sensory experiences",
+          "Reflexology zones and tactile plantations",
+          "Abundant tree cover and water features",
+          "Distinctly colored greenery for visual appeal"
+        ]
+      },
+      location_advantage: {
+        heading: "Location Advantages",
+        paragraph1: "Godrej Retreat is strategically located in Sector 83, Faridabad, with easy access to Noida, Gurgaon, and Delhi. The project is close to the proposed FNG Expressway, Eastern Peripheral Expressway, and major highways, ensuring seamless connectivity.",
+        paragraph2: "The area is surrounded by top educational institutions, retail centers, hotels, and hospitals, making it a convenient and desirable address.",
+        highlights: [
+          "Proximity to FNG Expressway and Eastern Peripheral Expressway",
+          "Easy access to Noida, Gurgaon, and Delhi",
+          "Close to leading schools, malls, and hospitals",
+          "Well-connected to major highways and infrastructure projects"
+        ]
+      },
+      about_developer: {
+        logo: "/assets/developers/godrej-properties-logo.jpg",
+        heading: "Developer Name : Godrej Properties",
+        paragraph1: "Godrej Properties is a leading real estate developer in India, known for its innovative projects and commitment to quality. The company has delivered numerous landmark developments across major cities, focusing on sustainable design and customer satisfaction.",
+        paragraph2: "With a legacy of trust and excellence, Godrej Properties continues to set new benchmarks in the real estate sector, offering thoughtfully designed homes and communities.",
+        conclusion: "Godrej Retreat Plots Faridabad exemplifies the developer’s vision of creating vibrant, nature-inspired communities for a superior living experience."
+      }
+    }
   },
   {
     id: "57",
@@ -3002,7 +3183,59 @@ export const properties: Property[] = [
     location: "Sector 108, Gurgaon",
     search: ["Sector 108", "Experion The Westerlies", "Gurgaon", "Gurugram"],
     category: "plots",
-    image: "/assets/plots/experion-the-westerlies-thumbnail.jpg"
+    image: "/assets/plots/experion-the-westerlies-thumbnail.jpg",
+    details: {
+      overview: {
+        heading: "Experion The Westerlies – Luxury Plot Living in Sector 108, Gurgaon",
+        paragraph1: "Experion The Westerlies is a luxury plotted development in Sector 108, Gurgaon, designed to offer a harmonious blend of nature, space, and modern living. Spread across more than 100 acres, the township features verdant greens, fragrant horticulture, meandering paths, and tranquil surroundings, making it an ideal choice for those seeking relaxation and rejuvenation.",
+        paragraph2: "Located near the 8-lane, 150-meter wide Dwarka Expressway, The Westerlies offers a perfect residential address with a holistic ecosystem model, promoting harmony between natural elements and human dwellers."
+      },
+      features: [
+        "Over 100 acres of holistic township design",
+        "Plots starting size 181/193/269/345 Sqyrd",
+        "13-acre green boulevard spanning the project",
+        "Grand entrance arch and signature landscaping",
+        "Four themed streets: Mulberry Drive, Cypress Lane, The Breeze, Chestnut Avenue",
+        "Walking, jogging, and cycling tracks",
+        "Play spaces, play schools, and provision for crèche and primary school",
+        "Intelligent water management and drainage systems",
+        "Orchards, meditation spaces, cosmopolitan plazas, and amphitheatre",
+        "Premium location near Dwarka Expressway"
+      ],
+      specifications: {
+        heading: "Project & Villa Specifications",
+        paragraph1: "The Westerlies villas feature premium quality imported marble in living rooms and master bedrooms, laminated wooden flooring in all bedrooms, and antiskid ceramic tiles in washrooms and balconies. All walls are finished with smudge-proof plastic paint, and kitchens and washrooms have water-resistant, washable ceramic tiles.",
+        paragraph2: "Main doors are crafted from solid teak wood with luxury veneer, internal doors have hardwood frames, and windows are fitted with high-quality UPVC frames. Washrooms include high-quality CP fittings, exhausts, sanitary fixtures, and a Jacuzzi in the master washroom. Split AC units are provided at all levels except the basement, and 100% power backup is available at an added cost. Main doors are equipped with video phones.",
+        highlights: [
+          "Premium imported marble in living and master bedrooms",
+          "Laminated wooden flooring in all bedrooms",
+          "Antiskid ceramic tiles in washrooms and balconies",
+          "Solid teak wood main door with luxury veneer",
+          "UPVC window frames and hardwood internal door frames",
+          "High-quality CP fittings and Jacuzzi in master washroom",
+          "Split AC units (except basement)",
+          "100% power backup (at added cost)",
+          "Main doors with video phones"
+        ]
+      },
+      location_advantage: {
+        heading: "Location Advantages",
+        paragraph1: "Experion The Westerlies is situated in Sector 108, Gurgaon, in close proximity to the Dwarka Expressway, providing excellent connectivity to Delhi and other key areas of Gurgaon.",
+        highlights: [
+          "Prime location near Dwarka Expressway",
+          "Easy access to Delhi and Gurgaon",
+          "Close to Delhi Green Reserve Zone",
+          "Well-connected to business, retail, and leisure hubs"
+        ]
+      },
+      about_developer: {
+        logo: "/assets/developers/experion-developers-logo.jpg",
+        heading: "Developer Name : Experion Developers",
+        paragraph1: "Experion Developers is a renowned real estate company known for its innovative and high-quality projects. With a global presence, Experion has delivered several landmark developments, focusing on customer satisfaction and sustainable design.",
+        paragraph2: "The company is committed to creating vibrant communities with thoughtfully planned amenities and green spaces, setting new standards in the real estate sector.",
+        conclusion: "Experion The Westerlies exemplifies the developer’s vision of providing luxury, comfort, and harmony with nature in every project."
+      }
+    }
   },
   {
     id: "58",
@@ -3010,7 +3243,57 @@ export const properties: Property[] = [
     location: "Sector 60, Gurgaon",
     search: ["Sector 60", "IREO City", "Gurgaon", "Gurugram"],
     category: "plots",
-    image: "/assets/plots/ireo-city-thumbnail.jpg"
+    image: "/assets/plots/ireo-city-thumbnail.jpg",
+    details: {
+      overview: {
+        heading: "IREO City Plots – Urban Masterpiece in Sector 60, Gurgaon",
+        paragraph1: "IREO City Plots in Sector 60, Gurgaon, offer a unique opportunity to own a residential plot in a master-planned urban environment. The project is designed to blend world-class architecture with convenience and beauty, providing every comfort and luxury a homeowner could desire.",
+        paragraph2: "The development features 274 plots spread across 29 acres, with sizes ranging from 240 to 1,000 square yards. The project is nearing completion, with paved access roads, operational electrical feeders, and 100% power backup for all plots. Residents enjoy a secure, gated community with a host of amenities and green spaces."
+      },
+      features: [
+        "Well-connected with Delhi & Gurgaon via Golf Course Extension Road",
+        "Secured gated community with 100% power backup",
+        "Perimeter security and environment-friendly planning",
+        "5-star hotel (Grand Hyatt) within the township",
+        "Signal-free access to and from Golf Course Extension Road",
+        "Immediate access to NH-8, Delhi Metro, and fast exit routes to NCR",
+        "Adani international-class clubhouses nearby",
+        "Cohesive urban design with street furniture, signage, and road lighting",
+        "Water features and landscaped gardens throughout"
+      ],
+      specifications: {
+        heading: "Project Highlights & Amenities",
+        paragraph1: "IREO City Plots offer a range of amenities, including a swimming pool, tennis court, eco jogging trail, and fitness court, encouraging a healthy and active lifestyle. The project emphasizes greenery and aesthetic landscaping, with manicured lawns, gardens, and fountains providing a tranquil environment.",
+        paragraph2: "The plots are well spaced out, ensuring privacy and scenic views, while the urban design incorporates modern infrastructure and social facilities such as art centers, galleries, theaters, and sports facilities.",
+        highlights: [
+          "Ideal plot sizes for investment: 240/300/360/400/500 Sqyrd",
+          "Swimming pool and tennis court",
+          "Eco jogging trail and fitness court",
+          "Manicured lawns, gardens, and fountains",
+          "Spacious plots with scenic settings",
+          "Modern infrastructure and social amenities"
+        ]
+      },
+      location_advantage: {
+        heading: "Location Advantages",
+        paragraph1: "IREO City Plots are strategically located in Sector 60, Gurgaon, offering excellent connectivity to major destinations in Delhi and Gurgaon.",
+        highlights: [
+          "30 min to IGI Airport",
+          "20 min to DLF Cybercity Gurgaon",
+          "10 min to Artemis Hospital",
+          "5 min from Heritage School",
+          "4 km from DLF Golf Course Road",
+          "2 km from proposed Delhi Metro station"
+        ]
+      },
+      about_developer: {
+        logo: "/assets/developers/ireo-logo.jpeg",
+        heading: "Developer Name : Ireo",
+        paragraph1: "Ireo Private Limited is a leading real estate developer in India, with a strong presence in Gurgaon. The company has over 15 years of experience and a portfolio spanning 800 acres of development projects, each setting new benchmarks in design and quality.",
+        paragraph2: "Ireo is committed to customer satisfaction, innovation, and creating architectural marvels that enhance the urban landscape.",
+        conclusion: "IREO City Plots exemplify the developer’s vision of delivering world-class living spaces and vibrant communities in Gurgaon."
+      }
+    }
   },
   {
     id: "59",
