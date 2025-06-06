@@ -85,7 +85,7 @@ export function HeroSection({
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.4 }}
-            className="mt-8 sm:mt-12 px-4 max-w-2xl mx-auto w-full"
+            className="mt-8 sm:mt-12 px-4 mx-auto w-full"
           >
             <SearchBar />
           </motion.div>

@@ -1,8 +1,17 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
-import { Phone, Menu, X, Mail } from "lucide-react";
+import {
+  Phone,
+  Menu,
+  X,
+  Mail,
+  Facebook,
+  Twitter,
+  Instagram,
+  Linkedin,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useScroll } from "@/hooks/use-scroll";
 import Image from "next/image";
@@ -21,8 +30,25 @@ export default function Navbar() {
   const scrolled = useScroll(10);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const sidebarRef = useRef(null);
 
   const toggleSidebar = () => setIsSidebarOpen((prev) => !prev);
+
+  // Close sidebar when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
+        setIsSidebarOpen(false);
+      }
+    };
+
+    if (isSidebarOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isSidebarOpen]);
 
   // Close sidebar when window resizes to desktop size
   useEffect(() => {
@@ -39,34 +65,51 @@ export default function Navbar() {
   return (
     <>
       {/* Top Contact Bar */}
-      <div className="bg-orange-600 text-white text-xs sm:text-sm py-1.5 px-4">
-        <div className="max-w-7xl mx-auto flex justify-between items-center">
+      <div className="bg-gradient-to-r from-orange-500 to-orange-600 text-white text-xs sm:text-sm py-2 px-4">
+        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 sm:gap-0">
           <div className="flex items-center gap-4">
             <a
               href="https://wa.me/+919811098193"
-              className="flex items-center gap-1.5 hover:text-orange-100 transition"
+              className="flex items-center gap-2 hover:text-orange-100 transition group"
             >
-              <Phone size={14} /> <span>+91 9811098193</span>
+              <Phone size={14} className="group-hover:animate-pulse" />
+              <span>+91 9811098193</span>
             </a>
             <a
               href="mailto:info@treehouserealty.com"
-              className="hidden sm:flex items-center gap-1.5 hover:text-orange-100 transition"
+              className="flex items-center gap-2 hover:text-orange-100 transition group"
             >
-              <Mail size={14} /> <span>Treehousefarmland@gmail.com</span>
+              <Mail size={14} className="group-hover:animate-pulse" />
+              <span>Treehousefarmland@gmail.com</span>
             </a>
           </div>
-          <div className="hidden md:flex items-center gap-3">
-            <span>Follow us:</span>
+          <div className="flex items-center gap-3">
+            <span className="hidden md:block font-light">Follow us:</span>
             <div className="flex gap-2">
-              {[1, 2, 3, 4].map((i) => (
-                <a
-                  key={i}
-                  href="#"
-                  className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center hover:bg-white/30 transition"
-                >
-                  <div className="w-3 h-3 bg-white rounded-sm"></div>
-                </a>
-              ))}
+              <a
+                href="#"
+                className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center hover:bg-white/30 transition hover:scale-110"
+              >
+                <Facebook size={12} />
+              </a>
+              <a
+                href="#"
+                className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center hover:bg-white/30 transition hover:scale-110"
+              >
+                <Twitter size={12} />
+              </a>
+              <a
+                href="#"
+                className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center hover:bg-white/30 transition hover:scale-110"
+              >
+                <Instagram size={12} />
+              </a>
+              <a
+                href="#"
+                className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center hover:bg-white/30 transition hover:scale-110"
+              >
+                <Linkedin size={12} />
+              </a>
             </div>
           </div>
         </div>
@@ -74,159 +117,235 @@ export default function Navbar() {
 
       {/* Main Header */}
       <header
-        className={`fixed top-7 left-0 right-0 z-50 w-full transition-all duration-300 ${
-          scrolled ? "top-0" : ""
+        className={`sticky top-0 left-0 right-0 z-50 w-full transition-all duration-300 ${
+          scrolled ? "shadow-lg" : ""
         }`}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div
-            className={`flex items-center justify-between gap-4 rounded-xl transition-all duration-300 ${
-              scrolled
-                ? "bg-white shadow-lg py-2 px-4 border border-gray-100"
-                : "bg-transparent py-3"
-            }`}
-          >
-            {/* LOGO */}
-            <Link href="/" className="flex-shrink-0">
-              <Image
-                src={"/assets/logo.png"}
-                alt="Tree House Real Estate"
-                width={scrolled ? 70 : 80}
-                height={scrolled ? 70 : 80}
-                className="transition-all duration-300"
-              />
-            </Link>
+        <div className="bg-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6">
+            <div className="flex items-center justify-between h-20">
+              {/* Logo */}
+              <Link href="/" className="flex items-center gap-3 z-10">
+                <div className="bg-orange-100 rounded-xl p-1.5 shadow-md">
+                  <div className="bg-white rounded-lg p-1">
+                    <Image
+                      src={"/assets/logo.png"}
+                      alt="Tree House Real Estate"
+                      width={scrolled ? 42 : 48}
+                      height={scrolled ? 42 : 48}
+                      className="transition-all duration-300"
+                    />
+                  </div>
+                </div>
+                {/* <div className="hidden md:block">
+                  <h1 className="font-bold text-xl tracking-tight text-orange-700">
+                    Tree House
+                  </h1>
+                  <p className="text-xs font-light tracking-widest text-gray-600">
+                    REAL ESTATE SOLUTIONS
+                  </p>
+                </div> */}
+              </Link>
 
-            {/* DESKTOP NAV */}
-            <nav className="hidden lg:flex items-center gap-1">
+              {/* Desktop Navigation */}
+              <nav className="hidden lg:flex items-center gap-1">
+                {navItems.map((item) => (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className="relative px-5 py-3 text-base font-medium text-gray-700 hover:text-orange-600 transition-colors duration-200 group whitespace-nowrap"
+                  >
+                    {item.label}
+                    <span className="absolute bottom-2 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-orange-600 transition-all duration-300 group-hover:w-8" />
+                  </Link>
+                ))}
+              </nav>
+
+              {/* Call to Action */}
+              <div className="flex items-center gap-4">
+                <Link
+                  href={"/enquiry"}
+                  className="hidden sm:block rounded-xl px-6 py-2.5 text-sm font-bold transition-all whitespace-nowrap shadow-md hover:shadow-lg transform hover:-translate-y-0.5 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white"
+                >
+                  Enquire Now
+                </Link>
+
+                {/* Mobile Menu Button */}
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className="block lg:hidden cursor-pointer rounded-xl bg-orange-50 hover:bg-orange-100 text-orange-600"
+                  onClick={toggleSidebar}
+                >
+                  <Menu className="w-6 h-6" />
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Secondary Navigation for Tablets */}
+        <div className="bg-orange-50 hidden md:block lg:hidden">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6">
+            <div className="flex overflow-x-auto py-2 hide-scrollbar">
               {navItems.map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`relative px-4 py-2 text-sm font-medium tracking-wide transition-colors duration-200 group whitespace-nowrap ${
-                    scrolled
-                      ? "text-gray-800 hover:text-orange-600"
-                      : "text-white hover:text-orange-300"
-                  }`}
+                  className="px-4 py-2 text-sm font-medium text-gray-700 hover:text-orange-600 whitespace-nowrap"
                 >
                   {item.label}
-                  <span
-                    className={`absolute bottom-1 left-4 right-4 h-0.5 bg-current transition-all transform scale-x-0 group-hover:scale-x-100 ${
-                      scrolled ? "bg-orange-600" : "bg-orange-300"
-                    }`}
-                  />
                 </Link>
               ))}
-            </nav>
-
-            {/* CTAs + MOBILE MENU */}
-            <div className="flex items-center gap-3 sm:gap-4">
-              <Link
-                href={"/enquiry"}
-                className={`hidden sm:block rounded-full px-4 py-2 text-sm font-bold transition-all whitespace-nowrap ${
-                  scrolled
-                    ? "bg-orange-600 hover:bg-orange-700 text-white"
-                    : "bg-white hover:bg-orange-50 text-orange-700"
-                }`}
-              >
-                Enquire Now
-              </Link>
-
-              <Button
-                variant="ghost"
-                size="icon"
-                className={`block lg:hidden cursor-pointer ${
-                  scrolled
-                    ? "text-gray-800 hover:bg-gray-100"
-                    : "text-white hover:bg-white/10"
-                }`}
-                onClick={toggleSidebar}
-              >
-                <Menu className="w-6 h-6" />
-              </Button>
             </div>
           </div>
         </div>
       </header>
 
-      {/* Mobile Sidebar Overlay */}
-      {isSidebarOpen && (
+      {/* Mobile Sidebar */}
+      <div
+        className={`fixed inset-0 z-50 transition-opacity duration-300 ${
+          isSidebarOpen ? "opacity-100 visible" : "opacity-0 invisible"
+        }`}
+      >
+        {/* Overlay */}
         <div
-          className="fixed inset-0 bg-black/70 z-50 backdrop-blur-sm"
+          className="absolute inset-0 bg-black/60 backdrop-blur-sm"
           onClick={toggleSidebar}
         />
-      )}
 
-      {/* Mobile Sidebar */}
-      <aside
-        className={`
-          fixed top-0 right-0 h-full w-full max-w-sm bg-white text-gray-800 z-50
-          transform transition-transform duration-300 ease-in-out
-          ${isSidebarOpen ? "translate-x-0" : "translate-x-full"}
-          shadow-2xl
-        `}
-      >
-        <div className="h-full flex flex-col">
-          {/* Header */}
-          <div className="flex items-center justify-between px-6 py-5 border-b">
-            <Link href="/" onClick={toggleSidebar}>
-              <Image
-                src={"/assets/logo.png"}
-                alt="Tree House Real Estate"
-                width={100}
-                height={100}
-              />
-            </Link>
-            <button
-              onClick={toggleSidebar}
-              className="p-2 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-800"
-            >
-              <X className="w-6 h-6" />
-            </button>
-          </div>
-
-          {/* Links */}
-          <nav className="flex-1 flex flex-col px-6 py-8 space-y-1 overflow-y-auto">
-            {navItems.map((item) => (
+        {/* Sidebar Content */}
+        <div
+          ref={sidebarRef}
+          className={`absolute top-0 right-0 h-full w-4/5 max-w-md bg-gradient-to-b from-white to-orange-50 transform transition-transform duration-300 ${
+            isSidebarOpen ? "translate-x-0" : "translate-x-full"
+          } shadow-2xl`}
+        >
+          <div className="h-full flex flex-col">
+            {/* Header */}
+            <div className="flex items-center justify-between px-6 py-5 bg-white shadow-sm">
               <Link
-                key={item.href}
-                href={item.href}
+                href="/"
                 onClick={toggleSidebar}
-                className="py-3 px-4 rounded-lg text-gray-700 hover:bg-orange-50 hover:text-orange-600 font-medium transition"
+                className="flex items-center gap-3"
               >
-                {item.label}
+                <div className="bg-orange-100 rounded-xl p-1.5 shadow-md">
+                  <div className="bg-white rounded-lg p-1">
+                    <Image
+                      src={"/assets/logo.png"}
+                      alt="Tree House Real Estate"
+                      width={40}
+                      height={40}
+                    />
+                  </div>
+                </div>
+                {/* <div>
+                  <h1 className="font-bold text-lg text-orange-700 tracking-tight">
+                    Tree House
+                  </h1>
+                  <p className="text-xs font-light text-gray-600 tracking-wide">
+                    REAL ESTATE SOLUTIONS
+                  </p>
+                </div> */}
               </Link>
-            ))}
-          </nav>
-
-          {/* Footer */}
-          <div className="border-t px-6 py-5 bg-gray-50">
-            <div className="mb-4">
-              <a
-                href="tel:+919811098193"
-                className="flex items-center gap-3 text-gray-800 font-medium py-2"
+              <button
+                onClick={toggleSidebar}
+                className="p-2 rounded-xl bg-orange-100 hover:bg-orange-200 text-orange-600 transition"
               >
-                <Phone className="w-5 h-5 text-orange-600" />
-                <span>+91 9811098193</span>
-              </a>
-              <a
-                href="mailto:info@treehouserealty.com"
-                className="flex items-center gap-3 text-gray-800 py-2"
-              >
-                <Mail className="w-5 h-5 text-orange-600" />
-                <span>info@treehouserealty.com</span>
-              </a>
+                <X className="w-6 h-6" />
+              </button>
             </div>
-            <Link
-              href={"/enquiry"}
-              className="block w-full text-center bg-orange-600 hover:bg-orange-700 text-white rounded-full px-4 py-3 font-bold transition"
-              onClick={toggleSidebar}
-            >
-              Enquire Now
-            </Link>
+
+            {/* Navigation Links */}
+            <nav className="flex-1 flex flex-col px-6 py-8 space-y-3 overflow-y-auto">
+              {navItems.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  onClick={toggleSidebar}
+                  className="py-4 px-5 rounded-xl text-gray-700 hover:bg-orange-500 hover:text-white font-medium transition-all flex items-center gap-3 group"
+                >
+                  <div className="w-1.5 h-1.5 rounded-full bg-orange-400 group-hover:bg-white transition" />
+                  <span>{item.label}</span>
+                </Link>
+              ))}
+            </nav>
+
+            {/* Footer */}
+            <div className="border-t border-orange-100 px-6 py-5 bg-white">
+              <div className="mb-4">
+                <a
+                  href="tel:+919811098193"
+                  className="flex items-center gap-4 text-gray-800 font-medium py-2.5 group"
+                >
+                  <div className="bg-orange-100 p-2 rounded-xl group-hover:bg-orange-500 transition">
+                    <Phone className="w-5 h-5 text-orange-600 group-hover:text-white" />
+                  </div>
+                  <span className="group-hover:text-orange-600 transition">
+                    +91 9811098193
+                  </span>
+                </a>
+                <a
+                  href="mailto:info@treehouserealty.com"
+                  className="flex items-center gap-4 text-gray-800 py-2.5 group"
+                >
+                  <div className="bg-orange-100 p-2 rounded-xl group-hover:bg-orange-500 transition">
+                    <Mail className="w-5 h-5 text-orange-600 group-hover:text-white" />
+                  </div>
+                  <span className="group-hover:text-orange-600 transition">
+                    Treehousefarmland@gmail.com
+                  </span>
+                </a>
+              </div>
+
+              <div className="flex justify-center gap-4 mb-4">
+                <a
+                  href="#"
+                  className="bg-orange-100 p-2 rounded-xl hover:bg-orange-500 transition"
+                >
+                  <Facebook className="w-5 h-5 text-orange-600 hover:text-white" />
+                </a>
+                <a
+                  href="#"
+                  className="bg-orange-100 p-2 rounded-xl hover:bg-orange-500 transition"
+                >
+                  <Twitter className="w-5 h-5 text-orange-600 hover:text-white" />
+                </a>
+                <a
+                  href="#"
+                  className="bg-orange-100 p-2 rounded-xl hover:bg-orange-500 transition"
+                >
+                  <Instagram className="w-5 h-5 text-orange-600 hover:text-white" />
+                </a>
+                <a
+                  href="#"
+                  className="bg-orange-100 p-2 rounded-xl hover:bg-orange-500 transition"
+                >
+                  <Linkedin className="w-5 h-5 text-orange-600 hover:text-white" />
+                </a>
+              </div>
+
+              <Link
+                href={"/enquiry"}
+                className="block w-full text-center bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white rounded-xl px-4 py-3.5 font-bold transition shadow-md hover:shadow-lg"
+                onClick={toggleSidebar}
+              >
+                Enquire Now
+              </Link>
+            </div>
           </div>
         </div>
-      </aside>
+      </div>
+
+      <style jsx>{`
+        .hide-scrollbar {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+          display: none;
+        }
+      `}</style>
     </>
   );
 }
