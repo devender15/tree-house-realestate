@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { MapPinIcon, MessageCircleMore } from "lucide-react";
+import { MapPinIcon } from "lucide-react";
 import Link from "next/link";
 
 type CardData = {
@@ -16,12 +16,12 @@ const PropertyCard = ({ id, title, location, image, category }: CardData) => {
   return (
     <div className="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg border border-gray-100 w-full max-w-[700px] my-2 mx-auto">
       {/* Image Section */}
-      <div className="relative aspect-video">
+      <div className="relative aspect-video overflow-hidden">
         <Image
           src={image || "/assets/default.jpg"}
           fill
           alt={title}
-          className="object-cover"
+          className="object-cover transition-transform duration-500 ease-in-out hover:scale-110"
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
         />
         <span className="absolute top-3 left-3 bg-orange-600 text-white px-3 py-1 rounded-full text-xs font-medium capitalize shadow-md">
@@ -40,20 +40,20 @@ const PropertyCard = ({ id, title, location, image, category }: CardData) => {
           <span className="line-clamp-1">{location}</span>
         </div>
 
-        {/* Action Buttons - Optimized for mobile */}
+        {/* Action Buttons */}
         <div className="flex items-center justify-between gap-1 sm:gap-2">
           <Link
             href={`/enquiry`}
             className="flex-1 min-w-[70px] sm:min-w-[100px] bg-orange-600 hover:bg-orange-700 text-white font-medium py-2 px-1.5 sm:px-3 rounded-lg text-center transition-colors duration-200 text-xs sm:text-sm md:text-base"
           >
-            <span className="">Enquire</span>
+            <span>Enquire</span>
           </Link>
 
           <Link
             href={`/details/${id}`}
             className="flex-1 min-w-[70px] sm:min-w-[100px] border border-orange-600 text-orange-600 hover:bg-orange-50 font-medium py-2 px-1.5 sm:px-3 rounded-lg text-center transition-colors duration-200 text-xs sm:text-sm md:text-base"
           >
-            <span className="">Details</span>
+            <span>Details</span>
           </Link>
 
           <a

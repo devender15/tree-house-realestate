@@ -1,8 +1,49 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { properties, Property } from "@/data/properties";
 import PropertyCard from "./propertyCard";
+import { motion, useAnimation, useInView } from "framer-motion";
+
+// Animation wrapper
+const AnimatedCard = ({
+  children,
+  index,
+}: {
+  children: React.ReactNode;
+  index: number;
+}) => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "0px 0px -100px 0px" });
+  const controls = useAnimation();
+
+  useEffect(() => {
+    if (isInView) {
+      controls.start("visible");
+    }
+  }, [isInView, controls]);
+
+  return (
+    <motion.div
+      ref={ref}
+      initial="hidden"
+      animate={controls}
+      transition={{
+        delay: Math.min(index * 0.07, 0.4),
+        type: "spring",
+        stiffness: 80,
+        damping: 14,
+        mass: 0.5,
+      }}
+      variants={{
+        hidden: { opacity: 0, y: 60 },
+        visible: { opacity: 1, y: 0 },
+      }}
+    >
+      {children}
+    </motion.div>
+  );
+};
 
 const Plots = () => {
   const [plotsData, setPlotsData] = useState<Property[]>([]);
@@ -11,8 +52,6 @@ const Plots = () => {
     const filtered = properties.filter(
       (property) => property.category === "plots"
     );
-
-    // If there's a type mismatch, explicitly assert the type
     setPlotsData(filtered as Property[]);
   }, []);
 
@@ -32,21 +71,22 @@ const Plots = () => {
         {/* Property Grid */}
         {plotsData.length > 0 ? (
           <div className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-3 md:gap-4 lg:gap-6">
-            {plotsData.map((property) => (
-              <PropertyCard
-                key={property?.id}
-                id={property?.id}
-                title={property?.title ?? "Untitled"}
-                location={property?.location ?? "Location not specified"}
-                image={property?.image ?? "/fallback.jpg"}
-                category={property?.category ?? "unknown"}
-              />
+            {plotsData.map((property, index) => (
+              <AnimatedCard key={property?.id} index={index}>
+                <PropertyCard
+                  id={property?.id}
+                  title={property?.title ?? "Untitled"}
+                  location={property?.location ?? "Location not specified"}
+                  image={property?.image ?? "/fallback.jpg"}
+                  category={property?.category ?? "unknown"}
+                />
+              </AnimatedCard>
             ))}
           </div>
         ) : (
           <div className="text-center py-12">
             <h3 className="text-xl font-medium text-gray-700">
-              No commercial properties available at the moment
+              No plots available at the moment
             </h3>
           </div>
         )}
