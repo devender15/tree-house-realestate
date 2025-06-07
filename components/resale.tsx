@@ -1,8 +1,49 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { properties, Property } from "@/data/properties";
 import PropertyCard from "./propertyCard";
+import { motion, useAnimation, useInView } from "framer-motion";
+
+// Reusable animation wrapper
+const AnimatedCard = ({
+  children,
+  index,
+}: {
+  children: React.ReactNode;
+  index: number;
+}) => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "0px 0px -100px 0px" });
+  const controls = useAnimation();
+
+  useEffect(() => {
+    if (isInView) {
+      controls.start("visible");
+    }
+  }, [isInView, controls]);
+
+  return (
+    <motion.div
+      ref={ref}
+      initial="hidden"
+      animate={controls}
+      transition={{
+        delay: Math.min(index * 0.07, 0.4),
+        type: "spring",
+        stiffness: 80,
+        damping: 14,
+        mass: 0.5,
+      }}
+      variants={{
+        hidden: { opacity: 0, y: 60 },
+        visible: { opacity: 1, y: 0 },
+      }}
+    >
+      {children}
+    </motion.div>
+  );
+};
 
 const Resale = () => {
   const [resaleData, setResaleData] = useState<Property[]>([]);
@@ -11,7 +52,6 @@ const Resale = () => {
     const filtered = properties.filter(
       (property) => property.category === "resale"
     );
-
     setResaleData(filtered as Property[]);
   }, []);
 
@@ -31,21 +71,22 @@ const Resale = () => {
         {/* Property Grid */}
         {resaleData.length > 0 ? (
           <div className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-3 md:gap-4 lg:gap-6">
-            {resaleData.map((property) => (
-              <PropertyCard
-                key={property?.id}
-                id={property?.id}
-                title={property?.title ?? "Untitled"}
-                location={property?.location ?? "Location not specified"}
-                image={property?.image ?? "/fallback.jpg"}
-                category={property?.category ?? "unknown"}
-              />
+            {resaleData.map((property, index) => (
+              <AnimatedCard key={property?.id} index={index}>
+                <PropertyCard
+                  id={property?.id}
+                  title={property?.title ?? "Untitled"}
+                  location={property?.location ?? "Location not specified"}
+                  image={property?.image ?? "/fallback.jpg"}
+                  category={property?.category ?? "unknown"}
+                />
+              </AnimatedCard>
             ))}
           </div>
         ) : (
           <div className="text-center py-12">
             <h3 className="text-xl font-medium text-gray-700">
-              No commercial properties available at the moment
+              No resale properties available at the moment
             </h3>
           </div>
         )}

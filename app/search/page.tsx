@@ -49,10 +49,7 @@ export default function SearchResultsPage({
           px-2 lg:mx-20 xl:mx-42 lg:px-6 lg:gap-6  xl:gap-8 "
         >
           {filtered.map((property) => (
-            <div
-              key={property.id}
-              className="bg-white rounded-lg shadow-md hover:shadow-orange-300/40 transition-shadow  border-orange-200 overflow-hidden"
-            >
+            <div key={property.id}>
               <PropertyCard
                 id={property.id}
                 title={property.title}
