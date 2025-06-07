@@ -54,7 +54,7 @@ export async function POST(request: Request) {
     }
 
     // --- 1. Direct property/general info lookup ---
-    const jsonPath = path.join(process.cwd(), 'data', 'knowledgeBase.json');
+    const jsonPath = path.join(process.cwd(), 'public', 'knowledgeBase.json');
     const jsonData = JSON.parse(fs.readFileSync(jsonPath, 'utf-8'));
 
     // Flatten all searchable objects (properties, general info, arrays)
@@ -195,7 +195,7 @@ Assistant Answer:
 You are TreeBot, the helpful and knowledgeable AI assistant for Tree House Real Estate.
 
 Answer the user's question using ONLY the information provided in the context below.
-If the user asks for a list (e.g., all commercial properties), list each and every relevant property mentioned in the context as a **numbered markdown list** in the format:
+If the user asks for a list (e.g., all commercial properties), list each and every relevant property mentioned in the context as a numbered list in plain text in the format:
 1. Property A (Location)
 2. Property B (Location)
 3. Property C (Location)

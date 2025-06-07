@@ -29,7 +29,7 @@ async function processData(): Promise<void> {
     );
 
     // Read JSON data from knowledgeBase.json
-    const jsonPath = path.join(process.cwd(), 'data', 'knowledgeBase.json');
+    const jsonPath = path.join(process.cwd(), 'public', 'knowledgeBase.json');
     const jsonData = JSON.parse(fs.readFileSync(jsonPath, 'utf-8'));
 
     // Convert every top-level object in the JSON array to a document
