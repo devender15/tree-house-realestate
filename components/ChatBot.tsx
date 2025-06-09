@@ -1,24 +1,12 @@
 "use client"
 
 import type React from "react"
-
 import { useState, useRef, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-import {
-  Loader2,
-  X,
-  User,
-  Send,
-  Copy,
-  Volume2,
-  VolumeX,
-  Minimize2,
-  Maximize2,
-  Check,
-  Bot, // <-- Use Bot icon instead of TreePine
-} from "lucide-react"
+import { Loader2, X, User, Send, Copy, Minimize2, Maximize2, Check, Bot } from "lucide-react"
+import ReactMarkdown from "react-markdown"
 
 interface Message {
   role: "user" | "assistant"
@@ -28,9 +16,9 @@ interface Message {
 }
 
 const realEstateQuickReplies = [
-  'Tell me more about Tree House Real Estate',
+  "Tell me more about Tree House Real Estate",
   "Show me all properties in Gurgaon",
-  "Show me all residential properties in Gurgaon",
+  "Show me residential properties in Gurgaon",
   "How can I contact Tree House Real Estate?",
 ]
 
@@ -41,7 +29,6 @@ export default function TreeHouseRealEstateChatBot() {
   const [input, setInput] = useState("")
   const [isLoading, setIsLoading] = useState(false)
   const [hasGreeted, setHasGreeted] = useState(false)
-  const [soundEnabled, setSoundEnabled] = useState(true)
   const [showQuickReplies, setShowQuickReplies] = useState(true)
   const [copiedMessageId, setCopiedMessageId] = useState<string | null>(null)
   const messagesEndRef = useRef<HTMLDivElement>(null)
@@ -125,7 +112,7 @@ export default function TreeHouseRealEstateChatBot() {
         content:
           error instanceof Error
             ? error.message
-            : "I apologize for the technical difficulty. Please try again or contact our office directly at (555) 123-4567.",
+            : "I apologize for the technical difficulty. Please try again or contact our office directly at +91 9811098193",
         timestamp: new Date(),
         id: (Date.now() + 1).toString(),
       }
@@ -158,7 +145,10 @@ export default function TreeHouseRealEstateChatBot() {
   }
 
   return (
-    <div className="fixed bottom-6 right-6 z-50">
+    <div
+      className="fixed bottom-4 right-4 z-50 sm:bottom-6 sm:right-6"
+      style={{ paddingBottom: "env(safe-area-inset-bottom, 0px)" }}
+    >
       {/* Floating Chat Button */}
       <motion.div className="relative" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
         <motion.button
@@ -168,6 +158,7 @@ export default function TreeHouseRealEstateChatBot() {
             boxShadow: isOpen ? "0 0 0 4px rgba(251, 146, 60, 0.3)" : "0 20px 40px -12px rgba(251, 146, 60, 0.4)",
           }}
           aria-label="Open Tree House Real Estate chat"
+          style={{ touchAction: "manipulation", minHeight: "56px", minWidth: "56px" }}
         >
           <motion.div
             className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent"
@@ -185,7 +176,11 @@ export default function TreeHouseRealEstateChatBot() {
               scale: { repeat: Number.POSITIVE_INFINITY, duration: 2, repeatType: "reverse" },
             }}
           >
-            {isOpen ? <X className="w-7 h-7 relative z-10" /> : <Bot className="w-7 h-7 relative z-10" />}
+            {isOpen ? (
+              <X className="w-6 h-6 sm:w-7 sm:h-7 relative z-10" />
+            ) : (
+              <Bot className="w-6 h-6 sm:w-7 sm:h-7 relative z-10" />
+            )}
           </motion.div>
 
           {/* Notification badge */}
@@ -193,7 +188,7 @@ export default function TreeHouseRealEstateChatBot() {
             <motion.div
               initial={{ scale: 0 }}
               animate={{ scale: 1 }}
-              className="absolute -top-2 -right-2 w-6 h-6 bg-red-500 text-white text-xs rounded-full flex items-center justify-center font-bold"
+              className="absolute -top-1 -right-1 w-5 h-5 sm:w-6 sm:h-6 bg-red-500 text-white text-xs rounded-full flex items-center justify-center font-bold"
             >
               {messages.filter((m) => m.role === "assistant").length}
             </motion.div>
@@ -214,68 +209,66 @@ export default function TreeHouseRealEstateChatBot() {
             }}
             exit={{ opacity: 0, y: 100, scale: 0.8 }}
             transition={{ type: "spring", stiffness: 300, damping: 30 }}
-            className="fixed bottom-20 right-0 w-full max-w-md sm:max-w-lg md:max-w-xl bg-white/95 backdrop-blur-xl rounded-3xl shadow-2xl border border-orange-200/50 flex flex-col overflow-hidden"
+            className="fixed bottom-16 sm:bottom-20 right-0 sm:right-4 w-full max-w-[100vw] sm:max-w-md md:max-w-lg lg:max-w-xl bg-white/95 backdrop-blur-xl rounded-t-3xl sm:rounded-3xl shadow-2xl border border-orange-200/50 flex flex-col overflow-hidden px-1 sm:px-0"
             style={{
-              height: isMinimized ? "60px" : "70vh",
-              maxHeight: isMinimized ? "60px" : "700px",
+              height: isMinimized ? "60px" : "min(85vh, 600px)",
+              maxHeight: isMinimized ? "60px" : "min(85vh, 600px)",
               boxShadow: "0 25px 50px -12px rgba(251, 146, 60, 0.25), 0 0 0 1px rgba(255,255,255,0.5)",
             }}
           >
             {/* Header */}
             <motion.div
-              className="flex items-center justify-between p-4 bg-gradient-to-r from-orange-500 to-orange-600 relative overflow-hidden"
+              className="flex items-center justify-between p-3 sm:p-4 bg-gradient-to-r from-orange-500 to-orange-600 relative overflow-hidden flex-nowrap"
+              style={{ minHeight: 56 }}
               animate={{ backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"] }}
               transition={{ duration: 8, repeat: Number.POSITIVE_INFINITY }}
             >
               {/* Animated background pattern */}
-              <div className="absolute inset-0 opacity-20">
+              <div className="absolute inset-0 opacity-20 pointer-events-none">
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.3)_0%,transparent_50%)]" />
               </div>
 
-              <div className="flex items-center gap-3 relative z-10">
+              <div className="flex items-center gap-2 sm:gap-3 relative z-10">
                 <motion.div
                   animate={{ rotate: [0, 360] }}
                   transition={{ duration: 20, repeat: Number.POSITIVE_INFINITY, ease: "linear" }}
-                  className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center"
+                  className="w-8 h-8 sm:w-10 sm:h-10 bg-white/20 rounded-full flex items-center justify-center"
                 >
-                  <Bot className="w-5 h-5 text-white" />
+                  <Bot className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
                 </motion.div>
                 <div>
-                  <span className="text-lg font-bold text-white tracking-wide">Tree House Real Estate</span>
-                  <div className="flex items-center gap-1 text-white/90 text-sm">
-                    <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
+                  <span className="text-base sm:text-lg font-bold text-white tracking-wide whitespace-nowrap">
+                    Tree House Real Estate
+                  </span>
+                  <div className="flex items-center gap-1 text-white/90 text-xs sm:text-sm whitespace-nowrap">
+                    <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-green-400 rounded-full animate-pulse" />
                     Online
                   </div>
                 </div>
               </div>
 
-              <div className="flex items-center gap-2 relative z-10">
+              <div className="flex items-center gap-1 sm:gap-2 relative z-10">
                 <Button
                   variant="ghost"
                   size="icon"
-                  className="text-white hover:bg-white/20 transition-colors"
-                  onClick={() => setSoundEnabled(!soundEnabled)}
-                  aria-label={soundEnabled ? "Mute sounds" : "Enable sounds"}
-                >
-                  {soundEnabled ? <Volume2 className="w-4 h-4" /> : <VolumeX className="w-4 h-4" />}
-                </Button>
-                <Button
-                  variant="ghost"
-                  size="icon"
-                  className="text-white hover:bg-white/20 transition-colors"
+                  className="text-white hover:bg-white/20 transition-colors h-8 w-8 sm:h-9 sm:w-9"
                   onClick={() => setIsMinimized(!isMinimized)}
                   aria-label={isMinimized ? "Maximize" : "Minimize"}
                 >
-                  {isMinimized ? <Maximize2 className="w-4 h-4" /> : <Minimize2 className="w-4 h-4" />}
+                  {isMinimized ? (
+                    <Maximize2 className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+                  ) : (
+                    <Minimize2 className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+                  )}
                 </Button>
                 <Button
                   variant="ghost"
                   size="icon"
-                  className="text-white hover:bg-white/20 transition-colors"
+                  className="text-white hover:bg-white/20 transition-colors h-8 w-8 sm:h-9 sm:w-9"
                   onClick={() => setIsOpen(false)}
                   aria-label="Close chat"
                 >
-                  <X className="w-4 h-4" />
+                  <X className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                 </Button>
               </div>
             </motion.div>
@@ -283,7 +276,10 @@ export default function TreeHouseRealEstateChatBot() {
             {!isMinimized && (
               <>
                 {/* Messages */}
-                <div className="flex-1 overflow-y-auto p-4 space-y-4 bg-gradient-to-br from-orange-50/30 to-white/80">
+                <div
+                  className="flex-1 overflow-y-auto p-3 sm:p-4 space-y-3 sm:space-y-4 bg-gradient-to-br from-orange-50/30 to-white/80"
+                  style={{ overscrollBehavior: "contain" }}
+                >
                   {messages.map((message, index) => (
                     <motion.div
                       key={message.id}
@@ -298,29 +294,29 @@ export default function TreeHouseRealEstateChatBot() {
                       className={`flex ${message.role === "user" ? "justify-end" : "justify-start"}`}
                     >
                       <div
-                        className={`flex items-end gap-3 max-w-[85%] group ${
+                        className={`flex items-end gap-1.5 sm:gap-3 max-w-[90%] sm:max-w-[85%] group ${
                           message.role === "user" ? "flex-row-reverse" : "flex-row"
                         }`}
                       >
                         <motion.div
                           whileHover={{ scale: 1.1 }}
-                          className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 ${
+                          className={`w-7 h-7 sm:w-8 sm:h-8 rounded-full flex items-center justify-center flex-shrink-0 ${
                             message.role === "user"
                               ? "bg-gradient-to-br from-gray-600 to-gray-700"
                               : "bg-gradient-to-br from-orange-500 to-orange-600"
                           }`}
                         >
                           {message.role === "user" ? (
-                            <User className="w-4 h-4 text-white" />
+                            <User className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-white" />
                           ) : (
-                            <Bot className="w-4 h-4 text-white" />
+                            <Bot className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-white" />
                           )}
                         </motion.div>
 
                         <div className="flex flex-col gap-1">
                           <motion.div
                             whileHover={{ scale: 1.02 }}
-                            className={`rounded-2xl px-4 py-3 text-sm shadow-lg relative ${
+                            className={`rounded-2xl px-3 py-2 sm:px-4 sm:py-3 text-sm leading-relaxed shadow-lg relative ${
                               message.role === "user"
                                 ? "bg-gradient-to-br from-gray-600 to-gray-700 text-white"
                                 : message.content.toLowerCase().includes("error") ||
@@ -335,7 +331,40 @@ export default function TreeHouseRealEstateChatBot() {
                               borderBottomRightRadius: 16,
                             }}
                           >
-                            {message.content}
+                            {message.role === "assistant" ? (
+                              <div
+                                className="prose prose-sm max-w-none 
+  prose-headings:font-semibold 
+  prose-headings:text-orange-700 
+  prose-headings:my-1 sm:prose-headings:my-2
+  prose-h1:text-sm sm:prose-h1:text-lg
+  prose-h2:text-xs sm:prose-h2:text-base
+  prose-p:text-gray-700 prose-p:text-sm prose-p:leading-relaxed
+  prose-ul:text-gray-700 prose-ul:text-sm
+  prose-ol:text-gray-700 prose-ol:text-sm
+  prose-li:my-0.5
+  prose-strong:text-orange-600
+  prose-strong:font-semibold
+  prose-em:text-gray-600
+  [&>p]:my-1 sm:[&>p]:my-2
+  [&>ul]:my-1 sm:[&>ul]:my-2
+  [&>ol]:my-1 sm:[&>ol]:my-2
+  [&>h1]:mb-1.5 sm:[&>h1]:mb-3
+  [&>h2]:mb-1 sm:[&>h2]:mb-2
+  [&>h3]:mb-0.5 sm:[&>h3]:mb-1.5
+  [&>ol>li]:ml-2 sm:[&>ol>li]:ml-3
+  [&>ul>li]:ml-2 sm:[&>ul>li]:ml-3
+  [&>ol>li]:marker:text-orange-500
+  [&>ul>li]:marker:text-orange-500
+  [&>ol>li]:marker:font-semibold
+  [&>ul>li]:marker:font-semibold
+"
+                              >
+                                <ReactMarkdown>{message.content}</ReactMarkdown>
+                              </div>
+                            ) : (
+                              message.content
+                            )}
 
                             {/* Copy button for assistant messages */}
                             {message.role === "assistant" && (
@@ -343,13 +372,13 @@ export default function TreeHouseRealEstateChatBot() {
                                 <Button
                                   variant="ghost"
                                   size="icon"
-                                  className="w-8 h-8 bg-white shadow-md hover:bg-orange-50 border border-orange-200"
+                                  className="w-7 h-7 sm:w-8 sm:h-8 bg-white shadow-md hover:bg-orange-50 border border-orange-200"
                                   onClick={() => copyMessage(message.content, message.id)}
                                 >
                                   {copiedMessageId === message.id ? (
-                                    <Check className="w-4 h-4 text-green-600" />
+                                    <Check className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-green-600" />
                                   ) : (
-                                    <Copy className="w-4 h-4 text-orange-600" />
+                                    <Copy className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-orange-600" />
                                   )}
                                 </Button>
                               </div>
@@ -366,28 +395,30 @@ export default function TreeHouseRealEstateChatBot() {
                     </motion.div>
                   ))}
 
-                  {/* Animated "Generating reply..." while loading */}
+                  {/* Loading indicator */}
                   {isLoading && (
                     <motion.div
                       initial={{ opacity: 0, y: 10 }}
                       animate={{ opacity: 1, y: 0 }}
                       className="flex justify-start"
                     >
-                      <div className="flex items-center gap-3">
-                        <div className="w-8 h-8 rounded-full flex items-center justify-center bg-gradient-to-br from-orange-500 to-orange-600">
-                          <Bot className="w-4 h-4 text-white" />
+                      <div className="flex items-center gap-2 sm:gap-3">
+                        <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-full flex items-center justify-center bg-gradient-to-br from-orange-500 to-orange-600">
+                          <Bot className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-white" />
                         </div>
-                        <div className="bg-gradient-to-br from-white to-orange-50/50 border border-orange-200/50 rounded-2xl px-4 py-3 flex items-center gap-2">
+                        <div className="bg-gradient-to-br from-white to-orange-50/50 border border-orange-200/50 rounded-2xl px-3 py-2 sm:px-4 sm:py-3 flex items-center gap-2">
                           <div className="flex gap-1">
                             {[0, 1, 2].map((i) => (
                               <span
                                 key={i}
-                                className="w-2 h-2 bg-orange-400 rounded-full inline-block animate-bounce"
+                                className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-orange-400 rounded-full inline-block animate-bounce"
                                 style={{ animationDelay: `${i * 0.2}s` }}
                               />
                             ))}
                           </div>
-                          <span className="text-sm text-orange-700 font-medium animate-pulse">Generating reply…</span>
+                          <span className="text-xs sm:text-sm text-orange-700 font-medium animate-pulse">
+                            Generating reply…
+                          </span>
                         </div>
                       </div>
                     </motion.div>
@@ -398,18 +429,23 @@ export default function TreeHouseRealEstateChatBot() {
 
                 {/* Quick Replies */}
                 {showQuickReplies && messages.length <= 1 && (
-                  <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="px-4 pb-2">
-                    <div className="flex flex-wrap gap-2">
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    className="px-2 sm:px-4 pb-2"
+                  >
+                    <div className="grid grid-cols-1 sm:flex sm:flex-wrap gap-1.5 sm:gap-2">
                       {realEstateQuickReplies.map((reply, index) => (
                         <motion.button
                           key={reply}
                           initial={{ opacity: 0, scale: 0.8 }}
                           animate={{ opacity: 1, scale: 1 }}
                           transition={{ delay: index * 0.1 }}
-                          whileHover={{ scale: 1.05 }}
-                          whileTap={{ scale: 0.95 }}
+                          whileHover={{ scale: 1.02 }}
+                          whileTap={{ scale: 0.98 }}
                           onClick={() => handleQuickReply(reply)}
-                          className="px-3 py-2 text-sm bg-gradient-to-r from-orange-100 to-orange-50 hover:from-orange-200 hover:to-orange-100 text-orange-700 rounded-full border border-orange-200 transition-all duration-200"
+                          className="px-3 py-2.5 text-xs sm:text-sm bg-gradient-to-r from-orange-100 to-orange-50 hover:from-orange-200 hover:to-orange-100 text-orange-700 rounded-xl border border-orange-200 transition-all duration-200 text-left min-h-[44px] flex items-center justify-center"
+                          style={{ touchAction: "manipulation" }}
                         >
                           {reply}
                         </motion.button>
@@ -421,22 +457,24 @@ export default function TreeHouseRealEstateChatBot() {
                 {/* Input */}
                 <motion.form
                   onSubmit={handleSubmit}
-                  className="p-4 border-t border-orange-200/50 bg-white/90 backdrop-blur-sm"
+                  className="p-2 sm:p-4 border-t border-orange-200/50 bg-white/95 backdrop-blur-sm"
                   initial={{ y: 50 }}
                   animate={{ y: 0 }}
                   transition={{ delay: 0.2 }}
+                  style={{ paddingBottom: "max(8px, env(safe-area-inset-bottom, 0px))" }}
                 >
-                  <div className="flex gap-3 items-end">
+                  <div className="flex gap-2 sm:gap-3 items-end">
                     <div className="flex-1 relative">
                       <Input
                         ref={inputRef}
                         type="text"
                         value={input}
                         onChange={(e) => setInput(e.target.value)}
-                        placeholder="Ask about properties, pricing, or schedule a viewing..."
-                        className="pr-12 border-orange-300 focus:border-orange-500 focus:ring-orange-500/20 rounded-2xl bg-white/90 backdrop-blur-sm transition-all duration-200"
+                        placeholder="Ask about properties..."
+                        className="pr-10 sm:pr-12 text-base border-orange-300 focus:border-orange-500 focus:ring-orange-500/20 rounded-xl bg-white/90 backdrop-blur-sm transition-all duration-200 h-12 sm:h-12"
                         disabled={isLoading}
                         aria-label="Type your real estate question"
+                        style={{ fontSize: "16px", touchAction: "manipulation" }}
                       />
                       {input && (
                         <Button
@@ -445,18 +483,20 @@ export default function TreeHouseRealEstateChatBot() {
                           size="icon"
                           className="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 text-gray-400 hover:text-gray-600"
                           onClick={() => setInput("")}
+                          style={{ touchAction: "manipulation" }}
                         >
                           <X className="w-4 h-4" />
                         </Button>
                       )}
                     </div>
 
-                    <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                    <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
                       <Button
                         type="submit"
-                        className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 hover:shadow-lg text-white rounded-2xl px-4 py-2 font-semibold transition-all duration-200 disabled:opacity-50"
+                        className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 hover:shadow-lg text-white rounded-xl px-4 py-3 text-sm font-semibold transition-all duration-200 disabled:opacity-50 h-12 min-w-[48px] flex items-center justify-center"
                         disabled={isLoading || !input.trim()}
                         aria-label="Send message"
+                        style={{ touchAction: "manipulation" }}
                       >
                         {isLoading ? <Loader2 className="w-5 h-5 animate-spin" /> : <Send className="w-5 h-5" />}
                       </Button>

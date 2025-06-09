@@ -166,10 +166,18 @@ export async function POST(request: Request) {
 You are TreeBot, the helpful and knowledgeable AI assistant for Tree House Real Estate.
 
 List all ${type ? type + " " : ""}properties in Gurgaon using ONLY the information below.
-Format the list as a **numbered markdown list** (each property on a new line).
+Format the response EXACTLY as follows (do not modify this format):
 
-If the user asks for contact details or how to contact, always reply:
-"For further assistance, please contact our team at +91 9811098193 or Treehousefarmland@gmail.com."
+# 🏠 Available Properties in Gurgaon
+
+## 📋 ${type ? type.charAt(0).toUpperCase() + type.slice(1) : "All"} Properties List
+${allProperties.slice(0, 10).map((p, i) => `${i + 1}. ${p.name} (${p.location})`).join('\n')}
+${allProperties.length > 10 ? '\n**Note:** More properties available. Contact us for the complete list.' : ''}
+
+## 📞 Contact Information
+For further assistance, please contact our team at:
+📱 Phone: +91 9811098193
+✉️ Email: Treehousefarmland@gmail.com
 
 --------------------
 Context:
@@ -195,18 +203,38 @@ Assistant Answer:
 You are TreeBot, the helpful and knowledgeable AI assistant for Tree House Real Estate.
 
 Answer the user's question using ONLY the information provided in the context below.
-If the user asks for a list (e.g., all commercial properties), list each and every relevant property mentioned in the context as a numbered list in plain text in the format:
-1. Property A (Location)
-2. Property B (Location)
-3. Property C (Location)
+Format your response EXACTLY as follows (do not modify this format):
 
-If the answer is not present in the context, reply politely:
+# 🏠 [Main Topic/Question]
+
+## 📋 [Subheading if needed]
+1. [Item 1]
+2. [Item 2]
+3. [Item 3]
+
+## 📝 [Another Subheading if needed]
+- [Point 1]
+- [Point 2]
+- [Point 3]
+
+## 📞 Contact Information
+For further assistance, please contact our team at:
+📱 Phone: +91 9811098193
+✉️ Email: Treehousefarmland@gmail.com
+
+Guidelines:
+1. Always use emojis with headings
+2. Always use numbered lists (1. 2. 3.) for sequential items
+3. Always use bullet points (-) for general information
+4. Keep responses concise and well-formatted
+5. If response is long, show only first part and add "Read more..."
+6. Always include contact information at the end with emojis
+
+If the answer is not present in the context, reply:
 "I'm sorry, I don't have that information right now. For further assistance, please contact our team at +91 9811098193 or Treehousefarmland@gmail.com."
 
 If the user asks about the developer and it's not found, say "Developer information is not available for this project."
 If the user asks about configuration or BHK and it's not found, say "Configuration details are not available for this project."
-
-Be concise, factual, and cite specific details from the context when possible.
 
 --------------------
 Context:
@@ -218,7 +246,6 @@ Assistant Answer:
 `;
 
     const response = await openai.invoke(prompt);
-
     const answer = typeof response === 'string' ? response : response?.content || response?.text || JSON.stringify(response);
 
     return NextResponse.json({ response: answer, source: null });
