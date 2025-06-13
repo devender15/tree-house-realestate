@@ -112,7 +112,7 @@ export default function TreeHouseRealEstateChatBot() {
         content:
           error instanceof Error
             ? error.message
-            : "I apologize for the technical difficulty. Please try again or contact our office directly at +91 9811098193",
+            : "I'm sorry, I don't have that information right now. For further assistance, please contact our team at **+91 9811098193** or **Treehousefarmland@gmail.com**",
         timestamp: new Date(),
         id: (Date.now() + 1).toString(),
       }
@@ -416,9 +416,6 @@ export default function TreeHouseRealEstateChatBot() {
                               />
                             ))}
                           </div>
-                          <span className="text-xs sm:text-sm text-orange-700 font-medium animate-pulse">
-                            Generating reply…
-                          </span>
                         </div>
                       </div>
                     </motion.div>
