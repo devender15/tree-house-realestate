@@ -2,8 +2,13 @@
 
 import { useState, useCallback, useEffect } from "react";
 import useEmblaCarousel from "embla-carousel-react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
-import { TabButton } from "@/components/tab-button";
+import {
+  ChevronLeft,
+  ChevronRight,
+  Building2,
+  Home,
+  Landmark,
+} from "lucide-react";
 import {
   properties,
   getPropertiesByCategory,
@@ -44,16 +49,12 @@ export function PropertyCarousel() {
 
   useEffect(() => {
     if (!emblaApi) return;
-
     onSelect();
     setTotalSlides(emblaApi.scrollSnapList().length);
-
     emblaApi.on("select", onSelect);
     emblaApi.on("reInit", onSelect);
 
-    return () => {
-      emblaApi.off("select", onSelect);
-    };
+    return () => emblaApi.off("select", onSelect);
   }, [emblaApi, onSelect]);
 
   useEffect(() => {
@@ -68,80 +69,79 @@ export function PropertyCarousel() {
   }, [activeTab, emblaApi]);
 
   return (
-    <section className="py-16 bg-white w-full overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-        {/* Tab Navigation */}
-        <div className="flex justify-center mb-8 md:mb-12">
-          <div className="flex flex-wrap justify-center gap-2 md:gap-4 bg-orange-50 p-2 rounded-full border border-orange-100">
-            <TabButton
-              active={activeTab === "new-launch"}
-              onClick={() => setActiveTab("new-launch")}
-              className="py-2 px-5 md:px-6 font-semibold rounded-full transition-all duration-300"
-              activeClassName="bg-orange-600 text-white shadow-md"
-              inactiveClassName="text-orange-600 hover:bg-orange-100"
-            >
-              New Launch
-            </TabButton>
-            <TabButton
-              active={activeTab === "residential"}
-              onClick={() => setActiveTab("residential")}
-              className="py-2 px-5 md:px-6 font-semibold rounded-full transition-all duration-300"
-              activeClassName="bg-orange-600 text-white shadow-md"
-              inactiveClassName="text-orange-600 hover:bg-orange-100"
-            >
-              Residential
-            </TabButton>
-            <TabButton
-              active={activeTab === "commercial"}
-              onClick={() => setActiveTab("commercial")}
-              className="py-2 px-5 md:px-6 font-semibold rounded-full transition-all duration-300"
-              activeClassName="bg-orange-600 text-white shadow-md"
-              inactiveClassName="text-orange-600 hover:bg-orange-100"
-            >
-              Commercial
-            </TabButton>
+    <section className="py-24 bg-slate-100 w-full overflow-hidden">
+      <div className="max-w-7xl mx-auto">
+        {/* Header and Tabs */}
+        <div className="flex flex-col items-center mb-1 gap-5 ">
+          <h2 className="text-4xl sm:text-5xl font-bold text-slate-700 text-center mb-8">
+            Discover Our <span className="text-orange-600">Featured Properties</span>
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 w-full max-w-3xl">
+            {[
+              {
+                label: "New Launch",
+                value: "new-launch",
+                icon: <Building2 className="w-5 h-5" />,
+              },
+              {
+                label: "Residential",
+                value: "residential",
+                icon: <Home className="w-5 h-5" />,
+              },
+              {
+                label: "Commercial",
+                value: "commercial",
+                icon: <Landmark className="w-5 h-5" />,
+              },
+            ].map(({ label, value, icon }) => (
+              <button
+                key={value}
+                onClick={() => setActiveTab(value as Property["category"])}
+                className={`flex items-center justify-center gap-2 p-4 rounded-sm cursor-pointer text-base transition-all duration-300 border shadow-sm hover:shadow-md ${
+                  activeTab === value
+                    ? "bg-slate-700 text-white"
+                    : "bg-white text-gray-800 hover:bg-gray-100"
+                }`}
+              >
+                {icon}
+                <span className="font-medium">{label}</span>
+              </button>
+            ))}
           </div>
         </div>
 
-        {/* Carousel Container */}
-        <div className="relative w-full">
-          <div className="overflow-hidden mb-6" ref={emblaRef}>
-            <div className="flex">
+        {/* Carousel */}
+        <div className="relative  my-15 ">
+          <div className="overflow-hidden mb-8" ref={emblaRef}>
+            <div className="flex items-center  ">
               {filteredProperties.map((property) => (
                 <div
                   key={property.id}
-                  className="flex-shrink-0 px-3 w-full min-w-[280px] sm:min-w-0 sm:w-1/2 lg:w-1/3"
+                  className=" flex-shrink-0 px-3 w-full min-w-[280px] sm:min-w-0 sm:w-1/2 lg:w-1/3"
                 >
-                  <PropertyCard
-                    id={property.id}
-                    title={property.title}
-                    location={property.location}
-                    image={property.image}
-                    category={property.category}
-                  />
+                  <PropertyCard {...property} />
                 </div>
               ))}
             </div>
           </div>
 
-          {/* Navigation Controls */}
+          {/* Controls */}
           <div className="flex justify-between items-center px-2">
-            {/* Slide Counter */}
-            <div className="text-sm text-orange-700 font-medium">
+            <div className="text-sm text-gray-600 font-medium">
               <span className="font-bold">{selectedIndex + 1}</span>
               <span className="mx-1">/</span>
               <span>{totalSlides}</span>
             </div>
 
-            {/* Navigation Buttons */}
             <div className="flex items-center gap-3">
               <button
                 onClick={scrollPrev}
                 disabled={selectedIndex === 0}
-                className={`w-10 h-10 flex items-center justify-center rounded-full border transition-colors duration-300 ${
+                className={`w-10 h-10 flex items-center justify-center rounded-full bg-white shadow-sm
+                   transition-colors cursor-pointer duration-300 ${
                   selectedIndex === 0
-                    ? "text-orange-300 border-orange-200 cursor-not-allowed"
-                    : "text-orange-700 border-orange-400 hover:bg-orange-50"
+                    ? "text-gray-300 border-gray-200 cursor-not-allowed"
+                    : "text-gray-700 border-gray-400 "
                 }`}
                 aria-label="Previous slide"
               >
@@ -151,10 +151,11 @@ export function PropertyCarousel() {
               <button
                 onClick={scrollNext}
                 disabled={selectedIndex >= totalSlides - 1}
-                className={`w-10 h-10 flex items-center justify-center rounded-full border transition-colors duration-300 ${
+                className={`w-10 h-10 flex items-center justify-center  rounded-full bg-white shadow-sm
+                   transition-colors cursor-pointer duration-300 ${
                   selectedIndex >= totalSlides - 1
-                    ? "text-orange-300 border-orange-200 cursor-not-allowed"
-                    : "text-orange-700 border-orange-400 hover:bg-orange-50"
+                    ? "text-gray-300 border-gray-200 cursor-not-allowed"
+                    : "text-gray-700 border-gray-400 "
                 }`}
                 aria-label="Next slide"
               >
