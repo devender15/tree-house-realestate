@@ -175,9 +175,8 @@ ${allProperties.slice(0, 10).map((p, i) => `${i + 1}. ${p.name} (${p.location})`
 ${allProperties.length > 10 ? '\n**Note:** More properties available. Contact us for the complete list.' : ''}
 
 ## 📞 Contact Information
-For further assistance, please contact our team at:
-📱 Phone: +91 9811098193
-✉️ Email: Treehousefarmland@gmail.com
+📱 Phone: **+91 9811098193**
+✉️ Email: **Treehousefarmland@gmail.com**
 
 --------------------
 Context:
@@ -196,7 +195,7 @@ Assistant Answer:
     }
 
     // --- 3. Vector search fallback (unchanged) ---
-    const results = await vectorStore.similaritySearch(message, 10);
+    const results = await vectorStore.similaritySearch(message, 15);
     const context = results.map(r => r.pageContent).join('\n\n');
 
     const prompt = `
@@ -218,9 +217,8 @@ Format your response EXACTLY as follows (do not modify this format):
 - [Point 3]
 
 ## 📞 Contact Information
-For further assistance, please contact our team at:
-📱 Phone: +91 9811098193
-✉️ Email: Treehousefarmland@gmail.com
+📱 Phone : **+91 9811098193**
+✉️ Email - **Treehousefarmland@gmail.com**
 
 Guidelines:
 1. Always use emojis with headings
@@ -231,7 +229,7 @@ Guidelines:
 6. Always include contact information at the end with emojis
 
 If the answer is not present in the context, reply:
-"I'm sorry, I don't have that information right now. For further assistance, please contact our team at +91 9811098193 or Treehousefarmland@gmail.com."
+"I'm sorry, I don't have that information right now. For further assistance, please contact our team at **+91 9811098193** or **Treehousefarmland@gmail.com**."
 
 If the user asks about the developer and it's not found, say "Developer information is not available for this project."
 If the user asks about configuration or BHK and it's not found, say "Configuration details are not available for this project."

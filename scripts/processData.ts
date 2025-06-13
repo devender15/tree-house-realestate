@@ -51,14 +51,19 @@ async function processData(): Promise<void> {
 
     // Split documents into chunks with overlap for better context
     const textSplitter = new RecursiveCharacterTextSplitter({
-      chunkSize: 1000,
-      chunkOverlap: 350,
+      chunkSize: 500,
+      chunkOverlap: 100,
     });
 
     const splitDocs = await textSplitter.splitDocuments(documents);
 
-    // Add documents to vector store
-    await vectorStore.addDocuments(splitDocs);
+    // Add documents to vector store in batches to avoid payload size limits
+    const batchSize = 100; // Adjust batch size as needed
+    for (let i = 0; i < splitDocs.length; i += batchSize) {
+      const batch = splitDocs.slice(i, i + batchSize);
+      console.log(`Adding batch ${Math.floor(i / batchSize) + 1}/${Math.ceil(splitDocs.length / batchSize)}...`);
+      await vectorStore.addDocuments(batch);
+    }
 
     console.log('Data processing completed successfully!');
   } catch (error) {
