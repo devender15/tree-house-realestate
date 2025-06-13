@@ -16,16 +16,16 @@ const PropertyCard = ({ id, title, location, image }: CardData) => {
   return (
     <Link
       href={`/details/${id}`}
-      className="block group"
+      className="block group "
     >
-      <div className="flex flex-col justify-between gap-4 bg-white rounded-xl border shadow-sm group-hover:shadow-lg transition-all p-4 md:p-5 duration-300 hover:cursor-pointer">
-        <div>
+      <div className="flex  flex-col justify-between gap-4 bg-white rounded-xl border shadow-sm group-hover:shadow-lg transition-all p-4 md:p-5 duration-300 hover:cursor-pointer">
+        <div className="">
           <Image
             src={image || "/assets/default.jpg"}
             alt={title}
             width={600}
-            height={600}
-            className="w-full object-fill rounded-lg"
+            height={350}
+            className="w-full object-fill rounded-lg "
           />
         </div>
 

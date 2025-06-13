@@ -8,8 +8,9 @@ const Footer = () => {
     <div className="relative overflow-hidden">
       <div className="absolute inset-0 bg-[url('/assets/footer-bg.jpg')] bg-cover opacity-10"></div>
       <footer className="bg-[#0f1a2f] text-white py-16 relative z-10">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-sm">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
+            {/* Logo + Description */}
             <div>
               <div className="mb-6">
                 <Image
@@ -23,16 +24,15 @@ const Footer = () => {
               <p className="text-[#a0aec0] mb-6 font-light leading-relaxed">
                 Your premier partner in discovering exceptional property investments that stand the test of time.
               </p>
-              <div className="flex space-x-4">
-                <Link
-                  href="/enquiry"
-                  className="bg-gradient-to-r from-[#d4af37] to-[#b8972e] hover:from-[#b8972e] hover:to-[#9c7e25] text-[#0f1a2f] px-6 py-3 rounded-lg font-medium shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
-                >
-                  Contact Us
-                </Link>
-              </div>
+              <Link
+                href="/enquiry"
+                className="inline-block bg-gradient-to-r from-[#d4af37] to-[#b8972e] hover:from-[#b8972e] hover:to-[#9c7e25] text-[#0f1a2f] px-6 py-3 rounded-lg font-medium shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+              >
+                Contact Us
+              </Link>
             </div>
 
+            {/* Quick Links */}
             <div>
               <h4 className="font-bold text-lg mb-6 text-[#d4af37] border-b border-[#d4af37]/30 pb-2">Quick Links</h4>
               <ul className="space-y-4">
@@ -50,6 +50,7 @@ const Footer = () => {
               </ul>
             </div>
 
+            {/* Property Types */}
             <div>
               <h4 className="font-bold text-lg mb-6 text-[#d4af37] border-b border-[#d4af37]/30 pb-2">Property Types</h4>
               <ul className="space-y-4">
@@ -67,50 +68,46 @@ const Footer = () => {
               </ul>
             </div>
 
+            {/* Contact Info */}
             <div>
               <h4 className="font-bold text-lg mb-6 text-[#d4af37] border-b border-[#d4af37]/30 pb-2">Contact Info</h4>
               <div className="space-y-5">
-                <div className="flex items-start">
-                  <div className="bg-[#d4af37]/10 p-2 rounded-lg mr-4 mt-1">
-                    <Phone className="w-5 h-5 text-[#d4af37]" />
+                {[
+                  {
+                    icon: <Phone className="w-5 h-5 text-[#d4af37]" />,
+                    label: "Phone",
+                    value: "+91-9811098193",
+                  },
+                  {
+                    icon: <Mail className="w-5 h-5 text-[#d4af37]" />,
+                    label: "Email",
+                    value: "Treehousefarmland@gmail.com",
+                  },
+                  {
+                    icon: <MapPin className="w-5 h-5 text-[#d4af37]" />,
+                    label: "Location",
+                    value: "Delhi NCR, India",
+                  },
+                ].map(({ icon, label, value }) => (
+                  <div className="flex items-start" key={label}>
+                    <div className="bg-[#d4af37]/10 p-2 rounded-lg mr-4 mt-1">
+                      {icon}
+                    </div>
+                    <div>
+                      <p className="text-[#a0aec0]">{label}</p>
+                      <p className="text-white">{value}</p>
+                    </div>
                   </div>
-                  <div>
-                    <p className="text-[#a0aec0]">Phone</p>
-                    <p className="text-white">+91-9811098193</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start">
-                  <div className="bg-[#d4af37]/10 p-2 rounded-lg mr-4 mt-1">
-                    <Mail className="w-5 h-5 text-[#d4af37]" />
-                  </div>
-                  <div>
-                    <p className="text-[#a0aec0]">Email</p>
-                    <p className="text-white">Treehousefarmland@gmail.com</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start">
-                  <div className="bg-[#d4af37]/10 p-2 rounded-lg mr-4 mt-1">
-                    <MapPin className="w-5 h-5 text-[#d4af37]" />
-                  </div>
-                  <div>
-                    <p className="text-[#a0aec0]">Location</p>
-                    <p className="text-white">Delhi NCR, India</p>
-                  </div>
-                </div>
+                ))}
               </div>
             </div>
           </div>
 
-          <div className="border-t border-[#1e2d49] mt-12 pt-8 text-center text-[#a0aec0]">
-            <div className="flex flex-col md:flex-row justify-between items-center">
-              <p>&copy; 2025 Tree House Real Estate. All rights reserved.</p>
-              <div className="mt-4 md:mt-0 flex gap-6">
-                <a href="#" className="hover:text-[#d4af37] transition-colors">Privacy Policy</a>
-                <a href="#" className="hover:text-[#d4af37] transition-colors">Terms of Service</a>
-                <a href="#" className="hover:text-[#d4af37] transition-colors">Sitemap</a>
-              </div>
+          {/* Bottom Bar */}
+          <div className="border-t border-[#1e2d49] mt-12 pt-8 text-[#a0aec0]">
+            <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
+              <p className="text-center sm:text-left">&copy; 2025 Tree House Real Estate. All rights reserved.</p>
+             
             </div>
           </div>
         </div>

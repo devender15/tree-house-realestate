@@ -111,9 +111,9 @@ export function PropertyCarousel() {
         </div>
 
         {/* Carousel */}
-        <div className="relative">
-          <div className="overflow-hidden" ref={emblaRef}>
-            <div className="flex items-center ">
+        <div className="relative  my-15 ">
+          <div className="overflow-hidden mb-8" ref={emblaRef}>
+            <div className="flex items-center  ">
               {filteredProperties.map((property) => (
                 <div
                   key={property.id}
