@@ -2,16 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
-import {
-  Phone,
-  Menu,
-  X,
-  Mail,
-  Facebook,
-  Twitter,
-  Instagram,
-  Linkedin,
-} from "lucide-react";
+import { Phone, Menu, X, Mail, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useScroll } from "@/hooks/use-scroll";
 import Image from "next/image";
@@ -34,7 +25,6 @@ export default function Navbar() {
 
   const toggleSidebar = () => setIsSidebarOpen((prev) => !prev);
 
-  // Close sidebar when clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
@@ -50,7 +40,6 @@ export default function Navbar() {
     };
   }, [isSidebarOpen]);
 
-  // Close sidebar when window resizes to desktop size
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 1024 && isSidebarOpen) {
@@ -65,19 +54,19 @@ export default function Navbar() {
   return (
     <>
       {/* Top Contact Bar */}
-      <div className="bg-gradient-to-r from-orange-500 to-orange-600 text-white text-xs sm:text-sm py-2 px-4">
+      <div className="bg-gradient-to-r from-[#0f1a2f] to-[#1a2b4a] text-[#d4af37] text-xs sm:text-sm py-2 px-4">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 sm:gap-0">
           <div className="flex items-center gap-4">
             <a
               href="https://wa.me/+919811098193"
-              className="flex items-center gap-2 hover:text-orange-100 transition group"
+              className="flex items-center gap-2 hover:text-[#f0d07d] transition-all duration-300 group"
             >
               <Phone size={14} className="group-hover:animate-pulse" />
               <span>+91 9811098193</span>
             </a>
             <a
               href="mailto:info@treehouserealty.com"
-              className="flex items-center gap-2 hover:text-orange-100 transition group"
+              className="flex items-center gap-2 hover:text-[#f0d07d] transition-all duration-300 group"
             >
               <Mail size={14} className="group-hover:animate-pulse" />
               <span>Treehousefarmland@gmail.com</span>
@@ -86,30 +75,30 @@ export default function Navbar() {
           <div className="flex items-center gap-3">
             <span className="hidden md:block font-light">Follow us:</span>
             <div className="flex gap-2">
-              <a
+              {/* <a
                 href="#"
-                className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center hover:bg-white/30 transition hover:scale-110"
+                className="w-6 h-6 rounded-full bg-[#d4af37]/20 flex items-center justify-center hover:bg-[#d4af37]/30 transition-all duration-300 hover:scale-110"
               >
                 <Facebook size={12} />
               </a>
               <a
                 href="#"
-                className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center hover:bg-white/30 transition hover:scale-110"
+                className="w-6 h-6 rounded-full bg-[#d4af37]/20 flex items-center justify-center hover:bg-[#d4af37]/30 transition-all duration-300 hover:scale-110"
               >
                 <Twitter size={12} />
-              </a>
+              </a> */}
               <a
                 href="#"
-                className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center hover:bg-white/30 transition hover:scale-110"
+                className="w-6 h-6 rounded-full bg-[#d4af37]/20 flex items-center justify-center hover:bg-[#d4af37]/30 transition-all duration-300 hover:scale-110"
               >
                 <Instagram size={12} />
               </a>
-              <a
+              {/* <a
                 href="#"
-                className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center hover:bg-white/30 transition hover:scale-110"
+                className="w-6 h-6 rounded-full bg-[#d4af37]/20 flex items-center justify-center hover:bg-[#d4af37]/30 transition-all duration-300 hover:scale-110"
               >
                 <Linkedin size={12} />
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
@@ -118,81 +107,72 @@ export default function Navbar() {
       {/* Main Header */}
       <header
         className={`sticky top-0 left-0 right-0 z-50 w-full transition-all duration-300 ${
-          scrolled ? "shadow-lg" : ""
+          scrolled ? "shadow-xl backdrop-blur-md bg-[#0f1a2f]/90" : "bg-transparent"
         }`}
       >
-        <div className="bg-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6">
-            <div className="flex items-center justify-between h-20">
-              {/* Logo */}
-              <Link href="/" className="flex items-center gap-3 z-10">
-                <div className="bg-orange-100 rounded-xl p-1.5 shadow-md">
-                  <div className="bg-white rounded-lg p-1">
-                    <Image
-                      src={"/assets/logo.png"}
-                      alt="Tree House Real Estate"
-                      width={scrolled ? 42 : 48}
-                      height={scrolled ? 42 : 48}
-                      className="transition-all duration-300"
-                    />
-                  </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="flex items-center justify-between h-20">
+            {/* Logo */}
+            <Link href="/" className="flex items-center gap-3 z-10 group">
+              <div className="bg-[#d4af37] rounded-xl p-1.5 shadow-lg group-hover:shadow-xl transition-all duration-300">
+                <div className="bg-white rounded-lg p-1">
+                  <Image
+                    src={"/assets/logo.png"}
+                    alt="Tree House Real Estate"
+                    width={scrolled ? 42 : 48}
+                    height={scrolled ? 42 : 48}
+                    className="transition-all duration-300"
+                  />
                 </div>
-                {/* <div className="hidden md:block">
-                  <h1 className="font-bold text-xl tracking-tight text-orange-700">
-                    Tree House
-                  </h1>
-                  <p className="text-xs font-light tracking-widest text-gray-600">
-                    REAL ESTATE SOLUTIONS
-                  </p>
-                </div> */}
+              </div>
+              
+            </Link>
+
+            {/* Desktop Navigation */}
+            <nav className="hidden lg:flex items-center gap-1">
+              {navItems.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className={`relative px-5 py-3 text-base font-medium text-black hover:text-[#d4af37] transition-all duration-300 group ${scrolled ? "text-white" : "text-black"}`}
+                >
+                  {item.label}
+                  <span className="absolute bottom-2 left-1/2 transform -translate-x-1/2 w-0 h-[2px] bg-[#d4af37] transition-all duration-300 group-hover:w-8" />
+                </Link>
+              ))}
+            </nav>
+
+            {/* Call to Action */}
+            <div className="flex items-center gap-4">
+              <Link
+                href={"/enquiry"}
+                className="hidden sm:block rounded-xl px-6 py-2.5 text-sm font-bold transition-all whitespace-nowrap shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 bg-gradient-to-r from-[#d4af37] to-[#b8972e] hover:from-[#b8972e] hover:to-[#9c7e25] text-[#0f1a2f] hover:text-white"
+              >
+                Enquire Now
               </Link>
 
-              {/* Desktop Navigation */}
-              <nav className="hidden lg:flex items-center gap-1">
-                {navItems.map((item) => (
-                  <Link
-                    key={item.href}
-                    href={item.href}
-                    className="relative px-5 py-3 text-base font-medium text-gray-700 hover:text-orange-600 transition-colors duration-200 group whitespace-nowrap"
-                  >
-                    {item.label}
-                    <span className="absolute bottom-2 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-orange-600 transition-all duration-300 group-hover:w-8" />
-                  </Link>
-                ))}
-              </nav>
-
-              {/* Call to Action */}
-              <div className="flex items-center gap-4">
-                <Link
-                  href={"/enquiry"}
-                  className="hidden sm:block rounded-xl px-6 py-2.5 text-sm font-bold transition-all whitespace-nowrap shadow-md hover:shadow-lg transform hover:-translate-y-0.5 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white"
-                >
-                  Enquire Now
-                </Link>
-
-                {/* Mobile Menu Button */}
-                <Button
-                  variant="ghost"
-                  size="icon"
-                  className="block lg:hidden cursor-pointer rounded-xl bg-orange-50 hover:bg-orange-100 text-orange-600"
-                  onClick={toggleSidebar}
-                >
-                  <Menu className="w-6 h-6" />
-                </Button>
-              </div>
+              {/* Mobile Menu Button */}
+              <Button
+                variant="ghost"
+                size="icon"
+                className="block lg:hidden cursor-pointer rounded-xl bg-[#d4af37]/10 hover:bg-[#d4af37]/20 text-[#d4af37]"
+                onClick={toggleSidebar}
+              >
+                <Menu className="w-6 h-6" />
+              </Button>
             </div>
           </div>
         </div>
 
         {/* Secondary Navigation for Tablets */}
-        <div className="bg-orange-50 hidden md:block lg:hidden">
+        <div className="hidden md:block lg:hidden bg-[#0f1a2f] py-3">
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
-            <div className="flex overflow-x-auto py-2 hide-scrollbar">
+            <div className="flex overflow-x-auto py-1 hide-scrollbar">
               {navItems.map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="px-4 py-2 text-sm font-medium text-gray-700 hover:text-orange-600 whitespace-nowrap"
+                  className="px-4 py-2 text-sm font-medium text-white hover:text-[#d4af37] whitespace-nowrap transition-colors duration-300"
                 >
                   {item.label}
                 </Link>
@@ -210,26 +190,26 @@ export default function Navbar() {
       >
         {/* Overlay */}
         <div
-          className="absolute inset-0 bg-black/60 backdrop-blur-sm"
+          className="absolute inset-0 bg-black/70 backdrop-blur-sm"
           onClick={toggleSidebar}
         />
 
         {/* Sidebar Content */}
         <div
           ref={sidebarRef}
-          className={`absolute top-0 right-0 h-full w-4/5 max-w-md bg-gradient-to-b from-white to-orange-50 transform transition-transform duration-300 ${
+          className={`absolute top-0 right-0 h-full w-4/5 max-w-md bg-gradient-to-b from-[#0f1a2f] to-[#1a2b4a] transform transition-transform duration-300 ${
             isSidebarOpen ? "translate-x-0" : "translate-x-full"
           } shadow-2xl`}
         >
           <div className="h-full flex flex-col">
             {/* Header */}
-            <div className="flex items-center justify-between px-6 py-5 bg-white shadow-sm">
+            <div className="flex items-center justify-between px-6 py-5 bg-[#0f1a2f] shadow-md">
               <Link
                 href="/"
                 onClick={toggleSidebar}
                 className="flex items-center gap-3"
               >
-                <div className="bg-orange-100 rounded-xl p-1.5 shadow-md">
+                <div className="bg-[#d4af37] rounded-xl p-1.5 shadow-md">
                   <div className="bg-white rounded-lg p-1">
                     <Image
                       src={"/assets/logo.png"}
@@ -239,18 +219,18 @@ export default function Navbar() {
                     />
                   </div>
                 </div>
-                {/* <div>
-                  <h1 className="font-bold text-lg text-orange-700 tracking-tight">
+                <div>
+                  <h1 className="font-bold text-lg text-white tracking-tight">
                     Tree House
                   </h1>
-                  <p className="text-xs font-light text-gray-600 tracking-wide">
-                    REAL ESTATE SOLUTIONS
+                  <p className="text-xs font-light text-[#d4af37] tracking-wide">
+                    LUXURY REAL ESTATE
                   </p>
-                </div> */}
+                </div>
               </Link>
               <button
                 onClick={toggleSidebar}
-                className="p-2 rounded-xl bg-orange-100 hover:bg-orange-200 text-orange-600 transition"
+                className="p-2 rounded-xl bg-[#d4af37]/10 hover:bg-[#d4af37]/20 text-[#d4af37] transition-all duration-300"
               >
                 <X className="w-6 h-6" />
               </button>
@@ -263,36 +243,36 @@ export default function Navbar() {
                   key={item.href}
                   href={item.href}
                   onClick={toggleSidebar}
-                  className="py-4 px-5 rounded-xl text-gray-700 hover:bg-orange-500 hover:text-white font-medium transition-all flex items-center gap-3 group"
+                  className="py-4 px-5 rounded-xl text-white hover:bg-[#d4af37] hover:text-[#0f1a2f] font-medium transition-all duration-300 flex items-center gap-3 group"
                 >
-                  <div className="w-1.5 h-1.5 rounded-full bg-orange-400 group-hover:bg-white transition" />
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#d4af37] group-hover:bg-[#0f1a2f] transition-all duration-300" />
                   <span>{item.label}</span>
                 </Link>
               ))}
             </nav>
 
             {/* Footer */}
-            <div className="border-t border-orange-100 px-6 py-5 bg-white">
+            <div className="border-t border-[#1a2b4a] px-6 py-5 bg-[#0f1a2f]">
               <div className="mb-4">
                 <a
                   href="tel:+919811098193"
-                  className="flex items-center gap-4 text-gray-800 font-medium py-2.5 group"
+                  className="flex items-center gap-4 text-white font-medium py-2.5 group"
                 >
-                  <div className="bg-orange-100 p-2 rounded-xl group-hover:bg-orange-500 transition">
-                    <Phone className="w-5 h-5 text-orange-600 group-hover:text-white" />
+                  <div className="bg-[#d4af37]/10 p-2 rounded-xl group-hover:bg-[#d4af37] transition-all duration-300">
+                    <Phone className="w-5 h-5 text-[#d4af37] group-hover:text-[#0f1a2f]" />
                   </div>
-                  <span className="group-hover:text-orange-600 transition">
+                  <span className="group-hover:text-[#d4af37] transition-all duration-300">
                     +91 9811098193
                   </span>
                 </a>
                 <a
                   href="mailto:info@treehouserealty.com"
-                  className="flex items-center gap-4 text-gray-800 py-2.5 group"
+                  className="flex items-center gap-4 text-white py-2.5 group"
                 >
-                  <div className="bg-orange-100 p-2 rounded-xl group-hover:bg-orange-500 transition">
-                    <Mail className="w-5 h-5 text-orange-600 group-hover:text-white" />
+                  <div className="bg-[#d4af37]/10 p-2 rounded-xl group-hover:bg-[#d4af37] transition-all duration-300">
+                    <Mail className="w-5 h-5 text-[#d4af37] group-hover:text-[#0f1a2f]" />
                   </div>
-                  <span className="group-hover:text-orange-600 transition">
+                  <span className="group-hover:text-[#d4af37] transition-all duration-300">
                     Treehousefarmland@gmail.com
                   </span>
                 </a>
@@ -301,33 +281,33 @@ export default function Navbar() {
               <div className="flex justify-center gap-4 mb-4">
                 <a
                   href="#"
-                  className="bg-orange-100 p-2 rounded-xl hover:bg-orange-500 transition"
+                  className="bg-[#d4af37]/10 p-2 rounded-xl hover:bg-[#d4af37] transition-all duration-300"
                 >
-                  <Facebook className="w-5 h-5 text-orange-600 hover:text-white" />
+                  <Facebook className="w-5 h-5 text-[#d4af37] hover:text-[#0f1a2f]" />
                 </a>
                 <a
                   href="#"
-                  className="bg-orange-100 p-2 rounded-xl hover:bg-orange-500 transition"
+                  className="bg-[#d4af37]/10 p-2 rounded-xl hover:bg-[#d4af37] transition-all duration-300"
                 >
-                  <Twitter className="w-5 h-5 text-orange-600 hover:text-white" />
+                  <Twitter className="w-5 h-5 text-[#d4af37] hover:text-[#0f1a2f]" />
                 </a>
                 <a
                   href="#"
-                  className="bg-orange-100 p-2 rounded-xl hover:bg-orange-500 transition"
+                  className="bg-[#d4af37]/10 p-2 rounded-xl hover:bg-[#d4af37] transition-all duration-300"
                 >
-                  <Instagram className="w-5 h-5 text-orange-600 hover:text-white" />
+                  <Instagram className="w-5 h-5 text-[#d4af37] hover:text-[#0f1a2f]" />
                 </a>
                 <a
                   href="#"
-                  className="bg-orange-100 p-2 rounded-xl hover:bg-orange-500 transition"
+                  className="bg-[#d4af37]/10 p-2 rounded-xl hover:bg-[#d4af37] transition-all duration-300"
                 >
-                  <Linkedin className="w-5 h-5 text-orange-600 hover:text-white" />
+                  <Linkedin className="w-5 h-5 text-[#d4af37] hover:text-[#0f1a2f]" />
                 </a>
               </div>
 
               <Link
                 href={"/enquiry"}
-                className="block w-full text-center bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white rounded-xl px-4 py-3.5 font-bold transition shadow-md hover:shadow-lg"
+                className="block w-full text-center bg-gradient-to-r from-[#d4af37] to-[#b8972e] hover:from-[#b8972e] hover:to-[#9c7e25] text-[#0f1a2f] rounded-xl px-4 py-3.5 font-bold transition-all shadow-lg hover:shadow-xl"
                 onClick={toggleSidebar}
               >
                 Enquire Now
