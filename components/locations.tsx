@@ -39,7 +39,7 @@ const PropertyCarousel = () => {
       <div className="container mx-auto px-4">
         {/* Header and Location Filter */}
         <div className="flex flex-col items-center mb-1 gap-5">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-700 text-center mb-6">
+          <h2 className="text-4xl sm:text-4xl md:text-5xl font-bold text-slate-700 text-center mb-6">
             Premium <span className="text-orange-600">Locations</span>
           </h2>
           <p className="text-slate-600 max-w-2xl mx-auto text-base md:text-lg text-center">
@@ -52,7 +52,7 @@ const PropertyCarousel = () => {
               <button
                 key={location}
                 onClick={() => setSelectedLocation(location)}
-                className={`px-4 py-2 rounded-lg cursor-pointer text-sm md:text-base transition-all duration-300 border shadow-sm hover:shadow-md ${
+                className={`p-4 rounded-sm cursor-pointer text-sm md:text-base transition-all duration-300 border shadow-sm hover:shadow-md ${
                   selectedLocation === location
                     ? "bg-slate-800 text-white shadow-md"
                     : "bg-white text-gray-800 hover:bg-gray-50"
