@@ -27,11 +27,11 @@ const SearchBar = () => {
   };
 
   return (
-    <div className="bg-white/90 backdrop-blur-md rounded-2xl shadow-lg p-4 sm:p-6 mx-auto w-full max-w-7xl ">
+    <div className="bg-slate-100 backdrop-blur-md rounded-md shadow-lg p-4 sm:p-6 mx-auto w-full max-w-7xl ">
       <div className="flex flex-col gap-4 md:flex-row md:items-center">
-        <div className="w-full md:w-[20%] min-w-[180px]">
+        <div className="w-full  md:w-[20%] min-w-[180px]">
           <Select onValueChange={setPropertyType}>
-            <SelectTrigger className="h-12 font-medium text-black w-full border rounded-md">
+            <SelectTrigger className="h-12 font-medium bg-white text-black w-full rounded-md border-2 border-gray-500 ">
               <SelectValue placeholder="Property Type" />
             </SelectTrigger>
             <SelectContent>
@@ -47,7 +47,7 @@ const SearchBar = () => {
         <div className="flex-1 w-full">
           <Input
             placeholder="Location, Project, or Builder"
-            className="h-12 text-black w-full border rounded-md font-normal"
+            className="h-12 bg-white text-black w-full border-2 border-gray-500 rounded-md font-normal"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
           />

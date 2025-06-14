@@ -4,6 +4,8 @@ import { Poppins, Cinzel } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
+import ExclusivePopup from "@/components/exclusive-popup";
+
 import ChatBot from "@/components/ChatBot";
 
 const poppins = Poppins({
@@ -35,7 +37,10 @@ export default function RootLayout({
     <html lang="en" className={`${poppins.variable} ${cinzel.variable}`}>
       <body className="font-poppins antialiased">
         <Navbar />
-        <main>{children}</main>
+        <main>
+          {children}
+          <ExclusivePopup />
+        </main>
         <Footer />
         <ChatBot />
       </body>

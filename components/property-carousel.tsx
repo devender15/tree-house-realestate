@@ -73,7 +73,7 @@ export function PropertyCarousel() {
       <div className="max-w-7xl mx-auto">
         {/* Header and Tabs */}
         <div className="flex flex-col items-center mb-1 gap-5 ">
-          <h2 className="text-4xl sm:text-5xl font-bold text-slate-700 text-center mb-8">
+          <h2 className="text-3xl sm:text-5xl font-bold text-slate-700 text-center mb-8">
             Discover Our <span className="text-orange-600">Featured Properties</span>
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 w-full max-w-3xl">
