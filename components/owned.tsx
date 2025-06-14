@@ -1,6 +1,7 @@
 "use client";
 
-import React, { useRef, useEffect } from "react";
+import type React from "react";
+import { useRef, useEffect } from "react";
 import { ourProperties } from "@/data/weown";
 import Image from "next/image";
 import { MapPin, Mail, Phone } from "lucide-react";
@@ -48,73 +49,113 @@ const AnimatedCard = ({
 
 const Owned = () => {
   return (
-    <section className="bg-gradient-to-b from-orange-50 via-white to-orange-50 py-16 md:py-24">
+    <section className="bg-gradient-to-br from-slate-50 via-white to-blue-50 py-20 md:py-28">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-14">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-orange-700 font-poppins mb-4">
-            Our Owned Properties
-          </h2>
-          <div className="w-24 h-1 bg-orange-500 mx-auto rounded-full mb-6"></div>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Premium real estate investments curated for discerning clients
-          </p>
+        {/* Header Section */}
+        <div className="text-center mb-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold bg-gradient-to-r from-slate-800 to-slate-600 bg-clip-text text-transparent font-poppins mb-6">
+              Our Owned Properties
+            </h2>
+            <div className="flex items-center justify-center gap-2 mb-6">
+              <div className="w-12 h-0.5 bg-gradient-to-r from-transparent to-blue-500"></div>
+              <div className="w-8 h-0.5 bg-blue-500"></div>
+              <div className="w-12 h-0.5 bg-gradient-to-l from-transparent to-blue-500"></div>
+            </div>
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
+              Premium real estate investments curated for discerning clients
+            </p>
+          </motion.div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* Properties Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 lg:gap-10">
           {ourProperties.map((property, index) => (
             <AnimatedCard key={property.id} index={index}>
-              <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group border border-orange-50 flex flex-col">
+              <div className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-slate-100 hover:border-slate-200 flex flex-col h-full">
                 {/* Property Image */}
-                <div className="relative w-full aspect-[4/3]">
+                <div className="relative w-full aspect-[4/3] overflow-hidden">
                   <Image
-                    src={property.image}
+                    src={property.image || "/placeholder.svg"}
                     alt={property.title}
                     fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    className="object-cover transition-all duration-700 group-hover:scale-110"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     priority
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-80"></div>
-                  <div className="absolute bottom-4 left-4">
-                    <h3 className="text-xl font-bold text-white font-poppins">
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+
+                  {/* Property Title Overlay */}
+                  <div className="absolute bottom-0 left-0 right-0 p-6">
+                    <h3 className="text-2xl font-bold text-white font-poppins mb-2 drop-shadow-lg">
                       {property.title}
                     </h3>
-                    <p className="text-orange-300 text-sm flex items-center gap-1 mt-1">
-                      <MapPin size={14} /> {property.location}
-                    </p>
+                    <div className="flex items-center gap-2 text-white/90">
+                      <MapPin size={16} className="text-blue-300" />
+                      <span className="text-sm font-medium">
+                        {property.location}
+                      </span>
+                    </div>
                   </div>
                 </div>
 
                 {/* Card Content */}
-                <div className="p-5 md:p-6 flex flex-col justify-between flex-1">
-                  <div className="space-y-4 mb-6">
-                    <ul className="text-gray-700 font-poppins mt-2 space-y-2">
+                <div className="p-6 lg:p-8 flex flex-col justify-between flex-1">
+                  {/* Property Details */}
+                  <div className="mb-8">
+                    <h4 className="text-lg font-semibold text-slate-800 mb-4 font-poppins">
+                      Property Features
+                    </h4>
+                    <ul className="space-y-3">
                       {property.details.map((point, index) => (
-                        <li key={index} className="flex items-start">
-                          <span className="text-orange-500 mr-2 mt-1">•</span>
-                          <span>{point}</span>
+                        <li key={index} className="flex items-start group/item">
+                          <div className="w-2 h-2 rounded-full bg-blue-500 mt-2 mr-3 flex-shrink-0 group-hover/item:bg-blue-600 transition-colors"></div>
+                          <span className="text-slate-700 leading-relaxed text-sm lg:text-base">
+                            {point}
+                          </span>
                         </li>
                       ))}
                     </ul>
                   </div>
 
                   {/* Contact Information */}
-                  <div className="bg-orange-50 rounded-lg p-4 border border-orange-100">
-                    <p className="text-sm font-medium text-gray-800 mb-2">
-                      <span className="font-semibold text-orange-700">
-                        Agent:
-                      </span>{" "}
-                      {property.contact.agent}
-                    </p>
-                    <div className="flex flex-col gap-2 text-sm">
-                      <p className="flex items-center gap-2 text-gray-600">
-                        <Mail size={14} className="text-orange-500" />
-                        <span>{property.contact.email}</span>
-                      </p>
-                      <p className="flex items-center gap-2 text-gray-600">
-                        <Phone size={14} className="text-orange-500" />
-                        <span>{property.contact.phone}</span>
-                      </p>
+                  <div className="bg-gradient-to-br from-slate-50 to-blue-50 rounded-xl p-5 border border-slate-100">
+                    <div className="flex items-center gap-2 mb-4">
+                      <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
+                        <span className="text-white text-sm font-bold">
+                          {property.contact.agent.charAt(0)}
+                        </span>
+                      </div>
+                      <div>
+                        <p className="text-sm font-semibold text-slate-800">
+                          {property.contact.agent}
+                        </p>
+                        <p className="text-xs text-slate-500">Property Agent</p>
+                      </div>
+                    </div>
+
+                    <div className="space-y-3">
+                      <div className="flex items-center gap-3 group/contact">
+                        <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center shadow-sm group-hover/contact:shadow-md transition-shadow">
+                          <Mail size={14} className="text-blue-500" />
+                        </div>
+                        <span className="text-sm text-slate-700 font-medium">
+                          {property.contact.email}
+                        </span>
+                      </div>
+
+                      <div className="flex items-center gap-3 group/contact">
+                        <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center shadow-sm group-hover/contact:shadow-md transition-shadow">
+                          <Phone size={14} className="text-blue-500" />
+                        </div>
+                        <span className="text-sm text-slate-700 font-medium">
+                          {property.contact.phone}
+                        </span>
+                      </div>
                     </div>
                   </div>
                 </div>

@@ -1,20 +1,20 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Playfair_Display, Montserrat } from "next/font/google";
+import { Playfair_Display, Inter } from "next/font/google";
 import Image from "next/image";
 import SearchBar from "./search";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
-  weight: ["400", "700", "900"],
+  weight: ["400", "500", "600", "700"],
   variable: "--font-playfair",
 });
 
-const montserrat = Montserrat({
+const inter = Inter({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600"],
-  variable: "--font-montserrat",
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-inter",
 });
 
 interface HeroSectionProps {
@@ -28,10 +28,10 @@ export function HeroSection({
   videoUrl,
   imageUrl,
   heading,
-  subheading = "WHERE YOUR HOME",
+  subheading = "DISCOVER YOUR PERFECT",
 }: HeroSectionProps) {
   return (
-    <section className="relative h-screen overflow-hidden">
+    <section className="relative h-screen overflow-hidden bg-black">
       {/* Background Media */}
       {videoUrl ? (
         <video
@@ -46,65 +46,100 @@ export function HeroSection({
         </video>
       ) : imageUrl ? (
         <Image
-          src={imageUrl}
-          alt="Hero Background"
+          src={imageUrl || "/placeholder.svg"}
+          alt="Luxury Real Estate"
           fill
           className="absolute inset-0 w-full h-full object-cover"
           priority
           quality={100}
         />
       ) : (
-        <div className="absolute inset-0 bg-gradient-to-br from-slate-900 to-slate-800" />
+        <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-black to-gray-800" />
       )}
 
-      {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/80" />
+      {/* Black Gradient Overlays */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/80" />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-transparent to-black/50" />
 
-      {/* Content */}
-      <div className="relative z-10 flex items-center justify-center h-full px-4 sm:px-6 lg:px-8">
-        <div className="text-center text-white max-w-4xl w-full space-y-8">
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className={`${montserrat.className} text-lg md:text-xl uppercase tracking-[0.2em] font-light text-gray-100`}
-          >
-            {subheading}
-          </motion.p>
-
-          <motion.h1
+      {/* Content Container */}
+      <div className="relative z-10 flex flex-col items-center justify-center h-full px-6 sm:px-8 lg:px-12">
+        <div className="text-center text-white max-w-7xl w-full">
+          {/* Subheading */}
+          <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.2 }}
-            className={`${playfair.className} text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1.15] font-bold max-w-3xl mx-auto`}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="mb-8"
           >
-            {heading || "JOURNEY BEGINS"}
+            <p
+              className={`${inter.className} text-gray-300 text-sm md:text-base uppercase tracking-[0.4em] font-light`}
+            >
+              {subheading}
+            </p>
+            <div className="w-32 h-px bg-white/30 mx-auto mt-6" />
+          </motion.div>
+
+          {/* Main Heading */}
+          <motion.h1
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.2, delay: 0.3, ease: "easeOut" }}
+            className={`${playfair.className} text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl leading-[0.85] font-bold mb-12 text-white`}
+          >
+            {heading || (
+              <>
+                <span className="block">LUXURY</span>
+                <span className="block text-gray-200 font-light">ESTATES</span>
+              </>
+            )}
           </motion.h1>
 
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
+          {/* Elegant Subtitle */}
+          <motion.p
+            initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.4 }}
-            className="mt-8 sm:mt-12 px-4 mx-auto w-full"
+            transition={{ duration: 1, delay: 0.6 }}
+            className={`${inter.className} text-gray-300 text-xl md:text-2xl max-w-3xl mx-auto mb-20 font-light leading-relaxed tracking-wide`}
+          >
+            Where exceptional properties meet discerning taste
+          </motion.p>
+
+          {/* Search Bar */}
+          <motion.div
+            initial={{ opacity: 0, y: 60 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.2, delay: 0.9, ease: "easeOut" }}
+            className="w-full max-w-6xl mx-auto"
           >
             <SearchBar />
           </motion.div>
         </div>
       </div>
 
-      {/* Scroll indicator */}
+      {/* Refined Scroll Indicator */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 1.2 }}
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+        transition={{ delay: 2, duration: 1 }}
+        className="absolute bottom-10 left-1/2 transform -translate-x-1/2"
       >
-        <div className="animate-bounce w-8 h-14 rounded-full border-2 border-white flex justify-center">
-          <motion.div
-            animate={{ y: [0, 10, 0] }}
-            transition={{ duration: 1.5, repeat: Infinity }}
-            className="w-1 h-3 bg-white mt-2 rounded-full"
-          />
+        <div className="flex flex-col items-center space-y-3">
+          <span
+            className={`${inter.className} text-white/60 text-xs uppercase tracking-[0.2em] font-light`}
+          >
+            Explore
+          </span>
+          <div className="w-px h-16 bg-gradient-to-b from-white/40 to-transparent relative">
+            <motion.div
+              animate={{ y: [0, 24, 0] }}
+              transition={{
+                duration: 2.5,
+                repeat: Number.POSITIVE_INFINITY,
+                ease: "easeInOut",
+              }}
+              className="w-px h-4 bg-white/80 absolute top-0"
+            />
+          </div>
         </div>
       </motion.div>
     </section>
