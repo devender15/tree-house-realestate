@@ -14,24 +14,25 @@ type CardData = {
 
 const PropertyCard = ({ id, title, location, image }: CardData) => {
   return (
-    <Link
-      href={`/details/${id}`}
-      className="block group "
-    >
-      <div className="flex  flex-col justify-between gap-4 bg-white rounded-xl border shadow-sm group-hover:shadow-lg transition-all p-4 md:p-5 duration-300 hover:cursor-pointer">
-        <div className="">
+    <Link href={`/details/${id}`} className="block group ">
+      <div className="flex  flex-col justify-between gap-4 bg-white rounded-xl border group-hover:shadow-lg transition-all p-2 md:p-2.5 duration-300 hover:cursor-pointer">
+        <div className="relative h-72 w-full">
+          {" "}
+          {/* Increased height */}
           <Image
             src={image || "/assets/default.jpg"}
             alt={title}
-            width={600}
-            height={350}
-            className="w-full object-fill rounded-lg "
+            fill
+            className="rounded-md object-cover" 
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
         </div>
 
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-3 mx-2 my-2 ">
           <div>
-            <h2 className="text-xl font-semibold text-gray-800 group-hover:underline">{title}</h2>
+            <h2 className="text-xl font-semibold text-gray-800 group-hover:underline">
+              {title}
+            </h2>
             <div className="flex items-center text-sm text-gray-500 mt-1">
               <MapPinIcon className="w-4 h-4 mr-1 text-gray-400" />
               <span>{location}</span>
@@ -42,7 +43,7 @@ const PropertyCard = ({ id, title, location, image }: CardData) => {
             <Link
               href={`/enquiry`}
               onClick={(e) => e.stopPropagation()}
-              className="px-4 py-1.5 text-md border border-gray-300 text-black rounded-sm hover:bg-gray-200 transition"
+              className="px-4 py-1.5 text-md curspoi border border-slate-600 text-black rounded-sm hover:bg-gray-200 transition"
             >
               Enquire
             </Link>

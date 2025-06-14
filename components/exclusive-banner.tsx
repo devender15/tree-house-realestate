@@ -36,7 +36,7 @@ export default function ExclusivePopup() {
       transition={{ duration: 0.3 }}
     >
       <motion.div
-        className="bg-gradient-to-br from-white to-slate-50 rounded-2xl shadow-2xl w-full max-w-2xl relative overflow-hidden"
+        className="bg-gradient-to-br from-white to-slate-50 rounded-xs shadow-2xl w-full max-w-2xl relative overflow-hidden"
         initial={{ scale: 0.95, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{
