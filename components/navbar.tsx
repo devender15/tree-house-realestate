@@ -142,7 +142,7 @@ export default function Navbar() {
               <Button
                 variant="ghost"
                 size="icon"
-                className={`block lg:hidden h-10 w-10 transition-colors duration-200 ${
+                className={`block lg:hidden h-10 w-10 transition-colors duration-200 cursor-pointer ${
                   scrolled
                     ? "hover:bg-slate-800 text-slate-300"
                     : "hover:bg-slate-100 text-slate-900"
@@ -213,14 +213,14 @@ export default function Navbar() {
                   <h1 className="font-bold text-lg text-slate-900 leading-none">
                     Tree House
                   </h1>
-                  <p className="text-xs text-slate-500 font-medium tracking-wide">
+                  {/* <p className="text-xs text-slate-500 font-medium tracking-wide">
                     REAL ESTATE
-                  </p>
+                  </p> */}
                 </div>
               </Link>
               <button
                 onClick={toggleSidebar}
-                className="p-2 rounded-lg hover:bg-slate-100 transition-colors duration-200"
+                className="p-2 rounded-lg cursor-pointer hover:bg-slate-100 transition-colors duration-200"
               >
                 <X className="w-5 h-5" />
               </button>
