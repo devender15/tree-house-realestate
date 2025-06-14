@@ -4,9 +4,8 @@ import { Poppins, Cinzel } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
-import ExclusivePopup from "@/components/exclusive-popup";
-
 import ChatBot from "@/components/ChatBot";
+import ExclusivePopup from "@/components/exclusive-banner";
 
 const poppins = Poppins({
   subsets: ["latin"],
