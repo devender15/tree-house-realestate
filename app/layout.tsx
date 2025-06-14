@@ -6,6 +6,8 @@ import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import ExclusivePopup from "@/components/exclusive-popup";
 
+import ChatBot from "@/components/ChatBot";
+
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
@@ -40,6 +42,7 @@ export default function RootLayout({
           <ExclusivePopup />
         </main>
         <Footer />
+        <ChatBot />
       </body>
     </html>
   );
