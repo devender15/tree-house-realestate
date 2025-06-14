@@ -100,7 +100,7 @@ const Footer = () => {
                   {
                     icon: <MapPin className="w-4 h-4 text-orange-500" />,
                     label: "Location",
-                    value: "Delhi NCR, India",
+                    value: "Gurgaon, Haryana",
                   },
                 ].map(({ icon, label, value }) => (
                   <div className="flex items-start" key={label}>

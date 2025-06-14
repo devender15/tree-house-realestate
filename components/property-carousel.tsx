@@ -101,7 +101,7 @@ export function PropertyCarousel() {
                 <button
                   key={value}
                   onClick={() => setActiveTab(value as Property["category"])}
-                  className={`flex items-center justify-center gap-2 p-3 sm:p-4 rounded-sm text-sm sm:text-base transition-all duration-300 border shadow-sm hover:shadow-md ${
+                  className={`flex items-center justify-center gap-2 p-3 sm:p-4 cursor-pointer rounded-sm text-sm sm:text-base transition-all duration-300 border shadow-sm hover:shadow-md ${
                     activeTab === value
                       ? "bg-slate-700 text-white"
                       : "bg-white text-gray-800 hover:bg-gray-100"
