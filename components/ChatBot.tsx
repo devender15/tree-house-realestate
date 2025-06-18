@@ -31,6 +31,7 @@ export default function TreeHouseRealEstateChatBot() {
   const [hasGreeted, setHasGreeted] = useState(false)
   const [showQuickReplies, setShowQuickReplies] = useState(true)
   const [copiedMessageId, setCopiedMessageId] = useState<string | null>(null)
+  const [hasSeenMessages, setHasSeenMessages] = useState(false)
   const messagesEndRef = useRef<HTMLDivElement>(null)
   const inputRef = useRef<HTMLInputElement>(null)
 
@@ -153,7 +154,14 @@ export default function TreeHouseRealEstateChatBot() {
       <motion.div className="relative" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
         <motion.button
           className="relative p-4 bg-gradient-to-br from-orange-500 to-orange-600 text-white rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-orange-200 overflow-hidden"
-          onClick={() => setIsOpen(!isOpen)}
+          onClick={() => {
+            if (isOpen) {
+              setIsOpen(false)
+            } else {
+              setIsOpen(true)
+              setHasSeenMessages(true)
+            }
+          }}
           animate={{
             boxShadow: isOpen ? "0 0 0 4px rgba(251, 146, 60, 0.3)" : "0 20px 40px -12px rgba(251, 146, 60, 0.4)",
           }}
@@ -184,7 +192,7 @@ export default function TreeHouseRealEstateChatBot() {
           </motion.div>
 
           {/* Notification badge */}
-          {!isOpen && messages.length > 0 && (
+          {!isOpen && messages.length > 0 && !hasSeenMessages && (
             <motion.div
               initial={{ scale: 0 }}
               animate={{ scale: 1 }}
@@ -265,7 +273,10 @@ export default function TreeHouseRealEstateChatBot() {
                   variant="ghost"
                   size="icon"
                   className="text-white hover:bg-white/20 transition-colors h-8 w-8 sm:h-9 sm:w-9"
-                  onClick={() => setIsOpen(false)}
+                  onClick={() => {
+                    setIsOpen(false)
+                    setHasSeenMessages(true)
+                  }}
                   aria-label="Close chat"
                 >
                   <X className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
