@@ -133,7 +133,7 @@ export default function EnquiryForm() {
   }
 
   return (
-    <Card className="border-0 shadow-2xl bg-white/80 backdrop-blur-xl">
+    <Card className="border-0 bg-white/80 backdrop-blur-xl">
       <CardContent className="p-6 md:p-8">
         {/* Header */}
         <div className="text-center mb-8">

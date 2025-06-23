@@ -5,7 +5,6 @@ import "./globals.css";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import ChatBot from "@/components/ChatBot";
-import ExclusivePopup from "@/components/exclusive-banner";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -38,7 +37,6 @@ export default function RootLayout({
         <Navbar />
         <main>
           {children}
-          <ExclusivePopup />
         </main>
         <Footer />
         <ChatBot />

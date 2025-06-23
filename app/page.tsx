@@ -1,9 +1,12 @@
 "use client";
-import { Search, Phone, Mail, ChevronRight, Shield, Award } from "lucide-react";
+import { Search, Phone, Mail, ChevronRight, Shield, Award, Star, Users, TrendingUp } from "lucide-react";
 import { motion } from "framer-motion";
 import { PropertyCarousel } from "@/components/property-carousel";
 import { HeroSection } from "@/components/heroSection";
 import Locations from "@/components/locations";
+import ExclusiveBanner from "@/components/exclusive-banner";
+import Image from "next/image";
+import Link from "next/link";
 
 // Animation variants
 const containerVariants = {
@@ -38,227 +41,274 @@ const fadeInUp = {
   },
 };
 
+const featured = [
+  {
+    title: "Commercial",
+    link: "/commercial",
+    image: "/assets/commercial/bg.png",
+  },
+  {
+    title: "Residensial",
+    link: "/residential",
+    image: "/assets/residential/bg.jpg",
+  },
+  {
+    title: "Plots",
+    link: "/plot",
+    image: "/assets/plot/bg.jpg",
+  },
+];
+
+const features = [
+  {
+    icon: Award,
+    title: "Trusted Expertise",
+    description:
+      "Decades of combined experience in real estate markets with a proven track record of successful transactions.",
+  },
+  {
+    icon: Star,
+    title: "Professional Excellence",
+    description:
+      "Industry-leading standards in service delivery, market analysis, and client relationship management.",
+  },
+  {
+    icon: Users,
+    title: "Client-Centric Approach",
+    description:
+      "Personalized service tailored to your specific needs, timeline, and investment objectives.",
+  },
+  {
+    icon: TrendingUp,
+    title: "Market Intelligence",
+    description:
+      "Advanced market research and analytics to ensure optimal investment decisions and timing.",
+  },
+];
+
+
+
 export default function HomePage() {
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-900">
+    <div className="">
       {/* Hero Section */}
       <section className="relative overflow-hidden">
         <HeroSection videoUrl="/assets/hero_vdo.mp4" imageUrl="" heading="" />
       </section>
 
+      {/* featured properties */}
+      <section className="px-6 py-16 bg-slate-50/50 md:px-12 lg:px-20">
+        <div className="max-w-7xl mx-auto">
+          {/* Header */}
+          <div className="text-center mb-12">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-light text-slate-800 tracking-tight">
+              Featured Properties
+            </h1>
+            <div className="w-16 h-0.5 bg-orange-500 mx-auto mt-4"></div>
+          </div>
+
+          {/* Properties Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+            {featured?.map((item, idx) => (
+              <Link
+                href={item.link}
+                key={idx}
+                className="group relative aspect-[4/5] overflow-hidden rounded-lg bg-white shadow-sm hover:shadow-xl transition-all duration-500 ease-out"
+              >
+                {/* Image */}
+                <div className="relative w-full h-full overflow-hidden">
+                  <Image
+                    src={item.image || "/placeholder.svg"}
+                    alt={item.title}
+                    fill
+                    className="object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+
+                  {/* Gradient Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300"></div>
+                </div>
+
+                {/* Content */}
+                <div className="absolute bottom-0 left-0 right-0 p-6">
+                  <h3 className="text-white text-xl md:text-2xl font-light tracking-wide group-hover:translate-y-[-2px] transition-transform duration-300">
+                    {item.title}
+                  </h3>
+
+                  {/* Subtle indicator */}
+                  <div className="w-8 h-0.5 bg-white/60 mt-3 group-hover:w-12 group-hover:bg-orange-400 transition-all duration-300"></div>
+                </div>
+
+                {/* Hover overlay */}
+                <div className="absolute inset-0 border-2 border-transparent group-hover:border-orange-400/30 rounded-lg transition-colors duration-300"></div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <ExclusiveBanner />
+
       {/* Property Carousel */}
-      <section className="py-16 md:py-20 bg-slate-100">
+      <section className="">
         <PropertyCarousel />
       </section>
 
-      {/* Locations */}
-      <section className="bg-slate-50">
-        <Locations />
-      </section>
-
       {/* Why Choose Section */}
-      <section className="py-16 md:py-24 bg-white">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+      <section className="relative py-20 overflow-hidden bg-slate-25">
+        {/* Primary Background Pattern */}
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-50/30 via-white to-slate-100/20"></div>
+
+        {/* Hexagonal Pattern */}
+        <div
+          className="absolute inset-0 opacity-[0.015]"
+          style={{
+            backgroundImage: `
+            radial-gradient(circle at 50% 50%, #64748b 1.5px, transparent 1.5px),
+            radial-gradient(circle at 0% 50%, #64748b 1px, transparent 1px),
+            radial-gradient(circle at 100% 50%, #64748b 1px, transparent 1px)
+          `,
+            backgroundSize: "120px 104px, 120px 104px, 120px 104px",
+            backgroundPosition: "0 0, 60px 52px, -60px 52px",
+          }}
+        ></div>
+
+        {/* Subtle Grid Lines */}
+        <div
+          className="absolute inset-0 opacity-[0.008]"
+          style={{
+            backgroundImage: `
+            linear-gradient(rgba(100, 116, 139, 0.3) 0.5px, transparent 0.5px),
+            linear-gradient(90deg, rgba(100, 116, 139, 0.3) 0.5px, transparent 0.5px)
+          `,
+            backgroundSize: "100px 100px",
+          }}
+        ></div>
+
+        {/* Organic Shapes */}
+        <div className="absolute top-10 left-[10%] w-96 h-96 bg-gradient-to-br from-slate-100/10 to-slate-200/5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-10 right-[15%] w-80 h-80 bg-gradient-to-br from-slate-200/8 to-slate-300/4 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/3 right-[10%] w-64 h-64 bg-gradient-to-br from-slate-150/6 to-slate-200/3 rounded-full blur-2xl"></div>
+
+        {/* Orange Accent Shapes - Very Subtle */}
+        <div className="absolute top-1/4 left-[20%] w-32 h-32 bg-gradient-to-br from-orange-100/8 to-orange-200/4 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-1/3 right-[25%] w-40 h-40 bg-gradient-to-br from-orange-50/6 to-orange-100/3 rounded-full blur-3xl"></div>
+
+        {/* Diagonal Pattern Overlay */}
+        <div
+          className="absolute inset-0 opacity-[0.003]"
+          style={{
+            backgroundImage: `
+            repeating-linear-gradient(
+              45deg,
+              transparent,
+              transparent 40px,
+              rgba(100, 116, 139, 0.1) 40px,
+              rgba(100, 116, 139, 0.1) 41px
+            )
+          `,
+          }}
+        ></div>
+
+        <div className="relative mx-auto px-6 sm:px-8 lg:px-16 xl:px-24 2xl:px-32">
+          {/* Header */}
           <motion.div
-            className="text-center mb-12 md:mb-16 max-w-4xl mx-auto"
+            className="text-center mb-16"
             initial="hidden"
             whileInView="visible"
             variants={fadeInUp}
-            viewport={{ once: true, margin: "-100px" }}
+            viewport={{ once: true, margin: "-50px" }}
           >
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-slate-900 leading-tight">
-              Why Choose Tree House
+            <h2 className="text-3xl md:text-4xl font-light text-slate-700 mb-4 tracking-tight">
+              Why Choose Us
             </h2>
-            <div className="h-1 w-20 bg-slate-600 mx-auto mb-6"></div>
-            <p className="text-slate-600 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto">
-              We provide comprehensive real estate solutions with expert
-              guidance, transparent processes, and personalized service tailored
-              to your needs.
-            </p>
+            <div className="relative w-16 h-0.5 mx-auto mt-6">
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-slate-300 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-orange-400/30 to-transparent"></div>
+            </div>
           </motion.div>
 
+          {/* Features Grid */}
           <motion.div
-            className="grid gap-6 md:gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-16"
+            className="grid gap-8 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 max-w-6xl mx-auto"
             variants={containerVariants}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
+            viewport={{ once: true, margin: "-50px" }}
           >
-            {/* Feature 1 */}
-            <motion.div
-              className="bg-white rounded-xl p-6 md:p-8 shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-200 hover:border-slate-300"
-              variants={itemVariants}
-              whileHover={{
-                y: -5,
-                boxShadow: "0 20px 40px -12px rgba(15, 23, 42, 0.15)",
-              }}
-            >
-              <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 bg-slate-100">
-                <Search className="w-8 h-8 text-slate-700" />
-              </div>
-              <h3 className="text-xl md:text-2xl font-semibold mb-3 text-slate-900 text-center">
-                Expert Property Search
-              </h3>
-              <p className="text-slate-600 text-sm md:text-base leading-relaxed text-center mb-4">
-                Advanced search tools and personalized recommendations to find
-                your perfect property match quickly and efficiently.
-              </p>
-              <button className="w-full flex items-center justify-center text-slate-700 font-medium hover:text-slate-900 transition-colors text-sm">
-                Learn more <ChevronRight className="w-4 h-4 ml-1" />
-              </button>
-            </motion.div>
+            {features.map((feature, index) => {
+              const IconComponent = feature.icon;
+              return (
+                <motion.div
+                  key={index}
+                  className="group text-center relative"
+                  variants={itemVariants}
+                  whileHover={{ y: -8 }}
+                  transition={{ duration: 0.3, ease: "easeOut" }}
+                >
+                  {/* Card Background with Subtle Pattern */}
+                  <div className="absolute inset-0 bg-white/40 backdrop-blur-sm rounded-2xl border border-slate-200/20 shadow-sm group-hover:shadow-lg group-hover:bg-white/60 group-hover:border-orange-200/20 transition-all duration-300"></div>
 
-            {/* Feature 2 */}
-            <motion.div
-              className="bg-white rounded-xl p-6 md:p-8 shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-200 hover:border-slate-300"
-              variants={itemVariants}
-              whileHover={{
-                y: -5,
-                boxShadow: "0 20px 40px -12px rgba(15, 23, 42, 0.15)",
-              }}
-            >
-              <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 bg-slate-100">
-                <Shield className="w-8 h-8 text-slate-700" />
-              </div>
-              <h3 className="text-xl md:text-2xl font-semibold mb-3 text-slate-900 text-center">
-                Trusted Service
-              </h3>
-              <p className="text-slate-600 text-sm md:text-base leading-relaxed text-center mb-4">
-                Dedicated support and professional guidance throughout your real
-                estate journey with complete transparency.
-              </p>
-              <button className="w-full flex items-center justify-center text-slate-700 font-medium hover:text-slate-900 transition-colors text-sm">
-                Learn more <ChevronRight className="w-4 h-4 ml-1" />
-              </button>
-            </motion.div>
+                  {/* Card Pattern */}
+                  <div
+                    className="absolute inset-0 rounded-2xl opacity-[0.01] group-hover:opacity-[0.02] transition-opacity duration-300"
+                    style={{
+                      backgroundImage: `
+                      radial-gradient(circle at 25% 25%, #64748b 0.8px, transparent 0.8px),
+                      radial-gradient(circle at 75% 75%, #64748b 0.5px, transparent 0.5px)
+                    `,
+                      backgroundSize: "30px 30px, 20px 20px",
+                      backgroundPosition: "0 0, 15px 15px",
+                    }}
+                  ></div>
 
-            {/* Feature 3 */}
-            <motion.div
-              className="bg-white rounded-xl p-6 md:p-8 shadow-sm hover:shadow-lg transition-all duration-300 border border-slate-200 hover:border-slate-300"
-              variants={itemVariants}
-              whileHover={{
-                y: -5,
-                boxShadow: "0 20px 40px -12px rgba(15, 23, 42, 0.15)",
-              }}
-            >
-              <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 bg-slate-100">
-                <Award className="w-8 h-8 text-slate-700" />
-              </div>
-              <h3 className="text-xl md:text-2xl font-semibold mb-3 text-slate-900 text-center">
-                Proven Results
-              </h3>
-              <p className="text-slate-600 text-sm md:text-base leading-relaxed text-center mb-4">
-                Years of experience with successful transactions and satisfied
-                clients across diverse property segments.
-              </p>
-              <button className="w-full flex items-center justify-center text-slate-700 font-medium hover:text-slate-900 transition-colors text-sm">
-                Learn more <ChevronRight className="w-4 h-4 ml-1" />
-              </button>
-            </motion.div>
-          </motion.div>
+                  <div className="relative p-8">
+                    {/* Icon Container */}
+                    <div className="relative w-16 h-16 mx-auto mb-6">
+                      {/* Icon Background */}
+                      <div className="absolute inset-0 bg-gradient-to-br from-white/80 to-slate-50/60 rounded-full shadow-sm group-hover:shadow-md transition-all duration-300"></div>
 
-          {/* Stats Section */}
-          <motion.div
-            className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 mb-16 p-8 bg-slate-50 rounded-2xl"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
-            viewport={{ once: true, margin: "-100px" }}
-          >
-            <div className="text-center">
-              <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-slate-900 mb-2">
-                500+
-              </div>
-              <div className="text-sm md:text-base text-slate-600">
-                Properties Sold
-              </div>
-            </div>
-            <div className="text-center">
-              <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-slate-900 mb-2">
-                1000+
-              </div>
-              <div className="text-sm md:text-base text-slate-600">
-                Happy Clients
-              </div>
-            </div>
-            <div className="text-center">
-              <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-slate-900 mb-2">
-                15+
-              </div>
-              <div className="text-sm md:text-base text-slate-600">
-                Years Experience
-              </div>
-            </div>
-            <div className="text-center">
-              <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-slate-900 mb-2">
-                50+
-              </div>
-              <div className="text-sm md:text-base text-slate-600">
-                Locations
-              </div>
-            </div>
-          </motion.div>
+                      {/* Orange Accent Ring - Only on Hover */}
+                      <div className="absolute inset-0 rounded-full border-2 border-transparent group-hover:border-orange-200/40 transition-colors duration-300"></div>
 
-          {/* CTA Section */}
-          <motion.div
-            className="bg-gradient-to-r from-slate-800 to-slate-900 rounded-2xl overflow-hidden shadow-xl"
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            viewport={{ once: true, margin: "-100px" }}
-          >
-            <div className="grid md:grid-cols-2 gap-8 items-center px-6 py-10 md:p-12">
-              <div>
-                <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-4 leading-tight">
-                  Ready to Find Your Dream Property?
-                </h3>
-                <p className="text-slate-300 text-base md:text-lg mb-8 leading-relaxed">
-                  Connect with our expert advisors today and discover properties
-                  that perfectly match your lifestyle and investment goals.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <button className="px-6 py-3 bg-white text-slate-900 font-medium rounded-lg hover:bg-slate-100 transition-colors text-sm md:text-base">
-                    Schedule Consultation
-                  </button>
-                  <button className="px-6 py-3 bg-transparent border-2 border-slate-400 text-white font-medium rounded-lg hover:bg-white/10 hover:border-white transition-colors text-sm md:text-base">
-                    Browse Properties
-                  </button>
-                </div>
-              </div>
-              <div className="flex justify-center">
-                <div className="bg-white/10 backdrop-blur-sm rounded-xl w-full max-w-md p-6 md:p-8 border border-white/20">
-                  <div className="flex items-center gap-4 mb-6">
-                    <div className="bg-white/20 rounded-full p-3">
-                      <Phone className="w-5 h-5 text-white" />
+                      {/* Icon */}
+                      <div className="absolute inset-0 flex items-center justify-center">
+                        <IconComponent className="w-7 h-7 text-slate-600 group-hover:text-slate-700 transition-colors duration-300" />
+                      </div>
+
+                      {/* Subtle Orange Glow on Hover */}
+                      <div className="absolute inset-0 bg-gradient-to-br from-orange-100/0 to-orange-200/0 group-hover:from-orange-100/10 group-hover:to-orange-200/5 rounded-full transition-all duration-300"></div>
                     </div>
-                    <div>
-                      <p className="text-slate-300 text-xs md:text-sm">
-                        Call us anytime
-                      </p>
-                      <p className="text-white text-lg md:text-xl font-semibold">
-                        +91 98765 43210
-                      </p>
-                    </div>
+
+                    {/* Content */}
+                    <h3 className="text-xl font-medium mb-4 text-slate-700 group-hover:text-slate-800 transition-colors duration-300">
+                      {feature.title}
+                    </h3>
+                    <p className="text-slate-500 leading-relaxed text-sm group-hover:text-slate-600 transition-colors duration-300">
+                      {feature.description}
+                    </p>
                   </div>
-                  <div className="flex items-center gap-4">
-                    <div className="bg-white/20 rounded-full p-3">
-                      <Mail className="w-5 h-5 text-white" />
-                    </div>
-                    <div>
-                      <p className="text-slate-300 text-xs md:text-sm">
-                        Email us
-                      </p>
-                      <p className="text-white text-lg md:text-xl font-semibold">
-                        info@treehouse.com
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+
+                  {/* Top Accent Line */}
+                  <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-8 h-0.5 bg-gradient-to-r from-transparent via-slate-300 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full"></div>
+
+                  {/* Orange Accent Dot */}
+                  <div className="absolute top-2 right-2 w-1 h-1 bg-orange-400/0 group-hover:bg-orange-400/60 rounded-full transition-colors duration-300"></div>
+                </motion.div>
+              );
+            })}
           </motion.div>
         </div>
       </section>
+
+      {/* Locations */}
+      {/* <section className="bg-slate-50">
+        <Locations />
+      </section> */}
+
+
+
+      
+
     </div>
   );
 }
