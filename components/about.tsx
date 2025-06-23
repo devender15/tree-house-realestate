@@ -1,8 +1,14 @@
-"use client"
+"use client";
 
-import type React from "react"
-import { useRef, useState } from "react"
-import { motion, useScroll, useTransform, useMotionValue, useSpring } from "framer-motion"
+import type React from "react";
+import { useRef, useState } from "react";
+import {
+  motion,
+  useScroll,
+  useTransform,
+  useMotionValue,
+  useSpring,
+} from "framer-motion";
 import {
   Building2,
   Handshake,
@@ -20,34 +26,34 @@ import {
   Zap,
   Camera,
   Quote,
-} from "lucide-react"
-import Image from "next/image"
-import Link from "next/link"
+} from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 
 const About = () => {
-  const containerRef = useRef<HTMLDivElement>(null)
-  const [activeService, setActiveService] = useState(0)
-  const mouseX = useMotionValue(0)
-  const mouseY = useMotionValue(0)
+  const containerRef = useRef<HTMLDivElement>(null);
+  const [activeService, setActiveService] = useState(0);
+  const mouseX = useMotionValue(0);
+  const mouseY = useMotionValue(0);
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ["start start", "end end"],
-  })
+  });
 
-  const springConfig = { stiffness: 100, damping: 30, restDelta: 0.001 }
-  const x = useSpring(mouseX, springConfig)
-  const y = useSpring(mouseY, springConfig)
+  const springConfig = { stiffness: 100, damping: 30, restDelta: 0.001 };
+  const x = useSpring(mouseX, springConfig);
+  const y = useSpring(mouseY, springConfig);
 
   const handleMouseMove = (event: React.MouseEvent) => {
-    const rect = event.currentTarget.getBoundingClientRect()
-    mouseX.set(event.clientX - rect.left - rect.width / 2)
-    mouseY.set(event.clientY - rect.top - rect.height / 2)
-  }
+    const rect = event.currentTarget.getBoundingClientRect();
+    mouseX.set(event.clientX - rect.left - rect.width / 2);
+    mouseY.set(event.clientY - rect.top - rect.height / 2);
+  };
 
-  const parallaxY1 = useTransform(scrollYProgress, [0, 1], [0, -100])
-  const parallaxY2 = useTransform(scrollYProgress, [0, 1], [0, -200])
-  const parallaxY3 = useTransform(scrollYProgress, [0, 1], [0, -50])
+  const parallaxY1 = useTransform(scrollYProgress, [0, 1], [0, -100]);
+  const parallaxY2 = useTransform(scrollYProgress, [0, 1], [0, -200]);
+  const parallaxY3 = useTransform(scrollYProgress, [0, 1], [0, -50]);
 
   return (
     <div ref={containerRef} className="bg-slate-50 overflow-hidden">
@@ -91,12 +97,18 @@ const About = () => {
               >
                 <motion.div
                   animate={{ rotate: 360 }}
-                  transition={{ duration: 20, repeat: Number.POSITIVE_INFINITY, ease: "linear" }}
+                  transition={{
+                    duration: 20,
+                    repeat: Number.POSITIVE_INFINITY,
+                    ease: "linear",
+                  }}
                 >
                   <Building2 className="w-4 h-4 md:w-5 md:h-5 text-slate-600" />
                 </motion.div>
                 <span className="text-slate-700 font-semibold tracking-wider uppercase">
-                  <span className="hidden sm:inline">Professional Real Estate Solutions</span>
+                  <span className="hidden sm:inline">
+                    Professional Real Estate Solutions
+                  </span>
                   <span className="sm:hidden">Real Estate Excellence</span>
                 </span>
                 <motion.div
@@ -139,7 +151,8 @@ const About = () => {
                   transition={{ duration: 1, delay: 0.8 }}
                   className="text-lg sm:text-xl md:text-2xl text-slate-600 leading-relaxed max-w-lg mx-auto lg:mx-0 font-medium"
                 >
-                  Professional real estate solutions built on trust, expertise, and integrity
+                  Professional real estate solutions built on trust, expertise,
+                  and integrity
                 </motion.p>
               </div>
 
@@ -151,12 +164,20 @@ const About = () => {
                 className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center lg:justify-start"
               >
                 <motion.button
-                  whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(0,0,0,0.1)" }}
+                  whileHover={{
+                    scale: 1.05,
+                    boxShadow: "0 20px 40px rgba(0,0,0,0.1)",
+                  }}
                   whileTap={{ scale: 0.95 }}
                   className="group bg-slate-800 text-white px-6 md:px-8 py-3 md:py-4 rounded-xl md:rounded-2xl font-semibold hover:bg-slate-700 transition-all duration-300 shadow-lg relative overflow-hidden text-sm md:text-base"
                 >
-                  <Link href={"/enquiry"} className="relative z-10 flex items-center justify-center gap-2">
-                    <span className="hidden sm:inline">Schedule Consultation</span>
+                  <Link
+                    href={"/enquiry"}
+                    className="relative z-10 flex items-center justify-center gap-2"
+                  >
+                    <span className="hidden sm:inline">
+                      Schedule Consultation
+                    </span>
                     <span className="sm:hidden">Get Consultation</span>
                     <ArrowRight className="w-4 h-4 md:w-5 md:h-5 group-hover:translate-x-1 transition-transform" />
                   </Link>
@@ -168,7 +189,10 @@ const About = () => {
                   />
                 </motion.button>
 
-                <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                <motion.div
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
                   <Link
                     href="/"
                     className="group border-2 border-slate-300 text-slate-700 px-6 md:px-8 py-3 md:py-4 rounded-xl md:rounded-2xl font-semibold hover:border-slate-400 hover:bg-slate-100 transition-all duration-300 relative overflow-hidden inline-flex items-center justify-center gap-2 text-sm md:text-base w-full sm:w-auto"
@@ -215,11 +239,15 @@ const About = () => {
                       className="absolute bottom-3 md:bottom-6 left-3 md:left-6 text-white"
                     >
                       <h3 className="text-lg md:text-2xl font-bold mb-1 md:mb-2">
-                        <span className="hidden sm:inline">Premium Plot Development</span>
+                        <span className="hidden sm:inline">
+                          Premium Plot Development
+                        </span>
                         <span className="sm:hidden">Premium Plots</span>
                       </h3>
                       <p className="text-slate-200 text-xs md:text-sm mb-2 md:mb-3">
-                        <span className="hidden md:inline">Strategic land acquisition and development</span>
+                        <span className="hidden md:inline">
+                          Strategic land acquisition and development
+                        </span>
                         <span className="md:hidden">Prime locations</span>
                       </p>
                       <div className="hidden md:flex items-center gap-2 text-sm">
@@ -248,8 +276,12 @@ const About = () => {
                     />
                     <div className="absolute inset-0 bg-slate-900/40 group-hover:bg-slate-900/20 transition-colors" />
                     <div className="absolute bottom-2 md:bottom-3 left-2 md:left-3 text-white">
-                      <p className="text-xs md:text-sm font-bold">Agricultural</p>
-                      <p className="text-xs text-slate-200 hidden md:block">Farmland & Rural Estates</p>
+                      <p className="text-xs md:text-sm font-bold">
+                        Agricultural
+                      </p>
+                      <p className="text-xs text-slate-200 hidden md:block">
+                        Farmland & Rural Estates
+                      </p>
                     </div>
                   </motion.div>
 
@@ -267,8 +299,12 @@ const About = () => {
                       />
                       <div className="absolute inset-0 bg-slate-900/40 group-hover:bg-slate-900/20 transition-colors" />
                       <div className="absolute bottom-2 md:bottom-3 left-2 md:left-3 text-white">
-                        <p className="text-xs md:text-sm font-bold">Commercial</p>
-                        <p className="text-xs text-slate-200 hidden md:block">Business Properties</p>
+                        <p className="text-xs md:text-sm font-bold">
+                          Commercial
+                        </p>
+                        <p className="text-xs text-slate-200 hidden md:block">
+                          Business Properties
+                        </p>
                       </div>
                     </motion.div>
 
@@ -285,16 +321,18 @@ const About = () => {
                       <div className="absolute inset-0 bg-slate-900/40 group-hover:bg-slate-900/20 transition-colors" />
                       <div className="absolute bottom-2 md:bottom-4 left-2 md:left-4 text-white">
                         <p className="text-sm md:text-lg font-bold">
-                          <span className="hidden md:inline">Strategic Consulting</span>
+                          <span className="hidden md:inline">
+                            Strategic Consulting
+                          </span>
                           <span className="md:hidden">Consulting</span>
                         </p>
-                        <p className="text-xs md:text-sm text-slate-200 hidden md:block">Expert advisory services</p>
+                        <p className="text-xs md:text-sm text-slate-200 hidden md:block">
+                          Expert advisory services
+                        </p>
                       </div>
                     </motion.div>
                   </div>
                 </div>
-
-            
               </div>
             </motion.div>
           </div>
@@ -335,10 +373,14 @@ const About = () => {
                   className="absolute bottom-4 md:bottom-6 left-4 md:left-6 text-white"
                 >
                   <h3 className="text-lg md:text-xl font-bold mb-1 md:mb-2">
-                    <span className="hidden md:inline">Excellence in Real Estate</span>
+                    <span className="hidden md:inline">
+                      Excellence in Real Estate
+                    </span>
                     <span className="md:hidden">Real Estate Excellence</span>
                   </h3>
-                  <p className="text-slate-200 text-sm">Our promise to every client</p>
+                  <p className="text-slate-200 text-sm">
+                    Our promise to every client
+                  </p>
                 </motion.div>
               </motion.div>
 
@@ -348,16 +390,24 @@ const About = () => {
                   className="bg-gradient-to-br from-slate-100 to-slate-200 rounded-xl md:rounded-2xl p-4 md:p-6 text-center"
                 >
                   <Handshake className="w-6 h-6 md:w-8 md:h-8 text-slate-600 mx-auto mb-2 md:mb-3" />
-                  <p className="text-slate-800 font-bold text-sm md:text-base">Trust</p>
-                  <p className="text-slate-600 text-xs md:text-sm">Built on integrity</p>
+                  <p className="text-slate-800 font-bold text-sm md:text-base">
+                    Trust
+                  </p>
+                  <p className="text-slate-600 text-xs md:text-sm">
+                    Built on integrity
+                  </p>
                 </motion.div>
                 <motion.div
                   whileHover={{ scale: 1.05 }}
                   className="bg-gradient-to-br from-orange-100 to-orange-200 rounded-xl md:rounded-2xl p-4 md:p-6 text-center"
                 >
                   <Target className="w-6 h-6 md:w-8 md:h-8 text-orange-600 mx-auto mb-2 md:mb-3" />
-                  <p className="text-orange-800 font-bold text-sm md:text-base">Expertise</p>
-                  <p className="text-orange-600 text-xs md:text-sm">Professional service</p>
+                  <p className="text-orange-800 font-bold text-sm md:text-base">
+                    Expertise
+                  </p>
+                  <p className="text-orange-600 text-xs md:text-sm">
+                    Professional service
+                  </p>
                 </motion.div>
               </div>
             </motion.div>
@@ -377,7 +427,9 @@ const About = () => {
                   className="inline-flex items-center gap-2 md:gap-3 px-4 md:px-6 py-2 md:py-3 bg-slate-100 rounded-full"
                 >
                   <Building2 className="w-4 h-4 md:w-5 md:h-5 text-slate-600" />
-                  <span className="text-slate-700 font-medium text-sm md:text-base">About Our Company</span>
+                  <span className="text-slate-700 font-medium text-sm md:text-base">
+                    About Our Company
+                  </span>
                 </motion.div>
 
                 <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 leading-tight">
@@ -389,14 +441,18 @@ const About = () => {
 
                 <div className="space-y-4 md:space-y-6 text-base md:text-lg text-slate-700 leading-relaxed">
                   <p>
-                    Tree House Realty stands as a premier real estate firm dedicated to delivering exceptional property
-                    solutions for discerning clients and strategic investors. Our commitment to excellence, combined
-                    with deep market expertise, ensures that every transaction is handled with the utmost
+                    Tree House Realty stands as a premier real estate firm
+                    dedicated to delivering exceptional property solutions for
+                    discerning clients and strategic investors. Our commitment
+                    to excellence, combined with deep market expertise, ensures
+                    that every transaction is handled with the utmost
                     professionalism and care.
                   </p>
                   <p>
-                    We specialize in connecting clients with premium land acquisitions, agricultural properties, and
-                    commercial real estate opportunities that align with their vision and investment objectives.
+                    We specialize in connecting clients with premium land
+                    acquisitions, agricultural properties, and commercial real
+                    estate opportunities that align with their vision and
+                    investment objectives.
                   </p>
                 </div>
 
@@ -407,7 +463,8 @@ const About = () => {
                 >
                   <Quote className="w-5 h-5 md:w-6 md:h-6 text-slate-400 mb-2 md:mb-3" />
                   <p className="text-slate-800 text-base md:text-lg font-medium italic">
-                    "Excellence in real estate isn't just our standard—it's our promise to every client we serve."
+                    "Excellence in real estate isn't just our standard—it's our
+                    promise to every client we serve."
                   </p>
                 </motion.div>
               </div>
@@ -439,9 +496,11 @@ const About = () => {
             </h2>
 
             <p className="text-lg sm:text-xl md:text-2xl text-slate-600 leading-relaxed max-w-4xl mx-auto">
-              To deliver unparalleled real estate services through strategic expertise, market intelligence, and
-              unwavering commitment to client success. We empower informed decision-making in property acquisition,
-              development, and investment across residential, commercial, and agricultural sectors.
+              To deliver unparalleled real estate services through strategic
+              expertise, market intelligence, and unwavering commitment to
+              client success. We empower informed decision-making in property
+              acquisition, development, and investment across residential,
+              commercial, and agricultural sectors.
             </p>
           </motion.div>
         </div>
@@ -464,7 +523,8 @@ const About = () => {
               </span>
             </h2>
             <p className="text-lg sm:text-xl md:text-2xl text-slate-600 max-w-4xl mx-auto leading-relaxed">
-              Comprehensive real estate solutions tailored to your unique requirements
+              Comprehensive real estate solutions tailored to your unique
+              requirements
             </p>
           </motion.div>
 
@@ -475,7 +535,11 @@ const About = () => {
                 icon: Building2,
                 title: "Premium Plot Development",
                 desc: "Strategic land acquisition and development opportunities in prime locations with exceptional growth potential.",
-                features: ["Prime location analysis", "Investment-grade properties", "Custom development solutions"],
+                features: [
+                  "Prime location analysis",
+                  "Investment-grade properties",
+                  "Custom development solutions",
+                ],
                 bgColor: "bg-blue-50",
                 borderColor: "border-blue-200",
                 iconColor: "text-slate-600",
@@ -484,7 +548,11 @@ const About = () => {
                 icon: Leaf,
                 title: "Agricultural Properties",
                 desc: "Specialized expertise in agricultural real estate, from productive farmland to luxury rural estates.",
-                features: ["Soil quality assessment", "Water rights verification", "Agricultural zoning expertise"],
+                features: [
+                  "Soil quality assessment",
+                  "Water rights verification",
+                  "Agricultural zoning expertise",
+                ],
                 bgColor: "bg-green-50",
                 borderColor: "border-green-200",
                 iconColor: "text-green-600",
@@ -493,7 +561,11 @@ const About = () => {
                 icon: Building2,
                 title: "Commercial Real Estate",
                 desc: "Full-service commercial property solutions for businesses and institutional investors.",
-                features: ["Market analysis reports", "Investment property evaluation", "Commercial lease negotiation"],
+                features: [
+                  "Market analysis reports",
+                  "Investment property evaluation",
+                  "Commercial lease negotiation",
+                ],
                 bgColor: "bg-purple-50",
                 borderColor: "border-purple-200",
                 iconColor: "text-purple-600",
@@ -502,7 +574,11 @@ const About = () => {
                 icon: Search,
                 title: "Strategic Consulting",
                 desc: "Expert advisory services for complex real estate transactions and portfolio optimization.",
-                features: ["Due diligence services", "Market trend analysis", "Investment strategy planning"],
+                features: [
+                  "Due diligence services",
+                  "Market trend analysis",
+                  "Investment strategy planning",
+                ],
                 bgColor: "bg-amber-50",
                 borderColor: "border-amber-200",
                 iconColor: "text-amber-600",
@@ -518,15 +594,23 @@ const About = () => {
                 className={`${service.bgColor} rounded-xl md:rounded-2xl p-6 md:p-8 border ${service.borderColor} shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer`}
               >
                 <div className="bg-white rounded-lg md:rounded-xl p-3 md:p-4 w-fit mb-4 md:mb-6 shadow-sm">
-                  <service.icon className={`w-6 h-6 md:w-8 md:h-8 ${service.iconColor}`} />
+                  <service.icon
+                    className={`w-6 h-6 md:w-8 md:h-8 ${service.iconColor}`}
+                  />
                 </div>
-                <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-3 md:mb-4">{service.title}</h3>
-                <p className="text-slate-700 mb-4 md:mb-6 leading-relaxed text-sm md:text-base">{service.desc}</p>
+                <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-3 md:mb-4">
+                  {service.title}
+                </h3>
+                <p className="text-slate-700 mb-4 md:mb-6 leading-relaxed text-sm md:text-base">
+                  {service.desc}
+                </p>
                 <ul className="space-y-2 md:space-y-3">
                   {service.features.map((feature) => (
                     <li key={feature} className="flex items-start">
                       <CheckCircle className="w-4 h-4 md:w-5 md:h-5 text-slate-600 mt-0.5 mr-2 md:mr-3 flex-shrink-0" />
-                      <span className="text-slate-700 text-sm md:text-base">{feature}</span>
+                      <span className="text-slate-700 text-sm md:text-base">
+                        {feature}
+                      </span>
                     </li>
                   ))}
                 </ul>
@@ -548,10 +632,12 @@ const About = () => {
               className="text-center mb-12 md:mb-16"
             >
               <h2 className="text-3xl sm:text-4xl md:text-4xl font-bold text-slate-900 mb-4 md:mb-6">
-                Why Choose <span className="text-slate-600">Tree House Realty</span>
+                Why Choose{" "}
+                <span className="text-slate-600">Tree House Realty</span>
               </h2>
               <p className="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto">
-                Our commitment to excellence sets us apart in the real estate industry
+                Our commitment to excellence sets us apart in the real estate
+                industry
               </p>
             </motion.div>
 
@@ -590,8 +676,12 @@ const About = () => {
                   <div className="bg-slate-100 rounded-xl md:rounded-2xl p-3 md:p-4 w-fit mx-auto mb-4 md:mb-6 group-hover:bg-slate-200 transition-colors">
                     <item.icon className="w-6 h-6 md:w-8 md:h-8 text-slate-600" />
                   </div>
-                  <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-3 md:mb-4">{item.title}</h3>
-                  <p className="text-slate-700 leading-relaxed text-sm md:text-base">{item.desc}</p>
+                  <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-3 md:mb-4">
+                    {item.title}
+                  </h3>
+                  <p className="text-slate-700 leading-relaxed text-sm md:text-base">
+                    {item.desc}
+                  </p>
                 </motion.div>
               ))}
             </div>
@@ -624,9 +714,10 @@ const About = () => {
               </h2>
 
               <p className="text-lg md:text-xl text-slate-200 leading-relaxed mb-8 md:mb-10 max-w-4xl mx-auto">
-                At Tree House Realty, we understand that real estate represents more than transactions—it's about
-                building futures, creating opportunities, and establishing lasting value. Let our expertise guide your
-                next strategic real estate decision.
+                At Tree House Realty, we understand that real estate represents
+                more than transactions—it's about building futures, creating
+                opportunities, and establishing lasting value. Let our expertise
+                guide your next strategic real estate decision.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center">
@@ -635,13 +726,12 @@ const About = () => {
                   whileTap={{ scale: 0.95 }}
                   className="bg-white text-slate-800 px-6 md:px-8 py-3 md:py-4 rounded-lg md:rounded-xl font-semibold text-base md:text-lg hover:bg-slate-100 transition-colors duration-200 shadow-lg"
                 >
-                  <Link
-                  href="/enquiry"
-                  >
-                  Schedule Consultation
-                  </Link>
+                  <Link href="/enquiry">Schedule Consultation</Link>
                 </motion.button>
-                <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                <motion.div
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
                   <Link
                     href="/"
                     className="border-2 border-white text-white px-6 md:px-8 py-3 md:py-4 rounded-lg md:rounded-xl font-semibold text-base md:text-lg hover:bg-white hover:text-slate-800 transition-colors duration-200 inline-block w-full sm:w-auto text-center"
@@ -655,7 +745,7 @@ const About = () => {
         </div>
       </section>
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;

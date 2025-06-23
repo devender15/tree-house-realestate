@@ -103,8 +103,8 @@ export default function Navbar() {
                   <Image
                     src={"/assets/logo.png"}
                     alt="Tree House Real Estate"
-                    width={32}
-                    height={32}
+                    width={50}
+                    height={50}
                     className="rounded"
                   />
                 </div>
