@@ -64,7 +64,7 @@ export function PropertyCarousel() {
   }, [activeTab, emblaApi]);
 
   return (
-    <section className="w-full py-16 px-4 sm:px-6 lg:px-8 lg:py-24 bg-gray-50">
+    <section className="w-full py-16 px-4 sm:px-6 lg:px-8 lg:py-24 bg-white overflow-hidden ">
       <div className="w-full max-w-none mx-auto">
         {/* Header */}
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6 mb-12 max-w-7xl mx-auto">
@@ -160,18 +160,24 @@ export function PropertyCarousel() {
         {/* Dots Indicator */}
         <div className="flex justify-center mt-10">
           <div className="flex items-center gap-2">
-            {Array.from({ length: totalSlides }).map((_, index) => (
-              <button
-                key={index}
-                onClick={() => emblaApi?.scrollTo(index)}
-                className={`rounded-full transition-all duration-300 cursor-pointer ${
-                  index === selectedIndex
-                    ? "bg-orange-600 w-8 h-3"
-                    : "bg-gray-300 hover:bg-gray-400 w-3 h-3"
-                }`}
-                aria-label={`Go to slide ${index + 1}`}
-              />
-            ))}
+            {Array.from({ length: totalSlides }).map((_, index) => {
+              if (Math.abs(index - selectedIndex) > 1) {
+                return null;
+              }
+
+              return (
+                <button
+                  key={index}
+                  onClick={() => emblaApi?.scrollTo(index)}
+                  className={`rounded-full transition-all duration-300 cursor-pointer ${
+                    index === selectedIndex
+                      ? "bg-orange-600 w-8 h-3"
+                      : "bg-gray-300 hover:bg-gray-400 w-3 h-3"
+                  }`}
+                  aria-label={`Go to slide ${index + 1}`}
+                />
+              );
+            })}
           </div>
         </div>
       </div>

@@ -1,9 +1,8 @@
 "use client";
-import { Search, Phone, Mail, ChevronRight, Shield, Award, Star, Users, TrendingUp } from "lucide-react";
+import { Award, Star, Users, TrendingUp } from "lucide-react";
 import { motion } from "framer-motion";
 import { PropertyCarousel } from "@/components/property-carousel";
 import { HeroSection } from "@/components/heroSection";
-import Locations from "@/components/locations";
 import ExclusiveBanner from "@/components/exclusive-banner";
 import Image from "next/image";
 import Link from "next/link";
@@ -97,7 +96,7 @@ export default function HomePage() {
       </section>
 
       {/* featured properties */}
-      <section className="px-6 py-16 bg-slate-50/50 md:px-12 lg:px-20">
+      <section className="px-6 py-16 bg-white md:px-12 lg:px-20">
         <div className="max-w-7xl mx-auto">
           {/* Header */}
           <div className="text-center mb-12">
@@ -154,7 +153,7 @@ export default function HomePage() {
       </section>
 
       {/* Why Choose Section */}
-      <section className="relative py-20 overflow-hidden bg-slate-25">
+      <section className="relative py-20 overflow-hidden bg-slate-100">
         {/* Primary Background Pattern */}
         <div className="absolute inset-0 bg-gradient-to-br from-slate-50/30 via-white to-slate-100/20"></div>
 
@@ -304,11 +303,6 @@ export default function HomePage() {
       {/* <section className="bg-slate-50">
         <Locations />
       </section> */}
-
-
-
-      
-
     </div>
   );
 }
