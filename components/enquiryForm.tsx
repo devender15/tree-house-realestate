@@ -40,7 +40,7 @@ export default function EnquiryForm() {
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
-    if (error) setError(null); // Clear error when user starts typing
+    if (error) setError(null); 
   };
 
   const validateForm = () => {
