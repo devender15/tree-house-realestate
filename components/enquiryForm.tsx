@@ -40,7 +40,7 @@ export default function EnquiryForm() {
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
-    if (error) setError(null); 
+    if (error) setError(null);
   };
 
   const validateForm = () => {
@@ -135,18 +135,6 @@ export default function EnquiryForm() {
   return (
     <Card className="border-0 bg-white/80 backdrop-blur-xl">
       <CardContent className="p-6 md:p-8">
-        {/* Header */}
-        <div className="text-center mb-8">
-          <h2 className="text-3xl md:text-4xl font-light text-slate-900 mb-4">
-            Get In <span className="font-semibold">Touch</span>
-          </h2>
-          <div className="w-16 h-0.5 bg-gradient-to-r from-slate-600 to-slate-700 mx-auto mb-6"></div>
-          <p className="text-slate-600 text-lg font-light">
-            Share your vision with us and let's create something extraordinary
-            together.
-          </p>
-        </div>
-
         {/* Error Message */}
         {error && (
           <div className="mb-8 p-4 bg-red-50 border border-red-100 rounded-2xl flex items-start gap-3">
@@ -258,7 +246,7 @@ export default function EnquiryForm() {
             <Textarea
               id="message"
               name="message"
-              placeholder="Tell us about your project requirements, timeline, or any specific questions you have..."
+              placeholder="How we can help"
               value={formData.message}
               onChange={handleChange}
               disabled={loading}
@@ -284,13 +272,6 @@ export default function EnquiryForm() {
               </div>
             )}
           </Button>
-
-          {/* Privacy Note */}
-          <p className="text-center text-sm text-slate-500 mt-6">
-            By submitting this form, you agree to our privacy policy.
-            <br className="hidden sm:inline" />
-            We'll never share your information with third parties.
-          </p>
         </form>
       </CardContent>
     </Card>

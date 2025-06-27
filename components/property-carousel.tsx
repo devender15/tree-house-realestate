@@ -64,15 +64,15 @@ export function PropertyCarousel() {
   }, [activeTab, emblaApi]);
 
   return (
-    <section className="w-full py-16 px-4 sm:px-6 lg:px-8 lg:py-24 bg-white overflow-hidden ">
+    <section className="w-full py-16 px-4 sm:px-6 lg:px-8 lg:py-24 lg:h-screen bg-white overflow-hidden">
       <div className="w-full max-w-none mx-auto">
         {/* Header */}
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6 mb-12 max-w-7xl mx-auto">
-          <div className="space-y-3">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 tracking-tight">
+          <div className="space-y-3  ">
+            <h2 className="text-3xl leading-8 sm:text-4xl lg:text-5xl font-bold text-slate-800 tracking-tight">
               New Launches
             </h2>
-            <p className="text-lg text-gray-600 font-medium">
+            <p className="text-lg text-slate-600 font-medium">
               Discover our latest premium properties
             </p>
           </div>
@@ -116,7 +116,7 @@ export function PropertyCarousel() {
                   key={property.id}
                   className="flex-shrink-0 w-full min-w-[320px] sm:min-w-0 sm:w-1/2 lg:w-1/3"
                 >
-                  <div className="group bg-white rounded-xl overflow-hidden border border-gray-200 hover:shadow-xl hover:shadow-gray-200/50 transition-all duration-300 cursor-pointer">
+                  <div className="group bg-white rounded-xl overflow-hidden border-2 border-orange-200/50 hover:shadow-xl hover:shadow-gray-200/50 transition-all duration-300 cursor-pointer">
                     {/* Image Container */}
                     <div className="relative h-72 overflow-hidden">
                       <Image

@@ -76,9 +76,9 @@ const ResidentialProperty = () => {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }} 
-            animate={{ opacity: 1, y: 0 }} 
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
             <div className="inline-flex items-center gap-3 mb-8 px-6 py-3 bg-white/80 backdrop-blur-sm rounded-full border border-slate-200/80 shadow-sm">
@@ -101,14 +101,15 @@ const ResidentialProperty = () => {
             </div>
 
             <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed font-medium">
-              Premium residential spaces designed for comfortable living and long-term value
+              Premium residential spaces designed for comfortable living and
+              long-term value
             </p>
           </motion.div>
         </div>
 
         {/* Property Grid */}
         {residentData.length > 0 ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10 items-stretch">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-5 items-stretch">
             {residentData.map((property, index) => (
               <AnimatedCard key={property.id} index={index}>
                 <div className="h-full">
@@ -134,14 +135,18 @@ const ResidentialProperty = () => {
               <div className="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Home className="w-8 h-8 text-slate-500" />
               </div>
-              <h3 className="text-2xl font-bold text-slate-800 mb-4">No Residential Properties Available</h3>
+              <h3 className="text-2xl font-bold text-slate-800 mb-4">
+                No Residential Properties Available
+              </h3>
               <p className="text-slate-600 text-lg leading-relaxed">
-                We're currently updating our residential property portfolio. Please check back soon for premium living
-                spaces.
+                We're currently updating our residential property portfolio.
+                Please check back soon for premium living spaces.
               </p>
               <div className="flex items-center justify-center gap-2 mt-6">
                 <Award className="w-4 h-4 text-slate-500" />
-                <span className="text-sm text-slate-500 font-medium">Luxury homes coming soon</span>
+                <span className="text-sm text-slate-500 font-medium">
+                  Luxury homes coming soon
+                </span>
               </div>
             </div>
           </motion.div>

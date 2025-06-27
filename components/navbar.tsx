@@ -85,20 +85,20 @@ export default function Navbar() {
 
       {/* Main Navbar */}
       <header
-        className={`sticky top-0 z-50 w-full transition-all ${
-          scrolled ? "shadow-md backdrop-blur bg-slate-900/90" : "bg-white"
+        className={`sticky top-0 z-50 py-2 w-full transition-all  ${
+          scrolled ? "shadow-md backdrop-blur bg-slate-900" : "bg-white"
         }`}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+        <div className=" mx-30 px-4 sm:px-6 h-16 flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 z-10">
-            <div className="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center">
+            <div className="w-20 h-20 flex items-center justify-center">
               <Image
                 src="/assets/logo.png"
                 alt="Tree House Real Estate"
                 width={40}
                 height={40}
-                className="rounded"
+                className="rounded w-full h-full "
               />
             </div>
           </Link>
@@ -109,7 +109,7 @@ export default function Navbar() {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`px-4 py-2 text-sm font-medium transition ${
+                className={`px-4 py-4 text-lg font-medium transition ${
                   scrolled
                     ? "text-slate-300 hover:text-white"
                     : "text-slate-700 hover:text-slate-900"
@@ -124,7 +124,7 @@ export default function Navbar() {
           <div className="flex items-center gap-4">
             <Link
               href="/enquiry"
-              className="hidden sm:block bg-orange-600 text-white px-6 py-2 text-sm font-medium rounded-md hover:bg-orange-700 transition"
+              className="hidden sm:block bg-orange-600 text-white px-6 py-3 text-md font-semibold rounded-full hover:bg-orange-700 transition"
             >
               Enquire Now
             </Link>

@@ -75,10 +75,16 @@ const Plots = () => {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
             <div className="inline-flex items-center gap-3 mb-8 px-6 py-3 bg-white/80 backdrop-blur-sm rounded-full border border-slate-200/80 shadow-sm">
               <MapPin className="w-5 h-5 text-slate-600" />
-              <span className="text-slate-700 text-sm font-semibold tracking-wider uppercase">Land & Development</span>
+              <span className="text-slate-700 text-sm font-semibold tracking-wider uppercase">
+                Land & Development
+              </span>
               <Compass className="w-4 h-4 text-slate-500" />
             </div>
 
@@ -94,15 +100,15 @@ const Plots = () => {
             </div>
 
             <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed font-medium">
-              Prime land opportunities and development plots strategically positioned for maximum investment potential
-              and future growth
+              Prime land opportunities and development plots strategically
+              positioned for maximum investment potential and future growth
             </p>
           </motion.div>
         </div>
 
         {/* Property Grid */}
         {plotsData.length > 0 ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10 items-stretch">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-5 items-stretch">
             {plotsData.map((property, index) => (
               <AnimatedCard key={property.id} index={index}>
                 <div className="h-full">
@@ -128,21 +134,26 @@ const Plots = () => {
               <div className="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center mx-auto mb-6">
                 <MapPin className="w-8 h-8 text-slate-500" />
               </div>
-              <h3 className="text-2xl font-bold text-slate-800 mb-4">No Plots Available Currently</h3>
+              <h3 className="text-2xl font-bold text-slate-800 mb-4">
+                No Plots Available Currently
+              </h3>
               <p className="text-slate-600 text-lg leading-relaxed">
-                We're actively sourcing premium land and development opportunities. Our team is working to bring you the
-                best plots and land investments in prime locations.
+                We're actively sourcing premium land and development
+                opportunities. Our team is working to bring you the best plots
+                and land investments in prime locations.
               </p>
               <div className="flex items-center justify-center gap-2 mt-6">
                 <Award className="w-4 h-4 text-slate-500" />
-                <span className="text-sm text-slate-500 font-medium">Prime locations coming soon</span>
+                <span className="text-sm text-slate-500 font-medium">
+                  Prime locations coming soon
+                </span>
               </div>
             </div>
           </motion.div>
         )}
       </div>
     </section>
-  )
+  );
 }
 
 export default Plots

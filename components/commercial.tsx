@@ -103,7 +103,7 @@ const Commercial = () => {
 
         {/* Property Grid */}
         {commercialData.length > 0 ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10 items-stretch">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-5 items-stretch">
             {commercialData.map((property, index) => (
               <AnimatedCard key={property.id} index={index}>
                 <div className="h-full">
