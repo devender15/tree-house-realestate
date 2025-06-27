@@ -94,7 +94,7 @@ const Owned = () => {
         </div>
 
         {/* Property Grid - Improved Alignment */}
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 lg:gap-10 items-stretch">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3 lg:gap-5 items-stretch">
           {ourProperties.map((property, index) => (
             <AnimatedCard key={property.id} index={index}>
               <div className="group relative bg-white/90 backdrop-blur-sm rounded-2xl overflow-hidden border border-slate-200/60 hover:border-slate-300/80 transition-all duration-500 hover:shadow-2xl hover:shadow-slate-200/50 flex flex-col h-full">

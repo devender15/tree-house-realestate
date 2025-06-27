@@ -19,6 +19,7 @@ const containerVariants = {
   },
 };
 
+
 const itemVariants = {
   hidden: { y: 30, opacity: 0 },
   visible: {
@@ -85,8 +86,6 @@ const features = [
   },
 ];
 
-
-
 export default function HomePage() {
   return (
     <div className="">
@@ -96,8 +95,8 @@ export default function HomePage() {
       </section>
 
       {/* featured properties */}
-      <section className="px-6 py-16 bg-white md:px-12 lg:px-20">
-        <div className="max-w-7xl mx-auto">
+      <section className="px-6 py-16 lg:h-screen bg-white md:px-12 lg:px-20">
+        <div className="max-w-7xl mx-auto lg:mt-10">
           {/* Header */}
           <div className="text-center mb-12">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-light text-slate-800 tracking-tight">
@@ -107,7 +106,7 @@ export default function HomePage() {
           </div>
 
           {/* Properties Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-5">
             {featured?.map((item, idx) => (
               <Link
                 href={item.link}
@@ -148,161 +147,176 @@ export default function HomePage() {
       <ExclusiveBanner />
 
       {/* Property Carousel */}
-      <section className="">
+      <section>
         <PropertyCarousel />
       </section>
 
       {/* Why Choose Section */}
-      <section className="relative py-20 overflow-hidden bg-slate-100">
-        {/* Primary Background Pattern */}
-        <div className="absolute inset-0 bg-gradient-to-br from-slate-50/30 via-white to-slate-100/20"></div>
-
-        {/* Hexagonal Pattern */}
-        <div
-          className="absolute inset-0 opacity-[0.015]"
-          style={{
-            backgroundImage: `
-            radial-gradient(circle at 50% 50%, #64748b 1.5px, transparent 1.5px),
-            radial-gradient(circle at 0% 50%, #64748b 1px, transparent 1px),
-            radial-gradient(circle at 100% 50%, #64748b 1px, transparent 1px)
-          `,
-            backgroundSize: "120px 104px, 120px 104px, 120px 104px",
-            backgroundPosition: "0 0, 60px 52px, -60px 52px",
-          }}
-        ></div>
-
-        {/* Subtle Grid Lines */}
-        <div
-          className="absolute inset-0 opacity-[0.008]"
-          style={{
-            backgroundImage: `
-            linear-gradient(rgba(100, 116, 139, 0.3) 0.5px, transparent 0.5px),
-            linear-gradient(90deg, rgba(100, 116, 139, 0.3) 0.5px, transparent 0.5px)
-          `,
-            backgroundSize: "100px 100px",
-          }}
-        ></div>
-
-        {/* Organic Shapes */}
-        <div className="absolute top-10 left-[10%] w-96 h-96 bg-gradient-to-br from-slate-100/10 to-slate-200/5 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-10 right-[15%] w-80 h-80 bg-gradient-to-br from-slate-200/8 to-slate-300/4 rounded-full blur-3xl"></div>
-        <div className="absolute top-1/3 right-[10%] w-64 h-64 bg-gradient-to-br from-slate-150/6 to-slate-200/3 rounded-full blur-2xl"></div>
-
-        {/* Orange Accent Shapes - Very Subtle */}
-        <div className="absolute top-1/4 left-[20%] w-32 h-32 bg-gradient-to-br from-orange-100/8 to-orange-200/4 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-1/3 right-[25%] w-40 h-40 bg-gradient-to-br from-orange-50/6 to-orange-100/3 rounded-full blur-3xl"></div>
-
-        {/* Diagonal Pattern Overlay */}
-        <div
-          className="absolute inset-0 opacity-[0.003]"
-          style={{
-            backgroundImage: `
-            repeating-linear-gradient(
-              45deg,
-              transparent,
-              transparent 40px,
-              rgba(100, 116, 139, 0.1) 40px,
-              rgba(100, 116, 139, 0.1) 41px
-            )
-          `,
-          }}
-        ></div>
-
-        <div className="relative mx-auto px-6 sm:px-8 lg:px-16 xl:px-24 2xl:px-32">
+      <section className="relative py-20 overflow-hidden bg-white">
+        <div className="relative mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           {/* Header */}
-          <motion.div
-            className="text-center mb-16"
-            initial="hidden"
-            whileInView="visible"
-            variants={fadeInUp}
-            viewport={{ once: true, margin: "-50px" }}
-          >
-            <h2 className="text-3xl md:text-4xl font-light text-slate-700 mb-4 tracking-tight">
-              Why Choose Us
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-4 tracking-tight">
+              Why Choose Tree House Realty
             </h2>
-            <div className="relative w-16 h-0.5 mx-auto mt-6">
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-slate-300 to-transparent"></div>
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-orange-400/30 to-transparent"></div>
-            </div>
-          </motion.div>
+            <div className="relative w-24 h-1 mx-auto mt-6 bg-gradient-to-r from-green-600 to-amber-500 rounded-full"></div>
+            <p className="mt-6 max-w-2xl mx-auto text-lg text-slate-600">
+              Our commitment to excellence sets us apart in the real estate
+              industry
+            </p>
+          </div>
 
           {/* Features Grid */}
-          <motion.div
-            className="grid gap-8 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 max-w-6xl mx-auto"
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-50px" }}
-          >
-            {features.map((feature, index) => {
-              const IconComponent = feature.icon;
-              return (
-                <motion.div
-                  key={index}
-                  className="group text-center relative"
-                  variants={itemVariants}
-                  whileHover={{ y: -8 }}
-                  transition={{ duration: 0.3, ease: "easeOut" }}
-                >
-                  {/* Card Background with Subtle Pattern */}
-                  <div className="absolute inset-0 bg-white/40 backdrop-blur-sm rounded-2xl border border-slate-200/20 shadow-sm group-hover:shadow-lg group-hover:bg-white/60 group-hover:border-orange-200/20 transition-all duration-300"></div>
-
-                  {/* Card Pattern */}
-                  <div
-                    className="absolute inset-0 rounded-2xl opacity-[0.01] group-hover:opacity-[0.02] transition-opacity duration-300"
-                    style={{
-                      backgroundImage: `
-                      radial-gradient(circle at 25% 25%, #64748b 0.8px, transparent 0.8px),
-                      radial-gradient(circle at 75% 75%, #64748b 0.5px, transparent 0.5px)
-                    `,
-                      backgroundSize: "30px 30px, 20px 20px",
-                      backgroundPosition: "0 0, 15px 15px",
-                    }}
-                  ></div>
-
-                  <div className="relative p-8">
-                    {/* Icon Container */}
-                    <div className="relative w-16 h-16 mx-auto mb-6">
-                      {/* Icon Background */}
-                      <div className="absolute inset-0 bg-gradient-to-br from-white/80 to-slate-50/60 rounded-full shadow-sm group-hover:shadow-md transition-all duration-300"></div>
-
-                      {/* Orange Accent Ring - Only on Hover */}
-                      <div className="absolute inset-0 rounded-full border-2 border-transparent group-hover:border-orange-200/40 transition-colors duration-300"></div>
-
-                      {/* Icon */}
-                      <div className="absolute inset-0 flex items-center justify-center">
-                        <IconComponent className="w-7 h-7 text-slate-600 group-hover:text-slate-700 transition-colors duration-300" />
-                      </div>
-
-                      {/* Subtle Orange Glow on Hover */}
-                      <div className="absolute inset-0 bg-gradient-to-br from-orange-100/0 to-orange-200/0 group-hover:from-orange-100/10 group-hover:to-orange-200/5 rounded-full transition-all duration-300"></div>
-                    </div>
-
-                    {/* Content */}
-                    <h3 className="text-xl font-medium mb-4 text-slate-700 group-hover:text-slate-800 transition-colors duration-300">
-                      {feature.title}
-                    </h3>
-                    <p className="text-slate-500 leading-relaxed text-sm group-hover:text-slate-600 transition-colors duration-300">
-                      {feature.description}
-                    </p>
+          <div className="grid gap-8 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-4">
+            {/* Trusted Expertise */}
+            <div className="group text-center relative bg-white rounded-xl border border-green-200 shadow-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-2">
+              <div className="relative p-8">
+                <div className="relative w-16 h-16 mx-auto mb-6">
+                  <div className="absolute inset-0 bg-green-50 rounded-xl group-hover:bg-gradient-to-br group-hover:from-green-500 group-hover:to-green-600 transition-all duration-300"></div>
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <svg
+                      className="w-7 h-7 text-green-500 group-hover:text-white transition-colors duration-300"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                      />
+                    </svg>
                   </div>
+                </div>
+                <h3 className="text-xl font-bold mb-4 text-slate-800 group-hover:text-green-700 transition-colors duration-300">
+                  Trusted Expertise
+                </h3>
+                <p className="text-slate-600 leading-relaxed text-base mb-6">
+                  Decades of combined experience with proven track record of
+                  successful transactions.
+                </p>
+              </div>
+            </div>
 
-                  {/* Top Accent Line */}
-                  <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-8 h-0.5 bg-gradient-to-r from-transparent via-slate-300 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full"></div>
+            {/* Professional Excellence */}
+            <div className="group text-center relative bg-white rounded-xl border border-blue-200 shadow-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-2">
+              <div className="relative p-8">
+                <div className="relative w-16 h-16 mx-auto mb-6">
+                  <div className="absolute inset-0 bg-blue-50 rounded-xl group-hover:bg-gradient-to-br group-hover:from-blue-500 group-hover:to-blue-600 transition-all duration-300"></div>
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <svg
+                      className="w-7 h-7 text-blue-500 group-hover:text-white transition-colors duration-300"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <h3 className="text-xl font-bold mb-4 text-slate-800 group-hover:text-blue-700 transition-colors duration-300">
+                  Professional Excellence
+                </h3>
+                <p className="text-slate-600 leading-relaxed text-base mb-6">
+                  Industry-leading standards in service delivery and client
+                  relationship management.
+                </p>
+              </div>
+            </div>
 
-                  {/* Orange Accent Dot */}
-                  <div className="absolute top-2 right-2 w-1 h-1 bg-orange-400/0 group-hover:bg-orange-400/60 rounded-full transition-colors duration-300"></div>
-                </motion.div>
-              );
-            })}
-          </motion.div>
+            {/* Client-Centric Approach */}
+            <div className="group text-center relative bg-white rounded-xl border border-orange-200 shadow-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-2">
+              <div className="relative p-8">
+                <div className="relative w-16 h-16 mx-auto mb-6">
+                  <div className="absolute inset-0 bg-amber-50 rounded-xl group-hover:bg-gradient-to-br group-hover:from-amber-500 group-hover:to-amber-600 transition-all duration-300"></div>
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <svg
+                      className="w-7 h-7 text-amber-500 group-hover:text-white transition-colors duration-300"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <h3 className="text-xl font-bold mb-4 text-slate-800 group-hover:text-amber-700 transition-colors duration-300">
+                  Client-Centric Approach
+                </h3>
+                <p className="text-slate-600 leading-relaxed text-base mb-6">
+                  Personalized service tailored to your specific needs and
+                  investment objectives.
+                </p>
+              </div>
+            </div>
+
+            {/* Market Intelligence */}
+            <div className="group text-center relative bg-white rounded-xl border border-purple-200 shadow-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-2">
+              <div className="relative p-8">
+                <div className="relative w-16 h-16 mx-auto mb-6">
+                  <div className="absolute inset-0 bg-purple-50 rounded-xl group-hover:bg-gradient-to-br group-hover:from-purple-500 group-hover:to-purple-600 transition-all duration-300"></div>
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <svg
+                      className="w-7 h-7 text-purple-500 group-hover:text-white transition-colors duration-300"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <h3 className="text-xl font-bold mb-4 text-slate-800 group-hover:text-purple-700 transition-colors duration-300">
+                  Market Intelligence
+                </h3>
+                <p className="text-slate-600 leading-relaxed text-base mb-6">
+                  Advanced research and analytics to ensure optimal investment
+                  decisions.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* CTA Section */}
+          <div className="mt-16 pt-8 border-t border-slate-200">
+            <div className="max-w-4xl mx-auto text-center">
+              <h3 className="text-2xl font-bold text-orange-500 mb-6">
+                Partner With Excellence
+              </h3>
+              <p className="text-lg text-slate-600 mb-8">
+                At Tree House Realty, we understand that real estate represents
+                more than transactions—it's about building futures, creating
+                opportunities, and establishing lasting value.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* Locations */}
-      {/* <section className="bg-slate-50">
-        <Locations />
-      </section> */}
+      
+      
+
+      
     </div>
   );
 }
