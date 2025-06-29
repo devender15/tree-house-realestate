@@ -1,147 +1,126 @@
-"use client";
-import EnquiryForm from "@/components/enquiryForm";
-import { useEffect, useRef } from "react";
+"use client"
+
+import EnquiryForm from "@/components/enquiryForm"
+import { motion } from "framer-motion"
+import { Phone, Mail, Building2, Leaf } from "lucide-react"
 
 export default function EnquiryPage() {
-  const canvasRef = useRef(null);
-
-  useEffect(() => {
-    const canvas = canvasRef.current;
-    if (!canvas) return;
-
-    const ctx = canvas.getContext("2d");
-    let animationFrameId;
-
-    const resizeCanvas = () => {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
-    };
-
-    resizeCanvas();
-    window.addEventListener("resize", resizeCanvas);
-
-    // Subtle floating orbs
-    const orbs = [];
-    const orbCount = 8;
-
-    class Orb {
-      constructor() {
-        this.x = Math.random() * canvas.width;
-        this.y = Math.random() * canvas.height;
-        this.size = Math.random() * 60 + 40;
-        this.speedX = (Math.random() - 0.5) * 0.5;
-        this.speedY = (Math.random() - 0.5) * 0.5;
-        this.opacity = Math.random() * 0.1 + 0.05;
-      }
-
-      update() {
-        this.x += this.speedX;
-        this.y += this.speedY;
-
-        if (this.x > canvas.width + this.size || this.x < -this.size)
-          this.speedX *= -1;
-        if (this.y > canvas.height + this.size || this.y < -this.size)
-          this.speedY *= -1;
-      }
-
-      draw() {
-        const gradient = ctx.createRadialGradient(
-          this.x,
-          this.y,
-          0,
-          this.x,
-          this.y,
-          this.size
-        );
-        gradient.addColorStop(0, `rgba(100, 116, 139, ${this.opacity})`);
-        gradient.addColorStop(1, "rgba(100, 116, 139, 0)");
-
-        ctx.fillStyle = gradient;
-        ctx.beginPath();
-        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-        ctx.fill();
-      }
-    }
-
-    for (let i = 0; i < orbCount; i++) {
-      orbs.push(new Orb());
-    }
-
-    const animate = () => {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      orbs.forEach((orb) => {
-        orb.update();
-        orb.draw();
-      });
-      animationFrameId = requestAnimationFrame(animate);
-    };
-
-    animate();
-
-    return () => {
-      window.removeEventListener("resize", resizeCanvas);
-      cancelAnimationFrame(animationFrameId);
-    };
-  }, []);
-
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-100/30 to-slate-200/20 relative overflow-hidden">
-      {/* Subtle animated background */}
-      <canvas ref={canvasRef} className="absolute inset-0 w-full h-full" />
+    <div className="py-10 md:py-20 flex flex-col items-center justify-center bg-gradient-to-br from-emerald-50 via-white to-teal-50 relative overflow-hidden">
+      {/* Decorative elements */}
+      <div className="absolute top-0 left-0 w-full h-full">
+        <div className="absolute top-20 left-20 w-32 h-32 rounded-full bg-emerald-200/20 blur-2xl" />
+        <div className="absolute bottom-32 right-16 w-48 h-48 rounded-full bg-teal-200/20 blur-3xl" />
+        <div className="absolute top-1/2 left-1/4 w-24 h-24 rounded-full bg-green-200/15 blur-xl" />
+      </div>
 
-      {/* Grid pattern overlay */}
-      <div className="absolute inset-0 bg-[linear-gradient(rgba(0,0,0,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.02)_1px,transparent_1px)] bg-[size:64px_64px]" />
+      {/* Subtle pattern overlay */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,rgba(16,185,129,0.05)_1px,transparent_0)] bg-[size:32px_32px]" />
 
-      <div className="relative z-10 min-h-screen flex flex-col">
-        {/* Header */}
-        <header className="pt-8 pb-16 px-4 text-center">
-          <div className="max-w-4xl mx-auto">
-            <div className="inline-flex items-center gap-2 mb-6">
-              <div className="w-8 h-8 bg-gradient-to-br from-slate-600 to-slate-700 rounded-lg flex items-center justify-center">
-                <svg
-                  className="w-5 h-5 text-white"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.84L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.84l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z" />
-                </svg>
+      <div className="relative z-10 container mx-auto px-4 py-8 lg:py-16">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center max-w-7xl mx-auto">
+          {/* Left Panel - Contact Information */}
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            className="space-y-8"
+          >
+            {/* Header */}
+            <div className="space-y-4">
+              <div className="flex items-center gap-3">
+                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center shadow-lg">
+                  <Leaf className="text-white w-6 h-6" />
+                </div>
+                <div>
+                  <h1 className="text-2xl font-bold text-gray-800">Tree House Realty</h1>
+                  <p className="text-sm text-emerald-600 font-medium">Construction Pvt Ltd</p>
+                </div>
               </div>
-              <span className="text-2xl font-bold bg-gradient-to-r from-slate-800 to-slate-600 bg-clip-text text-transparent">
-                Tree House
-              </span>
+
+              <div className="space-y-2">
+                <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+                  Let's Build Your
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-teal-600">
+                    {" "}
+                    Dream
+                  </span>
+                </h2>
+                <p className="text-lg text-gray-600 max-w-md">
+                  Connect with us for premium farmland, construction, and real estate solutions.
+                </p>
+              </div>
             </div>
 
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-light text-slate-900 mb-6 tracking-tight">
-              Let's Build Your
-              <span className="block font-semibold bg-gradient-to-r from-slate-700 to-slate-800 bg-clip-text text-transparent">
-                Dream Space
-              </span>
-            </h1>
+            {/* Contact Cards */}
+            <div className="space-y-4">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                className="group"
+              >
+                <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-6 border border-emerald-100 hover:border-emerald-200 transition-all duration-300 hover:shadow-lg">
+                  <div className="flex items-center gap-4">
+                    <div className="w-12 h-12 rounded-xl bg-emerald-100 flex items-center justify-center group-hover:bg-emerald-200 transition-colors">
+                      <Phone className="text-emerald-600 w-5 h-5" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-gray-800 mb-1">Call Us</h3>
+                      <p className="text-gray-600 font-medium">+91-9811098193</p>
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
 
-            <p className="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto font-light leading-relaxed">
-              Premium properties designed for modern living.
-              <span className="text-slate-800 font-medium">
-                Start your journey with us today.
-              </span>
-            </p>
-          </div>
-        </header>
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+                className="group"
+              >
+                <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-6 border border-emerald-100 hover:border-emerald-200 transition-all duration-300 hover:shadow-lg">
+                  <div className="flex items-center gap-4">
+                    <div className="w-12 h-12 rounded-xl bg-teal-100 flex items-center justify-center group-hover:bg-teal-200 transition-colors">
+                      <Mail className="text-teal-600 w-5 h-5" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-gray-800 mb-1">Email Us</h3>
+                      <p className="text-gray-600 font-medium">Treehousefarmland@gmail.com</p>
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
 
-        {/* Main Content */}
-        <main className="flex-1 flex items-center justify-center px-4 py-16">
-          <div className="w-full max-w-lg">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.4 }}
+                className="group"
+              >
+                <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-6 border border-emerald-100 hover:border-emerald-200 transition-all duration-300 hover:shadow-lg">
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 rounded-xl bg-green-100 flex items-center justify-center group-hover:bg-green-200 transition-colors flex-shrink-0">
+                      <Building2 className="text-green-600 w-5 h-5" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-gray-800 mb-1">Visit Us</h3>
+                      <p className="text-gray-600 font-medium leading-relaxed">
+                        905 DLF Corporate Tower-1
+                        <br />
+                        Sector 74, Gurgaon
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
+            </div>
+          </motion.div>
+          <div className="lg:pl-8">
             <EnquiryForm />
           </div>
-        </main>
-
-        {/* Footer */}
-        <footer className="py-8 px-4 text-center border-t border-slate-200/50 bg-white/30 backdrop-blur-sm">
-          <p className="text-sm text-slate-500">
-            © {new Date().getFullYear()} Tree House Properties. Crafted with
-            precision.
-          </p>
-        </footer>
+        </div>
       </div>
     </div>
-  );
+  )
 }

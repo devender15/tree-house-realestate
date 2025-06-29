@@ -52,44 +52,13 @@ export default function Navbar() {
 
   return (
     <>
-      {/* Top Bar */}
-      <div className="hidden sm:block bg-slate-50 border-b border-slate-200 text-slate-600 text-sm py-3 px-4">
-        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-3 sm:gap-0">
-          <div className="flex items-center gap-6">
-            <a
-              href="https://wa.me/+919811098193"
-              className="flex items-center gap-2 hover:text-slate-900 transition"
-            >
-              <Phone size={16} />
-              <span className="font-medium">+91 9811098193</span>
-            </a>
-            <a
-              href="mailto:info@treehouserealty.com"
-              className="flex items-center gap-2 hover:text-slate-900 transition"
-            >
-              <Mail size={16} />
-              <span className="font-medium">Treehousefarmland@gmail.com</span>
-            </a>
-          </div>
-          <div className="flex items-center gap-4">
-            <span className="hidden md:block font-medium">Follow us:</span>
-            <a
-              href="#"
-              className="w-8 h-8 rounded-full bg-slate-200 flex items-center justify-center hover:bg-slate-300 transition"
-            >
-              <Instagram size={16} />
-            </a>
-          </div>
-        </div>
-      </div>
-
       {/* Main Navbar */}
       <header
-        className={`sticky top-0 z-50 py-2 w-full transition-all  ${
-          scrolled ? "shadow-md backdrop-blur bg-slate-900" : "bg-white"
+        className={`sticky top-0 z-50 py-2 w-full transition-all overflow-hidden  ${
+          scrolled ? "shadow-md  bg-slate-900" : "bg-white"
         }`}
       >
-        <div className=" mx-30 px-4 sm:px-6 h-16 flex items-center justify-between">
+        <div className=" px-4 sm:px-6 lg:px-10 xl:px-20 h-16 flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 z-10">
             <div className="w-20 h-20 flex items-center justify-center">
@@ -124,7 +93,7 @@ export default function Navbar() {
           <div className="flex items-center gap-4">
             <Link
               href="/enquiry"
-              className="hidden sm:block bg-orange-600 text-white px-6 py-3 text-md font-semibold rounded-full hover:bg-orange-700 transition"
+              className="hidden lg:block bg-orange-600 text-white px-6 py-3 text-md font-semibold rounded-full hover:bg-orange-700 transition"
             >
               Enquire Now
             </Link>
