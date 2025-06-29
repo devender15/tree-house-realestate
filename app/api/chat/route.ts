@@ -195,7 +195,7 @@ Assistant Answer:
     }
 
     // --- 3. Vector search fallback (unchanged) ---
-    const results = await vectorStore.similar"use client";
+    const results = await vectorStore.similaritySearch(message, 15);
 
 import type React from "react";
 import { useRef, useState } from "react";

@@ -4,7 +4,6 @@ import {
   Crown,
   ArrowRight,
   Home,
-  MessageCircle,
   Mail,
   Phone,
   MapPin,
