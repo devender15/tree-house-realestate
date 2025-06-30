@@ -1,11 +1,12 @@
 "use client";
 import { Award, Star, Users, TrendingUp } from "lucide-react";
-import { motion } from "framer-motion";
 import { PropertyCarousel } from "@/components/property-carousel";
 import { HeroSection } from "@/components/heroSection";
 import ExclusiveBanner from "@/components/exclusive-banner";
 import Image from "next/image";
 import Link from "next/link";
+import EnquiryForm from "@/components/enquiryForm";
+
 
 // Animation variants
 const containerVariants = {
@@ -18,7 +19,6 @@ const containerVariants = {
     },
   },
 };
-
 
 const itemVariants = {
   hidden: { y: 30, opacity: 0 },
@@ -151,26 +151,33 @@ export default function HomePage() {
         <PropertyCarousel />
       </section>
 
-      {/* Why Choose Section */}
-      <section className="relative py-20 overflow-hidden bg-white">
-        <div className="relative mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+      {/* === Parallax “Why Choose Us” Section === */}
+      <section
+        className="w-full relative bg-cover bg-center bg-fixed py-20"
+        style={{ backgroundImage: `url('/assets/chooseUs_bg.png')` }}
+      >
+        {/* dark overlay */}
+        <div className="absolute inset-0 bg-black/60"></div>
+
+        <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           {/* Header */}
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-4 tracking-tight">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 tracking-tight">
               Why Choose Tree House Realty
             </h2>
-            <div className="relative w-24 h-1 mx-auto mt-6 bg-gradient-to-r from-green-600 to-amber-500 rounded-full"></div>
-            <p className="mt-6 max-w-2xl mx-auto text-lg text-slate-600">
+            <div className="mx-auto mb-6 w-24 h-1 bg-gradient-to-r from-green-600 to-amber-500 rounded-full"></div>
+            <p className="mt-4 max-w-2xl mx-auto text-lg text-gray-200">
               Our commitment to excellence sets us apart in the real estate
-              industry
+              industry. We build futures, create opportunities, and deliver
+              lasting value for every client.
             </p>
           </div>
 
           {/* Features Grid */}
           <div className="grid gap-8 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-4">
             {/* Trusted Expertise */}
-            <div className="group text-center relative bg-white rounded-xl border border-green-200 shadow-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-2">
-              <div className="relative p-8">
+            <div className="group text-center relative bg-green-50 rounded-xl border border-green-200 shadow-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-2">
+              <div className="p-8">
                 <div className="relative w-16 h-16 mx-auto mb-6">
                   <div className="absolute inset-0 bg-green-50 rounded-xl group-hover:bg-gradient-to-br group-hover:from-green-500 group-hover:to-green-600 transition-all duration-300"></div>
                   <div className="absolute inset-0 flex items-center justify-center">
@@ -179,7 +186,6 @@ export default function HomePage() {
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
                         strokeLinecap="round"
@@ -194,15 +200,15 @@ export default function HomePage() {
                   Trusted Expertise
                 </h3>
                 <p className="text-slate-600 leading-relaxed text-base mb-6">
-                  Decades of combined experience with proven track record of
+                  Decades of combined experience with a proven track record of
                   successful transactions.
                 </p>
               </div>
             </div>
 
             {/* Professional Excellence */}
-            <div className="group text-center relative bg-white rounded-xl border border-blue-200 shadow-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-2">
-              <div className="relative p-8">
+            <div className="group text-center relative bg-blue-50 rounded-xl border border-blue-200 shadow-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-2">
+              <div className="p-8">
                 <div className="relative w-16 h-16 mx-auto mb-6">
                   <div className="absolute inset-0 bg-blue-50 rounded-xl group-hover:bg-gradient-to-br group-hover:from-blue-500 group-hover:to-blue-600 transition-all duration-300"></div>
                   <div className="absolute inset-0 flex items-center justify-center">
@@ -211,7 +217,6 @@ export default function HomePage() {
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
                         strokeLinecap="round"
@@ -233,8 +238,8 @@ export default function HomePage() {
             </div>
 
             {/* Client-Centric Approach */}
-            <div className="group text-center relative bg-white rounded-xl border border-orange-200 shadow-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-2">
-              <div className="relative p-8">
+            <div className="group text-center relative bg-orange-50 rounded-xl border border-orange-200 shadow-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-2">
+              <div className="p-8">
                 <div className="relative w-16 h-16 mx-auto mb-6">
                   <div className="absolute inset-0 bg-amber-50 rounded-xl group-hover:bg-gradient-to-br group-hover:from-amber-500 group-hover:to-amber-600 transition-all duration-300"></div>
                   <div className="absolute inset-0 flex items-center justify-center">
@@ -243,7 +248,6 @@ export default function HomePage() {
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
                         strokeLinecap="round"
@@ -265,8 +269,8 @@ export default function HomePage() {
             </div>
 
             {/* Market Intelligence */}
-            <div className="group text-center relative bg-white rounded-xl border border-purple-200 shadow-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-2">
-              <div className="relative p-8">
+            <div className="group text-center relative bg-purple-50 rounded-xl border border-purple-200 shadow-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-2">
+              <div className="p-8">
                 <div className="relative w-16 h-16 mx-auto mb-6">
                   <div className="absolute inset-0 bg-purple-50 rounded-xl group-hover:bg-gradient-to-br group-hover:from-purple-500 group-hover:to-purple-600 transition-all duration-300"></div>
                   <div className="absolute inset-0 flex items-center justify-center">
@@ -275,7 +279,6 @@ export default function HomePage() {
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
                         strokeLinecap="round"
@@ -297,13 +300,12 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* CTA Section */}
           <div className="mt-16 pt-8 border-t border-slate-200">
             <div className="max-w-4xl mx-auto text-center">
               <h3 className="text-2xl font-bold text-orange-500 mb-6">
                 Partner With Excellence
               </h3>
-              <p className="text-lg text-slate-600 mb-8">
+              <p className="text-lg text-slate-100 mb-8">
                 At Tree House Realty, we understand that real estate represents
                 more than transactions—it's about building futures, creating
                 opportunities, and establishing lasting value.
@@ -313,10 +315,67 @@ export default function HomePage() {
         </div>
       </section>
 
-      
-      
+      {/* === Parallax “Contact Us” Section === */}
+      <section className="w-full bg-gradient-to-br from-slate-50 via-white to-slate-100 py-24 px-6 md:px-10 lg:px-20">
+        <div className="max-w-[1440px] mx-auto flex flex-col lg:flex-row items-start gap-12">
+          {/* Left Info Panel */}
+          <div className="w-full lg:w-1/2 flex flex-col justify-center">
+            <span className="text-sm tracking-wide uppercase text-amber-600 font-medium mb-4">
+              Contact Us
+            </span>
 
-      
+            <h2 className="text-4xl sm:text-5xl font-bold text-slate-800 leading-tight mb-6">
+              Get in Touch with <br />
+              <span className="text-amber-500">Tree House Realty</span>
+            </h2>
+
+            <p className="text-lg text-slate-600 mb-8 max-w-xl">
+              Whether you're looking to buy, sell, or just need guidance — our
+              team is here to help. Drop us a message or visit our office.
+            </p>
+
+            <div className="space-y-5 text-slate-700 text-base">
+              <div>
+                <p className="font-semibold text-lg text-slate-800 mb-1">
+                  Tree House Construction Pvt. Ltd.
+                </p>
+                <p>905, DLF Corporate Tower – 1</p>
+                <p>Sector 74, Gurgaon, Haryana</p>
+              </div>
+
+              <div>
+                <p>
+                  <span className="font-semibold text-slate-800">Email:</span>{" "}
+                  <a
+                    href="mailto:hello@treehouserealty.com"
+                    className="text-amber-600 hover:underline"
+                  >
+                    hello@treehouserealty.com
+                  </a>
+                </p>
+                <p>
+                  <span className="font-semibold text-slate-800">Phone:</span>{" "}
+                  <a
+                    href="tel:+918001234567"
+                    className="text-amber-600 hover:underline"
+                  >
+                    +91 800-123-4567
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Right Form Panel */}
+          <div className="w-full lg:w-1/2 bg-white shadow-xl rounded-3xl p-8 sm:p-10 border border-slate-200">
+            <h3 className="text-3xl text-center font-bold text-green-700 mb-6">
+              Send Us a Message
+            </h3>
+            {/* Your Form Component */}
+            <EnquiryForm />
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

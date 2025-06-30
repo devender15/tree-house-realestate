@@ -78,7 +78,7 @@ const Footer = () => {
               </ul>
             </div>
 
-            {/* Contact Info */}
+            {/* Contact Information */}
             <div>
               <h4 className="font-bold text-2xl mb-6 text-white">
                 Contact Info
