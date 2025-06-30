@@ -64,7 +64,7 @@ export function PropertyCarousel() {
   }, [activeTab, emblaApi]);
 
   return (
-    <section className="w-full py-16 px-4 sm:px-6 lg:px-8 lg:py-24 lg:h-screen bg-white overflow-hidden">
+    <section className="w-full py-16  px-4 sm:px-6 lg:px-8 lg:py-30 lg:h-scree bg-white overflow-hidden">
       <div className="w-full max-w-none mx-auto">
         {/* Header */}
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6 mb-12 max-w-7xl mx-auto">
