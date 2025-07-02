@@ -313,7 +313,7 @@ export default function HomePage() {
       </section>
 
       {/* === Parallax “Contact Us” Section === */}
-      <section className="w-full bg-gradient-to-br from-gray-900 via-slate-800 to-gray-900 py-16 sm:py-20 lg:py-28 px-4 sm:px-6 lg:px-8">
+      <section className="w-full bg-gradient-to-br from-gray-900 via-slate-800 to-gray-900 py-16 sm:py-20 lg:py-28 px-1 sm:px-6 lg:px-8">
             <div className="max-w-7xl mx-auto">
               <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 xl:gap-20 items-start">
                 {/* Left Info Panel */}

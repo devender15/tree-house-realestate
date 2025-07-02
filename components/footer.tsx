@@ -1,76 +1,49 @@
-import { Mail, MapPin, Phone } from "lucide-react";
-import Image from "next/image";
-import Link from "next/link";
+import { Mail, MapPin, Phone, ArrowRight } from "lucide-react"
+import Image from "next/image"
+import Link from "next/link"
 
 const Footer = () => {
   return (
-    <div className="relative overflow-hidden">
-      <div className="absolute inset-0 bg-[url('/assets/footer-bg.jpg')] bg-cover opacity-5"></div>
-      <footer className="bg-slate-900 text-slate-300 py-12 lg:pb-50 relative z-10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
-            {/* Logo + Description */}
-            <div className="sm:col-span-2 lg:col-span-1">
-              <div className="mb-6">
-                <Image
-                  src={"/assets/logo.png"}
-                  alt="Logo"
-                  width={100}
-                  height={100}
-                  className=""
-                />
-              </div>
-              <p className="text-slate-400 mb-6 font-light leading-relaxed text-sm lg:text-base">
-                Your premier partner in discovering exceptional property
-                investments that stand the test of time.
-              </p>
+    <footer className="bg-gray-900 text-gray-300 border-t md:pb-20 border-gray-800">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="py-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {/* Company Logo & CTA */}
+            <div className="flex flex-col items-start">
+              <Image src="/assets/logo.png" alt="Tree House Realty" width={100} height={100} className="mb-6" />
               <Link
                 href="/enquiry"
-                className="inline-block bg-orange-600 hover:bg-orange-700 text-white px-6 py-3 rounded-full font-medium shadow-lg  transition-all duration-300 transform text-md"
+                className="inline-flex items-center gap-2 bg-teal-600 hover:bg-teal-700 text-white px-5 py-2.5 rounded-lg font-medium transition-colors duration-300"
               >
                 Contact Us
+                <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
 
             {/* Quick Links */}
             <div>
-              <h4 className="font-bold text-2xl mb-6 text-white">
-                Quick Links
-              </h4>
-              <ul className="space-y-3">
-                {["Residential", "Commercial", "Rent", "Plots", "Resale"].map(
-                  (link) => (
-                    <li key={link}>
-                      <Link
-                        href={`/${link.toLowerCase()}`}
-                        className="text-white/70 hover:text-white transition-all duration-300 flex items-center group text-lg"
-                      >
-                        {link}
-                      </Link>
-                    </li>
-                  )
-                )}
+              <h4 className="font-semibold text-white text-lg mb-4">Quick Links</h4>
+              <ul className="space-y-2">
+                {["Residential", "Commercial", "Rent", "Plots", "Resale"].map((link) => (
+                  <li key={link}>
+                    <Link
+                      href={`/${link.toLowerCase()}`}
+                      className="text-gray-400 hover:text-white transition-colors duration-300"
+                    >
+                      {link}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
 
             {/* Property Types */}
             <div>
-              <h4 className="font-bold text-2xl mb-6 text-white">
-                Property Types
-              </h4>
-              <ul className="space-y-3">
-                {[
-                  "Apartments",
-                  "Villas",
-                  "Plots",
-                  "Commercial",
-                  "Luxury Homes",
-                ].map((type) => (
+              <h4 className="font-semibold text-white text-lg mb-4">Property Types</h4>
+              <ul className="space-y-2">
+                {["Apartments", "Villas", "Plots", "Commercial", "Luxury Homes"].map((type) => (
                   <li key={type}>
-                    <a
-                      href="#"
-                      className="text-white/70 hover:text-white transition-all duration-300 flex items-center group text-lg"
-                    >
+                    <a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">
                       {type}
                     </a>
                   </li>
@@ -78,47 +51,51 @@ const Footer = () => {
               </ul>
             </div>
 
-            {/* Contact Information */}
+            {/* Contact Info */}
             <div>
-              <h4 className="font-bold text-2xl mb-6 text-white">
-                Contact Info
-              </h4>
-              <div className="space-y-4">
-                {[
-                  {
-                    icon: <Phone className="w-6 h-6 text-white" />,
-                    label: "Phone",
-                    value: "+91-9811098193",
-                  },
-                  {
-                    icon: <Mail className="w-6 h-6 text-white" />,
-                    label: "Email",
-                    value: "Treehousefarmland@gmail.com",
-                  },
-                  {
-                    icon: <MapPin className="w-6 h-6 text-white" />,
-                    label: "Location",
-                    value: "Gurgaon, Haryana",
-                  },
-                ].map(({ icon, label, value }) => (
-                  <div className="flex justify-center items-center " key={label}>
-                    <div className="mr-3 mt-0.5 flex-shrink-0">
-                      {icon}
-                    </div>
-                    <div className="min-w-0 flex-1 ">
-                      <p className="text-white text-sm space-y-auto break-words">
-                        {value}
-                      </p>
-                    </div>
-                  </div>
-                ))}
+              <h4 className="font-semibold text-white text-lg mb-4">Contact</h4>
+              <div className="space-y-3">
+                <div className="flex items-center gap-3">
+                  <Phone className="w-4 h-4 text-teal-400 flex-shrink-0" />
+                  <a href="tel:+919811098193" className="text-gray-400 hover:text-white transition-colors duration-300">
+                    +91-9811098193
+                  </a>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Mail className="w-4 h-4 text-teal-400 flex-shrink-0 mt-0.5" />
+                  <a
+                    href="mailto:Treehousefarmland@gmail.com"
+                    className="text-gray-400 hover:text-white transition-colors duration-300 break-all"
+                  >
+                    Treehousefarmland@gmail.com
+                  </a>
+                </div>
+                <div className="flex items-center gap-3">
+                  <MapPin className="w-4 h-4 text-teal-400 flex-shrink-0" />
+                  <span className="text-gray-400">Gurgaon, Haryana</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </footer>
-    </div>
-  );
-};
 
-export default Footer;
+        {/* Bottom Bar */}
+        <div className="border-t border-gray-800 py-6">
+          <div className="flex flex-col sm:flex-row justify-between items-center gap-4 text-sm">
+            <span className="text-gray-500">&copy; 2025 Tree House Realty. All rights reserved.</span>
+            <div className="flex gap-6">
+              <Link href="/privacy" className="text-gray-500 hover:text-gray-300 transition-colors duration-300">
+                Privacy
+              </Link>
+              <Link href="/terms" className="text-gray-500 hover:text-gray-300 transition-colors duration-300">
+                Terms
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  )
+}
+
+export default Footer
