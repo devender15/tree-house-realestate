@@ -20,10 +20,6 @@ export function PropertyCarousel() {
     loop: false,
     align: "start",
     slidesToScroll: 1,
-    breakpoints: {
-      "(min-width: 768px)": { slidesToScroll: 2 },
-      "(min-width: 1024px)": { slidesToScroll: 3 },
-    },
   });
 
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -64,59 +60,59 @@ export function PropertyCarousel() {
   }, [activeTab, emblaApi]);
 
   return (
-    <section className="w-full py-16  px-4 sm:px-6 lg:px-8 lg:py-30 lg:h-scree bg-white overflow-hidden">
+    <section className="w-full py-16  px-4 sm:px-6 lg:px-8 lg:py-30 lg:h-scree bg-slate-800 overflow-hidden">
       <div className="w-full max-w-none mx-auto">
         {/* Header */}
-        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6 mb-12 max-w-7xl mx-auto">
+        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6 mb-12 lg:mx-20">
           <div className="space-y-3  ">
-            <h2 className="text-3xl leading-8 sm:text-4xl lg:text-5xl font-bold text-slate-800 tracking-tight">
+            <h2 className="text-3xl leading-8 sm:text-4xl lg:text-5xl font-bold text-white tracking-tight">
               New Launches
             </h2>
-            <p className="text-lg text-slate-600 font-medium">
+            <p className="text-lg text-gray-300 font-medium">
               Discover our latest premium properties
             </p>
           </div>
 
           {/* Navigation Controls */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 hidden lg:flex ">
             <button
               onClick={scrollPrev}
               disabled={selectedIndex === 0}
-              className={`w-12 h-12 flex items-center justify-center rounded-xl border-2 transition-all duration-200 ${
+              className={`w-12 h-12 flex items-center justify-center rounded-full transition-all duration-200 ${
                 selectedIndex === 0
                   ? "text-gray-300 bg-white border-gray-200 cursor-not-allowed"
-                  : "text-gray-700 bg-white border-gray-300 hover:bg-gray-50 hover:border-orange-300 hover:text-orange-600 cursor-pointer shadow-sm hover:shadow-md"
+                  : "text-gray-700 bg-white hover:bg-gray-50 cursor-pointer"
               }`}
               aria-label="Previous slide"
             >
-              <ChevronLeft className="w-5 h-5" />
+              <ChevronLeft className="w-7 h-7" />
             </button>
 
             <button
               onClick={scrollNext}
               disabled={selectedIndex >= totalSlides - 1}
-              className={`w-12 h-12 flex items-center justify-center rounded-xl border-2 transition-all duration-200 ${
+              className={`w-12 h-12 flex items-center justify-center rounded-full border-2 transition-all duration-200 ${
                 selectedIndex >= totalSlides - 1
                   ? "text-gray-300 bg-white border-gray-200 cursor-not-allowed"
-                  : "text-gray-700 bg-white border-gray-300 hover:bg-gray-50 hover:border-orange-300 hover:text-orange-600 cursor-pointer shadow-sm hover:shadow-md"
+                  : "text-gray-700 bg-white hover:bg-gray-50 cursor-pointer"
               }`}
               aria-label="Next slide"
             >
-              <ChevronRight className="w-5 h-5" />
+              <ChevronRight className="w-7 h-7" />
             </button>
           </div>
         </div>
 
         {/* Carousel */}
-        <div className="relative max-w-7xl mx-auto">
-          <div className="overflow-hidden" ref={emblaRef}>
+        <div className="relative  xl:mx-20">
+          <div className="overflow-hidden py-1" ref={emblaRef}>
             <div className="flex gap-6">
               {filteredProperties.map((property, index) => (
                 <div
                   key={property.id}
                   className="flex-shrink-0 w-full min-w-[320px] sm:min-w-0 sm:w-1/2 lg:w-1/3"
                 >
-                  <div className="group bg-white rounded-xl overflow-hidden border-2 border-orange-200/50 hover:shadow-xl hover:shadow-gray-200/50 transition-all duration-300 cursor-pointer">
+                  <div className="group bg-gray-200 rounded-xs overflow-hidden transition-all duration-300 cursor-pointer">
                     {/* Image Container */}
                     <div className="relative h-72 overflow-hidden">
                       <Image
@@ -133,18 +129,18 @@ export function PropertyCarousel() {
                     {/* Content */}
                     <div className="p-6 space-y-5">
                       <div className="space-y-3">
-                        <h3 className="text-xl font-bold text-gray-900 line-clamp-1 group-hover:text-orange-600 transition-colors duration-200">
+                        <h3 className="text-xl font-bold text-gray-900 line-clamp-1 transition-colors duration-200">
                           {property.title}
                         </h3>
                         <p className="text-sm text-gray-600 flex items-center gap-2 font-medium">
-                          <MapPin className="w-4 h-4 text-orange-500" />
+                          <MapPin className="w-4 h-4 text-black" />
                           {property.location}
                         </p>
                       </div>
 
                       <Link
                         href={`/details/${property.id}`}
-                        className="inline-flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white text-md font-semibold rounded-full hover:from-orange-600 hover:to-orange-700 transition-all duration-200 group/link cursor-pointer transform hover:scale-105"
+                        className="inline-flex items-center gap-3 px-6 py-3 bg-slate-900 text-white text-md font-semibold rounded-xs hover:from-orange-600 hover:to-orange-700 transition-all duration-200 group/link cursor-pointer transform hover:scale-105"
                       >
                         <span>View Details</span>
                         <ArrowRight className="w-4 h-4 transition-transform duration-200 group-hover/link:translate-x-1" />
@@ -171,8 +167,8 @@ export function PropertyCarousel() {
                   onClick={() => emblaApi?.scrollTo(index)}
                   className={`rounded-full transition-all duration-300 cursor-pointer ${
                     index === selectedIndex
-                      ? "bg-orange-600 w-8 h-3"
-                      : "bg-gray-300 hover:bg-gray-400 w-3 h-3"
+                      ? "bg-white w-8 h-3"
+                      : "bg-gray-400 hover:bg-gray-400 w-3 h-3"
                   }`}
                   aria-label={`Go to slide ${index + 1}`}
                 />

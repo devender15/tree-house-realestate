@@ -56,7 +56,7 @@ const SearchBar = () => {
         {/* Search Button */}
         <div className="w-full md:w-auto">
           <Button
-            className="w-full md:w-auto h-12 bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 rounded-md transition cursor-pointer "
+            className="w-full md:w-auto h-12 bg-black text-white font-semibold px-6 rounded-md transition cursor-pointer "
             onClick={handleSearch}
           >
             Search Properties

@@ -54,8 +54,8 @@ export default function Navbar() {
     <>
       {/* Main Navbar */}
       <header
-        className={`sticky top-0 z-50 py-2 w-full transition-all overflow-hidden  ${
-          scrolled ? "shadow-md  bg-slate-900" : "bg-white"
+        className={`sticky top-0 z-50 py-4 w-full transition-all overflow-hidden  ${
+          scrolled ? "shadow-md  bg-slate-900" : "bg-slate-900"
         }`}
       >
         <div className=" px-4 sm:px-6 lg:px-10 xl:px-20 h-16 flex items-center justify-between">
@@ -81,7 +81,7 @@ export default function Navbar() {
                 className={`px-4 py-4 text-lg font-medium transition ${
                   scrolled
                     ? "text-slate-300 hover:text-white"
-                    : "text-slate-700 hover:text-slate-900"
+                    : "text-white/80 hover:text-white"
                 }`}
               >
                 {item.label}
@@ -93,7 +93,7 @@ export default function Navbar() {
           <div className="flex items-center gap-4">
             <Link
               href="/enquiry"
-              className="hidden lg:block bg-orange-600 text-white px-6 py-3 text-md font-semibold rounded-full hover:bg-orange-700 transition"
+              className="hidden lg:block border-3 bg-blac border-white text-white hover:text-white/80 hover:border-white/80 px-6 py-2 text-lg font-semibold rounded-full transition"
             >
               Enquire Now
             </Link>
@@ -102,12 +102,12 @@ export default function Navbar() {
               size="icon"
               className={`block lg:hidden h-10 w-10 transition ${
                 scrolled
-                  ? "hover:bg-slate-800 text-slate-300"
-                  : "hover:bg-slate-100 text-slate-900"
+                  ? "hover:bg-slate-800 text-slate-100"
+                  : "hover:bg-slate-100 text-slate-100"
               }`}
               onClick={toggleSidebar}
             >
-              <Menu className="w-5 h-5" />
+              <Menu className="w-full h-full" />
             </Button>
           </div>
         </div>
@@ -125,7 +125,7 @@ export default function Navbar() {
           {/* Sidebar */}
           <div
             ref={sidebarRef}
-            className="fixed top-0 right-0 z-50 h-full w-80 max-w-[85vw] bg-white shadow-xl border-l border-slate-200 transform transition-transform duration-300 will-change-transform translate-x-0"
+            className="fixed top-0 right-0 z-50 h-full w-full sm:max-w-2/3 md:max-w-2/3 bg-white shadow-xl border-l border-slate-200 transform transition-transform duration-300 will-change-transform translate-x-0"
           >
             <div className="h-full flex flex-col">
               {/* Header */}
