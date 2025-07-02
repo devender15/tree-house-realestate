@@ -143,7 +143,7 @@ export default function EnquiryForm() {
 
   return (
     <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
-      <Card className="bg-white">
+      <Card className="rounded-sm shadow-none bg-white ">
         <CardContent className="p-8">
           {/* Error Message */}
           <AnimatePresence>
@@ -152,7 +152,7 @@ export default function EnquiryForm() {
                 initial={{ opacity: 0, height: 0 }}
                 animate={{ opacity: 1, height: "auto" }}
                 exit={{ opacity: 0, height: 0 }}
-                className="mb-6 p-4 bg-red-50 border border-red-200 rounded-xl flex items-start gap-3"
+                className="mb-6 p-4 bg-red-50 border border-red-200  flex items-start gap-3"
               >
                 <AlertCircle className="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" />
                 <span className="text-red-700 text-sm font-medium">{error}</span>
@@ -183,7 +183,7 @@ export default function EnquiryForm() {
                   value={formData.name}
                   onChange={handleChange}
                   disabled={loading}
-                  className="h-12 border-gray-200 focus:border-emerald-500 focus:ring-emerald-500/20 rounded-xl bg-gray-50/50 transition-all duration-200 hover:bg-white focus:bg-white"
+                  className="h-12 border-gray-200 focus:border-emerald-500 focus:ring-emerald-500/20  bg-gray-50/50 transition-all duration-200 hover:bg-white focus:bg-white"
                   required
                 />
               </motion.div>
@@ -208,7 +208,7 @@ export default function EnquiryForm() {
                   value={formData.phone}
                   onChange={handleChange}
                   disabled={loading}
-                  className="h-12 border-gray-200 focus:border-emerald-500 focus:ring-emerald-500/20 rounded-xl bg-gray-50/50 transition-all duration-200 hover:bg-white focus:bg-white"
+                  className="h-12 border-gray-200 focus:border-emerald-500 focus:ring-emerald-500/20  bg-gray-50/50 transition-all duration-200 hover:bg-white focus:bg-white"
                   required
                 />
               </motion.div>
@@ -235,7 +235,7 @@ export default function EnquiryForm() {
                 value={formData.email}
                 onChange={handleChange}
                 disabled={loading}
-                className="h-12 border-gray-200 focus:border-emerald-500 focus:ring-emerald-500/20 rounded-xl bg-gray-50/50 transition-all duration-200 hover:bg-white focus:bg-white"
+                className="h-12 border-gray-200 focus:border-emerald-500 focus:ring-emerald-500/20  bg-gray-50/50 transition-all duration-200 hover:bg-white focus:bg-white"
                 required
               />
             </motion.div>
@@ -260,7 +260,7 @@ export default function EnquiryForm() {
                 value={formData.message}
                 onChange={handleChange}
                 disabled={loading}
-                className="min-h-[120px] border-gray-200 focus:border-emerald-500 focus:ring-emerald-500/20 rounded-xl bg-gray-50/50 resize-none transition-all duration-200 hover:bg-white focus:bg-white"
+                className="min-h-[120px] border-gray-200 focus:border-emerald-500 focus:ring-emerald-500/20  bg-gray-50/50 resize-none transition-all duration-200 hover:bg-white focus:bg-white"
               />
             </motion.div>
 
@@ -269,7 +269,7 @@ export default function EnquiryForm() {
               <Button
                 type="submit"
                 disabled={loading}
-                className="w-full h-14 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white font-semibold rounded-xl transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed text-base shadow-lg hover:shadow-xl transform hover:scale-[1.02] active:scale-[0.98]"
+                className="w-full h-14 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white font-semibold  transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed text-base shadow-lg hover:shadow-xl transform hover:scale-[1.02] active:scale-[0.98]"
               >
                 {loading ? (
                   <div className="flex items-center gap-3">

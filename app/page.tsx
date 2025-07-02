@@ -50,7 +50,7 @@ const featured = [
   {
     title: "Residensial",
     link: "/residential",
-    image: "/assets/residential/bg.jpg",
+    image: "/assets/resi_bg.png",
   },
   {
     title: "Plots",
@@ -88,21 +88,21 @@ const features = [
 
 export default function HomePage() {
   return (
-    <div className="">
+    <div>
       {/* Hero Section */}
       <section className="relative overflow-hidden">
         <HeroSection videoUrl="/assets/hero_vdo.mp4" imageUrl="" heading="" />
       </section>
 
       {/* featured properties */}
-      <section className="px-6 py-16 lg:h-screen bg-white md:px-12 lg:px-20">
-        <div className="max-w-7xl mx-auto lg:mt-10">
+      <section className="px-2 py-16 flex flex-col items-center justify-center lg:h-screen bg-slate-800 md:px-12 lg:px-25">
+        <div className="w-full ">
           {/* Header */}
           <div className="text-center mb-12">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-light text-slate-800 tracking-tight">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-medium text-white tracking-tight">
               Featured Properties
             </h1>
-            <div className="w-16 h-0.5 bg-orange-500 mx-auto mt-4"></div>
+            <div className="w-16 h-0.5 bg-gray-400 mx-auto mt-4"></div>
           </div>
 
           {/* Properties Grid */}
@@ -111,7 +111,7 @@ export default function HomePage() {
               <Link
                 href={item.link}
                 key={idx}
-                className="group relative aspect-[4/5] overflow-hidden rounded-lg bg-white shadow-sm hover:shadow-xl transition-all duration-500 ease-out"
+                className="group relative aspect-[5/5] overflow-hidden rounded- bg-white overflow-hidden transition-all duration-500 ease-out"
               >
                 {/* Image */}
                 <div className="relative w-full h-full overflow-hidden">
@@ -133,11 +133,8 @@ export default function HomePage() {
                   </h3>
 
                   {/* Subtle indicator */}
-                  <div className="w-8 h-0.5 bg-white/60 mt-3 group-hover:w-12 group-hover:bg-orange-400 transition-all duration-300"></div>
+                  <div className="w-8 h-0.5 bg-white/60 mt-3 group-hover:w-12 transition-all duration-300"></div>
                 </div>
-
-                {/* Hover overlay */}
-                <div className="absolute inset-0 border-2 border-transparent group-hover:border-orange-400/30 rounded-lg transition-colors duration-300"></div>
               </Link>
             ))}
           </div>
@@ -300,9 +297,9 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="mt-16 pt-8 border-t border-slate-200">
+          <div className="mt-16 pt-8">
             <div className="max-w-4xl mx-auto text-center">
-              <h3 className="text-2xl font-bold text-orange-500 mb-6">
+              <h3 className="text-2xl font-bold text-white mb-6">
                 Partner With Excellence
               </h3>
               <p className="text-lg text-slate-100 mb-8">
@@ -316,66 +313,126 @@ export default function HomePage() {
       </section>
 
       {/* === Parallax “Contact Us” Section === */}
-      <section className="w-full bg-gradient-to-br from-slate-50 via-white to-slate-100 py-24 px-6 md:px-10 lg:px-20">
-        <div className="max-w-[1440px] mx-auto flex flex-col lg:flex-row items-start gap-12">
-          {/* Left Info Panel */}
-          <div className="w-full lg:w-1/2 flex flex-col justify-center">
-            <span className="text-sm tracking-wide uppercase text-amber-600 font-medium mb-4">
-              Contact Us
-            </span>
+      <section className="w-full bg-gradient-to-br from-gray-900 via-slate-800 to-gray-900 py-16 sm:py-20 lg:py-28 px-4 sm:px-6 lg:px-8">
+            <div className="max-w-7xl mx-auto">
+              <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 xl:gap-20 items-start">
+                {/* Left Info Panel */}
+                <div className="space-y-8">
+                  <div className="space-y-6">
+                    <div className="inline-flex items-center gap-2 bg-teal-500/10 border border-teal-500/20 text-teal-400 px-4 py-2 rounded-full text-sm font-semibold tracking-wide uppercase">
+                      <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                        <path
+                          fillRule="evenodd"
+                          d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                      Contact Us
+                    </div>
 
-            <h2 className="text-4xl sm:text-5xl font-bold text-slate-800 leading-tight mb-6">
-              Get in Touch with <br />
-              <span className="text-amber-500">Tree House Realty</span>
-            </h2>
+                    <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-[1.1] tracking-tight">
+                      Get in Touch with{" "}
+                      <span className="block mt-2 bg-gradient-to-r from-teal-400 via-emerald-400 to-green-400 bg-clip-text text-transparent">
+                        Tree House Realty
+                      </span>
+                    </h2>
 
-            <p className="text-lg text-slate-600 mb-8 max-w-xl">
-              Whether you're looking to buy, sell, or just need guidance — our
-              team is here to help. Drop us a message or visit our office.
-            </p>
+                    <p className="text-lg lg:text-xl text-gray-300 leading-relaxed max-w-2xl font-light">
+                      Whether you're looking to buy, sell, or just need guidance — our expert team is here to help. Drop
+                      us a message or visit our office for personalized assistance.
+                    </p>
+                  </div>
 
-            <div className="space-y-5 text-slate-700 text-base">
-              <div>
-                <p className="font-semibold text-lg text-slate-800 mb-1">
-                  Tree House Construction Pvt. Ltd.
-                </p>
-                <p>905, DLF Corporate Tower – 1</p>
-                <p>Sector 74, Gurgaon, Haryana</p>
-              </div>
+                  {/* Contact Information */}
+                  <div className="space-y-8 pt-4">
+                    {/* Visit Us */}
+                    <div className="group">
+                      <div className="flex items-start gap-4">
+                        <div className="w-12 h-12 bg-teal-500/10 border border-teal-500/20 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-teal-500/20 transition-colors duration-300">
+                          <svg className="w-6 h-6 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                            />
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                            />
+                          </svg>
+                        </div>
+                        <div className="space-y-1">
+                          <h3 className="text-xl font-semibold text-white">Visit Us</h3>
+                          <div className="text-gray-300 leading-relaxed">
+                            <p className="font-medium">905, DLF Corporate Tower – 1</p>
+                            <p>Sector 74, Gurgaon, Haryana</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
 
-              <div>
-                <p>
-                  <span className="font-semibold text-slate-800">Email:</span>{" "}
-                  <a
-                    href="mailto:hello@treehouserealty.com"
-                    className="text-amber-600 hover:underline"
-                  >
-                    hello@treehouserealty.com
-                  </a>
-                </p>
-                <p>
-                  <span className="font-semibold text-slate-800">Phone:</span>{" "}
-                  <a
-                    href="tel:+918001234567"
-                    className="text-amber-600 hover:underline"
-                  >
-                    +91 800-123-4567
-                  </a>
-                </p>
+                    {/* Email */}
+                    <div className="group">
+                      <div className="flex items-start gap-4">
+                        <div className="w-12 h-12 bg-teal-500/10 border border-teal-500/20 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-teal-500/20 transition-colors duration-300">
+                          <svg className="w-6 h-6 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                            />
+                          </svg>
+                        </div>
+                        <div className="space-y-1">
+                          <h3 className="text-xl font-semibold text-white">Email</h3>
+                          <a
+                            href="mailto:hello@treehouserealty.com"
+                            className="text-gray-300 hover:text-teal-400 transition-colors duration-300 font-medium"
+                          >
+                            hello@treehouserealty.com
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Phone */}
+                    <div className="group">
+                      <div className="flex items-start gap-4">
+                        <div className="w-12 h-12 bg-teal-500/10 border border-teal-500/20 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-teal-500/20 transition-colors duration-300">
+                          <svg className="w-6 h-6 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                            />
+                          </svg>
+                        </div>
+                        <div className="space-y-1">
+                          <h3 className="text-xl font-semibold text-white">Phone</h3>
+                          <a
+                            href="tel:+918001234567"
+                            className="text-gray-300 hover:text-teal-400 transition-colors duration-300 font-medium"
+                          >
+                            +91 800-123-4567
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Right Form Panel */}
+                <div className="lg:pl-8">
+                  <EnquiryForm />
+                </div>
               </div>
             </div>
-          </div>
-
-          {/* Right Form Panel */}
-          <div className="w-full lg:w-1/2 bg-white shadow-xl rounded-3xl p-8 sm:p-10 border border-slate-200">
-            <h3 className="text-3xl text-center font-bold text-green-700 mb-6">
-              Send Us a Message
-            </h3>
-            {/* Your Form Component */}
-            <EnquiryForm />
-          </div>
-        </div>
-      </section>
+          </section>
     </div>
   );
 }

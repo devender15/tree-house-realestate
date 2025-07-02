@@ -7,7 +7,7 @@ export default function Page() {
     <div className="min-h-screen bg-gradient-to-br from-white to-slate-50 flex flex-col">
       {/* Hero Section */}
       <HeroSection
-        imageUrl="/images/farmhouse-placeholder.jpg" // Replace with your actual image path if available
+        imageUrl="/assets/farmhouse_bg.png" // Replace with your actual image path if available
         heading="Farmhouse and Farmlands"
       />
 

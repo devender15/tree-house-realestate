@@ -93,10 +93,9 @@ export function HeroSection({
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.2, delay: 0.3, ease: "easeOut" }}
-            className={`${playfair.className} text-6xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[9rem] leading-[0.9] font-bold mb-16`}
+            className={`${playfair.className} text-6xl sm:text-7xl md:text-7xl lg:text-7xl xl:text-[6rem] leading-[0.9] font-bold mb-16`}
             style={{
-              background:
-                "linear-gradient(135deg, #ffffff 0%, #f8fafc 50%, #e2e8f0 100%)",
+              background:"linear-gradient(135deg, #ffffff 0%, #f8fafc 50%, #e2e8f0 100%)",
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
               backgroundClip: "text",

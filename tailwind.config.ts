@@ -19,6 +19,10 @@ const config = {
       },
     },
     extend: {
+      kgroundColor: {
+        'btn-primary': 'var(--btn-primary)', // Will reference CSS variable
+      },
+
       fontFamily: {
         sans: ["var(--font-poppins)"],
         poppins: ["var(--font-poppins)"],
@@ -27,6 +31,10 @@ const config = {
         montserrat: ["Montserrat", "sans-serif"],
       },
       colors: {
+         'my-blue': {
+          600: '#2563eb',
+          700: '#1d4ed8', // hover state
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
