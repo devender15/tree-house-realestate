@@ -54,7 +54,7 @@ export default function Navbar() {
     <>
       {/* Main Navbar */}
       <header
-        className={`sticky top-0 z-50 py-4 w-full transition-all overflow-hidden  ${
+        className={`sticky top-0 z-50 py-2 md:py-3 w-full transition-all overflow-hidden  ${
           scrolled ? "shadow-md  bg-slate-900" : "bg-slate-900"
         }`}
       >
@@ -93,22 +93,16 @@ export default function Navbar() {
           <div className="flex items-center gap-4">
             <Link
               href="/enquiry"
-              className="hidden lg:block border-3 bg-blac border-white text-white hover:text-white/80 hover:border-white/80 px-6 py-2 text-lg font-semibold rounded-full transition"
+              className="hidden lg:block border-2 bg-blac border-white text-white hover:text-white/80 hover:border-white/80 px-6 py-2 text-lg font-semibold rounded-full transition"
             >
               Enquire Now
             </Link>
-            <Button
-              variant="ghost"
-              size="icon"
-              className={`block lg:hidden h-10 w-10 transition ${
-                scrolled
-                  ? "hover:bg-slate-800 text-slate-100"
-                  : "hover:bg-slate-100 text-slate-100"
-              }`}
+            <button
+              className={`block lg:hidden h-8 w-8 transition text-white`}
               onClick={toggleSidebar}
             >
-              <Menu className="w-full h-full" />
-            </Button>
+              <Menu className="text-center w-full h-full " />
+            </button>
           </div>
         </div>
       </header>
@@ -152,7 +146,7 @@ export default function Navbar() {
                   onClick={toggleSidebar}
                   className="p-2 rounded hover:bg-slate-100"
                 >
-                  <X className="w-5 h-5" />
+                  <X className="w-8 h-8" />
                 </button>
               </div>
 

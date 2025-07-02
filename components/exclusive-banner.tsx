@@ -44,7 +44,7 @@ export default function ExclusiveBanner() {
             ].map((feature, index) => (
               <div
                 key={index}
-                className="bg-white overflow-hidden  rounded-2xl p-6 hover:border-teal-200 hover:shadow-lg transition-all duration-300 group"
+                className="bg-white relative overflow-hidden rounded-2xl p-6 hover:border-teal-200 hover:shadow-lg transition-all duration-300 group"
                 style={{
                 backgroundImage: feature.imageUrl,
                 backgroundSize: "cover",
@@ -54,11 +54,9 @@ export default function ExclusiveBanner() {
                 height: "full" 
               }}>
 
-                  <div className="relative w-full h-full z-10 flex flex-col justify-between ">
-                  <div className="w-12 h-12 bg-teal-100 rounded-xl flex items-center justify-center mb-4 group-hover:bg-teal-600 transition-colors duration-300">
-                    <feature.icon className="w-6 h-6 text-teal-600 group-hover:text-white transition-colors duration-300" />
-                  </div>
-                  <div>
+                <div className="absolute left-0 top-0 right-0 bottom-0 bg-gradient-to-t from-black/50 via-black/10 to-black/0 border z-10"></div>
+                  <div className="absolute left-0 right-0 bottom-0 z-10">
+                  <div className="p-5">
                     <h3 className="font-semibold text-white text-lg mb-3">{feature.title}</h3>
                     <p className="text-gray-100 leading-4">{feature.description}</p>
                   </div>

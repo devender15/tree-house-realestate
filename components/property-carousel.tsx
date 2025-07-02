@@ -140,7 +140,7 @@ export function PropertyCarousel() {
 
                       <Link
                         href={`/details/${property.id}`}
-                        className="inline-flex items-center gap-3 px-6 py-3 bg-slate-900 text-white text-md font-semibold rounded-xs hover:from-orange-600 hover:to-orange-700 transition-all duration-200 group/link cursor-pointer transform hover:scale-105"
+                        className="inline-flex items-center gap-3 px-6 py-3 bg-slate-700 text-white text-md font-semibold rounded-xs hover:from-orange-600 hover:to-orange-700 transition-all duration-200 group/link cursor-pointer transform hover:scale-105"
                       >
                         <span>View Details</span>
                         <ArrowRight className="w-4 h-4 transition-transform duration-200 group-hover/link:translate-x-1" />
