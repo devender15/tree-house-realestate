@@ -73,7 +73,7 @@ const ResidentialProperty = () => {
       <div className="absolute top-0 left-0 w-full h-64 bg-gradient-to-b from-white/80 to-transparent" />
       <div className="absolute bottom-0 left-0 w-full h-64 bg-gradient-to-t from-white/80 to-transparent" />
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative md:mx-5 xl:mx-30 px-3 md:px-5">
         {/* Section Header */}
         <div className="text-center mb-16">
           <motion.div
